@@ -1,0 +1,1 @@
+BeltHelper.isItemUpright(${input$item})
