@@ -1,0 +1,1 @@
+Double.valueOf(BlockStressValues.get${field$name}(${input$block}))
