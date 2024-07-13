@@ -1,0 +1,1 @@
+ItemHelper.getMaximumSockets(${input$item})

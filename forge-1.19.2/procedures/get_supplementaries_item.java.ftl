@@ -1,0 +1,1 @@
+${input$item}.is(ItemTags.create(new ResourceLocation("supplementaries:${field$name}s")))

@@ -1,0 +1,1 @@
+KineticDebugger.isActive()

@@ -1,0 +1,1 @@
+io.redspace.ironsspellbooks.player.ClientSpellCastHelper.shouldSuppressRightClicks()
