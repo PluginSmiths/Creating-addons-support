@@ -1,0 +1,66 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "brittle",
+          "brittle"
+        ],
+        [
+          "casing",
+          "casing"
+        ],
+        [
+          "fan_transparent",
+          "fan_transparent"
+        ],
+        [
+          "passive_boiler_heaters",
+          "passive_boiler_heaters"
+        ],
+        [
+          "windmill_sails",
+          "windmill_sails"
+        ],
+        [
+          "wrench_pickup",
+          "wrench_pickup"
+        ],
+        [
+          "valve_handles",
+          "valve_handles"
+        ],
+        [
+          "seats",
+          "seats"
+        ],
+        [
+          "toolboxes",
+          "toolboxes"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

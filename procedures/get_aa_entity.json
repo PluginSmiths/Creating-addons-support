@@ -1,0 +1,54 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "can_survive_extreme_cold",
+          "can_survive_extreme_cold"
+        ],
+        [
+          "can_survive_extreme_heat",
+          "can_survive_extreme_heat"
+        ],
+        [
+          "can_survive_in_acid_rain",
+          "can_survive_in_acid_rain"
+        ],
+        [
+          "can_survive_in_space",
+          "can_survive_in_space"
+        ],
+        [
+          "ignores_air_vortex",
+          "ignores_air_vortex"
+        ],
+        [
+          "lives_without_oxygen",
+          "lives_without_oxygen"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "ad_astra_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

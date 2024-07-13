@@ -1,0 +1,70 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "bunfungus_ignore_aoe_attacks",
+          "bunfungus_ignore_aoe_attacks"
+        ],
+        [
+          "bunfungus_ignores",
+          "bunfungus_ignores"
+        ],
+        [
+          "ignores_kimono",
+          "ignores_kimono"
+        ],
+        [
+          "mimic_octopus_fears",
+          "mimic_octopus_fears"
+        ],
+        [
+          "monkey_target_with_dart",
+          "monkey_target_with_dart"
+        ],
+        [
+          "neutral_land_animals",
+          "neutral_land_animals"
+        ],
+        [
+          "passive_land_animals",
+          "passive_land_animals"
+        ],
+        [
+          "scatters_crows",
+          "scatters_crows"
+        ],
+        [
+          "skunk_fears",
+          "skunk_fears"
+        ],
+        [
+          "void_portal_ignores",
+          "void_portal_ignores"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_mobs_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

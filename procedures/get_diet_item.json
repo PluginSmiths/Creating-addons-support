@@ -1,0 +1,58 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "fruits",
+          "fruits"
+        ],
+        [
+          "grains",
+          "grains"
+        ],
+        [
+          "ingredients",
+          "ingredients"
+        ],
+        [
+          "proteins",
+          "proteins"
+        ],
+        [
+          "special_food",
+          "special_food"
+        ],
+        [
+          "sugars",
+          "sugars"
+        ],
+        [
+          "vegetables",
+          "vegetables"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "diet_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "CastingSpellLevel",
+          "CastingSpellLevel"
+        ],
+        [
+          "CastDurationRemaining",
+          "CastDurationRemaining"
+        ],
+        [
+          "CastDuration",
+          "CastDuration"
+        ],
+        [
+          "CastCompletionPercent",
+          "CastCompletionPercent"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "irons_spellsn_spellbooks_support",
+    "toolbox_init": [
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

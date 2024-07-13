@@ -1,0 +1,54 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "cooling_consumed_items",
+          "cooling_consumed_items"
+        ],
+        [
+          "cooling_held_items",
+          "cooling_held_items"
+        ],
+        [
+          "cooling_armor",
+          "cooling_armor"
+        ],
+        [
+          "heating_armor",
+          "heating_armor"
+        ],
+        [
+          "heating_consumed_items",
+          "heating_consumed_items"
+        ],
+        [
+          "heating_held_items",
+          "heating_held_items"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c9c",
+  "mcreator": {
+    "toolbox_id": "tought_as_nails",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

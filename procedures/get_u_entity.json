@@ -1,0 +1,46 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "cavern_creature",
+          "cavern_creature"
+        ],
+        [
+          "immune_to_scintling_goo",
+          "immune_to_scintling_goo"
+        ],
+        [
+          "immune_to_virulent_mix",
+          "immune_to_virulent_mix"
+        ],
+        [
+          "rotspawn",
+          "rotspawn"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "undergarden_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

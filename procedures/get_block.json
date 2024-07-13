@@ -1,0 +1,54 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "ropes",
+          "ropes"
+        ],
+        [
+          "straw_blocks",
+          "straw_blocks"
+        ],
+        [
+          "tray_heat_sources",
+          "tray_heat_sources"
+        ],
+        [
+          "wild_crops",
+          "wild_crops"
+        ],
+        [
+          "heat_sources",
+          "heat_sources"
+        ],
+        [
+          "heat_conductors",
+          "heat_conductors"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "farmers_delight",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

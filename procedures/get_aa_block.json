@@ -1,0 +1,122 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "aeronos_caps",
+          "aeronos_caps"
+        ],
+        [
+          "cable_ducts",
+          "cable_ducts"
+        ],
+        [
+          "calorite_blocks",
+          "calorite_blocks"
+        ],
+        [
+          "desh_blocks",
+          "desh_blocks"
+        ],
+        [
+          "destroyed_in_space",
+          "destroyed_in_space"
+        ],
+        [
+          "flags",
+          "flags"
+        ],
+        [
+          "fluid_pipe_ducts",
+          "fluid_pipe_ducts"
+        ],
+        [
+          "glacian_logs",
+          "glacian_logs"
+        ],
+        [
+          "glacio_stone_replaceables",
+          "glacio_stone_replaceables"
+        ],
+        [
+          "globes",
+          "globes"
+        ],
+        [
+          "launch_pads",
+          "launch_pads"
+        ],
+        [
+          "mars_stone_replaceables",
+          "mars_stone_replaceables"
+        ],
+        [
+          "mercury_stone_replaceables",
+          "mercury_stone_replaceables"
+        ],
+        [
+          "moon_stone_replaceables",
+          "moon_stone_replaceables"
+        ],
+        [
+          "ostrum_blocks",
+          "ostrum_blocks"
+        ],
+        [
+          "passes_flood_fill",
+          "passes_flood_fill"
+        ],
+        [
+          "raw_calorite_blocks",
+          "raw_calorite_blocks"
+        ],
+        [
+          "raw_desh_blocks",
+          "raw_desh_blocks"
+        ],
+        [
+          "raw_ostrum_blocks",
+          "raw_ostrum_blocks"
+        ],
+        [
+          "sliding_doors",
+          "sliding_doors"
+        ],
+        [
+          "steel_blocks",
+          "steel_blocks"
+        ],
+        [
+          "strophar_caps",
+          "strophar_caps"
+        ],
+        [
+          "venus_stone_replaceables",
+          "venus_stone_replaceables"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "ad_astra_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

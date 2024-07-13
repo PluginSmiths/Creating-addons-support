@@ -1,0 +1,54 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "acid",
+          "acid"
+        ],
+        [
+          "bubbled",
+          "bubbled"
+        ],
+        [
+          "magnets",
+          "magnets"
+        ],
+        [
+          "radiation",
+          "radiation"
+        ],
+        [
+          "totem_of_possession",
+          "totem_of_possession"
+        ],
+        [
+          "tremorsaurus_roar",
+          "tremorsaurus_roar"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

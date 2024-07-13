@@ -1,0 +1,122 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "breed_ampithere",
+          "breed_ampithere"
+        ],
+        [
+          "breed_hippocampus",
+          "breed_hippocampus"
+        ],
+        [
+          "breed_hippogryph",
+          "breed_hippogryph"
+        ],
+        [
+          "charred_blocks",
+          "charred_blocks"
+        ],
+        [
+          "crackled_blocks",
+          "crackled_blocks"
+        ],
+        [
+          "dragon_armors",
+          "dragon_armors"
+        ],
+        [
+          "dragon_arrows",
+          "dragon_arrows"
+        ],
+        [
+          "dragon_bloods",
+          "dragon_bloods"
+        ],
+        [
+          "dragon_food_meat",
+          "dragon_food_meat"
+        ],
+        [
+          "dragon_hearts",
+          "dragon_hearts"
+        ],
+        [
+          "dragon_skulls",
+          "dragon_skulls"
+        ],
+        [
+          "frozen_blocks",
+          "frozen_blocks"
+        ],
+        [
+          "heal_ampithere",
+          "heal_ampithere"
+        ],
+        [
+          "heal_cockatrice",
+          "heal_cockatrice"
+        ],
+        [
+          "heal_hippocampus",
+          "heal_hippocampus"
+        ],
+        [
+          "heal_pixie",
+          "heal_pixie"
+        ],
+        [
+          "make_item_drops_fireimmune",
+          "make_item_drops_fireimmune"
+        ],
+        [
+          "mob_skulls",
+          "mob_skulls"
+        ],
+        [
+          "tame_hippogryph",
+          "tame_hippogryph"
+        ],
+        [
+          "tame_pixie",
+          "tame_pixie"
+        ],
+        [
+          "tempt_dragon",
+          "tempt_dragon"
+        ],
+        [
+          "tempt_hippocampus",
+          "tempt_hippocampus"
+        ],
+        [
+          "tempt_hippogryph",
+          "tempt_hippogryph"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "ice_and_fire_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

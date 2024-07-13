@@ -1,0 +1,58 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "radon_lamps",
+          "radon_lamps"
+        ],
+        [
+          "vallumraptor_steals",
+          "vallumraptor_steals"
+        ],
+        [
+          "teletor_spawns_with",
+          "teletor_spawns_with"
+        ],
+        [
+          "sea_pig_digests",
+          "sea_pig_digests"
+        ],
+        [
+          "restricted_biome_locators",
+          "restricted_biome_locators"
+        ],
+        [
+          "galena_gauntlet_crystallization_items",
+          "galena_gauntlet_crystallization_items"
+        ],
+        [
+          "ferromagnetic_items",
+          "ferromagnetic_items"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

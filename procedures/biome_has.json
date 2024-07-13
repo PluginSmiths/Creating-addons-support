@@ -1,0 +1,84 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "silver_dungeon",
+          "silver_dungeon"
+        ],
+        [
+          "ruined_portal_swamp",
+          "ruined_portal_swamp"
+        ],
+        [
+          "ruined_portal_standard",
+          "ruined_portal_standard"
+        ],
+        [
+          "ruined_portal_mountain",
+          "ruined_portal_mountain"
+        ],
+        [
+          "ruined_portal_jungle",
+          "ruined_portal_jungle"
+        ],
+        [
+          "ruined_portal_desert",
+          "ruined_portal_desert"
+        ],
+        [
+          "ruined_portal_aether",
+          "ruined_portal_aether"
+        ],
+        [
+          "large_aercloud",
+          "large_aercloud"
+        ],
+        [
+          "gold_dungeon",
+          "gold_dungeon"
+        ],
+        [
+          "bronze_dungeon",
+          "bronze_dungeon"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "X",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Y",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Z",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "aether_support",
+    "toolbox_init": [
+      "<value name=\"X\"><block type=\"coord_x\"></block></value>",
+      "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
+      "<value name=\"Z\"><block type=\"coord_z\"></block></value>"
+    ],
+    "inputs": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

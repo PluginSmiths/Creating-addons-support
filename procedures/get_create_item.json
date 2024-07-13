@@ -1,0 +1,62 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "casing",
+          "casing"
+        ],
+        [
+          "contraption_controlled",
+          "contraption_controlled"
+        ],
+        [
+          "create_ingots",
+          "create_ingots"
+        ],
+        [
+          "crushed_raw_materials",
+          "crushed_raw_materials"
+        ],
+        [
+          "seats",
+          "seats"
+        ],
+        [
+          "toolboxes",
+          "toolboxes"
+        ],
+        [
+          "valve_handles",
+          "valve_handles"
+        ],
+        [
+          "sleepers",
+          "sleepers"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

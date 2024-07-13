@@ -1,0 +1,50 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "sortable_entities",
+          "sortable_entities"
+        ],
+        [
+          "rides_obstruct_snatching",
+          "rides_obstruct_snatching"
+        ],
+        [
+          "lifedrain_drops_no_flesh",
+          "lifedrain_drops_no_flesh"
+        ],
+        [
+          "lich_poppables",
+          "lich_poppables"
+        ],
+        [
+          "dont_kill_bugs",
+          "dont_kill_bugs"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "twilight_forest_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

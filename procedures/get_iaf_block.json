@@ -1,0 +1,82 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "charred_blocks",
+          "charred_blocks"
+        ],
+        [
+          "crackled_blocks",
+          "crackled_blocks"
+        ],
+        [
+          "dragon_block_break_blacklist",
+          "dragon_block_break_blacklist"
+        ],
+        [
+          "dragon_block_break_no_drops",
+          "dragon_block_break_no_drops"
+        ],
+        [
+          "dragon_cave_common_ores",
+          "dragon_cave_common_ores"
+        ],
+        [
+          "dragon_cave_rare_ores",
+          "dragon_cave_rare_ores"
+        ],
+        [
+          "dragon_cave_uncommon_ores",
+          "dragon_cave_uncommon_ores"
+        ],
+        [
+          "dragon_environment_blocks",
+          "dragon_environment_blocks"
+        ],
+        [
+          "fire_dragon_cave_ores",
+          "fire_dragon_cave_ores"
+        ],
+        [
+          "frozen_blocks",
+          "frozen_blocks"
+        ],
+        [
+          "ice_dragon_cave_ores",
+          "ice_dragon_cave_ores"
+        ],
+        [
+          "lightning_dragon_cave_ores",
+          "lightning_dragon_cave_ores"
+        ],
+        [
+          "myrmex_harvestables",
+          "myrmex_harvestables"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "ice_and_fire_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}
