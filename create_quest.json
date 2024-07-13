@@ -1,0 +1,187 @@
+{
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "name"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "rarity",
+      "options": [
+        [
+          "r",
+          "r"
+        ],
+        [
+          "c",
+          "c"
+        ]
+      ]
+    },
+    {
+      "type": "field_dropdown",
+      "name": "color",
+      "options": [
+        [
+          "Rary",
+          "Rary"
+        ],
+        [
+          "none",
+          "none"
+        ]
+      ]
+    },
+    {
+      "type": "field_dropdown",
+      "name": "type",
+      "options": [
+        [
+          "deliver",
+          "deliver"
+        ],
+        [
+          "craft",
+          "craft"
+        ],
+        [
+          "kill",
+          "kill"
+        ],
+        [
+          "crit",
+          "crit"
+        ],
+        [
+          "build",
+          "build"
+        ],
+        [
+          "destroy",
+          "destroy"
+        ],
+        [
+          "catch",
+          "catch"
+        ],
+        [
+          "till",
+          "till"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "will_say",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "say_complete",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "required",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "reward",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "custom_name",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "task_custom_name",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "target_custom_name",
+      "check": "String"
+    },
+    {
+      "type": "input_value",
+      "name": "min",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "maximum",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "exp",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "id",
+      "check": "Number"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "for",
+      "options": [
+        [
+          "monster_hunter",
+          "monster_hunter"
+        ],
+        [
+          "cook",
+          "cook"
+        ],
+        [
+          "angler",
+          "angler"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#608a99",
+  "mcreator": {
+    "toolbox_id": "quests_and_rewards_support",
+    "toolbox_init": [
+      "<value name=\"will_say\"><block type=\"text\"><field name=\"TEXT\">quest.realmrpg_quests.generic.deliver</field></block></value>",
+      "<value name=\"say_complete\"><block type=\"text\"><field name=\"TEXT\">quest.realmrpg_quests.generic.reward</field></block></value>",
+      "<value name=\"required\"><block type=\"text\"><field name=\"TEXT\">minecraft:candles</field></block></value>",
+      "<value name=\"reward\"><block type=\"text\"><field name=\"TEXT\">minecraft:chests/simple_dungeon</field></block></value>",
+      "<value name=\"custom_name\"><block type=\"text\"><field name=\"TEXT\">biome.minecraft.swamp</field></block></value>",
+      "<value name=\"task_custom_name\"><block type=\"text\"><field name=\"TEXT\">biome.minecraft.swamp</field></block></value>",
+      "<value name=\"target_custom_name\"><block type=\"text\"><field name=\"TEXT\">biome.minecraft.swamp</field></block></value>",
+      "<value name=\"min\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value>",
+      "<value name=\"maximum\"><block type=\"math_number\"><field name=\"NUM\">64</field></block></value>",
+      "<value name=\"exp\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"id\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value>"
+    ],
+    "inputs": [
+      "will_say",
+      "say_complete",
+      "required",
+      "reward",
+      "custom_name",
+      "task_custom_name",
+      "target_custom_name",
+      "min",
+      "maximum",
+      "exp",
+      "id"
+    ],
+    "fields": [
+      "name",
+      "rarity",
+      "color",
+      "type",
+      "for"
+    ]
+  }
+}
