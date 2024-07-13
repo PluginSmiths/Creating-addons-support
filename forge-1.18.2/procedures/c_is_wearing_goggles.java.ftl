@@ -1,0 +1,1 @@
+${input$entity} instanceof Player _player && GogglesItem.isWearingGoggles(_player)==true

@@ -1,0 +1,1 @@
+ClientMagicData.getPlayerMana()

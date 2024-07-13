@@ -1,0 +1,1 @@
+s.setSanity(s.getSanity() - ${input$number} / 100f);

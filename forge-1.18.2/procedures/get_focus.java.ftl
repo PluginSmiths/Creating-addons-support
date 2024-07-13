@@ -1,0 +1,1 @@
+${input$item}.is(ItemTags.create(new ResourceLocation("irons_spellbooks:${field$name}_focus")))
