@@ -1,0 +1,155 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5136988')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5136987')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5264038')
+    }
+  update_files:
+    - ~
+
+forge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5264036')
+    }
+  update_files:
+    - ~
+
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5264037')
+    }
+  update_files:
+    - ~
+
+forge-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:4570835')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:4445053')
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:4277356')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:4277355')
+    }
+  update_files:
+    - ~
+
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:4277221')
+    }
+  update_files:
+    - ~
+
+fabric-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:4277220')
+    }
+  update_files:
+    - ~
+name: "Enchantment Descriptions"

@@ -1,0 +1,99 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-398521:5051242')
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-398521:5051241')
+    }
+  update_files:
+    - ~
+
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-398521:4679315')
+    }
+  update_files:
+    - ~
+
+fabric-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-fabric-482834:4111479')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-fabric-482834:4939667')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-fabric-482834:4640626')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:farmers-delight-fabric-482834:4939709')
+    }
+  update_files:
+    - ~
+name: "Farmers Delight"

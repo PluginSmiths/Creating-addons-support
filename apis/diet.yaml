@@ -1,0 +1,71 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813904')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813902')
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813890')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813888')
+    }
+  update_files:
+    - ~
+
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4571116')
+    }
+  update_files:
+    - ~
+name: "Diet"

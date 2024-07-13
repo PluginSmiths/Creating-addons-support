@@ -1,0 +1,57 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:5143956')
+    }
+  update_files:
+    - ~
+
+forge-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:4556622')
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:4556677')
+    }
+  update_files:
+    - ~
+
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:3783096')
+    }
+  update_files:
+    - ~
+name: "Citadel"

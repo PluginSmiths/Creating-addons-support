@@ -1,0 +1,113 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5261465')
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5261461')
+    }
+  update_files:
+    - ~
+
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5261459')
+    }
+  update_files:
+    - ~
+
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5246037')
+    }
+  update_files:
+    - ~
+
+forge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5246033')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5246030')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5246021')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fancymenu-367706:5246006')
+    }
+  update_files:
+    - ~
+name: "FancyMenu"

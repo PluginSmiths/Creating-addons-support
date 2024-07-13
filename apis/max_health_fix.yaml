@@ -1,0 +1,141 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:5378283')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:5378285')
+    }
+  update_files:
+    - ~
+
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:5127434')
+    }
+  update_files:
+    - ~
+
+forge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:5127433')
+    }
+  update_files:
+    - ~
+
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:5127432')
+    }
+  update_files:
+    - ~
+
+forge-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:4658489')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:4658488')
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:4658481')
+    }
+  update_files:
+    - ~
+
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:4658480')
+    }
+  update_files:
+    - ~
+
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:max-health-fix-492246:4609586')
+    }
+  update_files:
+    - ~
+name: "Max Health Fix"

@@ -1,0 +1,15 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:realm-rpg-quests-rewards-1021783:5388398')
+    }
+  update_files:
+    - ~
+name: "Quests and Rewards"
