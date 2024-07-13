@@ -1,0 +1,1 @@
+${input$item}.is(ItemTags.create(new ResourceLocation("toughasnails:${field$name}")))
