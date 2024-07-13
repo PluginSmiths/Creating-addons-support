@@ -1,0 +1,162 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "cave_paintings",
+          "cave_paintings"
+        ],
+        [
+          "cooks_meat_blocks",
+          "cooks_meat_blocks"
+        ],
+        [
+          "corrodent_blocks_digging",
+          "corrodent_blocks_digging"
+        ],
+        [
+          "dinosaurs_spawnable_on",
+          "dinosaurs_spawnable_on"
+        ],
+        [
+          "dinosaur_eggs",
+          "dinosaur_eggs"
+        ],
+        [
+          "drain_breaks",
+          "drain_breaks"
+        ],
+        [
+          "galena_gen_replaceables",
+          "galena_gen_replaceables"
+        ],
+        [
+          "gloomoth_light_sources",
+          "gloomoth_light_sources"
+        ],
+        [
+          "grottoceratops_food_blocks",
+          "grottoceratops_food_blocks"
+        ],
+        [
+          "grows_mussels",
+          "grows_mussels"
+        ],
+        [
+          "luxtructosaurus_breaks",
+          "luxtructosaurus_breaks"
+        ],
+        [
+          "magnetron_weapons",
+          "magnetron_weapons"
+        ],
+        [
+          "magnet_removes_last",
+          "magnet_removes_last"
+        ],
+        [
+          "nuke_proof",
+          "nuke_proof"
+        ],
+        [
+          "radon_lamps",
+          "radon_lamps"
+        ],
+        [
+          "radrock_gen_replaceables",
+          "radrock_gen_replaceables"
+        ],
+        [
+          "raycat_sleeps_on",
+          "raycat_sleeps_on"
+        ],
+        [
+          "regenerates_after_primordial_boss_fight",
+          "regenerates_after_primordial_boss_fight"
+        ],
+        [
+          "relicheirus_knockable_leaves",
+          "relicheirus_knockable_leaves"
+        ],
+        [
+          "relicheirus_knockable_logs",
+          "relicheirus_knockable_logs"
+        ],
+        [
+          "relicheirus_nibbles",
+          "relicheirus_nibbles"
+        ],
+        [
+          "remote_detonator_activates",
+          "remote_detonator_activates"
+        ],
+        [
+          "resists_magnetron_body_building",
+          "resists_magnetron_body_building"
+        ],
+        [
+          "scaffolding",
+          "scaffolding"
+        ],
+        [
+          "stops_dinosaur_eggs",
+          "stops_dinosaur_eggs"
+        ],
+        [
+          "submarine_assembly_blocks",
+          "submarine_assembly_blocks"
+        ],
+        [
+          "trench_generation_ignores",
+          "trench_generation_ignores"
+        ],
+        [
+          "tube_worm_avoids",
+          "tube_worm_avoids"
+        ],
+        [
+          "turns_into_cave_paintings",
+          "turns_into_cave_paintings"
+        ],
+        [
+          "underzealot_light_sources",
+          "underzealot_light_sources"
+        ],
+        [
+          "unmovable",
+          "unmovable"
+        ],
+        [
+          "water_carver_replaceables",
+          "water_carver_replaceables"
+        ],
+        [
+          "whalefall_ignores",
+          "whalefall_ignores"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

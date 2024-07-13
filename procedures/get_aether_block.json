@@ -1,0 +1,166 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "aechor_plant_spawnable_on",
+          "aechor_plant_spawnable_on"
+        ],
+        [
+          "aerclouds",
+          "aerclouds"
+        ],
+        [
+          "aerogel",
+          "aerogel"
+        ],
+        [
+          "aether_animals_spawnable_on",
+          "aether_animals_spawnable_on"
+        ],
+        [
+          "aether_dirt",
+          "aether_dirt"
+        ],
+        [
+          "aether_island_blocks",
+          "aether_island_blocks"
+        ],
+        [
+          "aether_portal_blacklist",
+          "aether_portal_blacklist"
+        ],
+        [
+          "aether_portal_blocks",
+          "aether_portal_blocks"
+        ],
+        [
+          "allowed_bucket_pickup",
+          "allowed_bucket_pickup"
+        ],
+        [
+          "allowed_flammables",
+          "allowed_flammables"
+        ],
+        [
+          "angelic_blocks",
+          "angelic_blocks"
+        ],
+        [
+          "boss_doorway_dungeon_blocks",
+          "boss_doorway_dungeon_blocks"
+        ],
+        [
+          "dungeon_blocks",
+          "dungeon_blocks"
+        ],
+        [
+          "enchanted_grass",
+          "enchanted_grass"
+        ],
+        [
+          "golden_oak_logs",
+          "golden_oak_logs"
+        ],
+        [
+          "gravitite_ability_blacklist",
+          "gravitite_ability_blacklist"
+        ],
+        [
+          "hellfire_blocks",
+          "hellfire_blocks"
+        ],
+        [
+          "holystone",
+          "holystone"
+        ],
+        [
+          "infiniburn",
+          "infiniburn"
+        ],
+        [
+          "locked_dungeon_blocks",
+          "locked_dungeon_blocks"
+        ],
+        [
+          "non_bronze_dungeon_spawnable",
+          "non_bronze_dungeon_spawnable"
+        ],
+        [
+          "non_ruined_portal_spawnable",
+          "non_ruined_portal_spawnable"
+        ],
+        [
+          "non_tunnel_replaceable",
+          "non_tunnel_replaceable"
+        ],
+        [
+          "ruined_portal_ground_replaceable",
+          "ruined_portal_ground_replaceable"
+        ],
+        [
+          "sentry_blocks",
+          "sentry_blocks"
+        ],
+        [
+          "skyroot_logs",
+          "skyroot_logs"
+        ],
+        [
+          "slider_unbreakable",
+          "slider_unbreakable"
+        ],
+        [
+          "swet_spawnable_on",
+          "swet_spawnable_on"
+        ],
+        [
+          "trapped_dungeon_blocks",
+          "trapped_dungeon_blocks"
+        ],
+        [
+          "treasure_doorway_dungeon_blocks",
+          "treasure_doorway_dungeon_blocks"
+        ],
+        [
+          "treated_as_aether_block",
+          "treated_as_aether_block"
+        ],
+        [
+          "treated_as_vanilla_block",
+          "treated_as_vanilla_block"
+        ],
+        [
+          "valkyrie_queen_unbreakable",
+          "valkyrie_queen_unbreakable"
+        ],
+        [
+          "valkyrie_teleportable_on",
+          "valkyrie_teleportable_on"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "aether_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}
