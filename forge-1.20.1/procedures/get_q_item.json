@@ -1,0 +1,162 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "ancient_logs",
+          "ancient_logs"
+        ],
+        [
+          "azalea_logs",
+          "azalea_logs"
+        ],
+        [
+          "backpack_blocked",
+          "backpack_blocked"
+        ],
+        [
+          "big_harvesting_hoes",
+          "big_harvesting_hoes"
+        ],
+        [
+          "blossom_logs",
+          "blossom_logs"
+        ],
+        [
+          "corundum",
+          "corundum"
+        ],
+        [
+          "crab_tempt_items",
+          "crab_tempt_items"
+        ],
+        [
+          "crystal_lamp",
+          "crystal_lamp"
+        ],
+        [
+          "framed_glass_panes",
+          "framed_glass_panes"
+        ],
+        [
+          "framed_glasses",
+          "framed_glasses"
+        ],
+        [
+          "glow_shroom_feedables",
+          "glow_shroom_feedables"
+        ],
+        [
+          "hedges",
+          "hedges"
+        ],
+        [
+          "hollow_logs",
+          "hollow_logs"
+        ],
+        [
+          "ignore_multishot",
+          "ignore_multishot"
+        ],
+        [
+          "ladders",
+          "ladders"
+        ],
+        [
+          "parrot_feed",
+          "parrot_feed"
+        ],
+        [
+          "pipes",
+          "pipes"
+        ],
+        [
+          "posts",
+          "posts"
+        ],
+        [
+          "reacharound_able",
+          "reacharound_able"
+        ],
+        [
+          "revertable_chests",
+          "revertable_chests"
+        ],
+        [
+          "revertable_trapped_chests",
+          "revertable_trapped_chests"
+        ],
+        [
+          "seed_pouch_fertilizers",
+          "seed_pouch_fertilizers"
+        ],
+        [
+          "seed_pouch_holdable",
+          "seed_pouch_holdable"
+        ],
+        [
+          "shards",
+          "shards"
+        ],
+        [
+          "stained_framed_glass_panes",
+          "stained_framed_glass_panes"
+        ],
+        [
+          "stained_framed_glasses",
+          "stained_framed_glasses"
+        ],
+        [
+          "stone_tool_materials",
+          "stone_tool_materials"
+        ],
+        [
+          "stools",
+          "stools"
+        ],
+        [
+          "trowel_blacklist",
+          "trowel_blacklist"
+        ],
+        [
+          "trowel_whitelist",
+          "trowel_whitelist"
+        ],
+        [
+          "vertical_slab",
+          "vertical_slab"
+        ],
+        [
+          "vertical_slabs",
+          "vertical_slabs"
+        ],
+        [
+          "wooden_vertical_slabs",
+          "wooden_vertical_slabs"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "quark_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "base_stone_undergarden",
+          "base_stone_undergarden"
+        ],
+        [
+          "depthrock_ore_replaceables",
+          "depthrock_ore_replaceables"
+        ],
+        [
+          "grongle_logs",
+          "grongle_logs"
+        ],
+        [
+          "muncher_breakables",
+          "muncher_breakables"
+        ],
+        [
+          "mushrooms",
+          "mushrooms"
+        ],
+        [
+          "portal_frame_blocks",
+          "portal_frame_blocks"
+        ],
+        [
+          "scintling_spawnable_on",
+          "scintling_spawnable_on"
+        ],
+        [
+          "shiverstone_ore_replaceables",
+          "shiverstone_ore_replaceables"
+        ],
+        [
+          "smogstem_logs",
+          "smogstem_logs"
+        ],
+        [
+          "tremblecrust_ore_replaceables",
+          "tremblecrust_ore_replaceables"
+        ],
+        [
+          "undergarden_carver_replaceables",
+          "undergarden_carver_replaceables"
+        ],
+        [
+          "wigglewood_logs",
+          "wigglewood_logs"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "undergarden_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "blood",
+          "blood"
+        ],
+        [
+          "eldritch",
+          "eldritch"
+        ],
+        [
+          "ender",
+          "ender"
+        ],
+        [
+          "evocation",
+          "evocation"
+        ],
+        [
+          "fire",
+          "fire"
+        ],
+        [
+          "holy",
+          "holy"
+        ],
+        [
+          "ice",
+          "ice"
+        ],
+        [
+          "lightning",
+          "lightning"
+        ],
+        [
+          "nature",
+          "nature"
+        ],
+        [
+          "school",
+          "school"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607b99",
+  "mcreator": {
+    "toolbox_id": "irons_spellsn_spellbooks_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

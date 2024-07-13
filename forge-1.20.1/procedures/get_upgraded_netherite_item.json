@@ -1,0 +1,78 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "bow",
+          "bow"
+        ],
+        [
+          "axe",
+          "axe"
+        ],
+        [
+          "boots",
+          "boots"
+        ],
+        [
+          "chestplate",
+          "chestplate"
+        ],
+        [
+          "crossbow",
+          "crossbow"
+        ],
+        [
+          "helmet",
+          "helmet"
+        ],
+        [
+          "horse_armor",
+          "horse_armor"
+        ],
+        [
+          "leggings",
+          "leggings"
+        ],
+        [
+          "pickaxe",
+          "pickaxe"
+        ],
+        [
+          "shield",
+          "shield"
+        ],
+        [
+          "shovel",
+          "shovel"
+        ],
+        [
+          "sword",
+          "sword"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "upgraded_netherite",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

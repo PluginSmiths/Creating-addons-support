@@ -1,0 +1,53 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "jar",
+          "jar"
+        ],
+        [
+          "cage",
+          "cage"
+        ]
+      ]
+    },
+    {
+      "type": "field_dropdown",
+      "name": "catch",
+      "options": [
+        [
+          "catchable",
+          "catchable"
+        ],
+        [
+          "baby_catchable",
+          "baby_catchable"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "supplementaries_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name",
+      "catch"
+    ]
+  }
+}

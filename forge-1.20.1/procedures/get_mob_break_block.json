@@ -1,0 +1,58 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "cachalot_whale",
+          "cachalot_whale"
+        ],
+        [
+          "gorilla",
+          "gorilla"
+        ],
+        [
+          "laviathan",
+          "laviathan"
+        ],
+        [
+          "leafcutter_ant",
+          "leafcutter_ant"
+        ],
+        [
+          "orca",
+          "orca"
+        ],
+        [
+          "void_worm",
+          "void_worm"
+        ],
+        [
+          "warped_mosco",
+          "warped_mosco"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_mobs_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

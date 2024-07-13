@@ -1,0 +1,106 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "advanced_crystals",
+          "advanced_crystals"
+        ],
+        [
+          "all_crystals",
+          "all_crystals"
+        ],
+        [
+          "altar_of_drought_target",
+          "altar_of_drought_target"
+        ],
+        [
+          "arcane_gold_ores",
+          "arcane_gold_ores"
+        ],
+        [
+          "arcane_lumos",
+          "arcane_lumos"
+        ],
+        [
+          "arcane_wood_logs",
+          "arcane_wood_logs"
+        ],
+        [
+          "arcanum_ores",
+          "arcanum_ores"
+        ],
+        [
+          "crystal_seeds",
+          "crystal_seeds"
+        ],
+        [
+          "crystals",
+          "crystals"
+        ],
+        [
+          "extractor_leaver_connection",
+          "extractor_leaver_connection"
+        ],
+        [
+          "faceted_crystals",
+          "faceted_crystals"
+        ],
+        [
+          "fluid_pipe_connection",
+          "fluid_pipe_connection"
+        ],
+        [
+          "fluid_pipe_connection_toggle",
+          "fluid_pipe_connection_toggle"
+        ],
+        [
+          "innocent_wood_logs",
+          "innocent_wood_logs"
+        ],
+        [
+          "masterful_crystals",
+          "masterful_crystals"
+        ],
+        [
+          "nether_salt_ores",
+          "nether_salt_ores"
+        ],
+        [
+          "pure_crystals",
+          "pure_crystals"
+        ],
+        [
+          "steam_pipe_connection",
+          "steam_pipe_connection"
+        ],
+        [
+          "steam_pipe_connection_toggle",
+          "steam_pipe_connection_toggle"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "wizards_reborn_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "ancient_logs",
+          "ancient_logs"
+        ],
+        [
+          "azalea_logs",
+          "azalea_logs"
+        ],
+        [
+          "beacon_transparent",
+          "beacon_transparent"
+        ],
+        [
+          "blossom_logs",
+          "blossom_logs"
+        ],
+        [
+          "breaks_toretoise_ore",
+          "breaks_toretoise_ore"
+        ],
+        [
+          "corundum",
+          "corundum"
+        ],
+        [
+          "crab_spawnable",
+          "crab_spawnable"
+        ],
+        [
+          "crystal_lamp",
+          "crystal_lamp"
+        ],
+        [
+          "foxhound_spawnable",
+          "foxhound_spawnable"
+        ],
+        [
+          "framed_glass_panes",
+          "framed_glass_panes"
+        ],
+        [
+          "framed_glasses",
+          "framed_glasses"
+        ],
+        [
+          "hedges",
+          "hedges"
+        ],
+        [
+          "hollow_logs",
+          "hollow_logs"
+        ],
+        [
+          "iron_rod_immune",
+          "iron_rod_immune"
+        ],
+        [
+          "ladders",
+          "ladders"
+        ],
+        [
+          "non_double_door",
+          "non_double_door"
+        ],
+        [
+          "pickarang_immune",
+          "pickarang_immune"
+        ],
+        [
+          "pike_trophies",
+          "pike_trophies"
+        ],
+        [
+          "pipes",
+          "pipes"
+        ],
+        [
+          "planks_vertical_slab",
+          "planks_vertical_slab"
+        ],
+        [
+          "posts",
+          "posts"
+        ],
+        [
+          "simple_harvest_blacklisted",
+          "simple_harvest_blacklisted"
+        ],
+        [
+          "stained_framed_glass_panes",
+          "stained_framed_glass_panes"
+        ],
+        [
+          "stained_framed_glasses",
+          "stained_framed_glasses"
+        ],
+        [
+          "stools",
+          "stools"
+        ],
+        [
+          "underground_biome_replaceable",
+          "underground_biome_replaceable"
+        ],
+        [
+          "vertical_slab",
+          "vertical_slab"
+        ],
+        [
+          "vertical_slabs",
+          "vertical_slabs"
+        ],
+        [
+          "wooden_vertical_slabs",
+          "wooden_vertical_slabs"
+        ],
+        [
+          "wraith_spawnable",
+          "wraith_spawnable"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "quark_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

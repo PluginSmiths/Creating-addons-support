@@ -1,0 +1,70 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "dead",
+          "dead"
+        ],
+        [
+          "fir",
+          "fir"
+        ],
+        [
+          "hellbark",
+          "hellbark"
+        ],
+        [
+          "jacaranda",
+          "jacaranda"
+        ],
+        [
+          "magic",
+          "magic"
+        ],
+        [
+          "mahogany",
+          "mahogany"
+        ],
+        [
+          "palm",
+          "palm"
+        ],
+        [
+          "redwood",
+          "redwood"
+        ],
+        [
+          "umbran",
+          "umbran"
+        ],
+        [
+          "willow",
+          "willow"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "biomes_o_plenty",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "altimeter",
+          "altimeter"
+        ],
+        [
+          "flag",
+          "flag"
+        ],
+        [
+          "hourglass_dust",
+          "hourglass_dust"
+        ],
+        [
+          "hourglass_sand",
+          "hourglass_sand"
+        ],
+        [
+          "key",
+          "key"
+        ],
+        [
+          "present",
+          "present"
+        ],
+        [
+          "placeable_book",
+          "placeable_book"
+        ],
+        [
+          "trapped_present",
+          "trapped_present"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "supplementaries_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

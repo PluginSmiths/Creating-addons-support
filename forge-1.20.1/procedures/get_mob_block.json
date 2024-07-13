@@ -1,0 +1,90 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "crow_fears",
+          "crow_fears"
+        ],
+        [
+          "crow_foodblocks",
+          "crow_foodblocks"
+        ],
+        [
+          "drops_acacia_blossoms",
+          "drops_acacia_blossoms"
+        ],
+        [
+          "drops_bananas",
+          "drops_bananas"
+        ],
+        [
+          "elephant_foodblocks",
+          "elephant_foodblocks"
+        ],
+        [
+          "froststalker_fears",
+          "froststalker_fears"
+        ],
+        [
+          "gelada_monkey_grass",
+          "gelada_monkey_grass"
+        ],
+        [
+          "grizzly_beehive",
+          "grizzly_beehive"
+        ],
+        [
+          "leafcutter_pupa_usable_on",
+          "leafcutter_pupa_usable_on"
+        ],
+        [
+          "mungus_replace_mushroom",
+          "mungus_replace_mushroom"
+        ],
+        [
+          "mungus_replace_nether",
+          "mungus_replace_nether"
+        ],
+        [
+          "potoo_perches",
+          "potoo_perches"
+        ],
+        [
+          "pupfish_eatables",
+          "pupfish_eatables"
+        ],
+        [
+          "seal_digables",
+          "seal_digables"
+        ],
+        [
+          "soul_vulture_perches",
+          "soul_vulture_perches"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_mobs_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

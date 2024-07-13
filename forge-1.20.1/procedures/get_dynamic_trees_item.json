@@ -1,0 +1,58 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "branches",
+          "branches"
+        ],
+        [
+          "branches_that_burn",
+          "branches_that_burn"
+        ],
+        [
+          "enhanced_fertilizer",
+          "enhanced_fertilizer"
+        ],
+        [
+          "fertilizer",
+          "fertilizer"
+        ],
+        [
+          "fungus_branches",
+          "fungus_branches"
+        ],
+        [
+          "fungus_caps",
+          "fungus_caps"
+        ],
+        [
+          "seeds",
+          "seeds"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "dynamic_trees",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}
