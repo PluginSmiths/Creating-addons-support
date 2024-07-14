@@ -74,6 +74,7 @@ If you like this plugin or want to support me you can vote for it!
 - 1.19.4 Forge
 - 1.19.2 Forge
 - 1.18.2 Forge
+  
 ## Coming soon:
 
 - Thirst was taken support.
@@ -91,8 +92,8 @@ If you like this plugin or want to support me you can vote for it!
 
 #### With Just enought effect descriprion mod you can make effect description and with Enchantments descriprion mod you can make enchantments description. To do than in localization file in localization key write this:
 
-- ##### Just enought effect descriprion - "effect.mod_ID.effect_ID.description"
-- ##### Enchantment descriprion - "enchantment.mod_ID.effect_ID.desc"
+- ##### Just enought effect description - ```effect.mod_ID.effect_ID.description```
+- ##### Enchantment description - ```enchantment.mod_ID.effect_ID.desc```
 - ##### But it is not necessary to include these mods in the API.
 
  
@@ -101,7 +102,7 @@ If you like this plugin or want to support me you can vote for it!
 
 #### Some APIs may require mixins.
 
-#### If you have any problems start an issue.
+#### If you have any problems comment on the plugin page or create nan issue here.
 
  
 
