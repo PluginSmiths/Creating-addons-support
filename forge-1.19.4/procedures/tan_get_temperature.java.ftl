@@ -1,0 +1,1 @@
+${input$entity} instanceof Player _player && Double.valueOf(TemperatureHelper.get${field$name}(_player))==${input$number}

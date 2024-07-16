@@ -1,6 +1,11 @@
 {
   "args0": [
     {
+      "type": "field_data_list_selector",
+      "name": "gui",
+      "datalist": "moddedscreens"
+    },
+    {
       "type": "input_value",
       "name": "entity",
       "check": "Entity"
@@ -8,14 +13,17 @@
   ],
   "inputsInline": true,
   "output": "Boolean",
-  "colour": "#608a99",
+  "colour": "#606999",
   "mcreator": {
-    "toolbox_id": "farmers_delight",
+    "toolbox_id": "additionally",
     "toolbox_init": [
       "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
     ],
     "inputs": [
       "entity"
+    ],
+    "fields": [
+      "gui"
     ]
   }
 }

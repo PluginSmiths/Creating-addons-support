@@ -1,0 +1,21 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "player",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "tought_as_nails",
+    "toolbox_init": [
+      "<value name=\"player\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "player"
+    ]
+  }
+}

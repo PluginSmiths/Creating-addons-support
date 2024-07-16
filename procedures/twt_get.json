@@ -1,0 +1,42 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Thirst",
+          "Thirst"
+        ],
+        [
+          "Quenched",
+          "Quenched"
+        ],
+        [
+          "Purity",
+          "Purity"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "itemstack",
+      "check": "MCItem"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "thirst_was_taken",
+    "toolbox_init": [
+      "<value name=\"itemstack\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "itemstack"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

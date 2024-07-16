@@ -1,1 +1,1 @@
-BlazeBurnerBlock.getLight(new BlockState(world.getBlockState(new BlockPos(${input$X}, ${input$Y}, ${input$Z}))))
+BlazeBurnerBlock.getLight(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})))

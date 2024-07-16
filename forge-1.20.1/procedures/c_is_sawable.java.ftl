@@ -1,1 +1,1 @@
-SawBlockEntity.isSawable(new BlockState(world.getBlockState(new BlockPos(${input$X}, ${input$Y}, ${input$Z}))))
+SawBlockEntity.isSawable(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})))

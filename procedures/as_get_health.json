@@ -1,0 +1,35 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "food",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "satur",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "exhaustion",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "apple_skin",
+    "toolbox_init": [
+      "<value name=\"food\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"satur\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"exhaustion\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+    ],
+    "inputs": [
+      "food",
+      "satur",
+      "exhaustion"
+    ]
+  }
+}

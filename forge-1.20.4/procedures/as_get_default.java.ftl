@@ -1,0 +1,1 @@
+Double.valueOf(FoodHelper.getDefaultFoodValues(${input$itemstack}))

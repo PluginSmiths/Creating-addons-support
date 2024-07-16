@@ -1,1 +1,1 @@
-Double.valueOf(BasinBlockEntity.getHeatLevelOf(new BlockState(world.getBlockState(new BlockPos(${input$X}, ${input$Y}, ${input$Z})))))
+Double.valueOf(BasinBlockEntity.getHeatLevelOf(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z}))))

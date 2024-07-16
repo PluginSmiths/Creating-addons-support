@@ -1,1 +1,1 @@
-BeltBlock.canTransportObjects(new BlockState(world.getBlockState(new BlockPos(${input$X}, ${input$Y}, ${input$Z}))));
+BeltBlock.canTransportObjects(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})))

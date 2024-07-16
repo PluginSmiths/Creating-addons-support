@@ -1,0 +1,38 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "MaxExhaustion",
+          "MaxExhaustion"
+        ],
+        [
+          "Exhaustion",
+          "Exhaustion"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "player",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "apple_skin",
+    "toolbox_init": [
+      "<value name=\"player\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "player"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,1 +1,1 @@
-Double.valueOf(BlazeBurnerBlock.getHeatLevelOf(new BlockState(world.getBlockState(new BlockPos(${input$X}, ${input$Y}, ${input$Z})))))
+Double.valueOf(BlazeBurnerBlock.getHeatLevelOf(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z}))))

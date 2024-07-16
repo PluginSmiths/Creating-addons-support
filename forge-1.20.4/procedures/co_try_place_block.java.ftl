@@ -1,3 +1,3 @@
 if (${input$entity} instanceof ServerPlayer _ServerPlayer) {
-PlacementHandler.tryPlaceBlock(_ServerPlayer, new BlockPos((int)${input$X},(int) ${input$Y},(int) ${input$Z}), ${input$dir}, null);
+PlacementHandler.tryPlaceBlock(_ServerPlayer, world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})), ${input$dir}, null);
 }

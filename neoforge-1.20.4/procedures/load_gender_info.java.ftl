@@ -1,1 +1,1 @@
-com.wildfire.main.WildfireGender.loadGenderInfo(${input$entity}.getUUID, true);
+WildfireGender.loadGenderInfo(${input$entity}.getUUID, true);
