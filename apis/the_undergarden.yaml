@@ -68,4 +68,18 @@ forge-1.18.2:
     }
   update_files:
     - ~
+
+neoforge-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5381985')
+    }
+  update_files:
+    - ~
 name: "The Undergarden"

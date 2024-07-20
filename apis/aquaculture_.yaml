@@ -68,4 +68,18 @@ forge-1.18.2:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aquaculture-60028:5538543')
+    }
+  update_files:
+    - ~
 name: "Aquaculture 2"

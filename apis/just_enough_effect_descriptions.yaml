@@ -96,4 +96,18 @@ forge-1.18.2:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5483315')
+    }
+  update_files:
+    - ~
 name: "Just Enough Effect Descriptions"

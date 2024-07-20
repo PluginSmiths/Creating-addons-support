@@ -96,4 +96,32 @@ forge-1.20.4:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5490271')
+    }
+  update_files:
+    - ~
+
+neoforge-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5420640')
+    }
+  update_files:
+    - ~
 name: "Tough As Nails"

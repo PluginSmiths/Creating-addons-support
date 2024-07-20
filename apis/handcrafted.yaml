@@ -110,4 +110,18 @@ fabric-1.20.4:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5436875')
+    }
+  update_files:
+    - ~
 name: "Handcrafted"

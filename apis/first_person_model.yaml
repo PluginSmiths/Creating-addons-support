@@ -138,4 +138,32 @@ fabric-1.19.2:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:5432643')
+    }
+  update_files:
+    - ~
+
+neoforge-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:5432636')
+    }
+  update_files:
+    - ~
 name: "First person Model"

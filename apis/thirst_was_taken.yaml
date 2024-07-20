@@ -40,4 +40,18 @@ forge-1.18.2:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:thirst-was-taken-thirst-was-taken:5437801')
+    }
+  update_files:
+    - ~
 name: "Thirst Was Taken"

@@ -96,4 +96,18 @@ forge-1.18.2:
     }
   update_files:
     - ~
+
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5525729')
+    }
+  update_files:
+    - ~
 name: "Apple Skin"
