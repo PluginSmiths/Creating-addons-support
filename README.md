@@ -1,3 +1,5 @@
+>### :warning: **Note:** This is the testing branch for the custom java code in this plugin. The version hosted on this branch may or may not work. This code may also have incompatibilities with the stable version of the plugin.
+
 # Creating Addons Support
 
 ## About the plugin:
