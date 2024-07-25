@@ -1,0 +1,1 @@
+ItemVaultBlock.is${field$name}(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})))==true
