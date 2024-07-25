@@ -1,15 +1,12 @@
 # CHANGELOG
 
 ### UNRELEASED:
-- Thirst was taken support.
-- Bigger Tought as nails support.
 - More mods items, blocks and tabs in Mcreator selector.
 - EMF and ETF support.
 - Epic fight support.
 - Emotecraft support.
 - Caelus support.
 - Cosmic horizons support.
-- Apple skin support.
 
 ### Version 3.8 changelog:
  - Added new Cold sweat procedure.
