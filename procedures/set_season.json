@@ -56,24 +56,44 @@
     },
     {
       "type": "input_value",
-      "name": "entity",
-      "check": "Entity"
+      "name": "X",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Y",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Z",
+      "check": "Number"
     }
   ],
   "inputsInline": true,
   "previousStatement": null,
   "nextStatement": null,
-  "colour": "#608a99",
+  "colour": "#998160",
   "mcreator": {
     "toolbox_id": "serene_seasons_support",
     "toolbox_init": [
-      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+      "<value name=\"X\"><block type=\"coord_x\"></block></value>",
+      "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
+      "<value name=\"Z\"><block type=\"coord_z\"></block></value>"
     ],
     "inputs": [
-      "entity"
+      "X",
+      "Y",
+      "Z"
     ],
     "fields": [
       "season"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
     ]
   }
 }

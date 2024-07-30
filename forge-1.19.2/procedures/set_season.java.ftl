@@ -1,5 +1,3 @@
-Entity _ent = ${input$entity};
-if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "season set ${field$season}");
+if (world instanceof ServerLevel _level) {
+_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(${input$X}, ${input$Y}, ${input$Z}), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "set season ${field$season}");
 }
