@@ -3,17 +3,14 @@
 # Creating Addons Support
 
 ## About the plugin:
-This plugin adds 44 mods supports with mods items and more to make your addon easily!
+This plugin adds 46 mods supports with mods items and more to make your addon easily!
 
 If you like this plugin or want to support me you can vote for it!
 
 #### Author Discord - OVONSAME.
 #### [MCreator Plugin Page](https://mcreator.net/plugin/105284/cold-sweat-support)
 ## Announcements:
-
- - I'm looking for a person who knows how to make mod elements for a plugin, be my partner. So that you can help me make elements for recipes (for example farmers delight and create). If anyone wants to help me with this and contribute to this big project, you can write in the comments or write to me on Discord. Also, I already know how recipes from mods work, so you will just need to make the mod element.
- - I will only add more support for the Create mod if I have a partner who knows how to make mod elements.
- - What mod support would you like to see in the plugin? 
+ 
 ## Mod offer rules:
 
  - if your mod doesn't only adds something new for blocks, entities, items and other.
@@ -110,7 +107,7 @@ If you like this plugin or want to support me you can vote for it!
 
 #### This plugin was made with MCreator plugin builder.
 
-#### The logo was taken from [here](https://ru.freepik.com/icon/technology_14959325#fromView=search&page=2&position=85&uuid=2a53e07c-fbb8-46a4-8879-97e3a8581fa5)
+#### The logo was taken from [here](https://freepik.com/icon/technology_14959325#fromView=search&page=2&position=85&uuid=2a53e07c-fbb8-46a4-8879-97e3a8581fa5)
 
 #### Some procedures may not work.
 
