@@ -9,8 +9,7 @@ If you like this plugin or want to support me you can vote for it!
 
 #### Author Discord - OVONSAME.
 #### [MCreator Plugin Page](https://mcreator.net/plugin/105284/cold-sweat-support)
-## Announcements:
- 
+
 ## Mod offer rules:
 
  - if your mod doesn't only adds something new for blocks, entities, items and other.
