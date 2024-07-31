@@ -25,3 +25,4 @@ for text in langs:
         translate_file(main_file, file, text)
 
 //The code requires a lot of internet and computing, so it may not always work!
+//The translation may not be accurate!
