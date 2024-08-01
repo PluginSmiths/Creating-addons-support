@@ -113,9 +113,6 @@ If you like this plugin or want to support me you can vote for it!
 
 #### If you have any problems comment on the plugin page or create nan issue here.
 
- 
-
-#### This plugin was made with MCreator plugin builder.
 
 #### The logo was taken from [here](https://freepik.com/icon/technology_14959325#fromView=search&page=2&position=85&uuid=2a53e07c-fbb8-46a4-8879-97e3a8581fa5)
 
