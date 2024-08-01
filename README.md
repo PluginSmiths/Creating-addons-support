@@ -83,8 +83,19 @@ If you like this plugin or want to support me you can vote for it!
 - Emotecraft support.
 - Caelus support.
 - Cosmic horizons support.
+- Recipe support:
+   - Create
+   - Locksmith
+   - Tough as Nails
+   - Ad Astra
+   - Wizards Reborn
+   - Forbidden and Arcanus
+- ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
+  
+## In Development:
 - Apple skin support.
-
+- Recipe Support:
+    - Farmers Delight
 
 ## Effects and Enchantments description:
 
