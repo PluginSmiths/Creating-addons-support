@@ -8,6 +8,16 @@
 - Caelus support.
 - Cosmic horizons support.
 
+### Version 4.0 changelog:
+ -Updated to 1.20.6 and 1.21 NeoForge.
+ -Bugs fixed.
+
+### Version 3.9 changelog:
+ -Added bigger Tought as nails support.
+ -Added Thirst was taken support.
+ -Added Apple skin support.
+ -Added new additionally procedures.
+
 ### Version 3.8 changelog:
  - Added new Cold sweat procedure.
  - Fixed all moded items.
