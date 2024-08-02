@@ -1,0 +1,14 @@
+### COOMING SOON:
+ - More mods items, blocks and tabs in Mcreator selector.
+ - EMF and ETF support.
+ - Epic fight support.
+ - Emotecraft support.
+ - Caelus support.
+ - Cosmic horizons support.
+ - Recipe support:
+    - Create
+    - Locksmith
+    - Tough as Nails
+    - Ad Astra
+    - Wizards Reborn
+    - Forbidden and Arcanus
