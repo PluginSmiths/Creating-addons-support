@@ -3,7 +3,8 @@
  - EMF and ETF support.
  - Epic fight support.
  - Emotecraft support.
- - Caelus support.
+ - Journey map support.
+ - Default options support.
  - Cosmic horizons support.
  - Recipe support:
     - Create
