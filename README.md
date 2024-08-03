@@ -1,14 +1,16 @@
->### :warning: **Note:** This is the testing branch for the custom java code in this plugin. The version hosted on this branch may or may not work. This code may also have incompatibilities with the stable version of the plugin.
+# Creating Addons Support  
 
-# Creating Addons Support
+[![Plugin Page](https://img.shields.io/badge/MCreator%20Page-green?style=for-the-badge)](https://mcreator.net/plugin/105284/cold-sweat-support)
+[![Author Discord](https://img.shields.io/badge/Author%20Discord-blue?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/)
+
 
 ## About the plugin:
 This plugin adds 46 mods supports with mods items and more to make your addon easily!
 
 If you like this plugin or want to support me you can vote for it!
 
-#### Author Discord - OVONSAME.
-#### [MCreator Plugin Page](https://mcreator.net/plugin/105284/cold-sweat-support)
+>### :warning: **Note:** This is the testing branch for the custom java code in this plugin. The version hosted on this branch may or may not work. This code may also have incompatibilities with the stable version of the plugin
+
 
 ## Mod offer rules:
 
@@ -95,7 +97,11 @@ If you like this plugin or want to support me you can vote for it!
 ## In Development:
 - Apple skin support.
 - Recipe Support:
-    - Farmers Delight
+    - Farmers Delight:
+       - Cutting:  
+         ![Progress](https://progress-bar.dev/95/)
+       - Cooking:  
+         ![Progress](https://progress-bar.dev/60/)
 
 ## Effects and Enchantments description:
 
