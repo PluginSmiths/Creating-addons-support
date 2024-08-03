@@ -6,20 +6,22 @@
 
 
 ## About the plugin:
-This plugin adds 46 mods supports with mods items and more to make your addon easily!
+This plugin adds support for 46 mods with items and more to make your addon easily!
 
-If you like this plugin or want to support me you can vote for it!
+If you like this plugin or want to support its development you can vote for it on the plugin page.
 
 >### :warning: **Note:** This is the testing branch for the custom java code in this plugin. The version hosted on this branch may or may not work. This code may also have incompatibilities with the stable version of the plugin
 
 
 ## Mod offer rules:
 
- - if your mod doesn't only adds something new for blocks, entities, items and other.
- - It is advisable if mod has Wiki o guide.
+ - If your mod doesn't only add something new for blocks, entities, items and other.
+   
+ - It is advisable if mod has Wiki or Guide.
+   
  - If the mod is popular enough.
+ - If the mod is not made in Mcreator, it must be open source!
 
-### A mod that is not made in Mcreator must has open source!
 ## Supported mods:
 
 - Farmer's delight
