@@ -6,6 +6,7 @@
  - Journey map support.
  - Default options support.
  - Cosmic horizons support.
+ - Tips support.
  - Recipe support:
     - Create
     - Locksmith
