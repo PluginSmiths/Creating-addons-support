@@ -17,7 +17,7 @@ If you like this plugin or want to support its development you can vote for it o
 
  - If your mod doesn't only add something new for blocks, entities, items and other.
    
- - It is advisable if mod has Wiki or Guide.
+ - It is good if mod has Wiki or Guide.
    
  - If the mod is popular enough.
  - If the mod is not made in Mcreator, it must be open source!
@@ -60,6 +60,7 @@ If you like this plugin or want to support its development you can vote for it o
 - Ice and fire
 - Dot coin
 - Quark
+  
 ## Supported libraries:
 
 - Fancy menu
@@ -70,6 +71,7 @@ If you like this plugin or want to support its development you can vote for it o
 - Bookshelf
 - First person model
 - Female gender
+  
 ## Supported versions:
 
 - 1.20.4 Forge/NeoForge
@@ -97,7 +99,7 @@ If you like this plugin or want to support its development you can vote for it o
    - Forbidden and Arcanus
 - ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
   
-## In Development:
+## Currently In Development:
 - Apple skin support.
 - Recipe Support:
     - Farmers Delight:
