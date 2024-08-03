@@ -2,6 +2,7 @@
 
 [![Plugin Page](https://img.shields.io/badge/MCreator%20Page-green?style=for-the-badge)](https://mcreator.net/plugin/105284/cold-sweat-support)
 [![Author Discord](https://img.shields.io/badge/Author%20Discord-blue?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/)
+[![License](https://img.shields.io/badge/License-GPL%203.0-blue?style=for-the-badge)](https://github.com/OVNSAME/Creating-addons-support/blob/main/LICENSE)
 
 
 ## About the plugin:
