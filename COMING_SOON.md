@@ -1,4 +1,4 @@
-### COOMING SOON:
+### COMING SOON:
  - More mods items, blocks and tabs in Mcreator selector.
  - EMF and ETF support.
  - Epic fight support.
@@ -12,3 +12,4 @@
     - Ad Astra
     - Wizards Reborn
     - Forbidden and Arcanus
+    - Farmer's Delight
