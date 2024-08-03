@@ -127,6 +127,13 @@ If you like this plugin or want to support its development you can vote for it o
 
 #### Some procedures may not work.
 
+## Contribute:
+If you would like to fix something or add something of your own to the plugin or plugin code you are always welcome to open a pull request.
+
+If you would like to be part of this project as a member of the team you may message me on Discord, my Discord username is OVONSAME.
+
+## Contributors:
+[![Contributors](https://contrib.rocks/image?repo=OVNSAME/Creating-addons-support)](https://github.com/OVNSAME/Creating-addons-support/graphs/contributors)
 
 
 
