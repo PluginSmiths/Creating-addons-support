@@ -100,7 +100,10 @@ If you like this plugin or want to support its development you can vote for it o
 - ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
   
 ## Currently In Development:
-- Apple skin support.
+#### These are the features that will be released next and their progress.
+- Bugfixes to procedures
+- Apple skin support:
+  ![Progress](https://progress-bar.dev/100/)
 - Recipe Support:
     - Farmers Delight:
        - Cutting:  
