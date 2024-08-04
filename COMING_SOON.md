@@ -7,6 +7,7 @@
  - Default options support.
  - Cosmic horizons support.
  - Tips support.
+ - Bigger Cold sweat support.
  - Recipe support:
     - Create
     - Locksmith
