@@ -7,6 +7,7 @@
  - Default options support.
  - Cosmic horizons support.
  - Tips support.
+ - Bigger Cold sweat support.
  - Recipe support:
     - Create
     - Locksmith
@@ -15,3 +16,4 @@
     - Wizards Reborn
     - Forbidden and Arcanus
     - Farmer's Delight
+- ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
