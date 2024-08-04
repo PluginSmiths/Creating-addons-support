@@ -103,6 +103,8 @@ If you like this plugin or want to support its development you can vote for it o
 ## Currently In Development:
 #### These are the features that will be released next and their progress.
 - Bugfixes to procedures
+- Bigger Cold sweat support
+  ![Progress](https://progress-bar.dev/80/)
 - Apple skin support:
   ![Progress](https://progress-bar.dev/100/)
 - Recipe Support:
