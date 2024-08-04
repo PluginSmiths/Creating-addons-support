@@ -1,0 +1,55 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "number",
+      "check": "Number"
+    },
+    {
+      "type": "field_data_list_selector",
+      "name": "temperature",
+      "datalist": "temperature"
+    },
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "type",
+      "options": [
+        [
+          "set",
+          "set"
+        ],
+        [
+          "add",
+          "add"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#609994",
+  "mcreator": {
+    "toolbox_id": "cold_sweat_support",
+    "toolbox_init": [
+      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "number",
+      "entity"
+    ],
+    "fields": [
+      "temperature",
+      "type"
+    ],
+    "required_apis": [
+      "cold_sweat"
+    ]
+  }
+}

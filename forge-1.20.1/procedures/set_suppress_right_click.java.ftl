@@ -1,1 +1,1 @@
-io.redspace.ironsspellbooks.player.ClientSpellCastHelper.setSuppressRightClicks(${input$bool});
+ClientSpellCastHelper.setSuppressRightClicks(${input$bool});
