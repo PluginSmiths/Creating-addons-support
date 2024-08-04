@@ -81,25 +81,6 @@ If you like this plugin or want to support its development you can vote for it o
 - 1.19.2 Forge
 - 1.18.2 Forge
   
-## Coming soon:
-
-- Thirst was taken support.
-- Bigger Tought as nails support.
-- More mods items, blocks and tabs in Mcreator selector.
-- EMF and ETF support.
-- Epic fight support.
-- Emotecraft support.
-- Caelus support.
-- Cosmic horizons support.
-- Recipe support:
-   - Create
-   - Locksmith
-   - Tough as Nails
-   - Ad Astra
-   - Wizards Reborn
-   - Forbidden and Arcanus
-- ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
-  
 ## Currently In Development:
 #### These are the features that will be released next and their progress.
 - Bugfixes to procedures
@@ -113,16 +94,6 @@ If you like this plugin or want to support its development you can vote for it o
          ![Progress](https://progress-bar.dev/95/)
        - Cooking:  
          ![Progress](https://progress-bar.dev/60/)
-
-## Effects and Enchantments description:
-
-#### With Just enought effect descriprion mod you can make effect description and with Enchantments descriprion mod you can make enchantments description. To do than in localization file in localization key write this:
-
-- ##### Just enought effect description - ```effect.mod_ID.effect_ID.description```
-- ##### Enchantment description - ```enchantment.mod_ID.effect_ID.desc```
-- ##### But it is not necessary to include these mods in the API.
-
- 
 
 #### Plugin supports Forge, but some API's and procedures supports Fabric and NeoForge!
 
