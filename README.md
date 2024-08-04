@@ -84,16 +84,16 @@ If you like this plugin or want to support its development you can vote for it o
 ## Currently In Development:
 #### These are the features that will be released next and their progress.
 - Bugfixes to procedures
-- Bigger Cold sweat support
+- Bigger Cold sweat support. 
   ![Progress](https://progress-bar.dev/100/)
-- Apple skin support:
+- Apple skin support:  
   ![Progress](https://progress-bar.dev/100/)
 - Recipe Support:
     - Farmers Delight:
        - Cutting:  
-         ![Progress](https://progress-bar.dev/95/)
+         ![Progress](https://progress-bar.dev/98/)
        - Cooking:  
-         ![Progress](https://progress-bar.dev/60/)
+         ![Progress](https://progress-bar.dev/87/)
 
 #### Plugin supports Forge, but some API's and procedures supports Fabric and NeoForge!
 
