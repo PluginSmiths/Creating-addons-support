@@ -74,7 +74,8 @@ If you like this plugin or want to support its development you can vote for it o
 - Female gender
   
 ## Supported versions:
-
+- 1.21 NeoForge
+- 1.20.6 NeoForge
 - 1.20.4 Forge/NeoForge
 - 1.20.1 Forge
 - 1.19.4 Forge
