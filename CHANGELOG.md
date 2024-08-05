@@ -1,13 +1,5 @@
 # CHANGELOG
 
-### UNRELEASED:
-- More mods items, blocks and tabs in Mcreator selector.
-- EMF and ETF support.
-- Epic fight support.
-- Emotecraft support.
-- Caelus support.
-- Cosmic horizons support.
-
 ### Version 4.0 changelog:
  - Updated to 1.20.6 and 1.21 NeoForge.
  - Bugs fixed.
