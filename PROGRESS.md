@@ -54,3 +54,5 @@
  - Tips: ![Progress](https://progress-bar.dev/0/)
  - Recipe: ![Progress](https://progress-bar.dev/5/)
  - Character leveling: ![Progress](https://progress-bar.dev/0/)
+ - Patchouli: ![Progress](https://progress-bar.dev/0/)
+ - Origins: ![Progress](https://progress-bar.dev/0/)
