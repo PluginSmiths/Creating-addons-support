@@ -1,4 +1,4 @@
-## COMING SOON:
+## COMING IN NEXT UPDATE:
  - More mods items, blocks and tabs in Mcreator selector.
  - Journey map support.
  - Default options support.
