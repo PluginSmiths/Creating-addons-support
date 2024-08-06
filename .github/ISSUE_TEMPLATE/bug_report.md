@@ -7,7 +7,7 @@ assignees: OVNSAME
 
 ---
 
-#### Also make sure that you have the latest version of the plugin and that you have installed the API of your mod.
+#### Make sure that you have the latest version of the plugin and that you have installed the API of your mod.
 
 **Describe the bug**
 A clear and concise description of what the bug is. Describe what the error is related to.
