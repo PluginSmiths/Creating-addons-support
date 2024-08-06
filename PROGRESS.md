@@ -13,7 +13,7 @@
  - Supplementaries: ![Progress](https://progress-bar.dev/100/)
  - Sons of sins: ![Progress](https://progress-bar.dev/100/)
  - Iron's Spells 'n Spellbooks: ![Progress](https://progress-bar.dev/90/)
- - Create: ![Progress](https://progress-bar.dev/88/)
+ - Create: ![Progress](https://progress-bar.dev/86/)
  - Alex's mobs: ![Progress](https://progress-bar.dev/100/)
  - Forbidden and arcanus: ![Progress](https://progress-bar.dev/100/)
  - Biomes o plenty: ![Progress](https://progress-bar.dev/100/)
