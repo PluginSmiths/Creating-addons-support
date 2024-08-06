@@ -1,16 +1,12 @@
 ## COMING IN NEXT UPDATE:
  - More mods items, blocks and tabs in Mcreator selector.
- - Journey map support.
+ - Bugs fix.
+ - Bugger Serene seasons support.
+ - Item hilighter support.
+ - Bigger Ad astra support.
  - Default options support.
  - Bigger Cold sweat support.
- - Recipe support:
-    - Create
-    - Locksmith
-    - Tough as Nails
-    - Ad Astra
-    - Wizards Reborn
-    - Forbidden and Arcanus
-    - Farmer's Delight
+ - Recipes support.
 ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
 
 ## Spoilers on features in development:
