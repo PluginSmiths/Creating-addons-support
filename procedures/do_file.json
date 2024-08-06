@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "DefaultOptionsFolder",
+          "DefaultOptionsFolder"
+        ],
+        [
+          "MinecraftDataDir",
+          "MinecraftDataDir"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "MCItemBlock",
+  "colour": "#9646aa",
+  "mcreator": {
+    "toolbox_id": "default_options_support",
+    "toolbox_init": [
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "default_options"
+    ]
+  }
+}
