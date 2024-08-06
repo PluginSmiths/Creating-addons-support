@@ -1,4 +1,4 @@
-###Progress:
+### Progress:
  - Farmer's delight: ![Progress](https://progress-bar.dev/100/)
  - Diet: ![Progress](https://progress-bar.dev/100/)
  - Sanity: ![Progress](https://progress-bar.dev/100/)
