@@ -1,12 +1,7 @@
 ## COMING SOON:
  - More mods items, blocks and tabs in Mcreator selector.
- - EMF and ETF support.
- - Epic fight support.
- - Emotecraft support.
  - Journey map support.
  - Default options support.
- - Cosmic horizons support.
- - Tips support.
  - Bigger Cold sweat support.
  - Recipe support:
     - Create
