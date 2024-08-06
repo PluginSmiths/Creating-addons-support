@@ -52,4 +52,4 @@
  - Default options support: ![Progress](https://progress-bar.dev/100/)
  - Cosmic horizons support: ![Progress](https://progress-bar.dev/0/)
  - Tips support: ![Progress](https://progress-bar.dev/0/)
- - Recipe support: ![Progress](https://progress-bar.dev/4/)
+ - Recipe support: ![Progress](https://progress-bar.dev/5/)
