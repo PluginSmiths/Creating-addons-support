@@ -1,12 +1,12 @@
 ## COMING IN NEXT UPDATE:
  - More mods items, blocks and tabs in Mcreator selector.
  - Bugs fix.
- - Bugger Serene seasons support.
- - Item hilighter support.
+ - Bigger Serene seasons support.
  - Bigger Ad astra support.
  - Default options support.
  - Bigger Cold sweat support.
  - Recipes support.
+ - Bigger Tree chop support.
 ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
 
 ## Spoilers on features in development:
