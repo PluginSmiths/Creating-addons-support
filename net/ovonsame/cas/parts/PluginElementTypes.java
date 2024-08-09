@@ -5,12 +5,13 @@ import net.ovonsame.cas.elements.*;
 import static net.mcreator.element.ModElementTypeLoader.register;
 
 public class PluginElementTypes {
-    public static ModElementType<?> FARMERSDELIGHTCUTTING;
+    public static ModElementType<?> FARMERSDELIGHT;
 
     public static void load() {
-        FARMERSDELIGHTCUTTING = register(
-                new ModElementType<>("farmersdelightcutting", (Character) null, FarmersDelightCuttingGUI::new, FarmersDelightCutting.class)
+        FARMERSDELIGHT = register(
+                new ModElementType<>("farmersdelight", (Character) null, FarmersDelightGUI::new, FarmersDelight.class)
         );
+
 
     }
 

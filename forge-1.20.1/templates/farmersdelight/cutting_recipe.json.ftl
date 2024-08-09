@@ -1,21 +1,21 @@
-<#include "../transformer.ftl">
+<#include "../mcitems.ftl">
 {
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": ${mappedMCItemToRegistryName(data.input)}
+      "item": "${mappedMCItemToRegistryName(data.cuttinginput)}"
     }
   ],
   "result": [
     {
-      "chance": ${data.chance},
+      "chance": ${data.cuttingchance},
       "count": ${data.count},
-      "item": ${mappedMCItemToRegistryName(data.output)}
+      "item": "${mappedMCItemToRegistryName(data.cuttingoutput)}"
     }
   ],
-  "sound": ${data.sound},
+  "sound": ${data.cuttingsound},
   "tool": {
     "type": "farmersdelight:tool_action",
-    "action": ${data.action}
+    "action": "${data.cuttingaction}"
   }
 }

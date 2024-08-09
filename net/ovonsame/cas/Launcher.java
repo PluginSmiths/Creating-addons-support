@@ -7,7 +7,6 @@ import net.ovonsame.cas.parts.PluginElementTypes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 public class Launcher extends JavaPlugin {
 
     private static final Logger LOG = LogManager.getLogger("Creating Addons Support");
@@ -16,7 +15,6 @@ public class Launcher extends JavaPlugin {
         super(plugin);
 
         addListener(PreGeneratorsLoadingEvent.class, e -> PluginElementTypes.load());
-
         LOG.info("Creating Addons Support plugin was loaded");
     }
 
