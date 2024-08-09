@@ -7,6 +7,7 @@
  - Bigger Cold sweat support.
  - Recipes support.
  - Bigger Tree chop support.
+ - Bigger Dynamic trees support.
 ### Note: We will be releasing recipe support one mod at a time as development is slow as well as to keep us organised.
 
 ## Spoilers on features in development:
