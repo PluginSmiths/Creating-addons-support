@@ -43,7 +43,7 @@
  - Just enought effect description: ![Progress](https://geps.dev/progress/100)
  - Bookshelf: ![Progress](https://geps.dev/progress/100)
  - First person model: ![Progress](https://geps.dev/progress/100)
- - Female gender: ![Progress](https://geps.dev/progress/90)
+ - Female gender: ![Progress](https://geps.dev/progress/100)
  - Apple skin: ![Progress](https://geps.dev/progress/100)
  - EMF and ETF: ![Progress](https://geps.dev/progress/0)
  - Epic fight: ![Progress](https://geps.dev/progress/0)
