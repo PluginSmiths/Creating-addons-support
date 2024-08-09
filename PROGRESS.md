@@ -9,7 +9,7 @@
  - Cold sweat: ![Progress](https://geps.dev/progress/100)
  - Handcrafted: ![Progress](https://geps.dev/progress/100)
  - Nutritional balance: ![Progress](https://geps.dev/progress/100)
- - Tree chop: ![Progress](https://geps.dev/progress/80)
+ - Tree chop: ![Progress](https://geps.dev/progress/95)
  - Supplementaries: ![Progress](https://geps.dev/progress/100)
  - Sons of sins: ![Progress](https://geps.dev/progress/100)
  - Iron's Spells 'n Spellbooks: ![Progress](https://geps.dev/progress/80)
