@@ -17,27 +17,26 @@
     },
     {
       "type": "input_value",
-      "name": "number",
-      "check": "Number"
+      "name": "direction",
+      "check": "Direction"
     }
   ],
   "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#998160",
+  "output": "Boolean",
+  "colour": "#607c99",
   "mcreator": {
-    "toolbox_id": "ad_astra_support",
+    "toolbox_id": "create_support",
     "toolbox_init": [
       "<value name=\"X\"><block type=\"coord_x\"></block></value>",
       "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
       "<value name=\"Z\"><block type=\"coord_z\"></block></value>",
-      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+      "<value name=\"direction\"><block type=\"direction_unspecified\"></block></value>"
     ],
     "inputs": [
       "X",
       "Y",
       "Z",
-      "number"
+      "direction"
     ],
     "dependencies": [
       {
@@ -46,7 +45,7 @@
       }
     ],
     "required_apis": [
-      "ad_astra"
+      "create"
     ]
   }
 }

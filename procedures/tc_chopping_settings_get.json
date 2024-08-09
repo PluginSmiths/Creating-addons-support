@@ -1,0 +1,49 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "ChoppingEnabled",
+          "ChoppingEnabled"
+        ],
+        [
+          "ChopInCreativeMode",
+          "ChopInCreativeMode"
+        ],
+        [
+          "TreesMustHaveLeaves",
+          "TreesMustHaveLeaves"
+        ],
+        [
+          "FellingEnabled",
+          "FellingEnabled"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "var",
+      "check": "ChopSettings"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "tree_chop_support",
+    "toolbox_init": [
+      "<value name=\"var\"><block type=\"variables_get_chopsettings\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "var"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "tree_chop"
+    ]
+  }
+}

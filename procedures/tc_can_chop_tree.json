@@ -2,6 +2,11 @@
   "args0": [
     {
       "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
       "name": "X",
       "check": "Number"
     },
@@ -14,30 +19,24 @@
       "type": "input_value",
       "name": "Z",
       "check": "Number"
-    },
-    {
-      "type": "input_value",
-      "name": "number",
-      "check": "Number"
     }
   ],
   "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#998160",
+  "output": "Boolean",
+  "colour": "#607c99",
   "mcreator": {
-    "toolbox_id": "ad_astra_support",
+    "toolbox_id": "tree_chop_support",
     "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
       "<value name=\"X\"><block type=\"coord_x\"></block></value>",
       "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
-      "<value name=\"Z\"><block type=\"coord_z\"></block></value>",
-      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+      "<value name=\"Z\"><block type=\"coord_z\"></block></value>"
     ],
     "inputs": [
+      "entity",
       "X",
       "Y",
-      "Z",
-      "number"
+      "Z"
     ],
     "dependencies": [
       {
@@ -46,7 +45,7 @@
       }
     ],
     "required_apis": [
-      "ad_astra"
+      "tree_chop"
     ]
   }
 }

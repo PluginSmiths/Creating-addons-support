@@ -1,0 +1,1 @@
+${input$var}.get${field$name}()

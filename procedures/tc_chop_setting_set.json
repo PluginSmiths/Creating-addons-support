@@ -1,0 +1,57 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "ChoppingEnabled",
+          "ChoppingEnabled"
+        ],
+        [
+          "FellingEnabled",
+          "FellingEnabled"
+        ],
+        [
+          "TreesMustHaveLeaves",
+          "TreesMustHaveLeaves"
+        ],
+        [
+          "ChopInCreativeMode",
+          "ChopInCreativeMode"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "to",
+      "check": "Boolean"
+    },
+    {
+      "type": "input_value",
+      "name": "var",
+      "check": "ChopSettings"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "tree_chop_support",
+    "toolbox_init": [
+      "<value name=\"to\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value>",
+      "<value name=\"var\"><block type=\"variables_get_chopsettings\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "to",
+      "var"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "tree_chop"
+    ]
+  }
+}

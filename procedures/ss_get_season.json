@@ -1,0 +1,29 @@
+{
+  "args0": [
+    {
+      "type": "field_data_list_selector",
+      "name": "season",
+      "datalist": "seasons"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "serene_seasons_support",
+    "toolbox_init": [
+    ],
+    "fields": [
+      "season"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
+    ],
+    "required_apis": [
+      "serene_seasons"
+    ]
+  }
+}
