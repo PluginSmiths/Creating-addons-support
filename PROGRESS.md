@@ -1,4 +1,5 @@
-### Progress:
+## Progress:
+### Procedures:
  - Farmer's delight: ![Progress](https://geps.dev/progress/100)
  - Diet: ![Progress](https://geps.dev/progress/100)
  - Sanity: ![Progress](https://geps.dev/progress/100)
@@ -57,6 +58,8 @@
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
 
+---
 
-- Recipes: ![Progress](https://geps.dev/progress/5)
-- APIs: ![Progress](https://geps.dev/progress/6)
+### Recipes: 
+- Farmer's Delight ![Progress](https://geps.dev/progress/99)
+### APIs: ![Progress](https://geps.dev/progress/6)
