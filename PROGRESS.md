@@ -52,8 +52,10 @@
  - Default options: ![Progress](https://geps.dev/progress/100)
  - Cosmic horizons: ![Progress](https://geps.dev/progress/0)
  - Tips: ![Progress](https://geps.dev/progress/0)
- - Recipes: ![Progress](https://geps.dev/progress/5)
  - Character leveling: ![Progress](https://geps.dev/progress/0)
  - Patchouli: ![Progress](https://geps.dev/progress/0)
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
+
+- Recipes: ![Progress](https://geps.dev/progress/5)
+- APIs: ![Progress](https://geps.dev/progress/6)
