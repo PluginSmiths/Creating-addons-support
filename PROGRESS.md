@@ -62,4 +62,10 @@
 
 ### Recipes: 
 - Farmer's Delight ![Progress](https://geps.dev/progress/99)
+- Create ![Progress](https://geps.dev/progress/0)
+- Ad astra ![Progress](https://geps.dev/progress/0)
+- Tought as nails ![Progress](https://geps.dev/progress/0)
+- Locksmith ![Progress](https://geps.dev/progress/0)
+- Wizards reborn ![Progress](https://geps.dev/progress/0)
+- Forbidden arcanus ![Progress](https://geps.dev/progress/0)
 ### APIs: ![Progress](https://geps.dev/progress/6)
