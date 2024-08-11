@@ -18,7 +18,7 @@
  - Alex's mobs: ![Progress](https://geps.dev/progress/100)
  - Forbidden and arcanus: ![Progress](https://geps.dev/progress/100)
  - Biomes o plenty: ![Progress](https://geps.dev/progress/100)
- - Alex's caves: ![Progress](https://geps.dev/progress/100)
+ - Alex's caves: ![Progress](https://geps.dev/progress/50)
  - Dynamic trees: ![Progress](https://geps.dev/progress/100)
  - Botany pots: ![Progress](https://geps.dev/progress/100)
  - Locksmith: ![Progress](https://geps.dev/progress/100)
