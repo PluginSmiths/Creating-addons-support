@@ -57,6 +57,8 @@
  - Patchouli: ![Progress](https://geps.dev/progress/0)
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
+- Elytra slot: ![Progress](https://geps.dev/progress/0)
+
 
 ---
 
