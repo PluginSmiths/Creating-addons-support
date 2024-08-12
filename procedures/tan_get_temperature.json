@@ -6,27 +6,9 @@
       "check": "Entity"
     },
     {
-      "type": "input_value",
+      "type": "field_data_list_selector",
       "name": "number",
-      "check": "Number"
-    },
-    {
-      "type": "field_dropdown",
-      "name": "name",
-      "options": [
-        [
-          "TicksHyperthermic",
-          "TicksHyperthermic"
-        ],
-        [
-          "PercentHyperthermic",
-          "PercentHyperthermic"
-        ],
-        [
-          "TemperatureForPlayer",
-          "TemperatureForPlayer"
-        ]
-      ]
+      "datalist": "TANTemperature"
     }
   ],
   "inputsInline": true,
@@ -35,15 +17,13 @@
   "mcreator": {
     "toolbox_id": "tought_as_nails",
     "toolbox_init": [
-      "<value name=\"player\"><block type=\"entity_from_deps\"></block></value>",
-      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>"
+      "<value name=\"player\"><block type=\"entity_from_deps\"></block></value>"
     ],
     "inputs": [
-      "player",
-      "number"
+      "player"
     ],
     "fields": [
-      "name"
+      "number"
     ],
     "required_apis": [
       "tough_as_nails"

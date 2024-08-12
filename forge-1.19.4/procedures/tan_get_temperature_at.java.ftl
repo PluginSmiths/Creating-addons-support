@@ -1,1 +1,1 @@
-world instanceof Level _level && Double.valueOf(TemperatureHelper.getTemperatureAtPos(_level, new BlockPos((int)${input$X},(int) ${input$Y},(int) ${input$Z})))==${input$number}
+world instanceof Level _level && TemperatureHelper.getTemperatureAtPos(_level, new BlockPos((int)${input$X},(int) ${input$Y},(int) ${input$Z})).equals(TemperatureLevel.${field$number})
