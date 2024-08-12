@@ -6,8 +6,8 @@ public class ${name}Procedure {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
             "world": "event.getLevel()",
-            "PrevSeason": "event.getPrevSeason()",
-            "NewSeason": "event.getNewSeason()",
+            "PrevSeason": "(ISeasonState) event.getPrevSeason()",
+            "NewSeason": "(ISeasonState) event.getNewSeason()",
             "event": "event"
             }/>
         </#compress></#assign>
