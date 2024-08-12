@@ -18,7 +18,7 @@
  - Alex's mobs: ![Progress](https://geps.dev/progress/100)
  - Forbidden and arcanus: ![Progress](https://geps.dev/progress/100)
  - Biomes o plenty: ![Progress](https://geps.dev/progress/100)
- - Alex's caves: ![Progress](https://geps.dev/progress/100)
+ - Alex's caves: ![Progress](https://geps.dev/progress/50)
  - Dynamic trees: ![Progress](https://geps.dev/progress/100)
  - Botany pots: ![Progress](https://geps.dev/progress/100)
  - Locksmith: ![Progress](https://geps.dev/progress/100)
@@ -50,16 +50,24 @@
  - Epic fight: ![Progress](https://geps.dev/progress/0)
  - Emotecraft: ![Progress](https://geps.dev/progress/10)
  - Journey map: ![Progress](https://geps.dev/progress/0)
- - Default options: ![Progress](https://geps.dev/progress/100)
+ - Default options: ![Progress](https://geps.dev/progress/50)
  - Cosmic horizons: ![Progress](https://geps.dev/progress/0)
  - Tips: ![Progress](https://geps.dev/progress/0)
  - Character leveling: ![Progress](https://geps.dev/progress/0)
  - Patchouli: ![Progress](https://geps.dev/progress/0)
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
+- Elytra slot: ![Progress](https://geps.dev/progress/0)
+
 
 ---
 
 ### Recipes: 
 - Farmer's Delight ![Progress](https://geps.dev/progress/99)
+- Create ![Progress](https://geps.dev/progress/0)
+- Ad astra ![Progress](https://geps.dev/progress/0)
+- Tought as nails ![Progress](https://geps.dev/progress/0)
+- Locksmith ![Progress](https://geps.dev/progress/0)
+- Wizards reborn ![Progress](https://geps.dev/progress/0)
+- Forbidden arcanus ![Progress](https://geps.dev/progress/0)
 ### APIs: ![Progress](https://geps.dev/progress/6)
