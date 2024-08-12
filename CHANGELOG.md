@@ -1,5 +1,11 @@
 # CHANGELOG
 
+### Version 4.1 changelog:
+ - Added bigger support for Serene seasons, Ad astra, Tought as nails, Cold sweat, Dynamic trees.
+ - Added support for Default options.
+ - Added recipes from Farmer's Delight
+ - Bugs fixed.
+
 ### Version 4.0 changelog:
  - Updated to 1.20.6 and 1.21 NeoForge.
  - Bugs fixed.
