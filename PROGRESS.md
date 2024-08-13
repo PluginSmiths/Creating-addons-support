@@ -58,6 +58,7 @@
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
 - Elytra slot: ![Progress](https://geps.dev/progress/0)
+- Point Black: ![Progress](https://geps.dev/progress/0)
 
 
 ---
