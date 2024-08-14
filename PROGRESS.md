@@ -71,4 +71,4 @@
 - Locksmith ![Progress](https://geps.dev/progress/0)
 - Wizards reborn ![Progress](https://geps.dev/progress/0)
 - Forbidden arcanus ![Progress](https://geps.dev/progress/0)
-### APIs: ![Progress](https://geps.dev/progress/6)
+### APIs: ![Progress](https://geps.dev/progress/8)
