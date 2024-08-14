@@ -1,11 +1,11 @@
 ---
 forge-1.20.1:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	implementation fg.deobf('curse.maven:terrablender-563928:5378180')
         implementation fg.deobf('curse.maven:biomes-o-plenty-220318:4764804')
@@ -15,11 +15,11 @@ forge-1.20.1:
 
 forge-1.20.4:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
          implementation fg.deobf('curse.maven:terrablender-563928:5068217')
          implementation fg.deobf('curse.maven:biomes-o-plenty-220318:4128419')
@@ -30,12 +30,11 @@ forge-1.20.4:
 
 forge-1.19.4:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-        
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	  implementation fg.deobf('curse.maven:terrablender-563928:4863577')
           implementation fg.deobf('curse.maven:biomes-o-plenty-220318:4573240')
@@ -45,12 +44,11 @@ forge-1.19.4:
 
 forge-1.18.2:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-        
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
           implementation fg.deobf('curse.maven:biomes-o-plenty-220318:3827434')
           implementation fg.deobf('curse.maven:terrablender-563928:3816497')
@@ -60,12 +58,11 @@ forge-1.18.2:
 
 forge-1.19.2:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-        
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:4128419')
         implementation fg.deobf('curse.maven:terrablender-563928:4618490')
@@ -75,12 +72,11 @@ forge-1.19.2:
 
 fabric-1.20.4:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-        
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	modImplementation "curse.maven:fabric-api-306612:5383731"
     	modImplementation "curse.maven:glitchcore-955399:5088443"
@@ -91,12 +87,11 @@ fabric-1.20.4:
 
 neoforge-1.20.4:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-    
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	implementation "curse.maven:glitchcore-955399:5088442"
     	implementation "curse.maven:biomes-o-plenty-220318:5532692"
@@ -107,12 +102,11 @@ neoforge-1.20.4:
 
 neoforge-1.21:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-        
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	implementation "curse.maven:glitchcore-955399:5483773"
     	implementation "curse.maven:terrablender-neoforge-940057:5429865"
@@ -123,12 +117,11 @@ neoforge-1.21:
 
 neoforge-1.20.6:
   gradle: |
-        repositories {
-          maven {
-              url = 'https://cursemaven.com/'
-          }
-        }
-        
+    	repositories {
+        	maven {
+            	url "https://cursemaven.com"
+        	}
+    	}
         dependencies {
     	implementation "curse.maven:glitchcore-955399:5352264"
     	implementation "curse.maven:terrablender-neoforge-940057:5378192"
