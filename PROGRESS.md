@@ -37,7 +37,7 @@
  - Dot coin: ![Progress](https://geps.dev/progress/100)
  - Quark: ![Progress](https://geps.dev/progress/100)
  - Thirst was taken: ![Progress](https://geps.dev/progress/90)
- - Fancy menu: ![Progress](https://geps.dev/progress/90)
+ - Fancy menu: ![Progress](https://geps.dev/progress/100)
  - Terra blender: ![Progress](https://geps.dev/progress/20)
  - AttributeFix: ![Progress](https://geps.dev/progress/100)
  - Enchantments description: ![Progress](https://geps.dev/progress/100)
