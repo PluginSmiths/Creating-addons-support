@@ -1,1 +1,1 @@
-${input$data}.getThirst()
+${input$data}.get${field$type}()

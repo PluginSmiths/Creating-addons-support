@@ -1,1 +1,1 @@
-${input$data}.setThirst(${input$number});
+${input$data}.set${field$type}(${input$number});
