@@ -1,0 +1,41 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "EntityMagneticDirection",
+          "EntityMagneticDirection"
+        ],
+        [
+          "StandingOnMagnetSurface",
+          "StandingOnMagnetSurface"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Direction",
+  "colour": "#997360",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "alexs_caves"
+    ]
+  }
+}

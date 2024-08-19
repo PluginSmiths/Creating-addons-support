@@ -1,0 +1,49 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "EntityOnMovingMetal",
+          "EntityOnMovingMetal"
+        ],
+        [
+          "SpectatorPlayer",
+          "SpectatorPlayer"
+        ],
+        [
+          "PulledByMagnets",
+          "PulledByMagnets"
+        ],
+        [
+          "attachesToMagnets",
+          "attachesToMagnets"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "alexs_caves"
+    ]
+  }
+}

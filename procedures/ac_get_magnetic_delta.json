@@ -1,0 +1,45 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Number"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "delta",
+      "options": [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "y",
+          "y"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "delta"
+    ],
+    "required_apis": [
+      "alexs_caves"
+    ]
+  }
+}

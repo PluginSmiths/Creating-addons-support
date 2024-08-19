@@ -1,0 +1,45 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "coor",
+      "options": [
+        [
+          "X",
+          "X"
+        ],
+        [
+          "Y",
+          "Y"
+        ],
+        [
+          "Z",
+          "Z"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "item",
+      "check": "MCItem"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "alexs_caves_support",
+    "toolbox_init": [
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "item"
+    ],
+    "fields": [
+      "coor"
+    ],
+    "required_apis": [
+      "alexs_caves"
+    ]
+  }
+}
