@@ -1,0 +1,24 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "data",
+      "check": "ThirstData"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "thirst_was_taken",
+    "toolbox_init": [
+      "<value name=\"data\"><block type=\"variables_get_thirstdata\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "data"
+    ],
+    "required_apis": [
+      "thirst_was_taken"
+    ]
+  }
+}

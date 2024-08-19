@@ -1,0 +1,24 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "output": "ThirstData",
+  "colour": "#606499",
+  "mcreator": {
+    "toolbox_id": "thirst_was_taken",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "required_apis": [
+      "thirst_was_taken"
+    ]
+  }
+}
