@@ -60,7 +60,6 @@
  - Elytra slot: ![Progress](https://geps.dev/progress/0)
  - Point Black: ![Progress](https://geps.dev/progress/0)
 
-
 ---
 
 ### Recipes: 
@@ -71,4 +70,7 @@
 - Locksmith ![Progress](https://geps.dev/progress/0)
 - Wizards reborn ![Progress](https://geps.dev/progress/0)
 - Forbidden arcanus ![Progress](https://geps.dev/progress/0)
+
+---
+
 ### APIs: ![Progress](https://geps.dev/progress/8)
