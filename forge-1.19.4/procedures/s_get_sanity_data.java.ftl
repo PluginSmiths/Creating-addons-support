@@ -1,0 +1,1 @@
+${input$entity}.getCapability(SanityProvider.CAP).orElse(null)

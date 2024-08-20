@@ -1,0 +1,24 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "output": "ThirstData",
+  "colour": "#646499",
+  "mcreator": {
+    "toolbox_id": "sanity_mod_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "required_apis": [
+      "sanity"
+    ]
+  }
+}

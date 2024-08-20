@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "sanity",
+      "check": "SanityData"
+    },
+    {
+      "type": "input_value",
+      "name": "number",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#609994",
+  "mcreator": {
+    "toolbox_id": "sanity_mod_support",
+    "toolbox_init": [
+      "<value name=\"sanity\"><block type=\"variables_get_sanitydata\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>",
+      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+    ],
+    "inputs": [
+      "sanity",
+      "number"
+    ],
+    "required_apis": [
+      "sanity"
+    ]
+  }
+}
