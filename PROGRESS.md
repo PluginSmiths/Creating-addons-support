@@ -50,15 +50,15 @@
  - Epic fight: ![Progress](https://geps.dev/progress/0)
  - Emotecraft: ![Progress](https://geps.dev/progress/10)
  - Journey map: ![Progress](https://geps.dev/progress/0)
- - Default options: ![Progress](https://geps.dev/progress/50)
+ - Default options: ![Progress](https://geps.dev/progress/100)
  - Cosmic horizons: ![Progress](https://geps.dev/progress/0)
  - Tips: ![Progress](https://geps.dev/progress/0)
  - Character leveling: ![Progress](https://geps.dev/progress/0)
  - Patchouli: ![Progress](https://geps.dev/progress/0)
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
-- Elytra slot: ![Progress](https://geps.dev/progress/0)
-- Point Black: ![Progress](https://geps.dev/progress/0)
+ - Elytra slot: ![Progress](https://geps.dev/progress/0)
+ - Point Black: ![Progress](https://geps.dev/progress/0)
 
 
 ---
