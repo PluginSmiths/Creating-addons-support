@@ -57,6 +57,9 @@
  - Patchouli: ![Progress](https://geps.dev/progress/0)
  - Origins: ![Progress](https://geps.dev/progress/0)
  - Item Highlighter: ![Progress](https://geps.dev/progress/0)
+ - Legendary Tooltips: ![Progress](https://geps.dev/progress/0)
+ - Item Borders: ![Progress](https://geps.dev/progress/0)
+ - Equipment Compare: ![Progress](https://geps.dev/progress/0)
  - Elytra slot: ![Progress](https://geps.dev/progress/0)
  - Point Black: ![Progress](https://geps.dev/progress/0)
 
