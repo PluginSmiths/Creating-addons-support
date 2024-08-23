@@ -10,16 +10,16 @@
       "name": "name",
       "options": [
         [
-          "IsElytraEquipped",
-          "isEquipped"
+          "ALLOW",
+          "ALLOW"
         ],
         [
-          "CanEquipElytra",
-          "canEquip"
+          "DEFAULT",
+          "DEFAULT"
         ],
         [
-          "CanFly",
-          "canFly"
+          "DENY",
+          "DENY"
         ]
       ]
     }
@@ -28,7 +28,7 @@
   "output": "Boolean",
   "colour": "#607c99",
   "mcreator": {
-    "toolbox_id": "elytra_slot_support",
+    "toolbox_id": "caelus_support",
     "toolbox_init": [
       "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
     ],
@@ -39,7 +39,7 @@
       "name"
     ],
     "required_apis": [
-      "elytra_slot"
+      "caelus_api"
     ]
   }
 }
