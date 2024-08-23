@@ -1,0 +1,45 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "isEquipped",
+          "isEquipped"
+        ],
+        [
+          "canEquip",
+          "canEquip"
+        ],
+        [
+          "canFly",
+          "canFly"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "elytra_slot_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "elytra_slot"
+    ]
+  }
+}

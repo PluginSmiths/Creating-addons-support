@@ -58,7 +58,7 @@
  - Legendary Tooltips: ![Progress](https://geps.dev/progress/0)
  - Item Borders: ![Progress](https://geps.dev/progress/0)
  - Equipment Compare: ![Progress](https://geps.dev/progress/0)
- - Elytra slot: ![Progress](https://geps.dev/progress/0)
+ - Elytra slot: ![Progress](https://geps.dev/progress/100)
  - Point Black: ![Progress](https://geps.dev/progress/0)
 
 ---
