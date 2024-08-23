@@ -51,7 +51,6 @@
  - Emotecraft: ![Progress](https://geps.dev/progress/10)
  - Journey map: ![Progress](https://geps.dev/progress/0)
  - Default options: ![Progress](https://geps.dev/progress/100)
- - Cosmic horizons: ![Progress](https://geps.dev/progress/0)
  - Tips: ![Progress](https://geps.dev/progress/0)
  - Character leveling: ![Progress](https://geps.dev/progress/0)
  - Patchouli: ![Progress](https://geps.dev/progress/0)
