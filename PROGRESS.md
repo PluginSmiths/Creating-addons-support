@@ -38,7 +38,6 @@
  - Quark: ![Progress](https://geps.dev/progress/100)
  - Thirst was taken: ![Progress](https://geps.dev/progress/100)
  - Fancy menu: ![Progress](https://geps.dev/progress/100)
- - Terra blender: ![Progress](https://geps.dev/progress/20)
  - AttributeFix: ![Progress](https://geps.dev/progress/100)
  - Enchantments description: ![Progress](https://geps.dev/progress/100)
  - Just enought effect description: ![Progress](https://geps.dev/progress/100)
