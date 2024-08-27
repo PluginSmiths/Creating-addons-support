@@ -11,8 +11,6 @@ This plugin adds support for 46 mods with items and more to make your addon easi
 
 If you like this plugin or want to support its development you can vote for it on the plugin page.
 
->### :warning: **Note:** This is the testing branch for the custom java code in this plugin. The version hosted on this branch may or may not work. This code may also have incompatibilities with the stable version of the plugin
-
 
 ## Mod offer rules:
 
