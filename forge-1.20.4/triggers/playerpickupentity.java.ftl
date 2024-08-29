@@ -5,8 +5,12 @@ public class ${name}Procedure {
     public static void onEventTriggered(EntityPickupEvent event) {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
+            "x": "event.player.getX()",
+            "y": "event.player.getY()",
+            "z": "event.player.getZ()",
             "entity": "event.target",
             "sourceentity": "event.player",
+            "world": "event.player.level()",
             "event": "event"
             }/>
         </#compress></#assign>
