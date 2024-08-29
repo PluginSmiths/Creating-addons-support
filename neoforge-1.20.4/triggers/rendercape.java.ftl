@@ -5,11 +5,11 @@ public class ${name}Procedure {
     public static void onEventTriggered(RenderCapeEvent event) {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
-            "x": "event.player.getX()",
-            "y": "event.player.getY()",
-            "z": "event.player.getZ()",
-            "entity": "event.player",
-            "world": "event.player.level()",
+            "x": "event.getEntity().getX()",
+            "y": "event.getEntity().getY()",
+            "z": "event.getEntity().getZ()",
+            "entity": "event.getEntity()",
+            "world": "event.getEntity().level()",
             "event": "event"
             }/>
         </#compress></#assign>
