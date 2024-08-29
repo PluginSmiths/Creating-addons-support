@@ -8,7 +8,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:5225134')
+      implementation fg.deobf("curse.maven:supplementaries-412082:5458843")
     }
   update_files:
     - ~
@@ -22,7 +22,7 @@ fabric-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:5225131')
+      modImplementation "curse.maven:supplementaries-412082:5458839"
     }
   update_files:
     - ~
@@ -35,8 +35,8 @@ fabric-1.19.2:
       }
     }
     
-    dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:5226669')
+    dependencies{
+      modImplementation "curse.maven:supplementaries-412082:4558910"
     }
   update_files:
     - ~
@@ -50,7 +50,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:5116486')
+      implementation fg.deobf("curse.maven:supplementaries-412082:5152602")
     }
   update_files:
     - ~
@@ -64,7 +64,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:4551273')
+      implementation fg.deobf("curse.maven:supplementaries-412082:4620166")
     }
   update_files:
     - ~
@@ -78,7 +78,7 @@ fabric-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:4551271')
+      modImplementation "curse.maven:supplementaries-412082:5226669"
     }
   update_files:
     - ~
@@ -92,7 +92,7 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:supplementaries-412082:4509223')
+      implementation fg.deobf("curse.maven:supplementaries-412082:4548315")
     }
   update_files:
     - ~
