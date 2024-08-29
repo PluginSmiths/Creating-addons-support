@@ -9,6 +9,7 @@ neoforge-1.20.4:
     
     dependencies {
       implementation "curse.maven:ad-astra-635042:5116782"
+      implementation "curse.maven:botarium-704113:5211699"
     }
   update_files:
     - ~
@@ -23,6 +24,7 @@ fabric-1.20.4:
     
     dependencies {
       modImplementation "curse.maven:ad-astra-635042:5116783"
+      modImplementation "curse.maven:botarium-704113:5211700"
     }
   update_files:
     - ~
@@ -37,6 +39,7 @@ fabric-1.20.1:
     
     dependencies {
       modImplementation "curse.maven:ad-astra-635042:5116772"
+      modImplementation "curse.maven:botarium-704113:5486071"
     }
   update_files:
     - ~
@@ -51,6 +54,7 @@ forge-1.20.1:
     
     dependencies {
       implementation fg.deobf("curse.maven:ad-astra-635042:5116766")
+      implementation fg.deobf("curse.maven:botarium-704113:5486070")
     }
   update_files:
     - ~
@@ -65,6 +69,7 @@ forge-1.19.4:
     
     dependencies {
       implementation fg.deobf("curse.maven:ad-astra-635042:4452010")
+      implementation fg.deobf("curse.maven:botarium-704113:4439777")
     }
   update_files:
     - ~
@@ -79,6 +84,7 @@ fabric-1.19.4:
     
     dependencies {
       modImplementation "curse.maven:ad-astra-635042:4452009"
+      modImplementation "curse.maven:botarium-704113:4439776"
     }
   update_files:
     - ~
@@ -93,7 +99,8 @@ forge-1.19.2:
     
     dependencies {
       implementation fg.deobf("curse.maven:ad-astra-635042:4643668")
-    }
+      implementation fg.deobf("curse.maven:botarium-704113:5118248")
+    }                                                                   
   update_files:
     - ~
 
@@ -107,6 +114,7 @@ fabric-1.19.2:
     
     dependencies {
       modImplementation "curse.maven:ad-astra-635042:4643667"
+      modImplementation "curse.maven:botarium-704113:5118247"
     }
   update_files:
     - ~
