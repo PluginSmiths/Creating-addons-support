@@ -1,0 +1,23 @@
+{
+  "args0": [
+    {
+      "type": "field_data_list_selector",
+      "name": "enchant",
+      "datalist": "enchantments"
+    }
+  ],
+  "inputsInline": true,
+  "output": "String",
+  "colour": "#609986",
+  "mcreator": {
+    "toolbox_id": "enchantment_descriptions_support",
+    "toolbox_init": [
+    ],
+    "fields": [
+      "enchant"
+    ],
+    "required_apis": [
+      "enchantment_descriptions"
+    ]
+  }
+}
