@@ -40,7 +40,7 @@
  - Fancy menu: ![Progress](https://geps.dev/progress/100)
  - AttributeFix: ![Progress](https://geps.dev/progress/100)
  - Enchantments description: ![Progress](https://geps.dev/progress/100)
- - Just enought effect description: ![Progress](https://geps.dev/progress/100)
+ - Just enough effect description: ![Progress](https://geps.dev/progress/100)
  - First person model: ![Progress](https://geps.dev/progress/100)
  - Female gender: ![Progress](https://geps.dev/progress/100)
  - Apple skin: ![Progress](https://geps.dev/progress/100)
