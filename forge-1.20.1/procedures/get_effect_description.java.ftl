@@ -1,0 +1,1 @@
+EffectWindowEntry.getDescription(${field$effect}).getString()

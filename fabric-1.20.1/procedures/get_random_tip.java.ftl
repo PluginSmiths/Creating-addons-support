@@ -1,0 +1,1 @@
+TipsAPI.getRandomTip().getText().getString()
