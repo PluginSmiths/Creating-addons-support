@@ -1,4 +1,4 @@
-- BLOOD_CAULDRON
+- BLOOD_CAULDRON:
 - BLOOD_MAGIC
 - DRAGON_BREATH_POOL
 - ELDRITCH_MAGIC
@@ -12,139 +12,298 @@
 - LIGHTNING_MAGIC
 - NATURE_MAGIC
 - POISON_CLOUD
-- BAMBOO_SPIKES
-- BOMB_EXPLOSION
-- PLAYER_BOMB_EXPLOSION
-- XP_EXTRACTING
-- ACID
-- DARK_ARROW
-- DESOLATE_DAGGER
-- FORSAKEN_SONIC_BOOM
-- NUKE
-- RADIATION
-- RAYGUN
-- SPIRIT_DINISAUR
-- TREMORZILLA_BAEM
-- FARSEER
-- FREDDY
-- COLD
-- COLD_SCALING
-- HOT
-- HOT_SCALING
-- CRUSH
-- CUCKOO_SURPRISE
-- FAN_FIRE
-- FAN_LAVA
-- MECHANICAL_DRILL
-- MECHANICAL_ROLLER
-- MECHANICAL_SAW
-- POTATO_CANNON
-- RUN_OVER
-- HYPERTHERMIA
-- THIRST
+- BAMBOO_SPIKES:
+  readable_name: "Wasteland steppe (Biomes O' Plenty)"
+  required_apis:
+    - supplementaries
+- BOMB_EXPLOSION:
+  required_apis:
+    - supplementaries
+- PLAYER_BOMB_EXPLOSION:
+  required_apis:
+    - supplementaries
+- XP_EXTRACTING:
+  required_apis:
+    - supplementaries
+- ACID:
+  required_apis:
+    - alexs_caves
+- DARK_ARROW:
+  required_apis:
+    - alexs_caves
+- DESOLATE_DAGGER:
+  required_apis:
+    - alexs_caves
+- FORSAKEN_SONIC_BOOM:
+  required_apis:
+    - alexs_caves
+- NUKE:
+  required_apis:
+    - alexs_caves
+- RADIATION:
+  required_apis:
+    - alexs_caves
+- RAYGUN:
+  required_apis:
+    - alexs_caves
+- SPIRIT_DINISAUR:
+  required_apis:
+    - alexs_caves
+- TREMORZILLA_BAEM:
+  required_apis:
+    - alexs_caves
+- FARSEER:
+  required_apis:
+    - alexs_mobs
+- FREDDY:
+  required_apis:
+    - alexs_mobs
+- COLD:
+  required_apis:
+    - cold_sweat
+- COLD_SCALING:
+  required_apis:
+    - cold_sweat
+- HOT:
+  required_apis:
+    - cold_sweat
+- HOT_SCALING:
+  required_apis:
+    - cold_sweat
+- CRUSH:
+  required_apis:
+    - create
+- CUCKOO_SURPRISE:
+  required_apis:
+    - create
+- FAN_FIRE:
+  required_apis:
+    - create
+- FAN_LAVA:
+  required_apis:
+    - create
+- MECHANICAL_DRILL:
+  required_apis:
+    - create
+- MECHANICAL_ROLLER:
+  required_apis:
+    - create
+- MECHANICAL_SAW:
+  required_apis:
+    - create
+- POTATO_CANNON:
+  required_apis:
+    - create
+- RUN_OVER:
+  required_apis:
+    - create
+- HYPERTHERMIA:
+  required_apis:
+    - tought_as_nails
+- THIRST:
+  required_apis:
+    - tought_as_nails
 - FALLING_TREE
 - STOVE_BURN
 - EXTRACT_SOUL
-- ARMOR_PIERCING_ATTACK
-- CLOUD_CRYSTAL
-- FIRE_CRYSTAL
-- FLOATING_BLOCK
-- ICE_CRYSTAL
-- INCINERATION
-- INEBRIATION
-- THUNDER_CRYSTAL
-- ACID_RAIN
-- ANT
-- AXING
-- CHILLING_BREATH
-- CLAMPED
-- EXPIRED
-- FALLING_ICE
-- FIERY
-- FIRE_JET
-- FROZEN
-- GHAST_TEAR
-- HAUNT
-- HYDRA_BITE
-- HYDRA_FIRE
-- HYDRA_MORTAR
-- KNIGHTMETAL
-- LEAF_BRAIN
-- LICH_BOLT
-- LICH_BOMB
-- LIFEDRAIN
-- LOST_WORDS
-- MOONWORM
-- REACTOR
-- SCHOOLED
-- SCORCHED
-- SLAM
-- SLIDER
-- SNOWBALL_FIGHT
-- SPIKED
-- SQUISH
-- THORNS
-- THROWN_AXE
-- THROWN_BLOCK
-- THROWN_PICKAXE
-- TWILIGHT_SCEPTER
-- YEETED
-- ACID_RAIN
-- ANT
-- AXING
-- CHILLING_BREATH
-- CLAMPED
-- EXPIRED
-- FALLING_ICE
-- FIERY
-- FIRE_JET
-- FROZEN
-- GHAST_TEAR
-- HAUNT
-- HYDRA_BITE
-- HYDRA_FIRE
-- HYDRA_MORTAR
-- KNIGHTMETAL
-- LEAF_BRAIN
-- LICH_BOLT
-- LICH_BOMB
-- LIFEDRAIN
-- LOST_WORDS
-- MOONWORM
-- REACTOR
-- SCHOOLED
-- SCORCHED
-- SLAM_TF
-- SLIDER
-- SNOWBALL_FIGHT
-- SPIKED
-- SQUISH
-- THORNS
-- THROWN_AXE
-- THROWN_BLOCK
-- THROWN_PICKAXE
-- TWILIGHT_SCEPTER
-- YEETED
-- ACID_RAIN_AA
-- CRYO_FUEL
-- OXYGEN
-- RAN_OVER
-- ROCKET_FLAMES
-- BITE
-- EMBER
-- FLUCTUANT_SPHERE
-- ROCK_STAB
-- ROCK_STAB.MOB
-- ROOT
-- SLAM
-- SUMMON
-- SUMMONED_LIGHTNING
-- VENOM_SPIT
-- BLISTERBERRY_BUSH
-- DEPTHROCK_PEBBLE
-- GOO_BALL
-- SHARD_TORCH
-- DRAGON_FIRE
-- DRAGON_ICE
-- DRAGON_LIGHTNING
-- GORGON
+- ARMOR_PIERCING_ATTACK:
+  required_apis:
+    - aether
+- CLOUD_CRYSTAL:
+  required_apis:
+    - aether
+- FIRE_CRYSTAL:
+  required_apis:
+    - aether
+- FLOATING_BLOCK:
+  required_apis:
+    - aether
+- ICE_CRYSTAL:
+  required_apis:
+    - aether
+- INCINERATION:
+  required_apis:
+    - aether
+- INEBRIATION:
+  required_apis:
+    - aether
+- THUNDER_CRYSTAL:
+  required_apis:
+    - aether
+- ACID_RAIN:
+  required_apis:
+    - twilight_forest
+- ANT:
+  required_apis:
+    - twilight_forest
+- AXING:
+  required_apis:
+    - twilight_forest
+- CHILLING_BREATH:
+  required_apis:
+    - twilight_forest
+- CLAMPED:
+  required_apis:
+    - twilight_forest
+- EXPIRED:
+  required_apis:
+    - twilight_forest
+- FALLING_ICE:
+  required_apis:
+    - twilight_forest
+- FIERY:
+  required_apis:
+    - twilight_forest
+- FIRE_JET:
+  required_apis:
+    - twilight_forest
+- FROZEN:
+  required_apis:
+    - twilight_forest
+- GHAST_TEAR:
+  required_apis:
+    - twilight_forest
+- HAUNT:
+  required_apis:
+    - twilight_forest
+- HYDRA_BITE:
+  required_apis:
+    - twilight_forest
+- HYDRA_FIRE:
+  required_apis:
+    - twilight_forest
+- HYDRA_MORTAR:
+  required_apis:
+    - twilight_forest
+- KNIGHTMETAL:
+  required_apis:
+    - twilight_forest
+- LEAF_BRAIN:
+  required_apis:
+    - twilight_forest
+- LICH_BOLT:
+  required_apis:
+    - twilight_forest
+- LICH_BOMB:
+  required_apis:
+    - twilight_forest
+- LIFEDRAIN:
+  required_apis:
+    - twilight_forest
+- LOST_WORDS:
+  required_apis:
+    - twilight_forest
+- MOONWORM:
+  required_apis:
+    - twilight_forest
+- REACTOR:
+  required_apis:
+    - twilight_forest
+- SCHOOLED:
+  required_apis:
+    - twilight_forest
+- SCORCHED:
+  required_apis:
+    - twilight_forest
+- SLAM:
+  required_apis:
+    - twilight_forest
+- SLIDER:
+  required_apis:
+    - twilight_forest
+- SNOWBALL_FIGHT:
+  required_apis:
+    - twilight_forest
+- SPIKED:
+  required_apis:
+    - twilight_forest
+- SQUISH:
+  required_apis:
+    - twilight_forest
+- THORNS:
+  required_apis:
+    - twilight_forest
+- THROWN_AXE:
+  required_apis:
+    - twilight_forest
+- THROWN_BLOCK:
+  required_apis:
+    - twilight_forest
+- THROWN_PICKAXE:
+  required_apis:
+    - twilight_forest
+- TWILIGHT_SCEPTER:
+  required_apis:
+    - twilight_forest
+- YEETED:
+  required_apis:
+    - twilight_forest
+- ACID_RAIN_AA:
+  required_apis:
+    - ad_astra
+- CRYO_FUEL:
+  required_apis:
+    - ad_astra
+- OXYGEN:
+  required_apis:
+    - ad_astra
+- RAN_OVER:
+  required_apis:
+    - ad_astra
+- ROCKET_FLAMES:
+  required_apis:
+    - ad_astra
+- BITE:
+  required_apis:
+    - blue_skies
+- EMBER:
+  required_apis:
+    - blue_skies
+- FLUCTUANT_SPHERE:
+  required_apis:
+    - blue_skies
+- ROCK_STAB:
+  required_apis:
+    - blue_skies
+- ROCK_STAB.MOB:
+  required_apis:
+    - blue_skies
+- ROOT:
+  required_apis:
+    - blue_skies
+- SLAM:
+  required_apis:
+    - blue_skies
+- SUMMON:
+  required_apis:
+    - blue_skies
+- SUMMONED_LIGHTNING:
+  required_apis:
+    - blue_skies
+- VENOM_SPIT:
+  required_apis:
+    - blue_skies
+- BLISTERBERRY_BUSH:
+  required_apis:
+    - undergarden
+- DEPTHROCK_PEBBLE:
+  required_apis:
+    - undergarden
+- GOO_BALL:
+  required_apis:
+    - undergarden
+- SHARD_TORCH:
+  required_apis:
+    - undergarden
+- DRAGON_FIRE:
+  required_apis:
+    - ice_and_fire
+- DRAGON_ICE:
+  required_apis:
+    - ice_and_fire
+- DRAGON_LIGHTNING:
+  required_apis:
+    - ice_and_fire
+- GORGON:
+  required_apis:
+    - ice_and_fire
