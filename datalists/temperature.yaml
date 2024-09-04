@@ -1,18 +1,18 @@
 - CORE:
-  description: "Farmer's delight"
+  description: "Defines the entity's internal temperature. This value will rise and fall depending on the ambient temperature."
 - BASE:
-  description: "Farmer's delight"
+  description: "A static offset applied to the entity's core temperature. For example, a value of 10 would cause an entity's body temperature to default to 10 when at rest, rather than 0."
 - WORLD:
-  description: "Farmer's delight"
+  description: "Defines what the area around the entity feels like. This is unique to each entity and is usually affected by biomes in the vicinity, time of day, nearby blocks, etc."
 - HEAT_RESISTANCE:
-  description: "Farmer's delight"
+  description: "Determines the entity's resistance to overheating damage. Ranges from 0 to 1, with 0 being no resistance and 1 being full resistance. Negative values do nothing."
 - COLD_RESISTANCE:
-  description: "Farmer's delight"
+  description: "Determines the entity's resistance to freezing damage. Ranges from 0 to 1, with 0 being no resistance and 1 being full resistance. Negative values do nothing."
 - HEAT_DAMPENING:
-  description: "Farmer's delight"
+  description: ""
 - COLD_DAMPENING:
-  description: "Farmer's delight"
+  description: "Changes the rate at which the entity freezes (decreases in body temperature). Values 0 to 1 slow the speed, with 1 stopping freezing altogether. Negative values speed up freezing."
 - FREEZING_POINT:
-  description: "Farmer's delight"
+  description: "Stores the temperature, in Minecraft units, at which the entity will begin freezing to death. "
 - BURNING_POINT:
-  description: "Farmer's delight"
+  description: "Stores the temperature, in Minecraft units, at which the entity will begin overheating to death. "
