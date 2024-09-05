@@ -4,6 +4,24 @@
       "type": "input_value",
       "name": "data",
       "check": "ThirstData"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "type",
+      "options": [
+        [
+          "Thirst",
+          "Thirst"
+        ],
+        [
+          "Quenched",
+          "Quenched"
+        ],
+        [
+          "Exhaustion",
+          "Exhaustion"
+        ]
+      ]
     }
   ],
   "inputsInline": true,
@@ -16,6 +34,9 @@
     ],
     "inputs": [
       "data"
+    ],
+    "fields": [
+      "type"
     ],
     "required_apis": [
       "thirst_was_taken"
