@@ -13,7 +13,7 @@
   "mcreator": {
     "toolbox_id": "passive_skill_tree_support",
     "toolbox_init": [
-      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+      "<value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value>"
     ],
     "inputs": [
       "item"

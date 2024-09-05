@@ -18,7 +18,7 @@
   "mcreator": {
     "toolbox_id": "locksmith_support",
     "toolbox_init": [
-      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>",
+      "<value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value>",
       "<value name=\"value\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value>"
     ],
     "inputs": [

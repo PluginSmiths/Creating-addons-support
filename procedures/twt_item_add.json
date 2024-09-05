@@ -37,7 +37,7 @@
   "mcreator": {
     "toolbox_id": "thirst_was_taken",
     "toolbox_init": [
-      "<value name=\"itemstack\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>",
+      "<value name=\"itemstack\"><block type=\"itemstack_to_mcitem\"></block></value>",
       "<value name=\"thirst\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>",
       "<value name=\"quenched\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
     ],
