@@ -1,0 +1,1 @@
+${input$entity}.getCapability(ModCapabilities.PLAYER_THIRST).orElse(null)
