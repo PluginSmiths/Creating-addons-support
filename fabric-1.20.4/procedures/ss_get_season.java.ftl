@@ -1,1 +1,1 @@
-world instanceof Level level && SeasonHelper.getSeasonState(level).toString().equals("${field$season}")
+(world instanceof Level _level ? SeasonHelper.getSeasonState(_level) : null)
