@@ -5,7 +5,7 @@
  - Sanity: ![Progress](https://geps.dev/progress/100)
  - Another furniture: ![Progress](https://geps.dev/progress/100)
  - Carry on: ![Progress](https://geps.dev/progress/100)
- - Tought as nails: ![Progress](https://geps.dev/progress/95)
+ - Tought as nails: ![Progress](https://geps.dev/progress/100)
  - Serene seasons: ![Progress](https://geps.dev/progress/100)
  - Cold sweat: ![Progress](https://geps.dev/progress/100)
  - Handcrafted: ![Progress](https://geps.dev/progress/100)
