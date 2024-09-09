@@ -64,7 +64,7 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5255403')
+      implementation "curse.maven:tough-as-nails-246391:5255403"
       implementation "curse.maven:glitchcore-955399:5088442"
     }
   update_files:
@@ -79,9 +79,9 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5255402')
+      modImplementation "curse.maven:tough-as-nails-246391:5255402"
       modImplementation "curse.maven:glitchcore-955399:5088443"
-      
+      modImplementation "curse.maven:fabric-api-306612:5664862" 
     }
   update_files:
     - ~
@@ -110,8 +110,8 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5490271')
-      
+      implementation "curse.maven:tough-as-nails-246391:5661487"
+      implementation "curse.maven:glitchcore-955399:5645390"
     }
   update_files:
     - ~
@@ -125,8 +125,8 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5420640')
-      
+      implementation "curse.maven:tough-as-nails-246391:5420640"
+      implementation "curse.maven:glitchcore-955399:5352264"
     }
   update_files:
     - ~
