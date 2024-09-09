@@ -1,0 +1,41 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "COOLING",
+          "COOLING"
+        ],
+        [
+          "HEATING",
+          "HEATING"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "trim",
+      "check": "ArmorTrim"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "tought_as_nails",
+    "toolbox_init": [
+      "<value name=\"trim\"><block type=\"variables_get_armortrim\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "trim"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "tought_as_nails"
+    ]
+  }
+}
