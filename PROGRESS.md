@@ -59,6 +59,8 @@
  - Equipment Compare: ![Progress](https://geps.dev/progress/0)
  - Elytra slot: ![Progress](https://geps.dev/progress/100)
  - Caelus API: ![Progress](https://geps.dev/progress/100)
+ - Bookshelf: ![Progress](https://geps.dev/progress/0)
+ - Balm: ![Progress](https://geps.dev/progress/0)
 
 ---
 
