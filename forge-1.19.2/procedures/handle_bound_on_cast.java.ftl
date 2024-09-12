@@ -1,1 +1,0 @@
-ClientSpellCastHelper.handleClientBoundOnCast${field$name}(${input$entity}.getUUID(), ${input$id}, ${input$level});

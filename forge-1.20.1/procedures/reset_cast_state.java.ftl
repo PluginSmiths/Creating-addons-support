@@ -1,1 +1,0 @@
-io.redspace.ironsspellbooks.player.ClientMagicData.resetClientCastState(${input$entity}.getUUID());
