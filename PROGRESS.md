@@ -2,7 +2,7 @@
 ### Procedures:
  - Farmer's delight: ![Progress](https://geps.dev/progress/100)
  - Diet: ![Progress](https://geps.dev/progress/100)
- - Sanity: ![Progress](https://geps.dev/progress/100)
+ - Sanity: ![Progress](https://geps.dev/progress/90)
  - Another furniture: ![Progress](https://geps.dev/progress/100)
  - Carry on: ![Progress](https://geps.dev/progress/100)
  - Tought as nails: ![Progress](https://geps.dev/progress/100)
@@ -62,6 +62,8 @@
  - Bookshelf: ![Progress](https://geps.dev/progress/0)
  - Balm: ![Progress](https://geps.dev/progress/0)
  - Cosmetic Armory: ![Progress](https://geps.dev/progress/0)
+ - Botarium: !
+[Progress](https://geps.dev/progress/0)
 
 ---
 
