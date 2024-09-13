@@ -62,8 +62,7 @@
  - Bookshelf: ![Progress](https://geps.dev/progress/0)
  - Balm: ![Progress](https://geps.dev/progress/0)
  - Cosmetic Armory: ![Progress](https://geps.dev/progress/0)
- - Botarium: !
-[Progress](https://geps.dev/progress/0)
+ - Botarium: ![Progress](https://geps.dev/progress/0)
 
 ---
 
