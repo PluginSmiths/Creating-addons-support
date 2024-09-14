@@ -25,19 +25,6 @@ forge-1.21:
   update_files:
     - ~
 
-forge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	implementation "curse.maven:balm-531761:5676523"
-    }
-  update_files:
-    - ~
-
 forge-1.18.2:
   gradle: |
     repositories {
@@ -64,46 +51,7 @@ forge-1.19.2:
   update_files:
     - ~
 
-forge-1.19.1:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	implementation fg.deobf("curse.maven:balm-531761:4751735")
-    }
-  update_files:
-    - ~
-
-forge-1.19:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	implementation fg.deobf("curse.maven:balm-531761:4751735")
-    }
-  update_files:
-    - ~
-
 neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	implementation "curse.maven:balm-531761:5676524"
-    }
-  update_files:
-    - ~
-
-neoforge-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -142,46 +90,7 @@ fabric-1.19.2:
   update_files:
     - ~
 
-fabric-1.19.1:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	modImplementation "curse.maven:balm-fabric-500525:4751733"
-    }
-  update_files:
-    - ~
-
-fabric-1.19:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	modImplementation "curse.maven:balm-fabric-500525:4751733"
-    }
-  update_files:
-    - ~
-
 fabric-1.21:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	modImplementation "curse.maven:balm-fabric-500525:5676520"
-    }
-  update_files:
-    - ~
-
-fabric-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -207,16 +116,4 @@ fabric-1.20.1:
   update_files:
     - ~
 
-fabric-1.20:
-  gradle: |
-    repositories {
-        maven {
-    		url "https://cursemaven.com"
-        }
-    }
-    dependencies {
-    	modImplementation "curse.maven:balm-fabric-500525:5644969"
-    }
-  update_files:
-    - ~
 name: "Balm"
