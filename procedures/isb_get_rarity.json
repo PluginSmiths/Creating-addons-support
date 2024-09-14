@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "rarity",
+      "check": "SpellRarity"
+    },
+    {
+      "type": "field_data_list_selector",
+      "name": "rarities",
+      "datalist": "spell_rarities"
+    }
+  ],
+  "inputsInline": true,
+  "output": "SpellRarity",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "irons_spellsn_spellbooks_support",
+    "toolbox_init": [
+      "<value name=\"rarity\"><block type=\"variables_get_spellrarity\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "rarity"
+    ],
+    "fields": [
+      "rarities"
+    ],
+    "required_apis": [
+      "irons_spellsn_spellbooks"
+    ]
+  }
+}

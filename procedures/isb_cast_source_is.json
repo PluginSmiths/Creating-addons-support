@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "source",
+      "check": "CastSource"
+    },
+    {
+      "type": "field_data_list_selector",
+      "name": "cast_sources",
+      "datalist": "cast_sources"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "irons_spellsn_spellbooks_support",
+    "toolbox_init": [
+      "<value name=\"source\"><block type=\"variables_get_castsource\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "source"
+    ],
+    "fields": [
+      "cast_sources"
+    ],
+    "required_apis": [
+      "irons_spellsn_spellbooks"
+    ]
+  }
+}

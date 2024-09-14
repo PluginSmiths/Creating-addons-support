@@ -1,0 +1,1 @@
+${input$rarity}==SpellRarity.${field$rarities}

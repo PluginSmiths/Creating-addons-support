@@ -1,0 +1,24 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "spell",
+      "check": "SpellData"
+    }
+  ],
+  "inputsInline": true,
+  "output": "SpellData",
+  "colour": "#96963c",
+  "mcreator": {
+    "toolbox_id": "irons_spellsn_spellbooks_support",
+    "toolbox_init": [
+      "<value name=\"spell\"><block type=\"variables_get_spelldata\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "spell"
+    ],
+    "required_apis": [
+      "irons_spellsn_spellbooks"
+    ]
+  }
+}
