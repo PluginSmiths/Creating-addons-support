@@ -1,1 +1,0 @@
-ClientMagicData.get${field$name}()
