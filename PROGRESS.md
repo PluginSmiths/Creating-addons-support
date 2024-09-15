@@ -13,7 +13,7 @@
  - Tree chop: ![Progress](https://geps.dev/progress/100)
  - Supplementaries: ![Progress](https://geps.dev/progress/100)
  - Sons of sins: ![Progress](https://geps.dev/progress/100)
- - Iron's Spells 'n Spellbooks: ![Progress](https://geps.dev/progress/95)
+ - Iron's Spells'n Spellbooks: ![Progress](https://geps.dev/progress/100)
  - Create: ![Progress](https://geps.dev/progress/100)
  - Alex's mobs: ![Progress](https://geps.dev/progress/100)
  - Forbidden and arcanus: ![Progress](https://geps.dev/progress/100)
@@ -76,4 +76,4 @@
 
 ---
 
-### APIs: ![Progress](https://geps.dev/progress/20)
+### APIs: ![Progress](https://geps.dev/progress/31)
