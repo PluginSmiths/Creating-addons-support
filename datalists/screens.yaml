@@ -1,53 +1,265 @@
-- cookingpotFD
-- water_purifierTAN
-- thermoregulatorTAN
-- presentblockS
-- trappedpresentblockS
-- noticeboardS
-- safeS
-- pulleyblockS
-- cannonS
-- redmerchantS
-- transmutationtableAM
-- schematictableC
-- schematicannonC
-- filterC
-- attributefilterC
-- craftingblueprintC
-- linkedcontrollerC
-- toolboxC
-- scheduleC
-- clibanoFA
-- hephaestusforgeFA
-- inscriptiontablemenuIS
-- scrollforgemenuIS
-- arcaneanvilmenuIS
-- arcaneworckbenchcontainerWR
-- jewelertablecontainerWR
-- alchemyfurnacecontainerWR
-- alchemymachinecontainerWR
-- arcanehoppercontainerWR
-- itemsortercontainerWR
-- totemofdisenchantcontainerWR
-- runicpedestalcontainerWR
-- crystalbagcontainerWR
-- alchemybagcontainerWR
-- coalgeneratorAA
-- compressorAA
-- etrionicblastfurnaceAA
-- oxygenloaderAA
-- fuelrefineryAA
-- waterpumpAA
-- solarpanelAA
-- oxygendistributorAA
-- gravitynormalizerAA
-- cryofreezerAA
-- nasaworkbenchAA
-- roverAA
-- rocketAA
-- landerAA
-- planetsAA
-- dragonforgecontainerIAF
-- podiumcontainerIAF
-- dragoncontainerIAF
-- hippocampuscontainerIAF
+- cookingpotFD:
+  readable_name: "Cooking pot"
+  description: "Farmer's delight"
+  required_apis:
+    - farmers_delight
+- water_purifierTAN:
+  readable_name: "Water purifier"
+  description: "Tought as nails"
+  required_apis:
+    - tought_as_nails
+- thermoregulatorTAN:
+  readable_name: "Thermoregulator"
+  description: "Tough as nails"
+  required_apis: 
+    - tough_as_nails
+- presentblockS:
+  readable_name: "Present block"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- trappedpresentblockS:
+  readable_name: "Trapped present block"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- noticeboardS:
+  readable_name: "Noticeboard"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- safeS:
+  readable_name: "Safe"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- pulleyblockS:
+  readable_name: "Pulley block"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- cannonS:
+  readable_name: "Cannon"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- redmerchantS:
+  readable_name: "Red merchants"
+  description: "Supplementaries"
+  required_apis: 
+    - supplementaries
+- transmutationtableAM:
+  readable_name: "Transmutation table"
+  description: "Alex's mobs"
+  required_apis: 
+    - alexs_mobs
+- schematictableC:
+  readable_name: "Schematic table"
+  description: "Create"
+  required_apis: 
+    - create
+- schematicannonC:
+  readable_name: "Schematic cannon"
+  description: "Create"
+  required_apis: 
+    - create
+- filterC:
+  readable_name: "Filter"
+  description: "Create"
+  required_apis: 
+    - create
+- attributefilterC:
+  readable_name: "Attribute filter"
+  description: "Create"
+  required_apis: 
+    - create
+- craftingblueprintC:
+  readable_name: "Crafting blueprint"
+  description: "Create"
+  required_apis: 
+    - create
+- linkedcontrollerC:
+  readable_name: "Linked controller"
+  description: "Create"
+  required_apis: 
+    - create
+- toolboxC:
+  readable_name: "Toolbox"
+  description: "Create"
+  required_apis: 
+    - create
+- scheduleC:
+  readable_name: "Schedule"
+  description: "Create"
+  required_apis: 
+    - create
+- clibanoFA:
+  readable_name: "Clibano"
+  description: "Forbidden arcanus"
+  required_apis: 
+    - forbidden_arcanus
+- hephaestusforgeFA:
+  readable_name: "Hephaestus forge"
+  description: "Forbidden arcanus"
+  required_apis: 
+    - forbidden_arcanus
+- inscriptiontablemenuIS:
+  readable_name: "Inscription table"
+  description: "Iron's spell book's"
+  required_apis: 
+    - irons_spell_books
+- scrollforgemenuIS:
+  readable_name: "Scroll forge"
+  description: "Iron's spell book's"
+  required_apis: 
+    - irons_spell_books
+- arcaneanvilmenuIS:
+  readable_name: "Arcane anvil"
+  description: "Iron's spell book's"
+  required_apis: 
+    - irons_spell_books
+- arcaneworckbenchcontainerWR:
+  readable_name: "Arcane workbench"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- jewelertablecontainerWR:
+  readable_name: "Jeweler table"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- alchemyfurnacecontainerWR:
+  readable_name: "Alchemy furnace"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- alchemymachinecontainerWR:
+  readable_name: "Alchemy machine"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- arcanehoppercontainerWR:
+  readable_name: "Arcane hopper"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- itemsortercontainerWR:
+  readable_name: "Item sorter"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- totemofdisenchantcontainerWR:
+  readable_name: "Totem of disenchant"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- runicpedestalcontainerWR:
+  readable_name: "Runic pedestal"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- crystalbagcontainerWR:
+  readable_name: "Crystal bag"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- alchemybagcontainerWR:
+  readable_name: "Alchemy bag"
+  description: "Wizards reborn"
+  required_apis: 
+    - wizards_reborn
+- coalgeneratorAA:
+  readable_name: "Coal generator"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- compressorAA:
+  readable_name: "Compressor"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- etrionicblastfurnaceAA:
+  readable_name: "Etrionic blast furnace"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- oxygenloaderAA:
+  readable_name: "Oxygen loader"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- fuelrefineryAA:
+  readable_name: "Fuel refinery"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- waterpumpAA:
+  readable_name: "Water pump"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- solarpanelAA:
+  readable_name: "Solar panel"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- oxygendistributorAA:
+  readable_name: "Oxygen distributor"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- gravitynormalizerAA:
+  readable_name: "Gravity normalizer"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- cryofreezerAA:
+  readable_name: "Cryofreezer"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- nasaworkbenchAA:
+  readable_name: "NASA workbench"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- roverAA:
+  readable_name: "Rover"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- rocketAA:
+  readable_name: "Rocket"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- landerAA:
+  readable_name: "Lander"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- planetsAA:
+  readable_name: "Planets"
+  description: "Ad astra"
+  required_apis: 
+    - ad_astra
+- dragonforgecontainerIAF:
+  readable_name: "Dragon forge"
+  description: "Ice and Fire"
+  required_apis: 
+    - ice_and_fire
+- podiumcontainerIAF:
+  readable_name: "Podium"
+  description: "Ice and Fire"
+  required_apis: 
+    - ice_and_fire
+- dragoncontainerIAF:
+  readable_name: "Dragon"
+  description: "Ice and Fire"
+  required_apis: 
+    - ice_and_fire
+- hippocampuscontainerIAF:
+  readable_name: "Hippocampus"
+  description: "Ice and Fire"
+  required_apis: 
+    - ice_and_fire
