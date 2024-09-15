@@ -2,20 +2,20 @@
   "args0": [
     {
       "type": "input_value",
-      "name": "entity",
-      "check": "Entity"
+      "name": "item",
+      "check": "MCItem"
     }
   ],
   "inputsInline": true,
-  "output": "MagicData",
-  "colour": "#50769e",
+  "output": "SpellRarity",
+  "colour": "#965a96",
   "mcreator": {
     "toolbox_id": "blockdata",
     "toolbox_init": [
-      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+      "<value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
     ],
     "inputs": [
-      "entity"
+      "item"
     ],
     "required_apis": [
       "irons_spellsn_spellbooks"

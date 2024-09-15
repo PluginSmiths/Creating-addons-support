@@ -6,16 +6,37 @@
       "check": "SpellRarity"
     },
     {
-      "type": "field_data_list_selector",
+      "type": "field_dropdown",
       "name": "rarities",
-      "datalist": "spell_rarities"
+      "options": [
+        [
+          "COMMON",
+          "COMMON"
+        ],
+        [
+          "EPIC",
+          "EPIC"
+        ],
+        [
+          "LEGENDARY",
+          "LEGENDARY"
+        ],
+        [
+          "RARE",
+          "RARE"
+        ],
+        [
+          "UNCOMMON",
+          "UNCOMMON"
+        ]
+      ]
     }
   ],
   "inputsInline": true,
   "output": "Boolean",
-  "colour": "#607c99",
+  "colour": "#96963c",
   "mcreator": {
-    "toolbox_id": "irons_spellsn_spellbooks_support",
+    "toolbox_id": "blockdata",
     "toolbox_init": [
       "<value name=\"rarity\"><block type=\"variables_get_spellrarity\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
     ],

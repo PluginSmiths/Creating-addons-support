@@ -1,0 +1,60 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "FIRE",
+          "FIRE"
+        ],
+        [
+          "ICE",
+          "ICE"
+        ],
+        [
+          "LIGHTNING",
+          "LIGHTNING"
+        ],
+        [
+          "HOLY",
+          "HOLY"
+        ],
+        [
+          "ENDER",
+          "ENDER"
+        ],
+        [
+          "BLOOD",
+          "BLOOD"
+        ],
+        [
+          "EVOCATION",
+          "EVOCATION"
+        ],
+        [
+          "NATURE",
+          "NATURE"
+        ],
+        [
+          "ELDRITCH",
+          "ELDRITCH"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "SpellRarity",
+  "colour": "#965a96",
+  "mcreator": {
+    "toolbox_id": "blockdata",
+    "toolbox_init": [
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "irons_spellsn_spellbooks"
+    ]
+  }
+}
