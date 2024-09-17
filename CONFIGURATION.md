@@ -12,5 +12,5 @@
   - Balm
 - Attributes:
   - Caelus API
-- File manager:
+- File Manager:
   - Default options
