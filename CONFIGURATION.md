@@ -1,11 +1,16 @@
 ### Configuration with other plugins.
 
 - Chunk Manager 2.0:
- - Balm
+  - Balm
 - Trims Manager:
- - Tought as nails
- - Blue skies
- - Twilight forest
- - Aethet
+  - Tought as nails
+  - Blue skies
+  - Twilight forest
+  - Aethet
+  - Undergarden
 - Player poses:
- - Balm
+  - Balm
+- Attributes:
+  - Caelus API
+- File manager:
+  - Default options
