@@ -2,12 +2,13 @@
 @Mod.EventBusSubscriber
 public class ${name}Procedure {
     @SubscribeEvent
-    public static void onEventTriggered(SeasonChangedEvent event) {
+    public static void onEventTriggered(SeasonChangedEvent.Standard event) {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
             "world": "event.getLevel()",
             "PrevSeason": "(ISeasonState) event.getPrevSeason()",
             "NewSeason": "(ISeasonState) event.getNewSeason()",
+            "Dimension": "event.getLevel().dimension()"
             "event": "event"
             }/>
         </#compress></#assign>
