@@ -8,7 +8,7 @@ public class ${name}Procedure {
             "world": "event.getLevel()",
             "PrevSeason": "(ISeasonState) event.getPrevSeason()",
             "NewSeason": "(ISeasonState) event.getNewSeason()",
-            "Dimension": "event.getLevel().dimension()"
+            "Dimension": "event.getLevel().dimension()",
             "event": "event"
             }/>
         </#compress></#assign>
