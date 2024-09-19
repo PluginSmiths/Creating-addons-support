@@ -10,7 +10,8 @@ public class ${name}Procedure {
             "z": "event.getPlayer().getZ()",
             "entity": "event.getPlayer()",
             "world": "event.getLevel()",
-            "chunk": "event.getLevel().getChunk(new BlockPos( (int) getChunkPos().x, (int) getChunkPos().y, (int) getChunkPos().z)",
+            "chunk": "event.getLevel().getChunk(new BlockPos( (int) event.getChunkPos().x, (int) event.getChunkPos().y, (int) event.getChunkPos().z)",
+            "Dimension": "event.getLevel().dimension()",
             "event": "event"
             }/>
         </#compress></#assign>
