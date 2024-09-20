@@ -1,0 +1,53 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "season_state",
+      "check": "SeasonState"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Day",
+          "Day"
+        ],
+        [
+          "SeasonCycleTicks",
+          "SeasonCycleTicks"
+        ],
+        [
+          "CycleDuration",
+          "CycleDuration"
+        ],
+        [
+          "SSeasonDuration",
+          "SubSeasonDuration"
+        ],
+        [
+          "DayDuration",
+          "DayDuration"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "serene_seasons_support",
+    "toolbox_init": [
+      "<value name=\"season_state\"><block type=\"variables_get_seasonstate\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "season_state"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "serene_seasons"
+    ]
+  }
+}
