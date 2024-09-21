@@ -1,1 +1,0 @@
-${input$item}.is(ItemTags.create(new ResourceLocation("forbidden_arcanus:${field$name}")))
