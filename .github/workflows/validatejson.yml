@@ -1,14 +1,16 @@
-name: JSON Validation
-
+name: JSON and YAML Validation
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  test:
+  json-yaml-validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: json-syntax-check
-        uses: limitusus/json-syntax-check@v2
-        with:
-          pattern: "\\.json$"
+      - uses: actions/checkout@v4
+
+      - name: json-yaml-validate
+        id: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v3.2.1
