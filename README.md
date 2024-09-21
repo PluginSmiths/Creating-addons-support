@@ -14,7 +14,7 @@ If you like this plugin or want to support its development you can vote for it o
 
 ## Mod offer rules:
 
- - If your mod doesn't only add something new for blocks, entities, items and other.
+ - If your mod doesn't only add something new for blocks, entities, items or other.
    
  - It is good if mod has Wiki or Guide.
    
