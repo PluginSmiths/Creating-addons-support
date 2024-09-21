@@ -1,1 +1,0 @@
-${input$item}.is(ItemTags.create(new ResourceLocation("create:blaze_burner_fuel/${field$name}")))
