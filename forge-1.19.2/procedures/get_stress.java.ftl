@@ -1,1 +1,0 @@
-KineticNetwork.getStressMultiplierForSpeed(${input$speed})
