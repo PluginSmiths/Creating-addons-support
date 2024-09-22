@@ -89,7 +89,7 @@ If you have any problems comment on the plugin page or create nan issue here.
 
 The logo was taken from [here](https://freepik.com/icon/technology_14959325#fromView=search&page=2&position=85&uuid=2a53e07c-fbb8-46a4-8879-97e3a8581fa5)
 
-#### Some procedures may not work.
+Some procedures may not work.
 
 ## Contribute:
 If you would like to fix something or add something of your own to the plugin or plugin code you are always welcome to open a pull request.
