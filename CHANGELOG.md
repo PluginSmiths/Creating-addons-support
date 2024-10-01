@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ### Version 4.1 changelog:
- - Added bigger support for Serene seasons, Ad astra, Tought as nails, Cold sweat, Dynamic trees, Thirst was taken, Sanity and Irona Spells and spell books.
+ - Added bigger support for Serene seasons, Ad astra, Tought as nails, Cold sweat, Dynamic trees, Thirst was taken, Sanity and Irons Spells and spell books.
  - Added support for Default options, Balm and Tips.
  - Added recipes from Farmer's Delight
  - Bugs fixed.
