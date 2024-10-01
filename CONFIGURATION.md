@@ -1,5 +1,7 @@
 #### Configuration with other plugins.
 
+---
+
 - Chunk Manager 2.0:
   - Balm
 - Trims Manager:
