@@ -3,10 +3,10 @@
 - Chunk Manager 2.0:
   - Balm
 - Trims Manager:
-  - Tought as nails
+  - Tough as nails
   - Blue skies
   - Twilight forest
-  - Aethet
+  - Aether
   - Undergarden
 - Player poses:
   - Balm
