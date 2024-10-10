@@ -1,1 +1,0 @@
-Double.valueOf(BeltConnectorItem.maxLength())

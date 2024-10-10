@@ -1,1 +1,0 @@
-world instanceof Level _level && SuperGlueEntity.isGlued(_level, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), ${input$direction}, new HashSet<>())
