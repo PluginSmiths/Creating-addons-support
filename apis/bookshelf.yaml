@@ -8,7 +8,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:5251134')
+      implementation fg.deobf("curse.maven:bookshelf-228525:5727085")
     }
   update_files:
     - ~
@@ -36,7 +36,7 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:5251136')
+      modImplementation "curse.maven:bookshelf-228525:5727087"
     }
   update_files:
     - ~
@@ -50,7 +50,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:5250293')
+      implementation fg.deobf("curse.maven:bookshelf-228525:5423987")
     }
   update_files:
     - ~
@@ -64,7 +64,7 @@ fabric-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:5250292')
+      modImplementation "curse.maven:bookshelf-228525:5423988"
     }
   update_files:
     - ~
@@ -92,7 +92,7 @@ fabric-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:4570841')
+      modImplementation "curse.maven:bookshelf-228525:4570841"
     }
   update_files:
     - ~
@@ -120,7 +120,7 @@ fabric-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:4556696')
+      modImplementation "curse.maven:bookshelf-228525:4556696"
     }
   update_files:
     - ~
