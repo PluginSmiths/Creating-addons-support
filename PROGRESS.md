@@ -13,7 +13,7 @@
  - Tree chop: ![Progress](https://geps.dev/progress/100)
  - Supplementaries: ![Progress](https://geps.dev/progress/100)
  - Sons of sins: ![Progress](https://geps.dev/progress/100)
- - Iron's Spells'n Spellbooks: ![Progress](https://geps.dev/progress/100)
+ - Iron's Spells'n Spellbooks: ![Progress](https://geps.dev/progress/80)
  - Alex's mobs: ![Progress](https://geps.dev/progress/100)
  - Biomes o plenty: ![Progress](https://geps.dev/progress/100)
  - Alex's caves: ![Progress](https://geps.dev/progress/100)
@@ -54,6 +54,7 @@
  - Balm: ![Progress](https://geps.dev/progress/100)
  - Cosmetic Armory: ![Progress](https://geps.dev/progress/0)
  - Botarium: ![Progress](https://geps.dev/progress/0)
+ - Citadel: ![Progress](https://geps.dev/progress/0)
 
 ---
 
