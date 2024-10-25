@@ -1,0 +1,138 @@
+---                                                                                               
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation "curse.maven:ad-astra-635042:5116782"
+      implementation "curse.maven:botarium-704113:5211699"
+      implementation "curse.maven:resourceful-config-714059:5230766"
+      implementation "curse.maven:resourceful-lib-570073:5180841"
+    }
+  update_files:
+    - ~
+
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation "curse.maven:ad-astra-635042:5116783"
+      modImplementation "curse.maven:botarium-704113:5211700"
+      modImplementation "curse.maven:resourceful-config-714059:5230767"
+      modImplementation "curse.maven:resourceful-lib-570073:5180842"
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation "curse.maven:ad-astra-635042:5116772"
+      modImplementation "curse.maven:botarium-704113:5486071"
+      modImplementation "curse.maven:resourceful-config-714059:5020442"
+      modImplementation "curse.maven:resourceful-lib-570073:5659872"
+    }
+  update_files:
+    - ~
+
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf("curse.maven:ad-astra-635042:5116766")
+      implementation fg.deobf("curse.maven:botarium-704113:5486070")
+      implementation fg.deobf("curse.maven:resourceful-config-714059:5020441")
+      implementation fg.deobf("curse.maven:resourceful-lib-570073:5659871")
+    }
+  update_files:
+    - ~
+
+forge-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf("curse.maven:ad-astra-635042:4452010")
+      implementation fg.deobf("curse.maven:botarium-704113:4439777")
+      implementation fg.deobf("curse.maven:resourceful-config-714059:4438564")
+      implementation fg.deobf("curse.maven:resourceful-lib-570073:4553782")
+      
+    }
+  update_files:
+    - ~
+
+fabric-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation "curse.maven:ad-astra-635042:4452009"
+      modImplementation "curse.maven:botarium-704113:4439776"
+      modImplementation "curse.maven:resourceful-config-714059:4438565"
+      modImplementation "curse.maven:resourceful-lib-570073:4553784"
+    }
+  update_files:
+    - ~
+
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf("curse.maven:ad-astra-635042:4643668")
+      implementation fg.deobf("curse.maven:botarium-704113:5118248")
+      implementation fg.deobf("curse.maven:resourceful-config-714059:4444198")
+      implementation fg.deobf("curse.maven:resourceful-lib-570073:4477753")
+    }                                                                   
+  update_files:
+    - ~
+
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation "curse.maven:ad-astra-635042:4643667"
+      modImplementation "curse.maven:botarium-704113:5118247"
+      modImplementation "curse.maven:resourceful-config-714059:4444200"
+      modImplementation "curse.maven:resourceful-lib-570073:4477754"
+    }
+  update_files:
+    - ~
+name: "Ad astra"

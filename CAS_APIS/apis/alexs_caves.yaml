@@ -1,0 +1,15 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:alexs-caves-924854:5162617')
+    }
+  update_files:
+    - ~
+name: "Alexs Caves"
