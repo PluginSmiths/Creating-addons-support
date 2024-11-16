@@ -19,3 +19,5 @@ for process_name in process_names:
             print(f"Process '{process_name}' with PID {process_id} stopped.")
         except Exception as e:
             print(f"Error on '{process_name}': {e}")
+
+#Closes all programms from "process_names".
