@@ -19,8 +19,9 @@ def translate_file(input_file, output_file, target_language):
 langs = ["ar_SA", "cs_CZ", "de_DE", "es_AR", "es_CL", "es_ES", "fa_IR", "fr_FR", "he_IL", "hu_HU", "it_IT", "ja_JP",
         "ko_KR", "nl_NL", "no_NO", "pl_PL", "pt_BR", "pt_PT", "ro_RO", "ru_RU", "sv_SE", "tr_TR", "uk_UA", "vi_VN"]
 for text in langs:
-    file = os.path.abspath(__file__) + "texts_" + text + ".properties"
-    main_file = os.path.abspath(__file__) + "texts.properties"
+    path = os.path.abspath(__file__)
+    file = path[0:8] + "CAS_P//lang//" + "texts_" + text + ".properties"
+    main_file = path[0:8] + "CAS_P//lang//" + "texts.properties"
     if not os.path.exists(file):
         translate_file(main_file, file, text)
 
