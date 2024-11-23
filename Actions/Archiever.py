@@ -11,11 +11,11 @@ def create_archive(source_folder, destination_folder, archive_filename):
                     file_path = os.path.join(root, file)
                     relative_path = os.path.relpath(file_path, source_folder)
                     zipf.write(file_path, arcname=relative_path) 
-        print(f"Архив успешно создан: {archive_path}")
+        print(f"Archive created at: {archive_path}")
     except FileNotFoundError:
-        print(f"Папка {source_folder} не найдена.")
+        print(f"Folder {source_folder} did not found.")
     except Exception as e:
-        print(f"Ошибка при создании архива: {e}")
+        print(f"Error on creating archive: {e}")
 
 s = input()
 
@@ -29,5 +29,5 @@ elif "P" in s:
     source = str(Workspace.get_repository_path()) + "CAS_P//"
     create_archive(source, Workspace.get_desktop_path(), "CAS Procedures")
 else:
-    print("Неизвестный тип архива.")
+    print("Unknown archive type.")
 
