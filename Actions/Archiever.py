@@ -20,13 +20,13 @@ def create_archive(source_folder, destination_folder, archive_filename):
 s = input()
 
 if "ME" in s:
-    source = str(Workspace.get_repository_path()) + "CAS_ME//"
+    source = str(Workspace.get_repository_path()) + "//CAS_ME"
     create_archive(source, Workspace.get_desktop_path(), "CAS Mod Elements")
 elif "API" in s:
-    source = str(Workspace.get_repository_path()) + "CAS_APIS//"
+    source = str(Workspace.get_repository_path()) + "//CAS_APIS"
     create_archive(source, Workspace.get_desktop_path(), "CAS API's")
 elif "P" in s:
-    source = str(Workspace.get_repository_path()) + "CAS_P//"
+    source = str(Workspace.get_repository_path()) + "//CAS_P"
     create_archive(source, Workspace.get_desktop_path(), "CAS Procedures")
 else:
     print("Unknown archive type.")
