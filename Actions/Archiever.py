@@ -23,7 +23,7 @@ source_folder = "путь_к_вашей_папке"
 destination_folder = "путь_к_папке_для_архива"
 
 if "ME" in s:
-    create_archive(source_folder + "CAS_ME//", destination_folder, "CAS Mod Elements")
+    create_archive(Workspace.get_ + "CAS_ME//", destination_folder, "CAS Mod Elements")
 elif "API" in s:
     create_archive(source_folder + "CAS_APIS//", destination_folder, "CAS API's")
 elif "P" in s:
