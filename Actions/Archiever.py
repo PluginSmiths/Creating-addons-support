@@ -19,14 +19,11 @@ def create_archive(source_folder, destination_folder, zip_filename):
 
 s = input()
 
-source_folder = "путь_к_вашей_папке"
-destination_folder = "путь_к_папке_для_архива"
-
 if "ME" in s:
-    create_archive(Workspace.get_repository_path() + "CAS_ME//", Workspace.get_desktop_folder, "CAS Mod Elements")
+    create_archive(Workspace.get_repository_path() + "CAS_ME//", Workspace.get_desktop_path(), "CAS Mod Elements")
 elif "API" in s:
-    create_archive(Workspace.get_repository_path() + "CAS_APIS//", destination_folder, "CAS API's")
+    create_archive(Workspace.get_repository_path() + "CAS_APIS//", Workspace.get_desktop_path(), "CAS API's")
 elif "P" in s:
-    create_archive(Workspace.get_repository_path() + "CAS_P//", destination_folder, "CAS Procedures")
+    create_archive(Workspace.get_repository_path() + "CAS_P//", Workspace.get_desktop_path(), "CAS Procedures")
 
 
