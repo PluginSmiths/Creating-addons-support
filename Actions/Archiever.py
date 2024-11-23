@@ -10,7 +10,7 @@ def create_archive(source_folder, destination_folder, zip_filename):
             for root, _, files in os.walk(source_folder):
                 for file in files:
                     file_path = os.path.join(root, file)
-                    zipf.write(file_path, arcname=file_path[len(source_folder) + 1:]) # Отсутствие относительного пути
+                    zip.write(file_path, arcname=file_path[len(source_folder) + 1:])
         print(f"Archive created: {zip_path}")
     except FileNotFoundError:
         print(f"Folder {source_folder} did not found.")
