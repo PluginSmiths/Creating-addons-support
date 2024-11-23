@@ -1,6 +1,7 @@
 import zipfile
 import os
 import rarfile
+import Workspace
 
 def create_archive(source_folder, destination_folder, zip_filename):
     try:
@@ -20,11 +21,12 @@ s = input()
 
 source_folder = "путь_к_вашей_папке"
 destination_folder = "путь_к_папке_для_архива"
-zip_filename = "мой_архив.zip"
 
 if "ME" in s:
-    create_archive(source_folder + "CAS_ME//", destination_folder, zip_filename)
+    create_archive(source_folder + "CAS_ME//", destination_folder, "CAS Mod Elements")
 elif "API" in s:
-    create_archive(source_folder + "CAS_APIS//", destination_folder, zip_filename)
+    create_archive(source_folder + "CAS_APIS//", destination_folder, "CAS API's")
+elif "P" in s:
+    create_archive(source_folder + "CAS_P//", destination_folder, "CAS Procedures")
 
 
