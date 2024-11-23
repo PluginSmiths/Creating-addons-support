@@ -1,1 +1,0 @@
-world.getBiome(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})).is(TagKey.create(Registries.BIOME, new ResourceLocation("enlightened_end:${field$name}_bismuth_biomes")))
