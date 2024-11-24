@@ -1,0 +1,66 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+    		url "https://cursemaven.com"
+        }
+    }
+    dependencies {
+    	implementation fg.deobf("curse.maven:journeymap-32274:5789363")
+    }
+  update_files:
+    - ~
+
+forge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+    		url "https://cursemaven.com"
+        }
+    }
+    dependencies {
+    	implementation "curse.maven:journeymap-32274:5777473"
+    }
+  update_files:
+    - ~
+
+fabric-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+    		url "https://cursemaven.com"
+        }
+    }
+    dependencies {
+    	modImplementation "curse.maven:journeymap-32274:5789354"
+    }
+  update_files:
+    - ~
+
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+    		url "https://cursemaven.com"
+        }
+    }
+    dependencies {
+    	modImplementation "curse.maven:journeymap-32274:5866551"
+    }
+  update_files:
+    - ~
+
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+    		url "https://cursemaven.com"
+        }
+    }
+    dependencies {
+    	implementation "curse.maven:journeymap-32274:5866552"
+    }
+  update_files:
+    - ~
+name: "journy"
