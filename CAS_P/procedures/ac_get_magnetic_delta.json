@@ -3,7 +3,7 @@
     {
       "type": "input_value",
       "name": "entity",
-      "check": "Number"
+      "check": "Entity"
     },
     {
       "type": "field_dropdown",
@@ -30,7 +30,7 @@
   "mcreator": {
     "toolbox_id": "alexs_caves_support",
     "toolbox_init": [
-      "<value name=\"entity\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
     ],
     "inputs": [
       "entity"
