@@ -18,7 +18,6 @@
  - Dynamic trees: ![Progress](https://geps.dev/progress/100)
  - Locksmith: ![Progress](https://geps.dev/progress/100)
  - Aether: ![Progress](https://geps.dev/progress/100)
- - Enlightend: ![Progress](https://geps.dev/progress/100)
  - Twilight forest: ![Progress](https://geps.dev/progress/100)
  - Passive skill tree: ![Progress](https://geps.dev/progress/100)
  - Blue skies: ![Progress](https://geps.dev/progress/100)
