@@ -1,1 +1,0 @@
-${input$entity} instanceof PlayerEntity _player && FoodHelper.canConsume(${input$itemstack}, _player)==true

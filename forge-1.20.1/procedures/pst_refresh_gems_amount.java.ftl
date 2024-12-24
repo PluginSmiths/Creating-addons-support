@@ -1,1 +1,0 @@
-ItemHelper.refreshGemsAmount(${input$item});

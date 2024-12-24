@@ -1,1 +1,0 @@
-${input$data}.set${field$type}(${input$number});

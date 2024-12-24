@@ -1,1 +1,0 @@
-${input$entity} instanceof BalmPlayer _player && _player.getForcedPose()==Pose.${field$pose}

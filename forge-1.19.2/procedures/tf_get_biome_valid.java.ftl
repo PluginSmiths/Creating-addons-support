@@ -1,1 +1,0 @@
-world.getBiome(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})).is(TagKey.create(Registries.BIOME, new ResourceLocation("twilightforest:valid_${field$name}_biomes")))

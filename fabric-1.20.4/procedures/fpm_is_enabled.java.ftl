@@ -1,1 +1,0 @@
-FirstPersonAPI.isEnabled()

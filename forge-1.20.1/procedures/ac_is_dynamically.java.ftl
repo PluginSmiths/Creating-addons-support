@@ -1,1 +1,0 @@
-${input$entity} instanceof LivingEntity _entity && isDynamicallyMagnetic(_entity, ${input$boolean})==true

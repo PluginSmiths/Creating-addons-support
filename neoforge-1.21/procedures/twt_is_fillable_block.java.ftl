@@ -1,1 +1,0 @@
-WaterPurity.isFillableBlock(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})))

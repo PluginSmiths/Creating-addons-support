@@ -1,1 +1,0 @@
-WildfireAPI.getPlayerGender(${input$entity}.getUUID)

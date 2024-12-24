@@ -1,1 +1,0 @@
-CaveMapItem.getBiomeBlockPos(${input$item}).get${field$coor}()

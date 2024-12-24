@@ -1,1 +1,0 @@
-FoodHelper.is${field$name}(${input$itemstack})==true

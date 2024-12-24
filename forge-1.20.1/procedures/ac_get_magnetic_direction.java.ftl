@@ -1,1 +1,0 @@
-MagnetUtil.get${field$name}(${input$entity})

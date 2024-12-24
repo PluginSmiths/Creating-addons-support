@@ -1,1 +1,0 @@
-world instanceof Level _level ChopUtil.getMaxNumChops(_level, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), (_level.getBlockState(BlockPos.containing((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))))

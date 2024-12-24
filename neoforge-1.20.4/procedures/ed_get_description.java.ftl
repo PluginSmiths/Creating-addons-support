@@ -1,1 +1,0 @@
-DescriptionManager.getDescription(${field$enchant}).getString()
