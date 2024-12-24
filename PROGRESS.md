@@ -1,5 +1,4 @@
-## Progress:
-### Procedures:
+### Progress:
  - Farmer's delight: ![Progress](https://geps.dev/progress/100)
  - Diet: ![Progress](https://geps.dev/progress/100)
  - Sanity: ![Progress](https://geps.dev/progress/100)
@@ -26,7 +25,6 @@
  - Ad astra: ![Progress](https://geps.dev/progress/100)
  - Quests & reward: ![Progress](https://geps.dev/progress/100)
  - Thirst was taken: ![Progress](https://geps.dev/progress/100)
- - AttributeFix: ![Progress](https://geps.dev/progress/100)
  - Enchantments description: ![Progress](https://geps.dev/progress/100)
  - Just enough effect description: ![Progress](https://geps.dev/progress/0)
  - First person model: ![Progress](https://geps.dev/progress/100)
@@ -53,16 +51,3 @@
  - Citadel: ![Progress](https://geps.dev/progress/0)
  - Corpse: ![Progress](https://geps.dev/progress/0)
  - Entity Culling: ![Progress](https://geps.dev/progress/0)
----
-
-### Recipes: 
-- Farmer's Delight ![Progress](https://geps.dev/progress/99)
-- Create ![Progress](https://geps.dev/progress/0)
-- Ad astra ![Progress](https://geps.dev/progress/0)
-- Tought as nails ![Progress](https://geps.dev/progress/0)
-- Locksmith ![Progress](https://geps.dev/progress/0)
-- Wizards reborn ![Progress](https://geps.dev/progress/0)
-
----
-
-### APIs: ![Progress](https://geps.dev/progress/31)
