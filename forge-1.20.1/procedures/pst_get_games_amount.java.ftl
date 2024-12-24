@@ -1,0 +1,1 @@
+ItemHelper.getGemsAmount(${input$item})

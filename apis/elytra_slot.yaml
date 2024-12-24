@@ -1,0 +1,159 @@
+---
+forge-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5778734')
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5778732')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5778732')
+      implementation fg.deobf('curse.maven:trinkets-341284:5778732')
+    }
+  update_files:
+    - ~
+quilt-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5778730')
+      implementation fg.deobf('curse.maven:trinkets-341284:5778730')
+      implementation fg.deobf('curse.maven:qsl-634179:5778730')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5778461')
+      implementation fg.deobf('curse.maven:curios-continuation-1037991:5778461')
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5770052')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5770052')
+      implementation fg.deobf('curse.maven:trinkets-341284:5770052')
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5542492')
+      implementation fg.deobf('curse.maven:curios-continuation-1037991:5542492')
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5542480')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5542480')
+      implementation fg.deobf('curse.maven:trinkets-341284:5542480')
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5539628')
+      implementation fg.deobf('curse.maven:trinkets-341284:5539628')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5539628')
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5539614')
+      implementation fg.deobf('curse.maven:trinkets-341284:5539614')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5539614')
+    }
+  update_files:
+    - ~
+neoforge-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5421068')
+    }
+  update_files:
+    - ~
+forge-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-slot-317716:5421064')
+    }
+  update_files:
+    - ~
+name: "Elytra Slot (Fabric/Forge/Quilt)"

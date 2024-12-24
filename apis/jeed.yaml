@@ -1,0 +1,83 @@
+---
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5693386')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5693386')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5693385')
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5594834')
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5589681')
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5589680')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5589680')
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5589673')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5589673')
+    }
+  update_files:
+    - ~
+name: "Just Enough Effect Descriptions (JEED)"

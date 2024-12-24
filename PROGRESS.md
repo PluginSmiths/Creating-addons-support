@@ -51,10 +51,8 @@
  - Cosmetic Armory: ![Progress](https://geps.dev/progress/0)
  - Botarium: ![Progress](https://geps.dev/progress/0)
  - Citadel: ![Progress](https://geps.dev/progress/0)
- - Corpse: !
-[Progress](https://geps.dev/progress/0)
- - Entity Culling: !
-[Progress](https://geps.dev/progress/0)
+ - Corpse: ![Progress](https://geps.dev/progress/0)
+ - Entity Culling: ![Progress](https://geps.dev/progress/0)
 ---
 
 ### Recipes: 

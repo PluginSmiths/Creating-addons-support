@@ -1,0 +1,160 @@
+---
+fabric-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5992130')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5992130')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5992130')
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5992129')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5992129')
+    }
+  update_files:
+    - ~
+forge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5992128')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5992128')
+    }
+  update_files:
+    - ~
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5969936')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5969936')
+    }
+  update_files:
+    - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5969935')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5969935')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5969935')
+    }
+  update_files:
+    - ~
+forge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5969934')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5969934')
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5833253')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5833253')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5833253')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5833252')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5833252')
+    }
+  update_files:
+    - ~
+forge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5833251')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5833251')
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5815864')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5815864')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5815864')
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:5815863')
+      implementation fg.deobf('curse.maven:glitchcore-955399:5815863')
+    }
+  update_files:
+    - ~
+name: "Tough As Nails"

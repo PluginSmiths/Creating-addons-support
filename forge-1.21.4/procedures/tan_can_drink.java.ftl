@@ -1,0 +1,1 @@
+${input$entity} instanceof Player _player && ThirstHelper.canDrink(_player, ${input$bol})

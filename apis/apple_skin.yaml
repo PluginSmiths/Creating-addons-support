@@ -1,0 +1,150 @@
+---
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5864743')
+    }
+  update_files:
+    - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5864742')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5864742')
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5864741')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5864741')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586600')
+    }
+  update_files:
+    - ~
+neoforge-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586595')
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586594')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5586594')
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5525729')
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5429755')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5429755')
+    }
+  update_files:
+    - ~
+fabric-1.20.5:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5292541')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5292541')
+    }
+  update_files:
+    - ~
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5042105')
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:4953893')
+    }
+  update_files:
+    - ~
+name: "AppleSkin"

@@ -1,0 +1,161 @@
+---
+fabric-1.21.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5838325')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:5838325')
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:5623453')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:5623453')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5623453')
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:5485055')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:5485055')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5485055')
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:5485047')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5485047')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:5485047')
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:5263463')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5263463')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:5263463')
+    }
+  update_files:
+    - ~
+fabric-1.20.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:4770904')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:4770904')
+    }
+  update_files:
+    - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635892')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:4635892')
+    }
+  update_files:
+    - ~
+fabric-1.19.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635888')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:4635888')
+    }
+  update_files:
+    - ~
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:4635887')
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635875')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:4635875')
+    }
+  update_files:
+    - ~
+fabric-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:4412629')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:4412629')
+    }
+  update_files:
+    - ~
+name: "Default Options (Fabric Edition)"

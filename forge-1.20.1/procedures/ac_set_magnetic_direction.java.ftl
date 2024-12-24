@@ -1,0 +1,1 @@
+MagnetUtil.setEntityMagneticDirection(${input$entity}, ${input$direction});

@@ -1,0 +1,1 @@
+${input$entity} instanceof LivingEntity _entity && CaelusApi.getInstance().canFallFly(_entity)==TriState.${field$name}

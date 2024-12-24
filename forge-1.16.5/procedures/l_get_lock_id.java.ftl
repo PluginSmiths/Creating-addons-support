@@ -1,0 +1,1 @@
+KeyItem.getLockId(${input$item}).equals(${input$uudi})

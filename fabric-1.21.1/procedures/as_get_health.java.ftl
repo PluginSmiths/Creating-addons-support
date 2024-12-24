@@ -1,0 +1,1 @@
+FoodHelper.getEstimatedHealthIncrement(${input$food}, ${input$satur}, ${input$exhaustion})

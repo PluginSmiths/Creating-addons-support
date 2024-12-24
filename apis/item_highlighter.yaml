@@ -1,0 +1,152 @@
+---
+fabric-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5991609')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:5991609')
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5591012')
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5569687')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:5569687')
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5343926')
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4940605')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:4940605')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4940605')
+      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940605')
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4938119')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:4938119')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4938119')
+      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938119')
+    }
+  update_files:
+    - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4687499')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4687499')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:4687499')
+      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4687499')
+    }
+  update_files:
+    - ~
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3921941')
+      implementation fg.deobf('curse.maven:fabric-api-306612:3921941')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:3921941')
+      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3921941')
+    }
+  update_files:
+    - ~
+fabric-1.18:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3549393')
+      implementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549393')
+      implementation fg.deobf('curse.maven:fabric-api-306612:3549393')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:3549393')
+    }
+  update_files:
+    - ~
+fabric-1.17.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3548202')
+      implementation fg.deobf('curse.maven:fabric-api-306612:3548202')
+      implementation fg.deobf('curse.maven:cloth-config-legacy-319057:3548202')
+      implementation fg.deobf('curse.maven:iceberg-fabric-539382:3548202')
+    }
+  update_files:
+    - ~
+name: "Item Highlighter [Fabric]"

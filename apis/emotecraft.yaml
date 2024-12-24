@@ -1,0 +1,86 @@
+---
+quilt-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-397809:5975180')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5975180')
+    }
+  update_files:
+    - ~
+quilt-1.18:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4632465')
+    }
+  update_files:
+    - ~
+quilt-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4632463')
+    }
+  update_files:
+    - ~
+quilt-1.19.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-397809:4632461')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4632461')
+    }
+  update_files:
+    - ~
+quilt-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4632459')
+    }
+  update_files:
+    - ~
+quilt-1.19.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-397809:4455298')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4455298')
+    }
+  update_files:
+    - ~
+name: "Emotecraft (Fabric)"

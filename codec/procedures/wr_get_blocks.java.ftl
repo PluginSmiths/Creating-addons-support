@@ -1,0 +1,1 @@
+${input$block}.defaultBlockState().is(BlockTags.create(new ResourceLocation("wizards_reborn:${field$name}")))

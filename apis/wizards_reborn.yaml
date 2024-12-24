@@ -1,0 +1,16 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:wizards-reborn-913994:5939765')
+      implementation fg.deobf('curse.maven:fluffy-fur-1097456:5939765')
+    }
+  update_files:
+    - ~
+name: "Wizard's Reborn"

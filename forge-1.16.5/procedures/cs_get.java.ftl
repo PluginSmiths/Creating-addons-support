@@ -1,0 +1,1 @@
+${input$entity} instanceof LivingEntity _player && get(_player, Temperature.Trait.${field$temperature})==${input$number}

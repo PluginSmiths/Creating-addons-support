@@ -1,0 +1,41 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:origins-forge-474438:5314209')
+    }
+  update_files:
+    - ~
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:origins-forge-474438:5314165')
+    }
+  update_files:
+    - ~
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:origins-forge-474438:5179273')
+    }
+  update_files:
+    - ~
+name: "Origins (Forge)"

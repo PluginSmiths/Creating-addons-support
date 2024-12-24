@@ -1,0 +1,1 @@
+${input$spell}.getDisplayName().getString()

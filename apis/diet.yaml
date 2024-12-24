@@ -1,0 +1,110 @@
+---
+quilt-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813906')
+      implementation fg.deobf('curse.maven:qsl-634179:4813906')
+    }
+  update_files:
+    - ~
+forge-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813904')
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813902')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4813902')
+    }
+  update_files:
+    - ~
+quilt-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813892')
+      implementation fg.deobf('curse.maven:qsl-634179:4813892')
+    }
+  update_files:
+    - ~
+forge-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813890')
+    }
+  update_files:
+    - ~
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4813888')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4813888')
+    }
+  update_files:
+    - ~
+forge-1.16.5:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4571173')
+    }
+  update_files:
+    - ~
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:diet-443570:4571116')
+    }
+  update_files:
+    - ~
+name: "Diet (Fabric/Forge/Quilt)"

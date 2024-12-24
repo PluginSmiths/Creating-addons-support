@@ -1,0 +1,1 @@
+world instanceof Level _level && Temperature.getTemperatureAt(new BlockPos(${input$X}, ${input$Y}, ${input$Z}), _level)==${input$number}

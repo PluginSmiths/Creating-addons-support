@@ -1,0 +1,32 @@
+---
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:passive-skill-tree-850298:5729406')
+      implementation fg.deobf('curse.maven:item-production-lib-950401:5729406')
+      implementation fg.deobf('curse.maven:attributefix-280510:5729406')
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:passive-skill-tree-850298:5715659')
+      implementation fg.deobf('curse.maven:item-production-lib-950401:5715659')
+      implementation fg.deobf('curse.maven:attributefix-280510:5715659')
+    }
+  update_files:
+    - ~
+name: "Passive Skill Tree"

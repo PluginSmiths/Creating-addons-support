@@ -1,0 +1,147 @@
+---
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5617253')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5617253')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5617253')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5617252')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5617252')
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5436877')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5436877')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5436877')
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5436875')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5436875')
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5119203')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5119203')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5119203')
+    }
+  update_files:
+    - ~
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5119202')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5119202')
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5118730')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5118730')
+      implementation fg.deobf('curse.maven:fabric-api-306612:5118730')
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5118729')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5118729')
+    }
+  update_files:
+    - ~
+fabric-1.20.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:4876961')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:4876961')
+      implementation fg.deobf('curse.maven:fabric-api-306612:4876961')
+    }
+  update_files:
+    - ~
+neoforge-1.20.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:4876960')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:4876960')
+    }
+  update_files:
+    - ~
+name: "Handcrafted"
