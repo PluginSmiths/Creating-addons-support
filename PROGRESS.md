@@ -31,7 +31,7 @@
  - Female gender: ![Progress](https://geps.dev/progress/100)
  - Apple skin: ![Progress](https://geps.dev/progress/100)
  - Epic fight: ![Progress](https://geps.dev/progress/0)
- - Emotecraft: ![Progress](https://geps.dev/progress/10)
+ - Emotecraft: ![Progress](https://geps.dev/progress/0)
  - Journey map: ![Progress](https://geps.dev/progress/0)
  - Default options: ![Progress](https://geps.dev/progress/100)
  - Tips: ![Progress](https://geps.dev/progress/0)
