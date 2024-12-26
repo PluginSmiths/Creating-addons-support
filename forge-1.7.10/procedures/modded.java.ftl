@@ -1,1 +1,1 @@
-${input$item}.is(ItemTags.create(new ResourceLocation("twilightforest:portal/activator")))
+${input$value}.get()

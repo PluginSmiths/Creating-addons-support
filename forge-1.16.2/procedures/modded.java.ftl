@@ -1,1 +1,1 @@
-${input$sanity}.setSanity(${input$number});
+${input$value}.get()

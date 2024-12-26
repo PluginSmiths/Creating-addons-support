@@ -2,14 +2,15 @@
   "args0": [
     {
       "type": "input_value",
-      "name": "value"
+      "name": "value",
+      "check": ["MCItemBlock", "MCItem", "Entity", "DimensionType", "DamageSource"]
     }
   ],
   "inputsInline": true,
-  "output": "",
+  "output": ["MCItemBlock", "MCItem", "Entity", "DimensionType", "DamageSource"],
   "colour": "#886499",
   "mcreator": {
-    "toolbox_id": "blockprocedures",
+    "toolbox_id": "minecraft_components",
     "toolbox_init": [],
     "inputs": [
       "value"

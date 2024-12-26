@@ -1,1 +1,1 @@
-FirstPersonAPI.setEnabled(${input$value});
+${input$value}.get()

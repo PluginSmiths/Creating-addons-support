@@ -1,1 +1,1 @@
-new ItemStack(${input$item}).is(ItemTags.create(new ResourceLocation("blue_skies:dungeon/${field$name}")))
+${input$value}.get()

@@ -8,8 +8,8 @@ quilt-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:5975180')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5975180')
+      implementation fg.deobf('curse.maven:emotecraft-397809:6023741')
+      implementation fg.deobf('curse.maven:fabric-api-306612:6023741')
     }
   update_files:
     - ~
@@ -66,20 +66,6 @@ quilt-1.20:
     dependencies {
       implementation fg.deobf('curse.maven:emotecraft-397809:4632459')
       implementation fg.deobf('curse.maven:fabric-api-306612:4632459')
-    }
-  update_files:
-    - ~
-quilt-1.19.3:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:4455298')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4455298')
     }
   update_files:
     - ~

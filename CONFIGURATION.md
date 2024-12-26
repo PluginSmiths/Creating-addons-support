@@ -12,6 +12,7 @@
   - Undergarden
 - Player poses:
   - Balm
+  - Citadel
 - Attributes:
   - Caelus API
 - File Manager:

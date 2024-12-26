@@ -1,4 +1,19 @@
 ---
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:default-options-fabric-547694:6024297')
+      implementation fg.deobf('curse.maven:fabric-api-306612:6024297')
+      implementation fg.deobf('curse.maven:balm-fabric-500525:6024297')
+    }
+  update_files:
+    - ~
 fabric-1.21.2:
   gradle: |
     repositories {
@@ -11,21 +26,6 @@ fabric-1.21.2:
       implementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
       implementation fg.deobf('curse.maven:fabric-api-306612:5838325')
       implementation fg.deobf('curse.maven:balm-fabric-500525:5838325')
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:5623453')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:5623453')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5623453')
     }
   update_files:
     - ~

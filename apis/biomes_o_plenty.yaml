@@ -8,10 +8,10 @@ fabric-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6012221')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6012221')
-      implementation fg.deobf('curse.maven:terrablender-fabric-565956:6012221')
-      implementation fg.deobf('curse.maven:fabric-api-306612:6012221')
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6023473')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6023473')
+      implementation fg.deobf('curse.maven:fabric-api-306612:6023473')
+      implementation fg.deobf('curse.maven:terrablender-fabric-565956:6023473')
     }
   update_files:
     - ~
@@ -24,9 +24,9 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6012220')
-      implementation fg.deobf('curse.maven:terrablender-neoforge-940057:6012220')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6012220')
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6023472')
+      implementation fg.deobf('curse.maven:terrablender-neoforge-940057:6023472')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6023472')
     }
   update_files:
     - ~
@@ -39,9 +39,40 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6012219')
-      implementation fg.deobf('curse.maven:terrablender-563928:6012219')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6012219')
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6023471')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6023471')
+      implementation fg.deobf('curse.maven:terrablender-563928:6023471')
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6023468')
+      implementation fg.deobf('curse.maven:terrablender-fabric-565956:6023468')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6023468')
+      implementation fg.deobf('curse.maven:fabric-api-306612:6023468')
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6023466')
+      implementation fg.deobf('curse.maven:terrablender-563928:6023466')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6023466')
     }
   update_files:
     - ~

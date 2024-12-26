@@ -1,4 +1,17 @@
 ---
+neoforge-1.21.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6024328')
+    }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -8,7 +21,33 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:5999621')
+      implementation fg.deobf('curse.maven:balm-531761:6024323')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6024304')
+    }
+  update_files:
+    - ~
+forge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6024298')
     }
   update_files:
     - ~
@@ -22,45 +61,6 @@ forge-1.20:
     
     dependencies {
       implementation fg.deobf('curse.maven:balm-531761:5999476')
-    }
-  update_files:
-    - ~
-neoforge-1.21.2:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:5848102')
-    }
-  update_files:
-    - ~
-forge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:5798248')
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:5798246')
     }
   update_files:
     - ~

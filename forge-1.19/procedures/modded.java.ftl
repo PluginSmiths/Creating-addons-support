@@ -1,1 +1,1 @@
-CaelusApi.getInstance().getElytraModifier()
+${input$value}.get()
