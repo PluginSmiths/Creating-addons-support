@@ -8,9 +8,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:6024297')
-      implementation fg.deobf('curse.maven:fabric-api-306612:6024297')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:6024297')
+      modImplementation('curse.maven:default-options-fabric-547694:6024297')
+      modImplementation('curse.maven:fabric-api-306612:6024297')
     }
   update_files:
     - ~
@@ -23,9 +22,8 @@ fabric-1.21.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5838325')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:5838325')
+      modImplementation('curse.maven:default-options-fabric-547694:5838325')
+      modImplementation('curse.maven:fabric-api-306612:5838325')
     }
   update_files:
     - ~
@@ -38,9 +36,8 @@ fabric-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:5485055')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:5485055')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5485055')
+      modImplementation('curse.maven:default-options-fabric-547694:5485055')
+      modImplementation('curse.maven:fabric-api-306612:5485055')
     }
   update_files:
     - ~
@@ -53,9 +50,8 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:5485047')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5485047')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:5485047')
+      modImplementation('curse.maven:default-options-fabric-547694:5485047')
+      modImplementation('curse.maven:fabric-api-306612:5485047')
     }
   update_files:
     - ~
@@ -68,9 +64,8 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:5263463')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5263463')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:5263463')
+      modImplementation('curse.maven:default-options-fabric-547694:5263463')
+      modImplementation('curse.maven:fabric-api-306612:5263463')
     }
   update_files:
     - ~
@@ -83,8 +78,7 @@ fabric-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:4770904')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:4770904')
+      modImplementation('curse.maven:default-options-fabric-547694:4770904')
     }
   update_files:
     - ~
@@ -97,8 +91,7 @@ fabric-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635892')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:4635892')
+      modImplementation('curse.maven:default-options-fabric-547694:4635892')
     }
   update_files:
     - ~
@@ -111,8 +104,7 @@ fabric-1.19.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635888')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:4635888')
+      modImplementation('curse.maven:default-options-fabric-547694:4635888')
     }
   update_files:
     - ~
@@ -125,8 +117,7 @@ fabric-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:4635887')
+      modImplementation('curse.maven:default-options-fabric-547694:4635887')
     }
   update_files:
     - ~
@@ -139,8 +130,7 @@ fabric-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:4635875')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:4635875')
+      modImplementation('curse.maven:default-options-fabric-547694:4635875')
     }
   update_files:
     - ~
@@ -153,8 +143,7 @@ fabric-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:default-options-fabric-547694:4412629')
-      implementation fg.deobf('curse.maven:balm-fabric-500525:4412629')
+      modImplementation('curse.maven:default-options-fabric-547694:4412629')
     }
   update_files:
     - ~

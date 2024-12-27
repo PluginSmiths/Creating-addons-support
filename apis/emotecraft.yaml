@@ -8,8 +8,8 @@ quilt-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:6023741')
-      implementation fg.deobf('curse.maven:fabric-api-306612:6023741')
+      modImplementation('curse.maven:emotecraft-397809:6023741')
+      modImplementation('curse.maven:fabric-api-306612:6023741')
     }
   update_files:
     - ~
@@ -22,8 +22,8 @@ quilt-1.18:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:4632465')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4632465')
+      modImplementation('curse.maven:emotecraft-397809:4632465')
+      modImplementation('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -36,8 +36,8 @@ quilt-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:4632463')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4632463')
+      modImplementation('curse.maven:emotecraft-397809:4632463')
+      modImplementation('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -50,8 +50,8 @@ quilt-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:4632461')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4632461')
+      modImplementation('curse.maven:emotecraft-397809:4632461')
+      modImplementation('curse.maven:fabric-api-306612:4632461')
     }
   update_files:
     - ~
@@ -64,8 +64,8 @@ quilt-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-397809:4632459')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4632459')
+      modImplementation('curse.maven:emotecraft-397809:4632459')
+      modImplementation('curse.maven:fabric-api-306612:4632459')
     }
   update_files:
     - ~

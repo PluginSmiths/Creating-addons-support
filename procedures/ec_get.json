@@ -1,0 +1,43 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "[Entity, MCBlock]"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "ForcedVisible",
+          "ForcedVisible"
+        ],
+        [
+          "Culled",
+          "Culled"
+        ],
+        [
+          "OutOfCamera",
+          "OutOfCamera"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "entity_culling_support",
+    "toolbox_init": [],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "entityculling"
+    ]
+  }
+}

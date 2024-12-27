@@ -8,7 +8,7 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:treechop-421377:5856018')
+      modImplementation('curse.maven:treechop-421377:5856018')
     }
   update_files:
     - ~
@@ -34,7 +34,7 @@ fabric-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:treechop-421377:5570187')
+      modImplementation('curse.maven:treechop-421377:5570187')
     }
   update_files:
     - ~
@@ -60,7 +60,7 @@ fabric-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:treechop-421377:5168479')
+      modImplementation('curse.maven:treechop-421377:5168479')
     }
   update_files:
     - ~

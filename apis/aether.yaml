@@ -22,8 +22,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:aether-255308:5963081')
-      implementation fg.deobf('curse.maven:owo-lib-532610:5963081')
+      modImplementation('curse.maven:aether-255308:5963081')
+      modImplementation('curse.maven:owo-lib-532610:5963081')
     }
   update_files:
     - ~

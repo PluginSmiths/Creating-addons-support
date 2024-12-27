@@ -34,7 +34,7 @@ quilt-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:bookshelf-228525:6004089')
+      modImplementation('curse.maven:bookshelf-228525:6004089')
     }
   update_files:
     - ~

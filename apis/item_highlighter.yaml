@@ -8,8 +8,8 @@ fabric-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5991609')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:5991609')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:5991609')
+      modImplementation('curse.maven:iceberg-fabric-539382:5991609')
     }
   update_files:
     - ~
@@ -22,7 +22,7 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5591012')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:5591012')
     }
   update_files:
     - ~
@@ -35,8 +35,8 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5569687')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:5569687')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:5569687')
+      modImplementation('curse.maven:iceberg-fabric-539382:5569687')
     }
   update_files:
     - ~
@@ -49,7 +49,7 @@ fabric-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5343926')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:5343926')
     }
   update_files:
     - ~
@@ -62,10 +62,10 @@ fabric-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4940605')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:4940605')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4940605')
-      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940605')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:4940605')
+      modImplementation('curse.maven:iceberg-fabric-539382:4940605')
+      modImplementation('curse.maven:fabric-api-306612:4940605')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4940605')
     }
   update_files:
     - ~
@@ -78,10 +78,10 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4938119')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:4938119')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4938119')
-      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938119')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:4938119')
+      modImplementation('curse.maven:iceberg-fabric-539382:4938119')
+      modImplementation('curse.maven:fabric-api-306612:4938119')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4938119')
     }
   update_files:
     - ~
@@ -94,10 +94,10 @@ fabric-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4687499')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4687499')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:4687499')
-      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4687499')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:4687499')
+      modImplementation('curse.maven:fabric-api-306612:4687499')
+      modImplementation('curse.maven:iceberg-fabric-539382:4687499')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4687499')
     }
   update_files:
     - ~
@@ -110,10 +110,10 @@ fabric-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3921941')
-      implementation fg.deobf('curse.maven:fabric-api-306612:3921941')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:3921941')
-      implementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3921941')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:3921941')
+      modImplementation('curse.maven:fabric-api-306612:3921941')
+      modImplementation('curse.maven:iceberg-fabric-539382:3921941')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:3921941')
     }
   update_files:
     - ~
@@ -126,10 +126,10 @@ fabric-1.18:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3549393')
-      implementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549393')
-      implementation fg.deobf('curse.maven:fabric-api-306612:3549393')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:3549393')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:3549393')
+      modImplementation('curse.maven:cloth-config-legacy-319057:3549393')
+      modImplementation('curse.maven:fabric-api-306612:3549393')
+      modImplementation('curse.maven:iceberg-fabric-539382:3549393')
     }
   update_files:
     - ~
@@ -142,10 +142,10 @@ fabric-1.17.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3548202')
-      implementation fg.deobf('curse.maven:fabric-api-306612:3548202')
-      implementation fg.deobf('curse.maven:cloth-config-legacy-319057:3548202')
-      implementation fg.deobf('curse.maven:iceberg-fabric-539382:3548202')
+      modImplementation('curse.maven:item-highlighter-fabric-541578:3548202')
+      modImplementation('curse.maven:fabric-api-306612:3548202')
+      modImplementation('curse.maven:cloth-config-legacy-319057:3548202')
+      modImplementation('curse.maven:iceberg-fabric-539382:3548202')
     }
   update_files:
     - ~

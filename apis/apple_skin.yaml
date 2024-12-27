@@ -21,8 +21,8 @@ fabric-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:appleskin-248787:5864742')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5864742')
+      modImplementation('curse.maven:appleskin-248787:5864742')
+      modImplementation('curse.maven:fabric-api-306612:5864742')
     }
   update_files:
     - ~
@@ -35,8 +35,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:appleskin-248787:5864741')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5864741')
+      modImplementation('curse.maven:appleskin-248787:5864741')
+      modImplementation('curse.maven:fabric-api-306612:5864741')
     }
   update_files:
     - ~
@@ -75,8 +75,8 @@ fabric-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:appleskin-248787:5586594')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5586594')
+      modImplementation('curse.maven:appleskin-248787:5586594')
+      modImplementation('curse.maven:fabric-api-306612:5586594')
     }
   update_files:
     - ~
@@ -102,8 +102,8 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:appleskin-248787:5429755')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5429755')
+      modImplementation('curse.maven:appleskin-248787:5429755')
+      modImplementation('curse.maven:fabric-api-306612:5429755')
     }
   update_files:
     - ~
@@ -116,8 +116,8 @@ fabric-1.20.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:appleskin-248787:5292541')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5292541')
+      modImplementation('curse.maven:appleskin-248787:5292541')
+      modImplementation('curse.maven:fabric-api-306612:5292541')
     }
   update_files:
     - ~
@@ -143,7 +143,7 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:appleskin-248787:4953893')
+      modImplementation('curse.maven:appleskin-248787:4953893')
     }
   update_files:
     - ~

@@ -8,8 +8,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5693386')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5693386')
+      modImplementation('curse.maven:just-enough-effect-descriptions-jeed-532286:5693386')
+      modImplementation('curse.maven:fabric-api-306612:5693386')
     }
   update_files:
     - ~
@@ -61,8 +61,8 @@ fabric-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5589680')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5589680')
+      modImplementation('curse.maven:just-enough-effect-descriptions-jeed-532286:5589680')
+      modImplementation('curse.maven:fabric-api-306612:5589680')
     }
   update_files:
     - ~
@@ -75,8 +75,8 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:5589673')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5589673')
+      modImplementation('curse.maven:just-enough-effect-descriptions-jeed-532286:5589673')
+      modImplementation('curse.maven:fabric-api-306612:5589673')
     }
   update_files:
     - ~

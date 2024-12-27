@@ -8,8 +8,8 @@ fabric-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:locksmith-544352:4650917')
-      implementation fg.deobf('curse.maven:pollen-544350:4650917')
+      modImplementation('curse.maven:locksmith-544352:4650917')
+      modImplementation('curse.maven:pollen-544350:4650917')
     }
   update_files:
     - ~
@@ -36,8 +36,8 @@ fabric-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:locksmith-544352:4650911')
-      implementation fg.deobf('curse.maven:pollen-544350:4650911')
+      modImplementation('curse.maven:locksmith-544352:4650911')
+      modImplementation('curse.maven:pollen-544350:4650911')
     }
   update_files:
     - ~
@@ -64,8 +64,8 @@ fabric-1.18:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:locksmith-544352:3889834')
-      implementation fg.deobf('curse.maven:pollen-544350:3889834')
+      modImplementation('curse.maven:locksmith-544352:3889834')
+      modImplementation('curse.maven:pollen-544350:3889834')
     }
   update_files:
     - ~
@@ -92,8 +92,8 @@ fabric-1.16.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:locksmith-544352:3889832')
-      implementation fg.deobf('curse.maven:pollen-544350:3889832')
+      modImplementation('curse.maven:locksmith-544352:3889832')
+      modImplementation('curse.maven:pollen-544350:3889832')
     }
   update_files:
     - ~

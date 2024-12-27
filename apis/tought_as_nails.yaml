@@ -8,9 +8,9 @@ fabric-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5992130')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5992130')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5992130')
+      modImplementation('curse.maven:tough-as-nails-246391:5992130')
+      modImplementation('curse.maven:glitchcore-955399:5992130')
+      modImplementation('curse.maven:fabric-api-306612:5992130')
     }
   update_files:
     - ~
@@ -65,9 +65,9 @@ fabric-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5969935')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5969935')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5969935')
+      modImplementation('curse.maven:tough-as-nails-246391:5969935')
+      modImplementation('curse.maven:glitchcore-955399:5969935')
+      modImplementation('curse.maven:fabric-api-306612:5969935')
     }
   update_files:
     - ~
@@ -94,9 +94,9 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5833253')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5833253')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5833253')
+      modImplementation('curse.maven:tough-as-nails-246391:5833253')
+      modImplementation('curse.maven:glitchcore-955399:5833253')
+      modImplementation('curse.maven:fabric-api-306612:5833253')
     }
   update_files:
     - ~
@@ -137,9 +137,9 @@ fabric-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5815864')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5815864')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5815864')
+      modImplementation('curse.maven:tough-as-nails-246391:5815864')
+      modImplementation('curse.maven:glitchcore-955399:5815864')
+      modImplementation('curse.maven:fabric-api-306612:5815864')
     }
   update_files:
     - ~

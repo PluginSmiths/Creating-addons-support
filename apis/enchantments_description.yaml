@@ -21,7 +21,7 @@ quilt-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855250')
+      modImplementation('curse.maven:enchantment-descriptions-250419:5855250')
     }
   update_files:
     - ~
@@ -62,8 +62,8 @@ quilt-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824114')
-      implementation fg.deobf('curse.maven:prickle-1023259:5824114')
+      modImplementation('curse.maven:enchantment-descriptions-250419:5824114')
+      modImplementation('curse.maven:prickle-1023259:5824114')
     }
   update_files:
     - ~
@@ -76,7 +76,7 @@ quilt-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5585610')
+      modImplementation('curse.maven:enchantment-descriptions-250419:5585610')
     }
   update_files:
     - ~

@@ -21,9 +21,9 @@ fabric-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5778732')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5778732')
-      implementation fg.deobf('curse.maven:trinkets-341284:5778732')
+      modImplementation('curse.maven:elytra-slot-317716:5778732')
+      modImplementation('curse.maven:fabric-api-306612:5778732')
+      modImplementation('curse.maven:trinkets-341284:5778732')
     }
   update_files:
     - ~
@@ -36,9 +36,9 @@ quilt-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5778730')
-      implementation fg.deobf('curse.maven:trinkets-341284:5778730')
-      implementation fg.deobf('curse.maven:qsl-634179:5778730')
+      modImplementation('curse.maven:elytra-slot-317716:5778730')
+      modImplementation('curse.maven:trinkets-341284:5778730')
+      modImplementation('curse.maven:qsl-634179:5778730')
     }
   update_files:
     - ~
@@ -65,9 +65,9 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5770052')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5770052')
-      implementation fg.deobf('curse.maven:trinkets-341284:5770052')
+      modImplementation('curse.maven:elytra-slot-317716:5770052')
+      modImplementation('curse.maven:fabric-api-306612:5770052')
+      modImplementation('curse.maven:trinkets-341284:5770052')
     }
   update_files:
     - ~
@@ -94,9 +94,9 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5542480')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5542480')
-      implementation fg.deobf('curse.maven:trinkets-341284:5542480')
+      modImplementation('curse.maven:elytra-slot-317716:5542480')
+      modImplementation('curse.maven:fabric-api-306612:5542480')
+      modImplementation('curse.maven:trinkets-341284:5542480')
     }
   update_files:
     - ~
@@ -109,9 +109,9 @@ fabric-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5539628')
-      implementation fg.deobf('curse.maven:trinkets-341284:5539628')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5539628')
+      modImplementation('curse.maven:elytra-slot-317716:5539628')
+      modImplementation('curse.maven:trinkets-341284:5539628')
+      modImplementation('curse.maven:fabric-api-306612:5539628')
     }
   update_files:
     - ~
@@ -124,9 +124,9 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5539614')
-      implementation fg.deobf('curse.maven:trinkets-341284:5539614')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5539614')
+      modImplementation('curse.maven:elytra-slot-317716:5539614')
+      modImplementation('curse.maven:trinkets-341284:5539614')
+      modImplementation('curse.maven:fabric-api-306612:5539614')
     }
   update_files:
     - ~

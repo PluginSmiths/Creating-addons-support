@@ -8,9 +8,9 @@ fabric-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:handcrafted-538214:5617253')
-      implementation fg.deobf('curse.maven:resourceful-lib-570073:5617253')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5617253')
+      modImplementation('curse.maven:handcrafted-538214:5617253')
+      modImplementation('curse.maven:resourceful-lib-570073:5617253')
+      modImplementation('curse.maven:fabric-api-306612:5617253')
     }
   update_files:
     - ~
@@ -37,9 +37,9 @@ fabric-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:handcrafted-538214:5436877')
-      implementation fg.deobf('curse.maven:resourceful-lib-570073:5436877')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5436877')
+      modImplementation('curse.maven:handcrafted-538214:5436877')
+      modImplementation('curse.maven:resourceful-lib-570073:5436877')
+      modImplementation('curse.maven:fabric-api-306612:5436877')
     }
   update_files:
     - ~
@@ -66,9 +66,9 @@ fabric-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:handcrafted-538214:5119203')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5119203')
-      implementation fg.deobf('curse.maven:resourceful-lib-570073:5119203')
+      modImplementation('curse.maven:handcrafted-538214:5119203')
+      modImplementation('curse.maven:fabric-api-306612:5119203')
+      modImplementation('curse.maven:resourceful-lib-570073:5119203')
     }
   update_files:
     - ~
@@ -95,9 +95,9 @@ fabric-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:handcrafted-538214:5118730')
-      implementation fg.deobf('curse.maven:resourceful-lib-570073:5118730')
-      implementation fg.deobf('curse.maven:fabric-api-306612:5118730')
+      modImplementation('curse.maven:handcrafted-538214:5118730')
+      modImplementation('curse.maven:resourceful-lib-570073:5118730')
+      modImplementation('curse.maven:fabric-api-306612:5118730')
     }
   update_files:
     - ~
@@ -124,9 +124,9 @@ fabric-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:handcrafted-538214:4876961')
-      implementation fg.deobf('curse.maven:resourceful-lib-570073:4876961')
-      implementation fg.deobf('curse.maven:fabric-api-306612:4876961')
+      modImplementation('curse.maven:handcrafted-538214:4876961')
+      modImplementation('curse.maven:resourceful-lib-570073:4876961')
+      modImplementation('curse.maven:fabric-api-306612:4876961')
     }
   update_files:
     - ~

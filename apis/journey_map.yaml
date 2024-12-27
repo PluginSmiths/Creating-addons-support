@@ -21,7 +21,7 @@ quilt-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5972767')
+      modImplementation('curse.maven:journeymap-32274:5972767')
     }
   update_files:
     - ~
@@ -60,7 +60,7 @@ quilt-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5972764')
+      modImplementation('curse.maven:journeymap-32274:5972764')
     }
   update_files:
     - ~
@@ -99,7 +99,7 @@ quilt-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5950313')
+      modImplementation('curse.maven:journeymap-32274:5950313')
     }
   update_files:
     - ~
