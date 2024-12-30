@@ -1,4 +1,17 @@
 ---
+forge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6033270')
+    }
+  update_files:
+    - ~
 forge-1.21.1:
   gradle: |
     repositories {
@@ -8,7 +21,33 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:5649346')
+      implementation fg.deobf('curse.maven:carry-on-274259:6033268')
+    }
+  update_files:
+    - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:carry-on-274259:6027761')
+    }
+  update_files:
+    - ~
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6027759')
     }
   update_files:
     - ~
@@ -74,19 +113,6 @@ fabric-1.21:
     
     dependencies {
       modImplementation('curse.maven:carry-on-274259:5541211')
-    }
-  update_files:
-    - ~
-forge-1.21:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:5535916')
     }
   update_files:
     - ~
@@ -191,19 +217,6 @@ forge-1.20:
     
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:4882500')
-    }
-  update_files:
-    - ~
-fabric-1.20:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      modImplementation('curse.maven:carry-on-274259:4882498')
     }
   update_files:
     - ~

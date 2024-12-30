@@ -8,9 +8,9 @@ fabric-1.21.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:tough-as-nails-246391:5992130')
-      modImplementation('curse.maven:glitchcore-955399:5992130')
-      modImplementation('curse.maven:fabric-api-306612:5992130')
+      modImplementation('curse.maven:tough-as-nails-246391:6031445')
+      modImplementation('curse.maven:glitchcore-955399:6031445')
+      modImplementation('curse.maven:fabric-api-306612:6031445')
     }
   update_files:
     - ~
@@ -23,8 +23,8 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5992129')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5992129')
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6031444')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6031444')
     }
   update_files:
     - ~
@@ -37,22 +37,8 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5992128')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5992128')
-    }
-  update_files:
-    - ~
-neoforge-1.21.3:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5969936')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5969936')
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6031443')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6031443')
     }
   update_files:
     - ~
@@ -65,9 +51,23 @@ fabric-1.21.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:tough-as-nails-246391:5969935')
-      modImplementation('curse.maven:glitchcore-955399:5969935')
-      modImplementation('curse.maven:fabric-api-306612:5969935')
+      modImplementation('curse.maven:tough-as-nails-246391:6029445')
+      modImplementation('curse.maven:glitchcore-955399:6029445')
+      modImplementation('curse.maven:fabric-api-306612:6029445')
+    }
+  update_files:
+    - ~
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029444')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
     }
   update_files:
     - ~
@@ -80,8 +80,8 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5969934')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5969934')
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
     }
   update_files:
     - ~
@@ -111,49 +111,6 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:tough-as-nails-246391:5833252')
       implementation fg.deobf('curse.maven:glitchcore-955399:5833252')
-    }
-  update_files:
-    - ~
-forge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5833251')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5833251')
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      modImplementation('curse.maven:tough-as-nails-246391:5815864')
-      modImplementation('curse.maven:glitchcore-955399:5815864')
-      modImplementation('curse.maven:fabric-api-306612:5815864')
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-          url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5815863')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5815863')
     }
   update_files:
     - ~
