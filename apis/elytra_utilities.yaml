@@ -3,9 +3,22 @@ fabric-1.19:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       modImplementation('curse.maven:elytra-utilities-fabric-601996:4815904')
@@ -17,9 +30,22 @@ fabric-1.18.2:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       modImplementation('curse.maven:elytra-utilities-fabric-601996:4087937')
@@ -31,9 +57,22 @@ fabric-1.16.5:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       modImplementation('curse.maven:elytra-utilities-fabric-601996:3723096')

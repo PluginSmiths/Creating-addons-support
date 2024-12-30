@@ -3,9 +3,22 @@ neoforge-1.21.1:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:5983260')
@@ -16,9 +29,22 @@ forge-1.20.1:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:5468648')
@@ -29,9 +55,22 @@ neoforge-1.20.6:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:5448253')
@@ -42,9 +81,22 @@ neoforge-1.20.4:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:5320183')
@@ -55,9 +107,22 @@ neoforge-1.20.2:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:4936836')
@@ -68,9 +133,22 @@ forge-1.7.10:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:4629338')
@@ -81,9 +159,22 @@ forge-1.19.4:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:the-twilight-forest-227639:4539671')

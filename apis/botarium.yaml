@@ -3,9 +3,22 @@ fabric-1.20.1:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       modImplementation('curse.maven:botarium-704113:5486071')
@@ -17,9 +30,22 @@ forge-1.20.1:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:botarium-704113:5486070')
@@ -30,9 +56,22 @@ fabric-1.20.4:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       modImplementation('curse.maven:botarium-704113:5211700')
@@ -44,9 +83,22 @@ neoforge-1.20.4:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:botarium-704113:5211699')
@@ -57,9 +109,22 @@ forge-1.20.4:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:botarium-704113:5118342')
@@ -70,9 +135,22 @@ forge-1.19.2:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       implementation fg.deobf('curse.maven:botarium-704113:5118248')
@@ -83,9 +161,22 @@ fabric-1.19.2:
   gradle: |
     repositories {
       maven {
-          url = 'https://cursemaven.com/'
+        url = 'https://cursemaven.com/'
       }
     }
+    
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+        server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+        }
+    }
+}
     
     dependencies {
       modImplementation('curse.maven:botarium-704113:5118247')
