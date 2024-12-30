@@ -1,0 +1,44 @@
+---
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:elytra-utilities-fabric-601996:4815904')
+      modImplementation('curse.maven:fabric-api-306612:4815904')
+    }
+  update_files:
+    - ~
+fabric-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:elytra-utilities-fabric-601996:4087937')
+      modImplementation('curse.maven:fabric-api-306612:4087937')
+    }
+  update_files:
+    - ~
+fabric-1.16.5:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:elytra-utilities-fabric-601996:3723096')
+      modImplementation('curse.maven:fabric-api-306612:3723096')
+    }
+  update_files:
+    - ~
+name: "Elytra Utilities (Fabric 1.16.5 - 1.19.2)"

@@ -1,0 +1,99 @@
+---
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:4814230')
+      modImplementation('curse.maven:fabric-api-306612:4814230')
+    }
+  update_files:
+    - ~
+fabric-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3725141')
+      modImplementation('curse.maven:fabric-api-306612:3725141')
+    }
+  update_files:
+    - ~
+fabric-1.17:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3346110')
+      modImplementation('curse.maven:fabric-api-306612:3346110')
+    }
+  update_files:
+    - ~
+fabric-1.16.4:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3113959')
+      modImplementation('curse.maven:caelus-fabric-397876:3113959')
+    }
+  update_files:
+    - ~
+fabric-1.16.3:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3067382')
+    }
+  update_files:
+    - ~
+fabric-1.16.2:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3034700')
+      modImplementation('curse.maven:caelus-fabric-397876:3034700')
+    }
+  update_files:
+    - ~
+fabric-1.16.1:
+  gradle: |
+    repositories {
+      maven {
+          url = 'https://cursemaven.com/'
+      }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3023089')
+      modImplementation('curse.maven:caelus-fabric-397876:3023089')
+    }
+  update_files:
+    - ~
+name: "Colytra (Fabric 1.16.1 - 1.19.2)"
