@@ -61,4 +61,5 @@
  - Colytra: ![Progress](https://geps.dev/progress/0)
  - Elytra utilities: ![Progress](https://geps.dev/progress/0)
  - Polymorph: ![Progress](https://geps.dev/progress/0)
+ - Entity Culling: ![Progress](https://geps.dev/progress/100)
 
