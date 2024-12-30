@@ -1,0 +1,31 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "slot",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "output": "MCItem",
+  "colour": "#996069",
+  "mcreator": {
+    "toolbox_id": "cosmetic_armory_support",
+    "toolbox_init": [
+      "<value name=\"slot\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "slot",
+      "entity"
+    ],
+    "required_apis": [
+      "cosmeticarmory"
+    ]
+  }
+}
