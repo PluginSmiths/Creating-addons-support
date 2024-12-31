@@ -1,0 +1,48 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Blocked",
+          "Blocked"
+        ],
+        [
+          "Vanilla",
+          "VanillaToast"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "controller",
+      "check": "ControlledDeque"
+    },
+    {
+      "type": "input_value",
+      "name": "toast",
+      "check": "Toast"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "toast_controll_support",
+    "toolbox_init": [
+      "<value name=\"controller\"><block type=\"variables_get_controlleddeque\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>",
+      "<value name=\"toast\"><block type=\"variables_get_toast\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "controller",
+      "toast"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "toast_controll"
+    ]
+  }
+}
