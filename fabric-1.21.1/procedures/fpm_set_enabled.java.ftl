@@ -1,0 +1,1 @@
+FirstPersonAPI.setEnabled(${input$value});

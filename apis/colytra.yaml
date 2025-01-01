@@ -1,4 +1,66 @@
 ---
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:4814230')
+      modImplementation('curse.maven:fabric-api-306612:4814230')
+    }
+  update_files:
+    - ~
+fabric-1.19.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:4814230')
+      modImplementation('curse.maven:fabric-api-306612:4814230')
+    }
+  update_files:
+    - ~
 fabric-1.19:
   gradle: |
     repositories {
@@ -27,6 +89,37 @@ fabric-1.19:
     dependencies {
       modImplementation('curse.maven:colytra-fabric-398089:4814230')
       modImplementation('curse.maven:fabric-api-306612:4814230')
+    }
+  update_files:
+    - ~
+fabric-1.18.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3725141')
+      modImplementation('curse.maven:fabric-api-306612:3725141')
     }
   update_files:
     - ~
@@ -61,6 +154,37 @@ fabric-1.18.2:
     }
   update_files:
     - ~
+fabric-1.17.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3346110')
+      modImplementation('curse.maven:fabric-api-306612:3346110')
+    }
+  update_files:
+    - ~
 fabric-1.17:
   gradle: |
     repositories {
@@ -89,6 +213,37 @@ fabric-1.17:
     dependencies {
       modImplementation('curse.maven:colytra-fabric-398089:3346110')
       modImplementation('curse.maven:fabric-api-306612:3346110')
+    }
+  update_files:
+    - ~
+fabric-1.16.5:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:colytra-fabric-398089:3113959')
+      modImplementation('curse.maven:caelus-fabric-397876:3113959')
     }
   update_files:
     - ~

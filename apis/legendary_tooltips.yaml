@@ -61,6 +61,38 @@ fabric-1.19.2:
     }
   update_files:
     - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:legendary-tooltips-fabric-542478:5591020')
+      modImplementation('curse.maven:iceberg-fabric-539382:5591020')
+      modImplementation('curse.maven:prism-fabric-665526:5591020')
+    }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -93,7 +125,7 @@ fabric-1.21.1:
     }
   update_files:
     - ~
-fabric-1.21:
+fabric-1.20.5:
   gradle: |
     repositories {
       maven {
@@ -119,7 +151,10 @@ fabric-1.21:
     }
     
     dependencies {
-      modImplementation('curse.maven:legendary-tooltips-fabric-542478:5581372')
+      modImplementation('curse.maven:legendary-tooltips-fabric-542478:5343802')
+      modImplementation('curse.maven:iceberg-fabric-539382:5343802')
+      modImplementation('curse.maven:prism-fabric-665526:5343802')
+      modImplementation('curse.maven:fabric-api-306612:5343802')
     }
   update_files:
     - ~
@@ -153,6 +188,40 @@ fabric-1.20.6:
       modImplementation('curse.maven:iceberg-fabric-539382:5343802')
       modImplementation('curse.maven:prism-fabric-665526:5343802')
       modImplementation('curse.maven:fabric-api-306612:5343802')
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:legendary-tooltips-fabric-542478:4940615')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4940615')
+      modImplementation('curse.maven:iceberg-fabric-539382:4940615')
+      modImplementation('curse.maven:prism-fabric-665526:4940615')
+      modImplementation('curse.maven:fabric-api-306612:4940615')
     }
   update_files:
     - ~
@@ -190,7 +259,7 @@ fabric-1.20:
     }
   update_files:
     - ~
-fabric-1.20.4:
+fabric-1.20.2:
   gradle: |
     repositories {
       maven {
@@ -224,7 +293,7 @@ fabric-1.20.4:
     }
   update_files:
     - ~
-fabric-1.20.1:
+fabric-1.20.4:
   gradle: |
     repositories {
       maven {
@@ -250,11 +319,11 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:legendary-tooltips-fabric-542478:4638431')
-      modImplementation('curse.maven:fabric-api-306612:4638431')
-      modImplementation('curse.maven:iceberg-fabric-539382:4638431')
-      modImplementation('curse.maven:prism-fabric-665526:4638431')
-      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4638431')
+      modImplementation('curse.maven:legendary-tooltips-fabric-542478:4938105')
+      modImplementation('curse.maven:iceberg-fabric-539382:4938105')
+      modImplementation('curse.maven:prism-fabric-665526:4938105')
+      modImplementation('curse.maven:fabric-api-306612:4938105')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4938105')
     }
   update_files:
     - ~
@@ -323,6 +392,40 @@ fabric-1.19.3:
       modImplementation('curse.maven:iceberg-fabric-539382:4335100')
       modImplementation('curse.maven:prism-fabric-665526:4335100')
       modImplementation('curse.maven:forge-config-api-port-fabric-547434:4335100')
+    }
+  update_files:
+    - ~
+fabric-1.19.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation('curse.maven:legendary-tooltips-fabric-542478:3998293')
+      modImplementation('curse.maven:fabric-api-306612:3998293')
+      modImplementation('curse.maven:iceberg-fabric-539382:3998293')
+      modImplementation('curse.maven:prism-fabric-665526:3998293')
+      modImplementation('curse.maven:forge-config-api-port-fabric-547434:3998293')
     }
   update_files:
     - ~

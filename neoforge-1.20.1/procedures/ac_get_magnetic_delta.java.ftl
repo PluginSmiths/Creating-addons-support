@@ -1,0 +1,1 @@
+MagnetUtil.getEntityMagneticDelta(${input$entity}).${field$delta}

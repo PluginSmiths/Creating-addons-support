@@ -1,5 +1,5 @@
 ---
-forge-1.20.1:
+neoforge-1.20.1:
   gradle: |
     repositories {
       maven {
@@ -30,7 +30,7 @@ forge-1.20.1:
     }
   update_files:
     - ~
-neoforge-1.20.1:
+forge-1.20.1:
   gradle: |
     repositories {
       maven {
@@ -56,8 +56,8 @@ neoforge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:fastsuite-475117:4679382')
-      implementation fg.deobf('curse.maven:placebo-283644:4679382')
+      implementation fg.deobf('curse.maven:fastsuite-475117:4711435')
+      implementation fg.deobf('curse.maven:placebo-283644:4711435')
     }
   update_files:
     - ~
@@ -185,7 +185,7 @@ forge-1.17.1:
     }
   update_files:
     - ~
-forge-1.16.4:
+forge-1.16.5:
   gradle: |
     repositories {
       maven {
@@ -216,7 +216,7 @@ forge-1.16.4:
     }
   update_files:
     - ~
-unknown_loader-1.16.4:
+forge-1.16.4:
   gradle: |
     repositories {
       maven {
@@ -242,39 +242,8 @@ unknown_loader-1.16.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:fastsuite-475117:3391318')
-      implementation fg.deobf('curse.maven:placebo-283644:3391318')
-    }
-  update_files:
-    - ~
-unknown_loader-1.16.5:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:fastsuite-475117:3295233')
-      implementation fg.deobf('curse.maven:placebo-283644:3295233')
+      implementation fg.deobf('curse.maven:fastsuite-475117:3419895')
+      implementation fg.deobf('curse.maven:placebo-283644:3419895')
     }
   update_files:
     - ~
