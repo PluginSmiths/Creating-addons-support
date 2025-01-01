@@ -1,0 +1,24 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "chestplate",
+      "check": "MCItem"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#996069",
+  "mcreator": {
+    "toolbox_id": "colytra_support",
+    "toolbox_init": [
+      "<value name=\"chestplate\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "chestplate"
+    ],
+    "required_apis": [
+      "colytra"
+    ]
+  }
+}

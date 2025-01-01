@@ -1,0 +1,31 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "chestplate",
+      "check": "MCItem"
+    },
+    {
+      "type": "input_value",
+      "name": "elytra",
+      "check": "MCItem"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "colytra_support",
+    "toolbox_init": [
+      "<value name=\"chestplate\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>",
+      "<value name=\"elytra\"><block type=\"itemstack_to_mcitem\"></block></value>"
+    ],
+    "inputs": [
+      "chestplate",
+      "elytra"
+    ],
+    "required_apis": [
+      "colytra"
+    ]
+  }
+}
