@@ -1,1 +1,1 @@
-world instanceof Level _level && Temperature.getTemperatureAt(new BlockPos(${input$X}, ${input$Y}, ${input$Z}), _level)==${input$number}
+world instanceof Level _level && com.momosoftworks.coldsweat.api.util.Temperature.getTemperatureAt(new BlockPos(${input$X}, ${input$Y}, ${input$Z}), _level)==${input$number}
