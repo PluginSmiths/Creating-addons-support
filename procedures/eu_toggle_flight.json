@@ -1,0 +1,25 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#608a99",
+  "mcreator": {
+    "toolbox_id": "elytra_untilities_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "required_apis": [
+      "elytra_untilities"
+    ]
+  }
+}
