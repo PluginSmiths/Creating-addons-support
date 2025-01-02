@@ -1,1 +1,1 @@
-ItemHelper.hasSockets(${input$item}) == true
+ItemHelper.hasSockets(${input$item})

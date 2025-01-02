@@ -1,1 +1,1 @@
-ItemHelper.canInsertGem(${input$item}) == true
+ItemHelper.canInsertGem(${input$item})

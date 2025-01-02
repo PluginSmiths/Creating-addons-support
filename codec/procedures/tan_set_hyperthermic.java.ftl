@@ -1,3 +1,1 @@
-(${input$entity} instanceof Player _player) {
-TemperatureHelper.setTicksHyperthermic(_player, ${input$number});
-}
+${input$entity} instanceof Player _player ? TemperatureHelper.setTicksHyperthermic(_player, ${input$number}) : null;
