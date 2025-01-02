@@ -1,3 +1,4 @@
+{
 File file_${field$for}_${field$name} = new File("");
 com.google.gson.JsonObject JSON_${field$for}_${field$name} = new com.google.gson.JsonObject();
 file_${field$for}_${field$name} = new File((FMLPaths.GAMEDIR.get().toString() + "config/realmrpg/quests/"), File.separator + "${field$for}.json");
@@ -38,6 +39,7 @@ fileWriter.write(mainGSONBuilderVariable.toJson(JSON_${field$for}_${field$name})
 fileWriter.close();
 } catch (IOException exception) {
 exception.printStackTrace();
+}
 }
 }
 }

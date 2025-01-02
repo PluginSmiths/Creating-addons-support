@@ -1,2 +1,1 @@
-UUID LUUID${field$var_name} = UUID.randomUUID());
-KeyItem.setLockId(${input$item}, LUUID${field$var_name});
+KeyItem.setLockId(${input$item}, UUID.randomUUID());
