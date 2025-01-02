@@ -1,1 +1,1 @@
-${input$entity} instanceof Player _player && TemperatureHelperisFullyHyperthermic(_player)==true
+${input$entity} instanceof Player _player && TemperatureHelperisFullyHyperthermic(_player)

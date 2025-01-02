@@ -1,8 +1,2 @@
-<#-- @formatter:off -->
-{
-	if(${input$entity} instanceof Player _player) {
-		CarryOnData data = CarryOnDataManager.getCarryData(_player);
-		data.setBlock(${input$block}.getDefaultBlockSate());
-	}
-}
-<#-- @formatter:on -->
+CarryOnData data = entity instanceof Player _player ? CarryOnDataManager.getCarryData(_player) : null;
+data.setBlock(${input$block}.getDefaultBlockSate());

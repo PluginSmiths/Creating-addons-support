@@ -1,1 +1,1 @@
-GemItem.hasGem(${input$item}) == true
+GemItem.hasGem(${input$item})

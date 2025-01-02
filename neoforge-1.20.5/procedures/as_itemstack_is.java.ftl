@@ -1,1 +1,1 @@
-FoodHelper.is${field$name}(${input$itemstack})==true
+FoodHelper.is${field$name}(${input$itemstack})

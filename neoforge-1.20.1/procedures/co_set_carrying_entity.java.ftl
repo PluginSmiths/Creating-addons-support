@@ -1,8 +1,2 @@
-<#-- @formatter:off -->
-{
-	if(${input$player}instanceof Player _player) {
-		CarryOnData data = CarryOnDataManager.getCarryData(_player);
-		data.setEntity(${input$entity});
-	}
-}
-<#-- @formatter:on -->
+CarryOnData data = entity instanceof Player _player ? CarryOnDataManager.getCarryData(_player) : null;
+data.setEntity(${input$entity});

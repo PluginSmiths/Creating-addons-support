@@ -1,10 +1,8 @@
 <#-- @formatter:off -->
 (new Object(){
 	public Entity getCarryingEntity(Entity entity) {
-		if(entity instanceof Player _player) {
-			CarryOnData data = CarryOnDataManager.getCarryData(_player);
-			return data.getEntity();
-		}
+		CarryOnData data = entity instanceof Player _player ? CarryOnDataManager.getCarryData(_player) : null;
+		return data.getEntity();
 	}
 }.getCarryingEntity(${input$entity}))
 <#-- @formatter:on -->

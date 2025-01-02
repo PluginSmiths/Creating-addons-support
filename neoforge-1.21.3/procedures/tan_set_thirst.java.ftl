@@ -1,4 +1,2 @@
-if (${input$entity} instanceof Player _pl) {
-IThirst thirst${field$set} = ThirstHelper.getThirst(_pl);
+IThirst thirst${field$set} = ${input$entity} instanceof Player _pl ? ThirstHelper.getThirst(_pl) : null;
 thirst${field$set}.set${field$set}(${input$number});
-}

@@ -1,1 +1,1 @@
-KeyItem.hasLockId(${input$item}) == true
+KeyItem.hasLockId(${input$item})

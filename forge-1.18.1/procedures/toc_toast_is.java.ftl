@@ -1,1 +1,1 @@
-${input$controller}is${field$name}(${input$toast})==true
+${input$controller}is${field$name}(${input$toast})

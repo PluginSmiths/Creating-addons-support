@@ -1,3 +1,1 @@
-if(${input$entity} instanceof Entity || ${input$entity} instanceof BlockEntity) {
-	${input$entity}.set${field$name}(${input$value});
-}
+${input$entity} instanceof Entity || ${input$entity} instanceof BlockEntity ? ${input$entity}.set${field$name}(${input$value}) : null;
