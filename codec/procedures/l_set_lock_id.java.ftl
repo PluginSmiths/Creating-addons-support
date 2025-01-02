@@ -1,4 +1,1 @@
-{
-UUID id = UUID.fromString(${input$ID});
-KeyItem.setLockId(${input$item}, id);
-}
+KeyItem.setLockId(${input$item}, UUID.fromString(${input$ID}));
