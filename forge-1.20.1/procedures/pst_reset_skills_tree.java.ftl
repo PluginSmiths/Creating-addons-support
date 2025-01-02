@@ -1,1 +1,1 @@
-${input$entity} instanceof Player _player ? PlayerSkills.resetTree(_player) : null;
+if(${input$entity} instanceof Player _player) PlayerSkills.resetTree(_player);

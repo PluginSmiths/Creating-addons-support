@@ -1,1 +1,1 @@
-${input$entity} instanceof PlayerEntity _player ? HungerHelper.setExhaustion(_player, ${input$Exhaustion}) : null;
+if(${input$entity} instanceof PlayerEntity _player) HungerHelper.setExhaustion(_player, ${input$Exhaustion});

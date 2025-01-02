@@ -1,1 +1,1 @@
-${input$entity} instanceof Player _player ? ClientFlightController.toggleFlight(_player) : null;
+if(${input$entity} instanceof Player _player) ClientFlightController.toggleFlight(_player);
