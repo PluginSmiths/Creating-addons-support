@@ -25,8 +25,8 @@ fabric-1.21:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:6024297')
-      modImplementation('curse.maven:fabric-api-306612:6024297')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:6024297')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6024297')
     }
   update_files:
     - ~
@@ -56,8 +56,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:6024297')
-      modImplementation('curse.maven:fabric-api-306612:6024297')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:6024297')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6024297')
     }
   update_files:
     - ~
@@ -87,8 +87,8 @@ fabric-1.21.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:5838325')
-      modImplementation('curse.maven:fabric-api-306612:5838325')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5838325')
     }
   update_files:
     - ~
@@ -118,8 +118,8 @@ fabric-1.21.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:5838325')
-      modImplementation('curse.maven:fabric-api-306612:5838325')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5838325')
     }
   update_files:
     - ~
@@ -149,8 +149,8 @@ fabric-1.20.6:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:5485055')
-      modImplementation('curse.maven:fabric-api-306612:5485055')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5485055')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5485055')
     }
   update_files:
     - ~
@@ -180,8 +180,8 @@ fabric-1.20.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:5263463')
-      modImplementation('curse.maven:fabric-api-306612:5263463')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5263463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5263463')
     }
   update_files:
     - ~
@@ -211,7 +211,7 @@ fabric-1.20.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4770904')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4770904')
     }
   update_files:
     - ~
@@ -241,7 +241,7 @@ fabric-1.19.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635892')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635892')
     }
   update_files:
     - ~
@@ -271,7 +271,7 @@ fabric-1.19.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635888')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635888')
     }
   update_files:
     - ~
@@ -301,7 +301,7 @@ fabric-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635887')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
     }
   update_files:
     - ~
@@ -331,7 +331,7 @@ fabric-1.19.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635887')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
     }
   update_files:
     - ~
@@ -361,7 +361,7 @@ fabric-1.19:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635887')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
     }
   update_files:
     - ~
@@ -391,7 +391,7 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635875')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635875')
     }
   update_files:
     - ~
@@ -421,7 +421,7 @@ fabric-1.20:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4635875')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635875')
     }
   update_files:
     - ~
@@ -451,7 +451,7 @@ fabric-1.18.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:default-options-fabric-547694:4412629')
+      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4412629')
     }
   update_files:
     - ~

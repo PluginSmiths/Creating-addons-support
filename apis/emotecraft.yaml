@@ -25,8 +25,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:6023741')
-      modImplementation('curse.maven:fabric-api-306612:6023741')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6023741')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6023741')
     }
   update_files:
     - ~
@@ -56,8 +56,8 @@ quilt-1.21.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:6023741')
-      modImplementation('curse.maven:fabric-api-306612:6023741')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6023741')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6023741')
     }
   update_files:
     - ~
@@ -87,8 +87,8 @@ fabric-1.18.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632465')
-      modImplementation('curse.maven:fabric-api-306612:4632465')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -118,8 +118,8 @@ fabric-1.18.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632465')
-      modImplementation('curse.maven:fabric-api-306612:4632465')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -149,8 +149,8 @@ fabric-1.18:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632465')
-      modImplementation('curse.maven:fabric-api-306612:4632465')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -180,8 +180,8 @@ quilt-1.18.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632465')
-      modImplementation('curse.maven:fabric-api-306612:4632465')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -211,8 +211,8 @@ quilt-1.18.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632465')
-      modImplementation('curse.maven:fabric-api-306612:4632465')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -242,8 +242,8 @@ quilt-1.18:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632465')
-      modImplementation('curse.maven:fabric-api-306612:4632465')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632465')
     }
   update_files:
     - ~
@@ -273,8 +273,8 @@ fabric-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632463')
-      modImplementation('curse.maven:fabric-api-306612:4632463')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -304,8 +304,8 @@ fabric-1.19.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632463')
-      modImplementation('curse.maven:fabric-api-306612:4632463')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -335,8 +335,8 @@ fabric-1.19:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632463')
-      modImplementation('curse.maven:fabric-api-306612:4632463')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -366,8 +366,8 @@ quilt-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632463')
-      modImplementation('curse.maven:fabric-api-306612:4632463')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -397,8 +397,8 @@ quilt-1.19.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632463')
-      modImplementation('curse.maven:fabric-api-306612:4632463')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -428,8 +428,8 @@ quilt-1.19:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632463')
-      modImplementation('curse.maven:fabric-api-306612:4632463')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632463')
     }
   update_files:
     - ~
@@ -459,8 +459,8 @@ fabric-1.19.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632461')
-      modImplementation('curse.maven:fabric-api-306612:4632461')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632461')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632461')
     }
   update_files:
     - ~
@@ -490,8 +490,8 @@ quilt-1.19.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632461')
-      modImplementation('curse.maven:fabric-api-306612:4632461')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632461')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632461')
     }
   update_files:
     - ~
@@ -521,8 +521,8 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632459')
-      modImplementation('curse.maven:fabric-api-306612:4632459')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632459')
     }
   update_files:
     - ~
@@ -552,8 +552,8 @@ fabric-1.20:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632459')
-      modImplementation('curse.maven:fabric-api-306612:4632459')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632459')
     }
   update_files:
     - ~
@@ -583,8 +583,8 @@ quilt-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632459')
-      modImplementation('curse.maven:fabric-api-306612:4632459')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632459')
     }
   update_files:
     - ~
@@ -614,8 +614,8 @@ quilt-1.20:
     }
     
     dependencies {
-      modImplementation('curse.maven:emotecraft-397809:4632459')
-      modImplementation('curse.maven:fabric-api-306612:4632459')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4632459')
     }
   update_files:
     - ~

@@ -1,4 +1,94 @@
 ---
+fabric-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:6050816')
+    }
+  update_files:
+    - ~
+forge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6050814')
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6050813')
+    }
+  update_files:
+    - ~
 forge-1.21.3:
   gradle: |
     repositories {
@@ -85,7 +175,7 @@ fabric-1.21.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:carry-on-274259:6027761')
+      modImplementation fg.deobf('curse.maven:carry-on-274259:6027761')
     }
   update_files:
     - ~
@@ -145,7 +235,7 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:carry-on-274259:5649345')
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5649345')
     }
   update_files:
     - ~
@@ -205,7 +295,7 @@ fabric-1.20.6:
     }
     
     dependencies {
-      modImplementation('curse.maven:carry-on-274259:5591952')
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5591952')
     }
   update_files:
     - ~
@@ -265,7 +355,7 @@ fabric-1.21:
     }
     
     dependencies {
-      modImplementation('curse.maven:carry-on-274259:5541211')
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5541211')
     }
   update_files:
     - ~
@@ -355,7 +445,7 @@ fabric-1.20.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:carry-on-274259:5141763')
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5141763')
     }
   update_files:
     - ~
@@ -415,187 +505,7 @@ fabric-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:carry-on-274259:5141760')
-    }
-  update_files:
-    - ~
-forge-1.19.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:5141759')
-    }
-  update_files:
-    - ~
-forge-1.18.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:5141758')
-    }
-  update_files:
-    - ~
-neoforge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:4882500')
-    }
-  update_files:
-    - ~
-neoforge-1.20:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:4882500')
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:4882500')
-    }
-  update_files:
-    - ~
-forge-1.20:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:carry-on-274259:4882500')
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5141760')
     }
   update_files:
     - ~

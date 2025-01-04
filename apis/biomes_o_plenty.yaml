@@ -25,10 +25,10 @@ fabric-1.21.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:biomes-o-plenty-220318:6031664')
-      modImplementation('curse.maven:terrablender-fabric-565956:6031664')
-      modImplementation('curse.maven:glitchcore-955399:6031664')
-      modImplementation('curse.maven:fabric-api-306612:6031664')
+      modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6047496')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6047496')
+      runtimeOnly fg.deobf('curse.maven:terrablender-fabric-565956:6047496')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6047496')
     }
   update_files:
     - ~
@@ -58,9 +58,9 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6031663')
-      implementation fg.deobf('curse.maven:terrablender-neoforge-940057:6031663')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6031663')
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6047494')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6047494')
+      runtimeOnly fg.deobf('curse.maven:terrablender-neoforge-940057:6047494')
     }
   update_files:
     - ~
@@ -90,9 +90,9 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6031662')
-      implementation fg.deobf('curse.maven:terrablender-563928:6031662')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6031662')
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6047493')
+      runtimeOnly fg.deobf('curse.maven:terrablender-563928:6047493')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6047493')
     }
   update_files:
     - ~
@@ -122,10 +122,10 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:biomes-o-plenty-220318:6028853')
-      modImplementation('curse.maven:fabric-api-306612:6028853')
-      modImplementation('curse.maven:terrablender-fabric-565956:6028853')
-      modImplementation('curse.maven:glitchcore-955399:6028853')
+      modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6028853')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6028853')
+      runtimeOnly fg.deobf('curse.maven:terrablender-fabric-565956:6028853')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6028853')
     }
   update_files:
     - ~
@@ -156,8 +156,8 @@ forge-1.20.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6028852')
-      implementation fg.deobf('curse.maven:terrablender-563928:6028852')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6028852')
+      runtimeOnly fg.deobf('curse.maven:terrablender-563928:6028852')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6028852')
     }
   update_files:
     - ~

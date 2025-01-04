@@ -25,9 +25,9 @@ fabric-1.21.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:serene-seasons-291874:5987112')
-      modImplementation('curse.maven:fabric-api-306612:5987112')
-      modImplementation('curse.maven:glitchcore-955399:5987112')
+      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5987112')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5987112')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5987112')
     }
   update_files:
     - ~
@@ -58,7 +58,7 @@ neoforge-1.21.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:serene-seasons-291874:5987111')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987111')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5987111')
     }
   update_files:
     - ~
@@ -89,7 +89,7 @@ forge-1.21.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:serene-seasons-291874:5987108')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987108')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5987108')
     }
   update_files:
     - ~
@@ -119,9 +119,9 @@ fabric-1.21.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:serene-seasons-291874:5861336')
-      modImplementation('curse.maven:fabric-api-306612:5861336')
-      modImplementation('curse.maven:glitchcore-955399:5861336')
+      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5861336')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5861336')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5861336')
     }
   update_files:
     - ~
@@ -152,7 +152,7 @@ neoforge-1.21.3:
     
     dependencies {
       implementation fg.deobf('curse.maven:serene-seasons-291874:5861335')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861335')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5861335')
     }
   update_files:
     - ~
@@ -183,7 +183,7 @@ forge-1.21.3:
     
     dependencies {
       implementation fg.deobf('curse.maven:serene-seasons-291874:5861334')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861334')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5861334')
     }
   update_files:
     - ~
@@ -213,9 +213,9 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:serene-seasons-291874:5790654')
-      modImplementation('curse.maven:glitchcore-955399:5790654')
-      modImplementation('curse.maven:fabric-api-306612:5790654')
+      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5790654')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5790654')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5790654')
     }
   update_files:
     - ~
@@ -246,7 +246,7 @@ forge-1.20.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:serene-seasons-291874:5790653')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5790653')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5790653')
     }
   update_files:
     - ~
@@ -277,7 +277,7 @@ neoforge-1.21.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:serene-seasons-291874:5753503')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5753503')
+      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5753503')
     }
   update_files:
     - ~
