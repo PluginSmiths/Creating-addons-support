@@ -25,8 +25,8 @@ fabric-1.21.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:6025240')
-      modImplementation('curse.maven:fabric-api-306612:6025240')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025240')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6025240')
     }
   update_files:
     - ~
@@ -56,8 +56,8 @@ fabric-1.21.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:6025240')
-      modImplementation('curse.maven:fabric-api-306612:6025240')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025240')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6025240')
     }
   update_files:
     - ~
@@ -87,8 +87,8 @@ fabric-1.21.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:6025235')
-      modImplementation('curse.maven:fabric-api-306612:6025235')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025235')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6025235')
     }
   update_files:
     - ~
@@ -118,8 +118,8 @@ fabric-1.21:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:6025222')
-      modImplementation('curse.maven:fabric-api-306612:6025222')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025222')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6025222')
     }
   update_files:
     - ~
@@ -149,8 +149,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:6025222')
-      modImplementation('curse.maven:fabric-api-306612:6025222')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025222')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6025222')
     }
   update_files:
     - ~
@@ -180,8 +180,8 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:5999468')
-      modImplementation('curse.maven:fabric-api-306612:5999468')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:5999468')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5999468')
     }
   update_files:
     - ~
@@ -211,8 +211,8 @@ fabric-1.20:
     }
     
     dependencies {
-      modImplementation('curse.maven:balm-fabric-500525:5999468')
-      modImplementation('curse.maven:fabric-api-306612:5999468')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:5999468')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5999468')
     }
   update_files:
     - ~

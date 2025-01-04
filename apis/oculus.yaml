@@ -26,7 +26,7 @@ forge-1.19.2:
     
     dependencies {
       implementation fg.deobf('curse.maven:oculus-581495:6020961')
-      implementation fg.deobf('curse.maven:rubidium-574856:6020961')
+      runtimeOnly fg.deobf('curse.maven:rubidium-574856:6020961')
     }
   update_files:
     - ~
@@ -147,7 +147,7 @@ forge-1.18.2:
     
     dependencies {
       implementation fg.deobf('curse.maven:oculus-581495:4578744')
-      implementation fg.deobf('curse.maven:rubidium-574856:4578744')
+      runtimeOnly fg.deobf('curse.maven:rubidium-574856:4578744')
     }
   update_files:
     - ~
@@ -178,7 +178,7 @@ forge-1.20:
     
     dependencies {
       implementation fg.deobf('curse.maven:oculus-581495:4578741')
-      implementation fg.deobf('curse.maven:rubidium-574856:4578741')
+      runtimeOnly fg.deobf('curse.maven:rubidium-574856:4578741')
     }
   update_files:
     - ~
@@ -209,7 +209,7 @@ forge-1.19.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:oculus-581495:4451142')
-      implementation fg.deobf('curse.maven:rubidium-574856:4451142')
+      runtimeOnly fg.deobf('curse.maven:rubidium-574856:4451142')
     }
   update_files:
     - ~

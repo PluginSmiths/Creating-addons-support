@@ -25,8 +25,8 @@ fabric-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:4814230')
-      modImplementation('curse.maven:fabric-api-306612:4814230')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4814230')
     }
   update_files:
     - ~
@@ -56,8 +56,8 @@ fabric-1.19.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:4814230')
-      modImplementation('curse.maven:fabric-api-306612:4814230')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4814230')
     }
   update_files:
     - ~
@@ -87,8 +87,8 @@ fabric-1.19:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:4814230')
-      modImplementation('curse.maven:fabric-api-306612:4814230')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4814230')
     }
   update_files:
     - ~
@@ -118,8 +118,8 @@ fabric-1.18.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3725141')
-      modImplementation('curse.maven:fabric-api-306612:3725141')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3725141')
     }
   update_files:
     - ~
@@ -149,8 +149,8 @@ fabric-1.18.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3725141')
-      modImplementation('curse.maven:fabric-api-306612:3725141')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3725141')
     }
   update_files:
     - ~
@@ -180,8 +180,8 @@ fabric-1.17.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3346110')
-      modImplementation('curse.maven:fabric-api-306612:3346110')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3346110')
     }
   update_files:
     - ~
@@ -211,8 +211,8 @@ fabric-1.17:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3346110')
-      modImplementation('curse.maven:fabric-api-306612:3346110')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3346110')
     }
   update_files:
     - ~
@@ -242,8 +242,8 @@ fabric-1.16.5:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3113959')
-      modImplementation('curse.maven:caelus-fabric-397876:3113959')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
+      runtimeOnly fg.deobf('curse.maven:caelus-fabric-397876:3113959')
     }
   update_files:
     - ~
@@ -273,8 +273,8 @@ fabric-1.16.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3113959')
-      modImplementation('curse.maven:caelus-fabric-397876:3113959')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
+      runtimeOnly fg.deobf('curse.maven:caelus-fabric-397876:3113959')
     }
   update_files:
     - ~
@@ -304,7 +304,7 @@ fabric-1.16.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3067382')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3067382')
     }
   update_files:
     - ~
@@ -334,8 +334,8 @@ fabric-1.16.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3034700')
-      modImplementation('curse.maven:caelus-fabric-397876:3034700')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3034700')
+      runtimeOnly fg.deobf('curse.maven:caelus-fabric-397876:3034700')
     }
   update_files:
     - ~
@@ -365,8 +365,8 @@ fabric-1.16.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:colytra-fabric-398089:3023089')
-      modImplementation('curse.maven:caelus-fabric-397876:3023089')
+      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3023089')
+      runtimeOnly fg.deobf('curse.maven:caelus-fabric-397876:3023089')
     }
   update_files:
     - ~

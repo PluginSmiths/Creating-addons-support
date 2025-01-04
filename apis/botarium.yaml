@@ -25,8 +25,8 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:botarium-704113:5486071')
-      modImplementation('curse.maven:fabric-api-306612:5486071')
+      modImplementation fg.deobf('curse.maven:botarium-704113:5486071')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5486071')
     }
   update_files:
     - ~
@@ -116,8 +116,8 @@ fabric-1.20.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:botarium-704113:5211700')
-      modImplementation('curse.maven:fabric-api-306612:5211700')
+      modImplementation fg.deobf('curse.maven:botarium-704113:5211700')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5211700')
     }
   update_files:
     - ~
@@ -237,8 +237,8 @@ fabric-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:botarium-704113:5118247')
-      modImplementation('curse.maven:fabric-api-306612:5118247')
+      modImplementation fg.deobf('curse.maven:botarium-704113:5118247')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5118247')
     }
   update_files:
     - ~
