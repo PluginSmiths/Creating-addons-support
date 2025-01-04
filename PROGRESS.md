@@ -58,8 +58,8 @@
  - Memory leak: ![Progress](https://geps.dev/progress/100)
  - Dynamic FPS: ![Progress](https://geps.dev/progress/100)
  - Jade: ![Progress](https://geps.dev/progress/0)
- - Colytra: ![Progress](https://geps.dev/progress/0)
- - Elytra utilities: ![Progress](https://geps.dev/progress/0)
+ - Colytra: ![Progress](https://geps.dev/progress/100)
+ - Elytra utilities: ![Progress](https://geps.dev/progress/100)
  - Polymorph: ![Progress](https://geps.dev/progress/0)
  - Entity Culling: ![Progress](https://geps.dev/progress/100)
 
