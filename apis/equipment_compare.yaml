@@ -25,8 +25,8 @@ fabric-1.21.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:5991588')
-      modImplementation('curse.maven:iceberg-fabric-539382:5991588')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5991588')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:5991588')
     }
   update_files:
     - ~
@@ -56,7 +56,7 @@ fabric-1.21:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:5590992')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
     }
   update_files:
     - ~
@@ -86,7 +86,7 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:5590992')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
     }
   update_files:
     - ~
@@ -116,7 +116,7 @@ fabric-1.20.5:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:5343810')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
     }
   update_files:
     - ~
@@ -146,7 +146,7 @@ fabric-1.20.6:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:5343810')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
     }
   update_files:
     - ~
@@ -176,10 +176,10 @@ fabric-1.20.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:4940609')
-      modImplementation('curse.maven:iceberg-fabric-539382:4940609')
-      modImplementation('curse.maven:fabric-api-306612:4940609')
-      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4940609')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4940609')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4940609')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4940609')
+      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
     }
   update_files:
     - ~
@@ -209,10 +209,10 @@ fabric-1.20:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:4940609')
-      modImplementation('curse.maven:iceberg-fabric-539382:4940609')
-      modImplementation('curse.maven:fabric-api-306612:4940609')
-      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4940609')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4940609')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4940609')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4940609')
+      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
     }
   update_files:
     - ~
@@ -242,10 +242,10 @@ fabric-1.20.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:4938108')
-      modImplementation('curse.maven:iceberg-fabric-539382:4938108')
-      modImplementation('curse.maven:fabric-api-306612:4938108')
-      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4938108')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4938108')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4938108')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4938108')
+      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
     }
   update_files:
     - ~
@@ -275,10 +275,10 @@ fabric-1.20.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:4938108')
-      modImplementation('curse.maven:iceberg-fabric-539382:4938108')
-      modImplementation('curse.maven:fabric-api-306612:4938108')
-      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4938108')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4938108')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4938108')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4938108')
+      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
     }
   update_files:
     - ~
@@ -308,10 +308,10 @@ fabric-1.19.4:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:4500115')
-      modImplementation('curse.maven:fabric-api-306612:4500115')
-      modImplementation('curse.maven:iceberg-fabric-539382:4500115')
-      modImplementation('curse.maven:forge-config-api-port-fabric-547434:4500115')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4500115')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4500115')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4500115')
+      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4500115')
     }
   update_files:
     - ~
@@ -341,9 +341,9 @@ fabric-1.19.3:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:4335113')
-      modImplementation('curse.maven:fabric-api-306612:4335113')
-      modImplementation('curse.maven:iceberg-fabric-539382:4335113')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4335113')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4335113')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4335113')
     }
   update_files:
     - ~
@@ -373,9 +373,9 @@ fabric-1.19.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3848278')
-      modImplementation('curse.maven:fabric-api-306612:3848278')
-      modImplementation('curse.maven:iceberg-fabric-539382:3848278')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3848278')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
   update_files:
     - ~
@@ -405,9 +405,9 @@ fabric-1.19.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3848278')
-      modImplementation('curse.maven:fabric-api-306612:3848278')
-      modImplementation('curse.maven:iceberg-fabric-539382:3848278')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3848278')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
   update_files:
     - ~
@@ -437,9 +437,9 @@ fabric-1.19:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3848278')
-      modImplementation('curse.maven:fabric-api-306612:3848278')
-      modImplementation('curse.maven:iceberg-fabric-539382:3848278')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3848278')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
   update_files:
     - ~
@@ -469,10 +469,10 @@ fabric-1.18.1:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3723542')
-      modImplementation('curse.maven:fabric-api-306612:3723542')
-      modImplementation('curse.maven:iceberg-fabric-539382:3723542')
-      modImplementation('curse.maven:cloth-config-348521:3723542')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3723542')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3723542')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3723542')
+      runtimeOnly fg.deobf('curse.maven:cloth-config-348521:3723542')
     }
   update_files:
     - ~
@@ -502,77 +502,10 @@ fabric-1.18.2:
     }
     
     dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3723542')
-      modImplementation('curse.maven:fabric-api-306612:3723542')
-      modImplementation('curse.maven:iceberg-fabric-539382:3723542')
-      modImplementation('curse.maven:cloth-config-348521:3723542')
+      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3723542')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3723542')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3723542')
+      runtimeOnly fg.deobf('curse.maven:cloth-config-348521:3723542')
     }
   update_files:
     - ~
-fabric-1.18:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3548173')
-      modImplementation('curse.maven:fabric-api-306612:3548173')
-      modImplementation('curse.maven:iceberg-fabric-539382:3548173')
-      modImplementation('curse.maven:cloth-config-348521:3548173')
-    }
-  update_files:
-    - ~
-fabric-1.17.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      modImplementation('curse.maven:equipment-compare-fabric-541329:3538163')
-      modImplementation('curse.maven:fabric-api-306612:3538163')
-      modImplementation('curse.maven:iceberg-fabric-539382:3538163')
-      modImplementation('curse.maven:cloth-config-348521:3538163')
-    }
-  update_files:
-    - ~
-name: "Equipment Compare [Fabric]"
