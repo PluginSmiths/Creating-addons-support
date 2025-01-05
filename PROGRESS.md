@@ -61,5 +61,5 @@
  - Polymorph: ![Progress](https://geps.dev/progress/0)
  - Entity Culling: ![Progress](https://geps.dev/progress/100)
  - Ok Zoomer: ![Progress](https://geps.dev/progress/0)
- - Ping Wheel: ![Progress](https://geps.dev/progress/0)
+ - Ping Wheel: ![Progress](https://geps.dev/progress/100)
 
