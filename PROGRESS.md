@@ -1,6 +1,6 @@
 ### Progress:
  - Farmer's delight: ![Progress](https://geps.dev/progress/100)
- - Diet: ![Progress](https://geps.dev/progress/100)
+ - Diet: ![Progress](https://geps.dev/progress/50)
  - Sanity: ![Progress](https://geps.dev/progress/100)
  - Another furniture: ![Progress](https://geps.dev/progress/100)
  - Carry on: ![Progress](https://geps.dev/progress/100)
@@ -62,4 +62,6 @@
  - Elytra utilities: ![Progress](https://geps.dev/progress/100)
  - Polymorph: ![Progress](https://geps.dev/progress/0)
  - Entity Culling: ![Progress](https://geps.dev/progress/100)
+ - Ok Zoomer: ![Progress](https://geps.dev/progress/0)
+ - Ping Wheel: ![Progress](https://geps.dev/progress/0)
 
