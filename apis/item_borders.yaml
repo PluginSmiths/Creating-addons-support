@@ -423,3 +423,69 @@ fabric-1.19.1:
     }
   update_files:
     - ~
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3849750')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
+      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+    }
+  update_files:
+    - ~
+fabric-1.18.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
+      runtimeOnly fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
+      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3583880')
+      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
+    }
+  update_files:
+    - ~
