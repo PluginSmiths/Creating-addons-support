@@ -26,6 +26,7 @@ neoforge-1.21.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:tips-306549:5844057')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5844057')
       runtimeOnly fg.deobf('curse.maven:prickle-1023259:5844057')
     }
   update_files:
@@ -58,6 +59,7 @@ forge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:tips-306549:5844055')
       runtimeOnly fg.deobf('curse.maven:prickle-1023259:5844055')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5844055')
     }
   update_files:
     - ~
@@ -89,6 +91,7 @@ fabric-1.21.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:tips-306549:5844053')
       runtimeOnly fg.deobf('curse.maven:prickle-1023259:5844053')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5844053')
     }
   update_files:
     - ~
@@ -120,6 +123,7 @@ quilt-1.21.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:tips-306549:5844053')
       runtimeOnly fg.deobf('curse.maven:prickle-1023259:5844053')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5844053')
     }
   update_files:
     - ~
@@ -150,6 +154,7 @@ fabric-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tips-306549:5547512')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5547512')
     }
   update_files:
     - ~
@@ -180,6 +185,7 @@ quilt-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tips-306549:5547512')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5547512')
     }
   update_files:
     - ~
@@ -210,6 +216,7 @@ neoforge-1.20.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:tips-306549:5547510')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
   update_files:
     - ~
@@ -240,6 +247,7 @@ forge-1.20.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:tips-306549:5547510')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
   update_files:
     - ~
@@ -270,6 +278,7 @@ neoforge-1.20.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:tips-306549:5166152')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5166152')
     }
   update_files:
     - ~
@@ -300,6 +309,7 @@ forge-1.20.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:tips-306549:5166151')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5166151')
     }
   update_files:
     - ~
@@ -330,6 +340,7 @@ fabric-1.20.4:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tips-306549:5166150')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5166150')
     }
   update_files:
     - ~
@@ -360,6 +371,7 @@ quilt-1.20.4:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tips-306549:5166150')
+      runtimeOnly fg.deobf('curse.maven:bookshelf-228525:5166150')
     }
   update_files:
     - ~

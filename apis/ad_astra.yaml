@@ -29,6 +29,7 @@ fabric-1.20.1:
       runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5914895')
       runtimeOnly fg.deobf('curse.maven:resourceful-lib-570073:5914895')
       runtimeOnly fg.deobf('curse.maven:resourceful-config-714059:5914895')
+      runtimeOnly fg.deobf('curse.maven:botarium-704113:5914895')
     }
   update_files:
     - ~
@@ -59,6 +60,7 @@ forge-1.20.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:ad-astra-635042:5914893')
+      runtimeOnly fg.deobf('curse.maven:botarium-704113:5914893')
       runtimeOnly fg.deobf('curse.maven:resourceful-lib-570073:5914893')
       runtimeOnly fg.deobf('curse.maven:resourceful-config-714059:5914893')
     }
@@ -94,6 +96,7 @@ fabric-1.20.4:
       runtimeOnly fg.deobf('curse.maven:resourceful-config-714059:5116783')
       runtimeOnly fg.deobf('curse.maven:resourceful-lib-570073:5116783')
       runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5116783')
+      runtimeOnly fg.deobf('curse.maven:botarium-704113:5116783')
     }
   update_files:
     - ~
@@ -126,6 +129,7 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:ad-astra-635042:5116782')
       runtimeOnly fg.deobf('curse.maven:resourceful-config-714059:5116782')
       runtimeOnly fg.deobf('curse.maven:resourceful-lib-570073:5116782')
+      runtimeOnly fg.deobf('curse.maven:botarium-704113:5116782')
     }
   update_files:
     - ~
