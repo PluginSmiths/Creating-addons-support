@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "field_data_list_selector",
+      "name": "nutrien",
+      "datalist": "nutrients"
+    },
+    {
+      "type": "input_value",
+      "name": "diet",
+      "check": "dietstate"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "diet_support",
+    "toolbox_init": [
+      "<value name=\"diet\"><block type=\"variables_get_dietstate\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "diet"
+    ],
+    "fields": [
+      "nutrien"
+    ],
+    "required_apis": [
+      "diet"
+    ]
+  }
+}
