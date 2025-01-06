@@ -1,0 +1,1 @@
+${input$entity} instanceof LivingEntity _player && com.momosoftworks.coldsweat.api.util.Temperature.get(_player, com.momosoftworks.coldsweat.api.util.Temperature.Trait.${field$temperature})==${input$number}
