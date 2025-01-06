@@ -1,6 +1,6 @@
 ### Progress:
  - Farmer's delight: ![Progress](https://geps.dev/progress/100)
- - Diet: ![Progress](https://geps.dev/progress/50)
+ - Diet: ![Progress](https://geps.dev/progress/100)
  - Sanity: ![Progress](https://geps.dev/progress/100)
  - Another furniture: ![Progress](https://geps.dev/progress/100)
  - Carry on: ![Progress](https://geps.dev/progress/100)
