@@ -8,3 +8,5 @@
 - Dot coin
 - Ice and Fire
 - Upgraded netherite
+- Cobblemon
+- Pixelmon
