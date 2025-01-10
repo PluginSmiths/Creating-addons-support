@@ -9,25 +9,18 @@
       "type": "input_value",
       "name": "entity",
       "check": "Entity"
-    },
-    {
-      "type": "input_value",
-      "name": "number",
-      "check": "Number"
     }
   ],
   "inputsInline": true,
-  "output": "Boolean",
-  "colour": "#607c99",
+  "output": "Number",
+  "colour": "#606999",
   "mcreator": {
     "toolbox_id": "cold_sweat_support",
     "toolbox_init": [
-      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
-      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
     ],
     "inputs": [
-      "entity",
-      "number"
+      "entity"
     ],
     "fields": [
       "temperature"

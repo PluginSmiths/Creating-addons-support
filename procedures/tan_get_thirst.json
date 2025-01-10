@@ -4,11 +4,6 @@
       "type": "input_value",
       "name": "entity",
       "check": "Entity"
-    },
-    {
-      "type": "input_value",
-      "name": "number",
-      "check": "Number"
     }
   ],
   "inputsInline": true,
@@ -17,12 +12,10 @@
   "mcreator": {
     "toolbox_id": "tought_as_nails_support",
     "toolbox_init": [
-      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
-      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>"
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
     ],
     "inputs": [
-      "entity",
-      "number"
+      "entity"
     ],
     "required_apis": [
       "tough_as_nails"
