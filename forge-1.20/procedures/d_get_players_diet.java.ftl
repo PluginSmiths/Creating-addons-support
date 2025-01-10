@@ -1,1 +1,1 @@
-${input$entity} instanceof Player _player ? com.illusivesoulworks.diet.platform.Services.CAPABILITY.get(_player).orElseGet(() -> {return null;}) : null
+${input$entity} instanceof Player _pl027 ? com.illusivesoulworks.diet.platform.Services.CAPABILITY.get(_pl027).orElseGet(() -> {return null;}) : null

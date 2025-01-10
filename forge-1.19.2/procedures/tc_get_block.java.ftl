@@ -1,1 +1,1 @@
-world instanceof Level _level && ChopUtil.is${field$name}(_level, BlockPos = new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))
+world instanceof Level _l049 && ChopUtil.is${field$name}(_l049, BlockPos = new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))

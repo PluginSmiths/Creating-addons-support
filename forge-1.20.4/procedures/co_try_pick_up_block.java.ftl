@@ -1,1 +1,1 @@
-if(${input$entity} instanceof ServerPlayer _ServerPlayer && world instanceof Level _level) PickupHandler.tryPickUpBlock(_ServerPlayer, world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})), _level, null);
+if(${input$entity} instanceof ServerPlayer _ServerPl018 && world instanceof Level _l019) PickupHandler.tryPickUpBlock(_ServerPl018, world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})), _l019, null);

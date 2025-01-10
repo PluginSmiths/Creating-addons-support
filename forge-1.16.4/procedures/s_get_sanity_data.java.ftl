@@ -1,1 +1,1 @@
-(${input$entity} instanceof ServerPlayer _player ? _player.getCapability(SanityProvider.CAP).orElse(null) : null)
+(${input$entity} instanceof ServerPlayer _pl035 ? _pl035.getCapability(SanityProvider.CAP).orElse(null) : null)

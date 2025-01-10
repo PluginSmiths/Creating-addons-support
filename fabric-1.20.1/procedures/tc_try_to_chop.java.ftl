@@ -1,1 +1,1 @@
-ChopResult result = world instanceof Level _level ? ChopUtil.tryToChopWithoutFelling(_level, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), ${input$num}) : null;
+ChopResult result = world instanceof Level _l052 ? ChopUtil.tryToChopWithoutFelling(_l052, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), ${input$num}) : null;

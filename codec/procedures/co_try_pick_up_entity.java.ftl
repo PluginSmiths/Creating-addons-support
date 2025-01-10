@@ -1,1 +1,1 @@
-if(${input$player} instanceof Player _player) PickupHandler.tryPickupEntity(_player, ${input$entity}, null);
+if(${input$player} instanceof Player _pl020) PickupHandler.tryPickupEntity(_pl020, ${input$entity}, null);

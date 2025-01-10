@@ -1,1 +1,1 @@
-if(world instanceof Level _level) TreeHelper.destroyTree(_level, BlockPos = new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), null);
+if(world instanceof Level _l028) TreeHelper.destroyTree(_l028, BlockPos = new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), null);

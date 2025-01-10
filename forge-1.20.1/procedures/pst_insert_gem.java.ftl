@@ -1,1 +1,1 @@
-if(${input$entity} instanceof Player _player) GemItem.insertGem(_player, new ItemStack(${input$item}), ${input$gem});
+if(${input$entity} instanceof Player _pl033) GemItem.insertGem(_pl033, new ItemStack(${input$item}), ${input$gem});
