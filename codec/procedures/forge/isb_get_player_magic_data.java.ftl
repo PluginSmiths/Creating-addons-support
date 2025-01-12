@@ -1,0 +1,1 @@
+(${input$entity} instanceof LivingEntity _en032 ? MagicData.getPlayerMagicData(_en032) : null)

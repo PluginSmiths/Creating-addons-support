@@ -1,0 +1,1 @@
+GemItem.hasGem(${input$item})

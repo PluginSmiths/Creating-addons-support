@@ -1,1 +1,1 @@
-world instanceof ServerLevel _level && PlanetHandler.get${field$name}(_level, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))
+world instanceof ServerLevel _l001 && PlanetHandler.get${field$name}(_l001, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))

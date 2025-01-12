@@ -1,1 +1,1 @@
-world instanceof ServerLevel _level && PlanetHandler.hasOxygen(_level, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))
+world instanceof ServerLevel _l002 && PlanetHandler.hasOxygen(_l002, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))

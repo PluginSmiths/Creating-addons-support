@@ -1,1 +1,1 @@
-${input$entity} instanceof PlayerEntity _player && FoodHelper.canConsume(${input$itemstack}, _player)
+${input$entity} instanceof PlayerEntity _pl006 && FoodHelper.canConsume(${input$itemstack}, _pl006)

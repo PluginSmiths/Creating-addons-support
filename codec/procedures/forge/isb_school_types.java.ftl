@@ -1,0 +1,1 @@
+SchoolRegistry.getSchool(SchoolRegistry.${field$name}_RESOURCE)
