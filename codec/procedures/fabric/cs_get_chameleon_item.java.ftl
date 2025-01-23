@@ -1,1 +1,0 @@
-${input$item}.is(ItemTags.create(new ResourceLocation("cold_sweat:chameleon/${field$name}")))

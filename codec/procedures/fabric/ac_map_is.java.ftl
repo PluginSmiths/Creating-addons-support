@@ -1,1 +1,0 @@
-CaveMapItem.is${field$name}(${input$item})
