@@ -26,7 +26,7 @@ fabric-1.21.4:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011965')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011965')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011965')
     }
   update_files:
     - ~
@@ -117,7 +117,7 @@ fabric-1.21.3:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011960')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011960')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011960')
     }
   update_files:
     - ~
@@ -208,7 +208,7 @@ fabric-1.21:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011954')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011954')
     }
   update_files:
     - ~
@@ -239,7 +239,7 @@ fabric-1.21.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011954')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011954')
     }
   update_files:
     - ~
@@ -270,7 +270,7 @@ fabric-1.21.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011954')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011954')
     }
   update_files:
     - ~
@@ -481,7 +481,7 @@ fabric-1.20.6:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011949')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011949')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011949')
     }
   update_files:
     - ~
@@ -572,7 +572,7 @@ fabric-1.20.4:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011944')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011944')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011944')
     }
   update_files:
     - ~
@@ -663,7 +663,7 @@ fabric-1.20.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011935')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011935')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011935')
     }
   update_files:
     - ~
@@ -754,7 +754,7 @@ fabric-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011930')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6011930')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6011930')
     }
   update_files:
     - ~
@@ -788,4 +788,4 @@ forge-1.20.1:
     }
   update_files:
     - ~
-name: "First-person Model (Forge/Fabric)"
+name: "First-person Model"

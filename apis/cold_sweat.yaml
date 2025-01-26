@@ -1,34 +1,4 @@
 ---
-forge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:6026507')
-    }
-  update_files:
-    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -55,11 +25,11 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:5946056')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6073805')
     }
   update_files:
     - ~
-neoforge-1.21:
+forge-1.20.1:
   gradle: |
     repositories {
       maven {
@@ -85,7 +55,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:5946050')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6073801')
     }
   update_files:
     - ~
@@ -115,7 +85,67 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:5946050')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6073797')
+    }
+  update_files:
+    - ~
+forge-1.20:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6058311')
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6058306')
     }
   update_files:
     - ~

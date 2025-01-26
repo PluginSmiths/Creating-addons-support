@@ -1,21 +1,17 @@
 <#include "procedures.java.ftl">
-@Mod.EventBusSubscriber
 public class ${name}Procedure {
-    @SubscribeEvent
-    public static void onEventTriggered(ChopEvent.FinishChopEvent event) {
+    TreeChopEvents.AFTER_CHOP.register((world, player, pos, state, chopData, felled) -> {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
-            "x": "event.getChoppedBlockPos().getX()",
-            "y": "event.getChoppedBlockPos().getY()",
-            "z": "event.getChoppedBlockPos().getZ()",
-            "entity": "event.getPlayer()",
-            "world": "event.getLevel()",
-            "blockstate": "event.getChoppedBlockState()",
-            "Chops": "event.getNumChops()",
-            "Felling": "event.getFelling()",
-            "Felled": "event.getFelled()",
-            "event": "event"
+            "x": "pos.getX()",
+            "y": "pos.getY()",
+            "z": "pos.getZ()",
+            "entity": "player",
+            "world": "world",
+            "blockstate": "state",
+            "Felled": "felled"
             }/>
         </#compress></#assign>
         execute(event<#if dependenciesCode?has_content>,</#if>${dependenciesCode});
+	});
     }

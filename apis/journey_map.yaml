@@ -25,7 +25,7 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5972768')
+      implementation fg.deobf('curse.maven:journeymap-32274:6124717')
     }
   update_files:
     - ~
@@ -55,7 +55,7 @@ fabric-1.21.4:
     }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:5972767')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6124716')
     }
   update_files:
     - ~
@@ -85,7 +85,7 @@ quilt-1.21.4:
     }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:5972767')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6124716')
     }
   update_files:
     - ~
@@ -115,7 +115,7 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5972766')
+      implementation fg.deobf('curse.maven:journeymap-32274:6124715')
     }
   update_files:
     - ~
@@ -145,7 +145,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5972765')
+      implementation fg.deobf('curse.maven:journeymap-32274:6124693')
     }
   update_files:
     - ~
@@ -175,7 +175,7 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:5972764')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6124692')
     }
   update_files:
     - ~
@@ -205,7 +205,7 @@ quilt-1.21.1:
     }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:5972764')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6124692')
     }
   update_files:
     - ~
@@ -235,11 +235,11 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5972763')
+      implementation fg.deobf('curse.maven:journeymap-32274:6124691')
     }
   update_files:
     - ~
-neoforge-1.21.3:
+forge-1.7.10:
   gradle: |
     repositories {
       maven {
@@ -265,97 +265,7 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5950315')
-    }
-  update_files:
-    - ~
-fabric-1.21.3:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:5950313')
-    }
-  update_files:
-    - ~
-quilt-1.21.3:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:5950313')
-    }
-  update_files:
-    - ~
-forge-1.21.3:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:5950312')
+      implementation fg.deobf('curse.maven:journeymap-32274:6114227')
     }
   update_files:
     - ~

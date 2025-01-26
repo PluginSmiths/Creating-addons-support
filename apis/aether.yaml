@@ -25,8 +25,8 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:aether-255308:6040708')
-      runtimeOnly fg.deobf('curse.maven:owo-lib-532610:6040708')
+      implementation fg.deobf('curse.maven:aether-255308:6108540')
+      implementation fg.deobf('curse.maven:owo-lib-532610:6108540')
     }
   update_files:
     - ~
@@ -56,8 +56,8 @@ fabric-1.21.1:
     }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:aether-255308:6040690')
-      runtimeOnly fg.deobf('curse.maven:owo-lib-532610:6040690')
+      modImplementation fg.deobf('curse.maven:aether-255308:6078340')
+      modImplementation fg.deobf('curse.maven:owo-lib-532610:6078340')
     }
   update_files:
     - ~
@@ -238,36 +238,6 @@ forge-1.19.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:aether-255308:5889507')
-    }
-  update_files:
-    - ~
-forge-1.7.10:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:aether-255308:5875775')
     }
   update_files:
     - ~

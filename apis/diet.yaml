@@ -26,7 +26,7 @@ quilt-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813906')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:4813906')
+      modImplementation fg.deobf('curse.maven:qsl-634179:4813906')
     }
   update_files:
     - ~
@@ -57,7 +57,7 @@ quilt-1.20:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813906')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:4813906')
+      modImplementation fg.deobf('curse.maven:qsl-634179:4813906')
     }
   update_files:
     - ~
@@ -148,7 +148,7 @@ fabric-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813902')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4813902')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4813902')
     }
   update_files:
     - ~
@@ -179,7 +179,7 @@ fabric-1.20:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813902')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4813902')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4813902')
     }
   update_files:
     - ~
@@ -210,7 +210,7 @@ quilt-1.19.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813892')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:4813892')
+      modImplementation fg.deobf('curse.maven:qsl-634179:4813892')
     }
   update_files:
     - ~
@@ -241,7 +241,7 @@ quilt-1.19.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813892')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:4813892')
+      modImplementation fg.deobf('curse.maven:qsl-634179:4813892')
     }
   update_files:
     - ~
@@ -272,7 +272,7 @@ quilt-1.19:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813892')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:4813892')
+      modImplementation fg.deobf('curse.maven:qsl-634179:4813892')
     }
   update_files:
     - ~
@@ -393,6 +393,7 @@ fabric-1.19.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813888')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4813888')
     }
   update_files:
     - ~
@@ -423,7 +424,7 @@ fabric-1.19.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813888')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4813888')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4813888')
     }
   update_files:
     - ~
@@ -454,7 +455,7 @@ fabric-1.19:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:diet-443570:4813888')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4813888')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4813888')
     }
   update_files:
     - ~
@@ -518,4 +519,4 @@ forge-1.18.2:
     }
   update_files:
     - ~
-name: "Diet (Fabric/Forge/Quilt)"
+name: "Diet"

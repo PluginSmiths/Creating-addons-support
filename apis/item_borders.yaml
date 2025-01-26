@@ -26,8 +26,8 @@ fabric-1.21.3:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5991625')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:5991625')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:5991625')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5991625')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991625')
     }
   update_files:
     - ~
@@ -118,9 +118,9 @@ fabric-1.20.5:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5343818')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:5343818')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5343818')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
     }
   update_files:
     - ~
@@ -151,9 +151,9 @@ fabric-1.20.6:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5343818')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:5343818')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5343818')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
     }
   update_files:
     - ~
@@ -214,10 +214,10 @@ fabric-1.20:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4940619')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4940619')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:4940619')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4940619')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940619')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940619')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940619')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4940619')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940619')
     }
   update_files:
     - ~
@@ -248,10 +248,10 @@ fabric-1.20.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:4938114')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4938114')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4938114')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
     }
   update_files:
     - ~
@@ -282,10 +282,10 @@ fabric-1.20.4:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:4938114')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4938114')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4938114')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
     }
   update_files:
     - ~
@@ -316,10 +316,10 @@ fabric-1.19.4:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4499855')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4499855')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4499855')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:4499855')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4499855')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4499855')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4499855')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4499855')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4499855')
     }
   update_files:
     - ~
@@ -350,10 +350,10 @@ fabric-1.19.3:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4343667')
-      runtimeOnly fg.deobf('curse.maven:prism-fabric-665526:4343667')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:4343667')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:4343667')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4343667')
+      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4343667')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:4343667')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4343667')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4343667')
     }
   update_files:
     - ~
@@ -384,9 +384,9 @@ fabric-1.19.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3849750')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3849750')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
     }
   update_files:
     - ~
@@ -417,9 +417,9 @@ fabric-1.19.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3849750')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3849750')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
     }
   update_files:
     - ~
@@ -450,9 +450,9 @@ fabric-1.19:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3849750')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      runtimeOnly fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3849750')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
+      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
     }
   update_files:
     - ~
@@ -483,9 +483,9 @@ fabric-1.18.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
-      runtimeOnly fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3583880')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
+      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3583880')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
     }
   update_files:
     - ~
@@ -516,9 +516,9 @@ fabric-1.18.2:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
-      runtimeOnly fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3583880')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
+      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3583880')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
     }
   update_files:
     - ~
@@ -549,9 +549,9 @@ fabric-1.17.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583860')
-      runtimeOnly fg.deobf('curse.maven:cloth-config-legacy-319057:3583860')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3583860')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3583860')
+      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583860')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3583860')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583860')
     }
   update_files:
     - ~
@@ -582,9 +582,9 @@ fabric-1.18:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3549412')
-      runtimeOnly fg.deobf('curse.maven:cloth-config-legacy-319057:3549412')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:3549412')
-      runtimeOnly fg.deobf('curse.maven:iceberg-fabric-539382:3549412')
+      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549412')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:3549412')
+      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549412')
     }
   update_files:
     - ~

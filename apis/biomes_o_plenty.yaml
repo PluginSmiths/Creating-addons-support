@@ -1,36 +1,4 @@
 ---
-neoforge-1.21.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6054629')
-      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6054629')
-      runtimeOnly fg.deobf('curse.maven:terrablender-neoforge-940057:6054629')
-    }
-  update_files:
-    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -57,10 +25,42 @@ fabric-1.21.4:
     }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6054628')
-      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6054628')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6054628')
-      runtimeOnly fg.deobf('curse.maven:terrablender-fabric-565956:6054628')
+      modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6083660')
+      modImplementation fg.deobf('curse.maven:terrablender-fabric-565956:6083660')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6083660')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6083660')
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6083659')
+      implementation fg.deobf('curse.maven:terrablender-neoforge-940057:6083659')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6083659')
     }
   update_files:
     - ~
@@ -90,9 +90,9 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6054626')
-      runtimeOnly fg.deobf('curse.maven:terrablender-563928:6054626')
-      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6054626')
+      implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6083658')
+      implementation fg.deobf('curse.maven:terrablender-563928:6083658')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6083658')
     }
   update_files:
     - ~
@@ -123,9 +123,9 @@ fabric-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6028853')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:6028853')
-      runtimeOnly fg.deobf('curse.maven:terrablender-fabric-565956:6028853')
-      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6028853')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:6028853')
+      modImplementation fg.deobf('curse.maven:terrablender-fabric-565956:6028853')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6028853')
     }
   update_files:
     - ~
@@ -156,8 +156,8 @@ forge-1.20.1:
     
     dependencies {
       implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6028852')
-      runtimeOnly fg.deobf('curse.maven:terrablender-563928:6028852')
-      runtimeOnly fg.deobf('curse.maven:glitchcore-955399:6028852')
+      implementation fg.deobf('curse.maven:terrablender-563928:6028852')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6028852')
     }
   update_files:
     - ~

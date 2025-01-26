@@ -86,7 +86,7 @@ fabric-1.21:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5995378')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5995378')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5995378')
     }
   update_files:
     - ~
@@ -117,7 +117,7 @@ fabric-1.21.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5995378')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5995378')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5995378')
     }
   update_files:
     - ~
@@ -268,7 +268,7 @@ fabric-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5995251')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5995251')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5995251')
     }
   update_files:
     - ~
@@ -299,7 +299,7 @@ fabric-1.20:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5995251')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5995251')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5995251')
     }
   update_files:
     - ~
@@ -330,7 +330,7 @@ quilt-1.20.1:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5995249')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:5995249')
+      modImplementation fg.deobf('curse.maven:qsl-634179:5995249')
     }
   update_files:
     - ~
@@ -361,7 +361,7 @@ quilt-1.20:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5995249')
-      runtimeOnly fg.deobf('curse.maven:qsl-634179:5995249')
+      modImplementation fg.deobf('curse.maven:qsl-634179:5995249')
     }
   update_files:
     - ~
@@ -422,7 +422,7 @@ fabric-1.20.6:
     
     dependencies {
       modImplementation fg.deobf('curse.maven:polymorph-388800:5539321')
-      runtimeOnly fg.deobf('curse.maven:fabric-api-306612:5539321')
+      modImplementation fg.deobf('curse.maven:fabric-api-306612:5539321')
     }
   update_files:
     - ~
@@ -456,4 +456,4 @@ forge-1.20.6:
     }
   update_files:
     - ~
-name: "Polymorph (Fabric/Forge/Quilt)"
+name: "Polymorph"
