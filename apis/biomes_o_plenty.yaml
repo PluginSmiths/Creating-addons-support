@@ -7,28 +7,11 @@ fabric-1.21.4:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6083660')
       modImplementation fg.deobf('curse.maven:terrablender-fabric-565956:6083660')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6083660')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6083660')
     }
   update_files:
     - ~
@@ -104,26 +87,9 @@ fabric-1.20.1:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:biomes-o-plenty-220318:6028853')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6028853')
       modImplementation fg.deobf('curse.maven:terrablender-fabric-565956:6028853')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6028853')
     }

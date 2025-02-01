@@ -7,26 +7,9 @@ fabric-1.21.4:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080328')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080328')
     }
   update_files:
     - ~
@@ -98,26 +81,9 @@ fabric-1.21.3:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080323')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080323')
     }
   update_files:
     - ~
@@ -129,26 +95,9 @@ fabric-1.21.2:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080323')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080323')
     }
   update_files:
     - ~
@@ -220,26 +169,9 @@ fabric-1.21:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080318')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080318')
     }
   update_files:
     - ~
@@ -251,26 +183,9 @@ fabric-1.21.1:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080318')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080318')
     }
   update_files:
     - ~
@@ -342,26 +257,9 @@ fabric-1.20.5:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080311')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080311')
     }
   update_files:
     - ~
@@ -373,26 +271,9 @@ fabric-1.20.6:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080311')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080311')
     }
   update_files:
     - ~
@@ -434,26 +315,9 @@ fabric-1.20.3:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080308')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080308')
     }
   update_files:
     - ~
@@ -465,26 +329,9 @@ fabric-1.20.4:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080308')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080308')
     }
   update_files:
     - ~
@@ -556,26 +403,9 @@ fabric-1.20.2:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080304')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080304')
     }
   update_files:
     - ~
@@ -617,26 +447,9 @@ fabric-1.20.1:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080300')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080300')
     }
   update_files:
     - ~
@@ -648,26 +461,9 @@ fabric-1.20:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080300')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080300')
     }
   update_files:
     - ~
@@ -739,26 +535,9 @@ fabric-1.19.4:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080297')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080297')
     }
   update_files:
     - ~
@@ -800,26 +579,9 @@ fabric-1.19.3:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080295')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6080295')
     }
   update_files:
     - ~

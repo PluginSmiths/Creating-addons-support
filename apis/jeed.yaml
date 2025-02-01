@@ -25,7 +25,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6124590')
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6134582')
     }
   update_files:
     - ~
@@ -37,26 +37,9 @@ fabric-1.20.1:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6124587')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6124587')
+      modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6134580')
     }
   update_files:
     - ~
@@ -86,7 +69,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6124576')
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6134528')
     }
   update_files:
     - ~
@@ -116,7 +99,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6124576')
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6134528')
     }
   update_files:
     - ~
@@ -128,26 +111,9 @@ fabric-1.21:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6124575')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6124575')
+      modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6134527')
     }
   update_files:
     - ~
@@ -159,26 +125,9 @@ fabric-1.21.1:
       }
     }
     
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6124575')
-      modImplementation fg.deobf('curse.maven:fabric-api-306612:6124575')
+      modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6134527')
     }
   update_files:
     - ~
