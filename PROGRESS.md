@@ -68,7 +68,6 @@
  - Fabric shield lib: ![Progress](https://geps.dev/progress/100)
  - Locki: ![Progress](https://geps.dev/progress/100)
  - Kotlin: ![Progress](https://geps.dev/progress/100)
- - Locki: ![Progress](https://geps.dev/progress/100)
  - Expand ability: ![Progress](https://geps.dev/progress/100)
  - Fall flying lib: ![Progress](https://geps.dev/progress/100)
  - Culinary construct: ![Progress](https://geps.dev/progress/0)
