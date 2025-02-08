@@ -1,1 +1,0 @@
-ThirstHelper.add${field$add}(${input$itemstack}, ${input$thirst}, ${input$quenched});

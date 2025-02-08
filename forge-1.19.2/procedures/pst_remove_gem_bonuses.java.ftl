@@ -1,1 +1,0 @@
-GemItem.removeGemBonuses(${input$item});

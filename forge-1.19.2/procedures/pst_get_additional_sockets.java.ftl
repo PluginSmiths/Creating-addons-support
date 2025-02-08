@@ -1,1 +1,0 @@
-ItemHelper.getAdditionalSockets(${input$item})

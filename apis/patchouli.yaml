@@ -25,7 +25,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:patchouli-306770:5683901')
+      implementation fg.deobf('curse.maven:patchouli-306770:6164617')
     }
   update_files:
     - ~
@@ -55,7 +55,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:patchouli-306770:5683901')
+      implementation fg.deobf('curse.maven:patchouli-306770:6164617')
     }
   update_files:
     - ~
@@ -85,7 +85,37 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:patchouli-306770:5504820')
+      implementation fg.deobf('curse.maven:patchouli-306770:6164591')
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164575')
     }
   update_files:
     - ~
@@ -116,36 +146,6 @@ neoforge-1.20.4:
     
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:5240286')
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:patchouli-306770:4966125')
     }
   update_files:
     - ~

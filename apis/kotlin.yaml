@@ -12,7 +12,7 @@ neoforge-1.21:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -50,7 +50,7 @@ neoforge-1.21.4:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -88,7 +88,7 @@ neoforge-1.20.6:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -126,7 +126,7 @@ neoforge-1.21.3:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -164,7 +164,7 @@ neoforge-1.21.1:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -202,7 +202,7 @@ neoforge-1.21.2:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -240,7 +240,7 @@ forge-1.21:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -278,7 +278,7 @@ forge-1.21.4:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -316,7 +316,7 @@ forge-1.20.6:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -354,7 +354,7 @@ forge-1.21.3:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -392,7 +392,7 @@ forge-1.21.1:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -430,7 +430,7 @@ forge-1.21.2:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -468,7 +468,7 @@ neoforge-1.19.3:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -506,7 +506,7 @@ neoforge-1.20.2:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -544,7 +544,7 @@ neoforge-1.19.4:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -582,7 +582,7 @@ neoforge-1.20.3:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -620,7 +620,7 @@ neoforge-1.20.1:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -658,7 +658,7 @@ neoforge-1.20:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -696,7 +696,7 @@ neoforge-1.20.4:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -734,7 +734,7 @@ forge-1.19.3:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -772,7 +772,7 @@ forge-1.20.2:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -810,7 +810,7 @@ forge-1.19.4:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -848,7 +848,7 @@ forge-1.20.3:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -886,7 +886,7 @@ forge-1.20.1:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -924,7 +924,7 @@ forge-1.20:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -962,7 +962,7 @@ forge-1.20.4:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1000,7 +1000,7 @@ neoforge-1.20.5:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1038,7 +1038,7 @@ forge-1.20.5:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1076,7 +1076,7 @@ forge-1.18.1:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1114,7 +1114,7 @@ forge-1.18.2:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1152,7 +1152,7 @@ forge-1.19.2:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1190,7 +1190,7 @@ forge-1.19.1:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1228,7 +1228,7 @@ forge-1.18:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {
@@ -1266,7 +1266,7 @@ forge-1.19:
     }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
-            jvmTarget = java
+            jvmTarget = java.toolchain.languageVersion.get()
         }
     }
     minecraft {

@@ -1,1 +1,0 @@
-${input$entity} instanceof Player _player && Double.valueOf(ThirstHelper.getThirst(${input$entity}))==${input$number}

@@ -1,0 +1,48 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Lock",
+          "lock"
+        ],
+        [
+          "Unlock",
+          "unlock"
+        ]
+      ]
+    },
+    {
+      "type": "field_data_list_selector",
+      "name": "node",
+      "datalist": "inventory_nodes"
+    },
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#609994",
+  "mcreator": {
+    "toolbox_id": "locki_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name",
+      "node"
+    ],
+    "required_apis": [
+      "locki"
+    ]
+  }
+}

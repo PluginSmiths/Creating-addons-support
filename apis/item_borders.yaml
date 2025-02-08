@@ -1,4 +1,18 @@
 ---
+fabric-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:6168711')
+    }
+  update_files:
+    - ~
 fabric-1.21.3:
   gradle: |
     repositories {

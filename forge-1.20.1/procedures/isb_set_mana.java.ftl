@@ -1,1 +1,0 @@
-${input$magic}.setMana(${input$mana});

@@ -1,4 +1,18 @@
 ---
+fabric-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:6168703')
+    }
+  update_files:
+    - ~
 fabric-1.21.3:
   gradle: |
     repositories {
