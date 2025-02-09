@@ -7,10 +7,9 @@ fabric-1.21.4:
       }
     }
     
-    
     dependencies {
-      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6031445')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:6031445')
+      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6173796')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
     }
   update_files:
     - ~
@@ -21,7 +20,6 @@ neoforge-1.21.4:
         url = 'https://cursemaven.com/'
       }
     }
-    
     minecraft {
         runs {
             client {
@@ -40,8 +38,8 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:6031444')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6031444')
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173795')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
     }
   update_files:
     - ~
@@ -52,7 +50,6 @@ forge-1.21.4:
         url = 'https://cursemaven.com/'
       }
     }
-    
     minecraft {
         runs {
             client {
@@ -71,8 +68,8 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:6031443')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6031443')
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
     }
   update_files:
     - ~
@@ -83,7 +80,6 @@ fabric-1.21.3:
         url = 'https://cursemaven.com/'
       }
     }
-    
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6029445')
@@ -98,7 +94,6 @@ neoforge-1.21.3:
         url = 'https://cursemaven.com/'
       }
     }
-    
     minecraft {
         runs {
             client {
@@ -129,7 +124,6 @@ forge-1.21.3:
         url = 'https://cursemaven.com/'
       }
     }
-    
     minecraft {
         runs {
             client {
@@ -150,52 +144,6 @@ forge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
       implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:5833253')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5833253')
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:5833252')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5833252')
     }
   update_files:
     - ~
