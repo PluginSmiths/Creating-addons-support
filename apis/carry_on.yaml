@@ -1,11 +1,36 @@
 ---
 forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/855/carryon-forge-1.21.4-2.3.0.23.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -26,28 +51,74 @@ forge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:6058855')
     }
-  update_files:
-    - ~
 fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6050/816/carryon-fabric-1.21.4-2.3.0.22.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     
     dependencies {
       modImplementation fg.deobf('curse.maven:carry-on-274259:6050816')
     }
-  update_files:
-    - ~
 neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6050/813/carryon-neoforge-1.21.4-2.3.0.22.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -68,15 +139,38 @@ neoforge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:6050813')
     }
-  update_files:
-    - ~
 forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6033/270/carryon-forge-1.21.3-2.2.3.21.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -97,15 +191,38 @@ forge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:6033270')
     }
-  update_files:
-    - ~
 forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6033/268/carryon-forge-1.21.1-2.2.3.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -126,28 +243,74 @@ forge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:6033268')
     }
-  update_files:
-    - ~
 fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6027/761/carryon-fabric-1.21.3-2.2.3.12.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     
     dependencies {
       modImplementation fg.deobf('curse.maven:carry-on-274259:6027761')
     }
-  update_files:
-    - ~
 neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6027/759/carryon-neoforge-1.21.3-2.2.3.12.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -168,28 +331,74 @@ neoforge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:6027759')
     }
-  update_files:
-    - ~
 fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5649/345/carryon-fabric-1.21.1-2.2.2.11.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     
     dependencies {
       modImplementation fg.deobf('curse.maven:carry-on-274259:5649345')
     }
-  update_files:
-    - ~
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5649/344/carryon-neoforge-1.21.1-2.2.2.11.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -210,28 +419,74 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:5649344')
     }
-  update_files:
-    - ~
 fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5591/952/carryon-fabric-1.20.6-2.1.4.21.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     
     dependencies {
       modImplementation fg.deobf('curse.maven:carry-on-274259:5591952')
     }
-  update_files:
-    - ~
 neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5541/347/carryon-neoforge-1.21-2.2.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -252,28 +507,74 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:5541347')
     }
-  update_files:
-    - ~
 fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5541/211/carryon-fabric-1.21-2.2.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     
     dependencies {
       modImplementation fg.deobf('curse.maven:carry-on-274259:5541211')
     }
-  update_files:
-    - ~
 neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5521/253/carryon-neoforge-1.20.6-2.1.4.20.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -294,15 +595,38 @@ neoforge-1.20.6:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:5521253')
     }
-  update_files:
-    - ~
 neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/764/carryon-neoforge-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -323,28 +647,74 @@ neoforge-1.20.4:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:5141764')
     }
-  update_files:
-    - ~
 fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/763/carryon-fabric-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     
     dependencies {
       modImplementation fg.deobf('curse.maven:carry-on-274259:5141763')
     }
-  update_files:
-    - ~
 forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/762/carryon-forge-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
     minecraft {
         runs {
             client {
@@ -365,6 +735,1446 @@ forge-1.20.4:
     dependencies {
       implementation fg.deobf('curse.maven:carry-on-274259:5141762')
     }
+name: "Carry On"
+forge-1.21.4:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/855/carryon-forge-1.21.4-2.3.0.23.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6058855')
+    }
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6050/816/carryon-fabric-1.21.4-2.3.0.22.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:6050816')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6050/813/carryon-neoforge-1.21.4-2.3.0.22.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6050813')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6033/270/carryon-forge-1.21.3-2.2.3.21.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6033270')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6033/268/carryon-forge-1.21.1-2.2.3.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6033268')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6027/761/carryon-fabric-1.21.3-2.2.3.12.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:6027761')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6027/759/carryon-neoforge-1.21.3-2.2.3.12.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6027759')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5649/345/carryon-fabric-1.21.1-2.2.2.11.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5649345')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5649/344/carryon-neoforge-1.21.1-2.2.2.11.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5649344')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5591/952/carryon-fabric-1.20.6-2.1.4.21.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5591952')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5541/347/carryon-neoforge-1.21-2.2.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5541347')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5541/211/carryon-fabric-1.21-2.2.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5541211')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5521/253/carryon-neoforge-1.20.6-2.1.4.20.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5521253')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/764/carryon-neoforge-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5141764')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/763/carryon-fabric-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5141763')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/762/carryon-forge-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5141762')
+    }
+name: "Carry On"
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/855/carryon-forge-1.21.4-2.3.0.23.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6058855')
+    }
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6050/816/carryon-fabric-1.21.4-2.3.0.22.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:6050816')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6050/813/carryon-neoforge-1.21.4-2.3.0.22.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6050813')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6033/270/carryon-forge-1.21.3-2.2.3.21.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6033270')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6033/268/carryon-forge-1.21.1-2.2.3.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6033268')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6027/761/carryon-fabric-1.21.3-2.2.3.12.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:6027761')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6027/759/carryon-neoforge-1.21.3-2.2.3.12.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:6027759')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5649/345/carryon-fabric-1.21.1-2.2.2.11.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5649345')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5649/344/carryon-neoforge-1.21.1-2.2.2.11.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5649344')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5591/952/carryon-fabric-1.20.6-2.1.4.21.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5591952')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5541/347/carryon-neoforge-1.21-2.2.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5541347')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5541/211/carryon-fabric-1.21-2.2.1.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5541211')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5521/253/carryon-neoforge-1.20.6-2.1.4.20.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5521253')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/764/carryon-neoforge-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5141764')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/763/carryon-fabric-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:carry-on-274259:5141763')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/carry_on.jar
+  resource_paths:
+    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
+    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
+    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
+    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
+    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
+    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
+    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
+    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
+    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
+    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
+    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
+    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
+    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('carry_on') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5141/762/carryon-forge-1.20.4-2.1.3.13.jar', dest: 'lib/carry_on.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn carry_on
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:carry-on-274259:5141762')
+    }
 name: "Carry On"

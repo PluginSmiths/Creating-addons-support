@@ -1,11 +1,36 @@
 ---
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5769/852/The_Undergarden-1.21.1-0.8.22.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -26,15 +51,38 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:5769852')
     }
-  update_files:
-    - ~
 neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5663/496/The_Undergarden-1.20.6-0.8.19.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -55,15 +103,38 @@ neoforge-1.20.6:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:5663496')
     }
-  update_files:
-    - ~
 neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5600/831/The_Undergarden-1.21-0.8.19.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -84,15 +155,38 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:5600831')
     }
-  update_files:
-    - ~
 neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5188/616/The_Undergarden-1.20.4-0.8.15.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -113,15 +207,38 @@ neoforge-1.20.4:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:5188616')
     }
-  update_files:
-    - ~
 neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5182/632/The_Undergarden-1.20.1-0.8.14.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -142,15 +259,38 @@ neoforge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:5182632')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5182/632/The_Undergarden-1.20.1-0.8.14.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -171,15 +311,38 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:5182632')
     }
-  update_files:
-    - ~
 neoforge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4682/838/The_Undergarden-1.20.1-0.8.8.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -200,15 +363,38 @@ neoforge-1.20:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
     }
-  update_files:
-    - ~
 forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4682/838/The_Undergarden-1.20.1-0.8.8.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -229,15 +415,38 @@ forge-1.20:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
     }
-  update_files:
-    - ~
 forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4544/1/The_Undergarden-1.19.4-0.8.4.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -258,15 +467,38 @@ forge-1.19.4:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:4544001')
     }
-  update_files:
-    - ~
 forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4057/184/The_Undergarden-1.19.2-0.8.3.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
     minecraft {
         runs {
             client {
@@ -287,6 +519,1026 @@ forge-1.19.2:
     dependencies {
       implementation fg.deobf('curse.maven:the-undergarden-379849:4057184')
     }
+name: "The Undergarden"
+neoforge-1.21.1:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5769/852/The_Undergarden-1.21.1-0.8.22.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5769852')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5663/496/The_Undergarden-1.20.6-0.8.19.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5663496')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5600/831/The_Undergarden-1.21-0.8.19.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5600831')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5188/616/The_Undergarden-1.20.4-0.8.15.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5188616')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5182/632/The_Undergarden-1.20.1-0.8.14.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5182632')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5182/632/The_Undergarden-1.20.1-0.8.14.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5182632')
+    }
+neoforge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4682/838/The_Undergarden-1.20.1-0.8.8.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4682/838/The_Undergarden-1.20.1-0.8.8.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4544/1/The_Undergarden-1.19.4-0.8.4.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4544001')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4057/184/The_Undergarden-1.19.2-0.8.3.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4057184')
+    }
+name: "The Undergarden"
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5769/852/The_Undergarden-1.21.1-0.8.22.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5769852')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5663/496/The_Undergarden-1.20.6-0.8.19.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5663496')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5600/831/The_Undergarden-1.21-0.8.19.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5600831')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5188/616/The_Undergarden-1.20.4-0.8.15.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5188616')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5182/632/The_Undergarden-1.20.1-0.8.14.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5182632')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5182/632/The_Undergarden-1.20.1-0.8.14.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:5182632')
+    }
+neoforge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4682/838/The_Undergarden-1.20.1-0.8.8.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4682/838/The_Undergarden-1.20.1-0.8.8.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4544/1/The_Undergarden-1.19.4-0.8.4.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4544001')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/undergarden.jar
+  resource_paths:
+    block_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/block'
+    item_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/item'
+    effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/effect'
+    environment_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/environment'
+    gui_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/gui'
+    font_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/font'
+    map_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/map'
+    misc_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/misc'
+    mob_effect_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/mob_effect'
+    models_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/models'
+    painting_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/painting'
+    particle_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/particle'
+    trims_textures_dir: 'lib/undergarden.jar!/assets/undergarden/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('undergarden') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4057/184/The_Undergarden-1.19.2-0.8.3.jar', dest: 'lib/undergarden.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn undergarden
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:the-undergarden-379849:4057184')
+    }
 name: "The Undergarden"

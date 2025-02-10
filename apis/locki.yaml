@@ -1,158 +1,1276 @@
 ---
 fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5434/884/locki-0.13.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:5434884')
     }
-  update_files:
-    - ~
 fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5434/559/locki-0.12.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:5434559')
     }
-  update_files:
-    - ~
 fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5432/857/locki-0.11.1-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:5432857')
     }
-  update_files:
-    - ~
 quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4999/28/locki-0.11.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:4999028')
     }
-  update_files:
-    - ~
 quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4460/238/locki-0.10.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:4460238')
     }
-  update_files:
-    - ~
 quilt-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4414/690/locki-0.9.1-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:4414690')
     }
-  update_files:
-    - ~
 quilt-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3859/68/locki-0.8.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:3859068')
     }
-  update_files:
-    - ~
 fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:3738273')
     }
-  update_files:
-    - ~
 fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:3738273')
     }
-  update_files:
-    - ~
 fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:3738273')
     }
-  update_files:
-    - ~
 fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3536/932/locki-0.6.0.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:3536932')
     }
-  update_files:
-    - ~
 fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3423/146/locki-0.2.2.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locki-483059:3423146')
     }
+name: "Locki"
+fabric-1.21:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5434/884/locki-0.13.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:5434884')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5434/559/locki-0.12.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:5434559')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5432/857/locki-0.11.1-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:5432857')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4999/28/locki-0.11.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:4999028')
+    }
+quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4460/238/locki-0.10.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:4460238')
+    }
+quilt-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4414/690/locki-0.9.1-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:4414690')
+    }
+quilt-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3859/68/locki-0.8.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3859068')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3738273')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3738273')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3738273')
+    }
+fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3536/932/locki-0.6.0.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3536932')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3423/146/locki-0.2.2.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3423146')
+    }
+name: "Locki"
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5434/884/locki-0.13.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:5434884')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5434/559/locki-0.12.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:5434559')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5432/857/locki-0.11.1-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:5432857')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4999/28/locki-0.11.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:4999028')
+    }
+quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4460/238/locki-0.10.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:4460238')
+    }
+quilt-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4414/690/locki-0.9.1-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:4414690')
+    }
+quilt-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3859/68/locki-0.8.0-standalone.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3859068')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3738273')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3738273')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3738/273/locki-0.6.3.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3738273')
+    }
+fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3536/932/locki-0.6.0.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3536932')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locki.jar
+  resource_paths:
+    block_textures_dir: 'lib/locki.jar!/assets/locki/textures/block'
+    item_textures_dir: 'lib/locki.jar!/assets/locki/textures/item'
+    effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/effect'
+    environment_textures_dir: 'lib/locki.jar!/assets/locki/textures/environment'
+    gui_textures_dir: 'lib/locki.jar!/assets/locki/textures/gui'
+    font_textures_dir: 'lib/locki.jar!/assets/locki/textures/font'
+    map_textures_dir: 'lib/locki.jar!/assets/locki/textures/map'
+    misc_textures_dir: 'lib/locki.jar!/assets/locki/textures/misc'
+    mob_effect_textures_dir: 'lib/locki.jar!/assets/locki/textures/mob_effect'
+    models_textures_dir: 'lib/locki.jar!/assets/locki/textures/models'
+    painting_textures_dir: 'lib/locki.jar!/assets/locki/textures/painting'
+    particle_textures_dir: 'lib/locki.jar!/assets/locki/textures/particle'
+    trims_textures_dir: 'lib/locki.jar!/assets/locki/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locki') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3423/146/locki-0.2.2.jar', dest: 'lib/locki.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locki
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locki-483059:3423146')
+    }
 name: "Locki"

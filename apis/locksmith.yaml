@@ -1,25 +1,73 @@
 ---
 fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/917/locksmith-fabric-1.1.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locksmith-544352:4650917')
       modImplementation fg.deobf('curse.maven:pollen-544350:4650917')
     }
-  update_files:
-    - ~
 forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/915/locksmith-forge-1.1.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     minecraft {
         runs {
             client {
@@ -41,29 +89,75 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:locksmith-544352:4650915')
       implementation fg.deobf('curse.maven:pollen-544350:4650915')
     }
-  update_files:
-    - ~
 fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/911/locksmith-fabric-1.1.1%2b1.18.2.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locksmith-544352:4650911')
       modImplementation fg.deobf('curse.maven:pollen-544350:4650911')
     }
-  update_files:
-    - ~
 forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/906/locksmith-forge-1.1.1%2b1.18.2.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     minecraft {
         runs {
             client {
@@ -85,43 +179,112 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:locksmith-544352:4650906')
       implementation fg.deobf('curse.maven:pollen-544350:4650906')
     }
-  update_files:
-    - ~
 fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/834/locksmith-fabric-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
       modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
     }
-  update_files:
-    - ~
 fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/834/locksmith-fabric-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
       modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
     }
-  update_files:
-    - ~
 forge-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/833/locksmith-forge-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     minecraft {
         runs {
             client {
@@ -143,15 +306,38 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:locksmith-544352:3889833')
       implementation fg.deobf('curse.maven:pollen-544350:3889833')
     }
-  update_files:
-    - ~
 forge-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/833/locksmith-forge-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     minecraft {
         runs {
             client {
@@ -173,29 +359,75 @@ forge-1.18:
       implementation fg.deobf('curse.maven:locksmith-544352:3889833')
       implementation fg.deobf('curse.maven:pollen-544350:3889833')
     }
-  update_files:
-    - ~
 fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/832/locksmith-fabric-1.0.3%2b1.16.5.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     
     dependencies {
       modImplementation fg.deobf('curse.maven:locksmith-544352:3889832')
       modImplementation fg.deobf('curse.maven:pollen-544350:3889832')
     }
-  update_files:
-    - ~
 forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/830/locksmith-forge-1.0.3%2b1.16.5.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
     minecraft {
         runs {
             client {
@@ -217,6 +449,886 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:locksmith-544352:3889830')
       implementation fg.deobf('curse.maven:pollen-544350:3889830')
     }
+name: "Locksmith"
+fabric-1.19.2:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/917/locksmith-fabric-1.1.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:4650917')
+      modImplementation fg.deobf('curse.maven:pollen-544350:4650917')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/915/locksmith-forge-1.1.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:4650915')
+      implementation fg.deobf('curse.maven:pollen-544350:4650915')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/911/locksmith-fabric-1.1.1%2b1.18.2.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:4650911')
+      modImplementation fg.deobf('curse.maven:pollen-544350:4650911')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/906/locksmith-forge-1.1.1%2b1.18.2.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:4650906')
+      implementation fg.deobf('curse.maven:pollen-544350:4650906')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/834/locksmith-fabric-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
+      modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/834/locksmith-fabric-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
+      modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
+    }
+forge-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/833/locksmith-forge-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:3889833')
+      implementation fg.deobf('curse.maven:pollen-544350:3889833')
+    }
+forge-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/833/locksmith-forge-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:3889833')
+      implementation fg.deobf('curse.maven:pollen-544350:3889833')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/832/locksmith-fabric-1.0.3%2b1.16.5.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:3889832')
+      modImplementation fg.deobf('curse.maven:pollen-544350:3889832')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/830/locksmith-forge-1.0.3%2b1.16.5.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:3889830')
+      implementation fg.deobf('curse.maven:pollen-544350:3889830')
+    }
+name: "Locksmith"
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/917/locksmith-fabric-1.1.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:4650917')
+      modImplementation fg.deobf('curse.maven:pollen-544350:4650917')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/915/locksmith-forge-1.1.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:4650915')
+      implementation fg.deobf('curse.maven:pollen-544350:4650915')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/911/locksmith-fabric-1.1.1%2b1.18.2.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:4650911')
+      modImplementation fg.deobf('curse.maven:pollen-544350:4650911')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4650/906/locksmith-forge-1.1.1%2b1.18.2.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:4650906')
+      implementation fg.deobf('curse.maven:pollen-544350:4650906')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/834/locksmith-fabric-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
+      modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/834/locksmith-fabric-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
+      modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
+    }
+forge-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/833/locksmith-forge-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:3889833')
+      implementation fg.deobf('curse.maven:pollen-544350:3889833')
+    }
+forge-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/833/locksmith-forge-1.0.3%2b1.18.1.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:3889833')
+      implementation fg.deobf('curse.maven:pollen-544350:3889833')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/832/locksmith-fabric-1.0.3%2b1.16.5.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:locksmith-544352:3889832')
+      modImplementation fg.deobf('curse.maven:pollen-544350:3889832')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/locksmith.jar
+  resource_paths:
+    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
+    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
+    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
+    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
+    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
+    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
+    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
+    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
+    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
+    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
+    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
+    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
+    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('locksmith') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3889/830/locksmith-forge-1.0.3%2b1.16.5.jar', dest: 'lib/locksmith.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn locksmith
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:locksmith-544352:3889830')
+      implementation fg.deobf('curse.maven:pollen-544350:3889830')
+    }
 name: "Locksmith"

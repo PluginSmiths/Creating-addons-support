@@ -1,11 +1,36 @@
 ---
 neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/617/Patchouli-1.21-88-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -26,15 +51,38 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:6164617')
     }
-  update_files:
-    - ~
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/617/Patchouli-1.21-88-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -55,15 +103,38 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:6164617')
     }
-  update_files:
-    - ~
 neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/591/Patchouli-1.20.6-86.1-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -84,15 +155,38 @@ neoforge-1.20.6:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:6164591')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/575/Patchouli-1.20.1-84.1-FORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -113,15 +207,38 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:6164575')
     }
-  update_files:
-    - ~
 neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5240/286/Patchouli-1.20.4-85-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -142,15 +259,38 @@ neoforge-1.20.4:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:5240286')
     }
-  update_files:
-    - ~
 forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4636/289/Patchouli-1.19.4-79.1-FORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -171,15 +311,38 @@ forge-1.19.4:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:4636289')
     }
-  update_files:
-    - ~
 forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4391/51/Patchouli-1.19.3-78.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -200,15 +363,38 @@ forge-1.19.3:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:4391051')
     }
-  update_files:
-    - ~
 forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4031/402/Patchouli-1.19.2-77.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -229,15 +415,38 @@ forge-1.19.2:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:4031402')
     }
-  update_files:
-    - ~
 forge-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3877/555/Patchouli-1.19-75.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -258,15 +467,38 @@ forge-1.19:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:3877555')
     }
-  update_files:
-    - ~
 forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3847/29/Patchouli-1.16.4-53.3.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -287,15 +519,38 @@ forge-1.16.5:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:3847029')
     }
-  update_files:
-    - ~
 forge-1.16.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3847/29/Patchouli-1.16.4-53.3.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -316,15 +571,38 @@ forge-1.16.4:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:3847029')
     }
-  update_files:
-    - ~
 forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3846/86/Patchouli-1.18.2-71.1.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
     minecraft {
         runs {
             client {
@@ -345,6 +623,1230 @@ forge-1.18.2:
     dependencies {
       implementation fg.deobf('curse.maven:patchouli-306770:3846086')
     }
+name: "Patchouli"
+neoforge-1.21:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/617/Patchouli-1.21-88-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164617')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/617/Patchouli-1.21-88-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164617')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/591/Patchouli-1.20.6-86.1-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164591')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/575/Patchouli-1.20.1-84.1-FORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164575')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5240/286/Patchouli-1.20.4-85-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:5240286')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4636/289/Patchouli-1.19.4-79.1-FORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:4636289')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4391/51/Patchouli-1.19.3-78.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:4391051')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4031/402/Patchouli-1.19.2-77.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:4031402')
+    }
+forge-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3877/555/Patchouli-1.19-75.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3877555')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3847/29/Patchouli-1.16.4-53.3.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3847029')
+    }
+forge-1.16.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3847/29/Patchouli-1.16.4-53.3.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3847029')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3846/86/Patchouli-1.18.2-71.1.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3846086')
+    }
+name: "Patchouli"
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/617/Patchouli-1.21-88-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164617')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/617/Patchouli-1.21-88-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164617')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/591/Patchouli-1.20.6-86.1-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164591')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6164/575/Patchouli-1.20.1-84.1-FORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:6164575')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5240/286/Patchouli-1.20.4-85-NEOFORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:5240286')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4636/289/Patchouli-1.19.4-79.1-FORGE.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:4636289')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4391/51/Patchouli-1.19.3-78.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:4391051')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4031/402/Patchouli-1.19.2-77.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:4031402')
+    }
+forge-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3877/555/Patchouli-1.19-75.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3877555')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3847/29/Patchouli-1.16.4-53.3.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3847029')
+    }
+forge-1.16.4:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3847/29/Patchouli-1.16.4-53.3.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3847029')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/patchouli.jar
+  resource_paths:
+    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
+    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
+    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
+    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
+    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
+    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
+    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
+    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
+    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
+    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
+    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
+    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
+    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('patchouli') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3846/86/Patchouli-1.18.2-71.1.jar', dest: 'lib/patchouli.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn patchouli
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:patchouli-306770:3846086')
+    }
 name: "Patchouli"

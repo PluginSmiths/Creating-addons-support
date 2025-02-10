@@ -1,25 +1,73 @@
 ---
 fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/796/ToughAsNails-fabric-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6173796')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
     }
-  update_files:
-    - ~
 neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/795/ToughAsNails-neoforge-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
     minecraft {
         runs {
             client {
@@ -41,15 +89,38 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6173795')
       implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
     }
-  update_files:
-    - ~
 forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/794/ToughAsNails-forge-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
     minecraft {
         runs {
             client {
@@ -71,29 +142,75 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
       implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
     }
-  update_files:
-    - ~
 fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/445/ToughAsNails-fabric-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
     
     dependencies {
       modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6029445')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6029445')
     }
-  update_files:
-    - ~
 neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/444/ToughAsNails-neoforge-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
     minecraft {
         runs {
             client {
@@ -115,15 +232,38 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6029444')
       implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
     }
-  update_files:
-    - ~
 forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/443/ToughAsNails-forge-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
     minecraft {
         runs {
             client {
@@ -145,6 +285,566 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
       implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
     }
+name: "Tough As Nails"
+fabric-1.21.4:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/796/ToughAsNails-fabric-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6173796')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/795/ToughAsNails-neoforge-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173795')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/794/ToughAsNails-forge-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/445/ToughAsNails-fabric-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6029445')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6029445')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/444/ToughAsNails-neoforge-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029444')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/443/ToughAsNails-forge-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
+    }
+name: "Tough As Nails"
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/796/ToughAsNails-fabric-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6173796')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/795/ToughAsNails-neoforge-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173795')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/794/ToughAsNails-forge-1.21.4-10.4.0.3.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/445/ToughAsNails-fabric-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6029445')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6029445')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/444/ToughAsNails-neoforge-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029444')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/tought_as_nails.jar
+  resource_paths:
+    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
+    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
+    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
+    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
+    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
+    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
+    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
+    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
+    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
+    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
+    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
+    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
+    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tought_as_nails') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6029/443/ToughAsNails-forge-1.21.3-10.2.0.1.jar', dest: 'lib/tought_as_nails.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tought_as_nails
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
+    }
 name: "Tough As Nails"

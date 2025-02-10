@@ -1,11 +1,36 @@
 ---
 neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/265/corpse-neoforge-1.21.4-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -26,15 +51,38 @@ neoforge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:6121265')
     }
-  update_files:
-    - ~
 neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/250/corpse-neoforge-1.21.1-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -55,15 +103,38 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:6121250')
     }
-  update_files:
-    - ~
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/250/corpse-neoforge-1.21.1-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -84,15 +155,38 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:6121250')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/243/corpse-forge-1.20.1-1.0.20.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -113,15 +207,38 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:6121243')
     }
-  update_files:
-    - ~
 neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5964/725/corpse-neoforge-1.21.3-1.1.3.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -142,15 +259,38 @@ neoforge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:5964725')
     }
-  update_files:
-    - ~
 neoforge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5834/433/corpse-neoforge-1.21.2-1.1.2.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -171,15 +311,38 @@ neoforge-1.21.2:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:5834433')
     }
-  update_files:
-    - ~
 forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5816/905/corpse-forge-1.19.2-1.0.17.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
     minecraft {
         runs {
             client {
@@ -200,6 +363,720 @@ forge-1.19.2:
     dependencies {
       implementation fg.deobf('curse.maven:corpse-316582:5816905')
     }
+name: "Corpse"
+neoforge-1.21.4:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/265/corpse-neoforge-1.21.4-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121265')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/250/corpse-neoforge-1.21.1-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121250')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/250/corpse-neoforge-1.21.1-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121250')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/243/corpse-forge-1.20.1-1.0.20.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121243')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5964/725/corpse-neoforge-1.21.3-1.1.3.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:5964725')
+    }
+neoforge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5834/433/corpse-neoforge-1.21.2-1.1.2.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:5834433')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5816/905/corpse-forge-1.19.2-1.0.17.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:5816905')
+    }
+name: "Corpse"
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/265/corpse-neoforge-1.21.4-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121265')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/250/corpse-neoforge-1.21.1-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121250')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/250/corpse-neoforge-1.21.1-1.1.5.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121250')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6121/243/corpse-forge-1.20.1-1.0.20.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:6121243')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5964/725/corpse-neoforge-1.21.3-1.1.3.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:5964725')
+    }
+neoforge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5834/433/corpse-neoforge-1.21.2-1.1.2.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:5834433')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/corpse.jar
+  resource_paths:
+    block_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/block'
+    item_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/item'
+    effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/effect'
+    environment_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/environment'
+    gui_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/gui'
+    font_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/font'
+    map_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/map'
+    misc_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/misc'
+    mob_effect_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/mob_effect'
+    models_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/models'
+    painting_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/painting'
+    particle_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/particle'
+    trims_textures_dir: 'lib/corpse.jar!/assets/corpse/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('corpse') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5816/905/corpse-forge-1.19.2-1.0.17.jar', dest: 'lib/corpse.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn corpse
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:corpse-316582:5816905')
+    }
 name: "Corpse"

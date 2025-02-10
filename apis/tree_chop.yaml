@@ -1,24 +1,72 @@
 ---
 fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5856/18/TreeChop-1.21-fabric-0.19.2.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
     
     dependencies {
       modImplementation fg.deobf('curse.maven:treechop-421377:5856018')
     }
-  update_files:
-    - ~
 forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5570/188/TreeChop-1.19.2-forge-0.19.1.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
     minecraft {
         runs {
             client {
@@ -39,28 +87,74 @@ forge-1.19.2:
     dependencies {
       implementation fg.deobf('curse.maven:treechop-421377:5570188')
     }
-  update_files:
-    - ~
 fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5570/187/TreeChop-1.19.2-fabric-0.19.1.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
     
     dependencies {
       modImplementation fg.deobf('curse.maven:treechop-421377:5570187')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5565/422/TreeChop-1.20.1-forge-0.19.0-fixed.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
     minecraft {
         runs {
             client {
@@ -81,19 +175,456 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:treechop-421377:5565422')
     }
-  update_files:
-    - ~
 fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5168/479/TreeChop-1.20.1-fabric-0.19.0.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
     
     dependencies {
       modImplementation fg.deobf('curse.maven:treechop-421377:5168479')
     }
+name: "HT's TreeChop"
+fabric-1.21:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5856/18/TreeChop-1.21-fabric-0.19.2.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:5856018')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5570/188/TreeChop-1.19.2-forge-0.19.1.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:treechop-421377:5570188')
+    }
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5570/187/TreeChop-1.19.2-fabric-0.19.1.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:5570187')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5565/422/TreeChop-1.20.1-forge-0.19.0-fixed.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:treechop-421377:5565422')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5168/479/TreeChop-1.20.1-fabric-0.19.0.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:5168479')
+    }
+name: "HT's TreeChop"
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5856/18/TreeChop-1.21-fabric-0.19.2.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:5856018')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5570/188/TreeChop-1.19.2-forge-0.19.1.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:treechop-421377:5570188')
+    }
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5570/187/TreeChop-1.19.2-fabric-0.19.1.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:5570187')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5565/422/TreeChop-1.20.1-forge-0.19.0-fixed.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:treechop-421377:5565422')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/tree_chop.jar
+  resource_paths:
+    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
+    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
+    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
+    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
+    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
+    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
+    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
+    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
+    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
+    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
+    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
+    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
+    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('tree_chop') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5168/479/TreeChop-1.20.1-fabric-0.19.0.jar', dest: 'lib/tree_chop.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn tree_chop
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:5168479')
+    }
 name: "HT's TreeChop"

@@ -1,41 +1,322 @@
 ---
 fabric-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3029/603/sizeentityattributes-3.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
     
     dependencies {
       modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3029603')
     }
-  update_files:
-    - ~
 fabric-1.16.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3020/784/sizeentityattributes-r2.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
     
     dependencies {
       modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3020784')
     }
-  update_files:
-    - ~
 fabric-1.16:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3020/784/sizeentityattributes-r2.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
     
     dependencies {
       modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3020784')
     }
+name: "Size Entity Attributes"
+fabric-1.16.2:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3029/603/sizeentityattributes-3.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3029603')
+    }
+fabric-1.16.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3020/784/sizeentityattributes-r2.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3020784')
+    }
+fabric-1.16:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3020/784/sizeentityattributes-r2.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3020784')
+    }
+name: "Size Entity Attributes"
+fabric-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3029/603/sizeentityattributes-3.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3029603')
+    }
+fabric-1.16.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3020/784/sizeentityattributes-r2.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3020784')
+    }
+fabric-1.16:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_size_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_size_attributes.jar!/assets/fabric_entity_size_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_entity_size_attributes') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3020/784/sizeentityattributes-r2.jar', dest: 'lib/fabric_entity_size_attributes.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_entity_size_attributes
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:size-entity-attributes-398876:3020784')
+    }
 name: "Size Entity Attributes"

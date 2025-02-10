@@ -1,11 +1,36 @@
 ---
 forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/797/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -24,17 +49,40 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:6135870')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176797')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/793/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -53,17 +101,40 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:6135868')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176793')
     }
-  update_files:
-    - ~
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/789/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -82,17 +153,40 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:6135867')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176789')
     }
-  update_files:
-    - ~
 forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/311/ColdSweat-2.3.10e.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -113,15 +207,38 @@ forge-1.20:
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6058311')
     }
-  update_files:
-    - ~
 neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/306/ColdSweat-2.3.10e.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -142,15 +259,38 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6058306')
     }
-  update_files:
-    - ~
 forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5874/642/ColdSweat-2.3.8.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -171,15 +311,38 @@ forge-1.16.5:
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:5874642')
     }
+name: "Cold Sweat"
+forge-1.19.2:
+  required_when_enabled: true
   update_files:
-    - ~
-forge-1.18.2:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/797/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
     minecraft {
         runs {
             client {
@@ -198,8 +361,568 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:5874638')
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176797')
     }
+forge-1.20.1:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/793/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176793')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/789/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176789')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/311/ColdSweat-2.3.10e.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6058311')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/306/ColdSweat-2.3.10e.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6058306')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5874/642/ColdSweat-2.3.8.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:5874642')
+    }
+name: "Cold Sweat"
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/797/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176797')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/793/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176793')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6176/789/ColdSweat-2.3.12.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6176789')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/311/ColdSweat-2.3.10e.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6058311')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6058/306/ColdSweat-2.3.10e.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6058306')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/cold_sweat.jar
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('cold_sweat') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5874/642/ColdSweat-2.3.8.jar', dest: 'lib/cold_sweat.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn cold_sweat
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:5874642')
+    }
 name: "Cold Sweat"

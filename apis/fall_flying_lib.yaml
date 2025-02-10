@@ -1,37 +1,108 @@
 ---
 fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3337/866/fallflyinglib-2.0.4.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fallflyinglib-404770:3337866')
     }
-  update_files:
-    - ~
 fabric-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3043/239/fallflyinglib-1.0.3.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fallflyinglib-404770:3043239')
     }
-  update_files:
-    - ~
 forge-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3042/960/fallflyinglib-1.0.0.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
     minecraft {
         runs {
             client {
@@ -52,6 +123,248 @@ forge-1.16.2:
     dependencies {
       implementation fg.deobf('curse.maven:fallflyinglib-404770:3042960')
     }
+name: "FallFlyingLib"
+fabric-1.16.5:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3337/866/fallflyinglib-2.0.4.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fallflyinglib-404770:3337866')
+    }
+fabric-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3043/239/fallflyinglib-1.0.3.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fallflyinglib-404770:3043239')
+    }
+forge-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3042/960/fallflyinglib-1.0.0.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fallflyinglib-404770:3042960')
+    }
+name: "FallFlyingLib"
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3337/866/fallflyinglib-2.0.4.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fallflyinglib-404770:3337866')
+    }
+fabric-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3043/239/fallflyinglib-1.0.3.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fallflyinglib-404770:3043239')
+    }
+forge-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fall_flying_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/block'
+    item_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/item'
+    effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/effect'
+    environment_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/environment'
+    gui_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/gui'
+    font_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/font'
+    map_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/map'
+    misc_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/models'
+    painting_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/painting'
+    particle_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/particle'
+    trims_textures_dir: 'lib/fall_flying_lib.jar!/assets/fall_flying_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fall_flying_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3042/960/fallflyinglib-1.0.0.jar', dest: 'lib/fall_flying_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fall_flying_lib
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fallflyinglib-404770:3042960')
+    }
 name: "FallFlyingLib"

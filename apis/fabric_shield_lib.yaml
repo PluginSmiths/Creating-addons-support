@@ -1,288 +1,2336 @@
 ---
 fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6107/932/FabricShieldLib-1.8.0-1.21.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6107932')
     }
-  update_files:
-    - ~
 fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6051/395/FabricShieldLib-1.8.0-pre1-1.21.3.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6051395')
     }
-  update_files:
-    - ~
 fabric-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6051/395/FabricShieldLib-1.8.0-pre1-1.21.3.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6051395')
     }
-  update_files:
-    - ~
 fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5672/739/FabricShieldLib-1.7.2-1.21.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5672739')
     }
-  update_files:
-    - ~
 fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5672/739/FabricShieldLib-1.7.2-1.21.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5672739')
     }
-  update_files:
-    - ~
 fabric-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5424/154/FabricShieldLib-1.7.2-1.20.6.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5424154')
     }
-  update_files:
-    - ~
 fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5424/154/FabricShieldLib-1.7.2-1.20.6.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5424154')
     }
-  update_files:
-    - ~
 fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
     }
-  update_files:
-    - ~
 fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
     }
-  update_files:
-    - ~
 fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
     }
-  update_files:
-    - ~
 fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4955/668/FabricShieldLib-1.7.2-1.20.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4955668')
     }
-  update_files:
-    - ~
 fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4955/668/FabricShieldLib-1.7.2-1.20.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4955668')
     }
-  update_files:
-    - ~
 fabric-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/224/FabricShieldLib-1.7.2-1.19.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925224')
     }
-  update_files:
-    - ~
 fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/224/FabricShieldLib-1.7.2-1.19.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925224')
     }
-  update_files:
-    - ~
 fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
     }
-  update_files:
-    - ~
 fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
     }
-  update_files:
-    - ~
 fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
     }
-  update_files:
-    - ~
 fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
     }
-  update_files:
-    - ~
 fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
     }
-  update_files:
-    - ~
 fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
     }
-  update_files:
-    - ~
 fabric-1.17.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/220/FabricShieldLib-1.7.2-1.17.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925220')
     }
-  update_files:
-    - ~
 fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/220/FabricShieldLib-1.7.2-1.17.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
     
     dependencies {
       modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925220')
     }
+name: "Fabric Shield Lib"
+fabric-1.21.4:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6107/932/FabricShieldLib-1.8.0-1.21.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6107932')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6051/395/FabricShieldLib-1.8.0-pre1-1.21.3.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6051395')
+    }
+fabric-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6051/395/FabricShieldLib-1.8.0-pre1-1.21.3.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6051395')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5672/739/FabricShieldLib-1.7.2-1.21.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5672739')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5672/739/FabricShieldLib-1.7.2-1.21.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5672739')
+    }
+fabric-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5424/154/FabricShieldLib-1.7.2-1.20.6.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5424154')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5424/154/FabricShieldLib-1.7.2-1.20.6.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5424154')
+    }
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
+    }
+fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4955/668/FabricShieldLib-1.7.2-1.20.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4955668')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4955/668/FabricShieldLib-1.7.2-1.20.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4955668')
+    }
+fabric-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/224/FabricShieldLib-1.7.2-1.19.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925224')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/224/FabricShieldLib-1.7.2-1.19.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925224')
+    }
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
+    }
+fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
+    }
+fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
+    }
+fabric-1.17.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/220/FabricShieldLib-1.7.2-1.17.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925220')
+    }
+fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/220/FabricShieldLib-1.7.2-1.17.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925220')
+    }
+name: "Fabric Shield Lib"
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6107/932/FabricShieldLib-1.8.0-1.21.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6107932')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6051/395/FabricShieldLib-1.8.0-pre1-1.21.3.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6051395')
+    }
+fabric-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6051/395/FabricShieldLib-1.8.0-pre1-1.21.3.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:6051395')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5672/739/FabricShieldLib-1.7.2-1.21.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5672739')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5672/739/FabricShieldLib-1.7.2-1.21.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5672739')
+    }
+fabric-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5424/154/FabricShieldLib-1.7.2-1.20.6.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5424154')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/5424/154/FabricShieldLib-1.7.2-1.20.6.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:5424154')
+    }
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
+    }
+fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4957/558/FabricShieldLib-1.7.2-1.20.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4957558')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4955/668/FabricShieldLib-1.7.2-1.20.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4955668')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4955/668/FabricShieldLib-1.7.2-1.20.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4955668')
+    }
+fabric-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/224/FabricShieldLib-1.7.2-1.19.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925224')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/224/FabricShieldLib-1.7.2-1.19.4.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925224')
+    }
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
+    }
+fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
+    }
+fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/222/FabricShieldLib-1.7.2-1.19.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925222')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/221/FabricShieldLib-1.7.2-1.18.2.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925221')
+    }
+fabric-1.17.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/220/FabricShieldLib-1.7.2-1.17.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925220')
+    }
+fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_shield_lib.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/block'
+    item_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/item'
+    effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/effect'
+    environment_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/environment'
+    gui_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/gui'
+    font_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/font'
+    map_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/map'
+    misc_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/models'
+    painting_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/painting'
+    particle_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/particle'
+    trims_textures_dir: 'lib/fabric_shield_lib.jar!/assets/fabric_shield_lib/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('fabric_shield_lib') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4925/220/FabricShieldLib-1.7.2-1.17.1.jar', dest: 'lib/fabric_shield_lib.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn fabric_shield_lib
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-shield-lib-380649:4925220')
+    }
 name: "Fabric Shield Lib"

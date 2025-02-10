@@ -1,67 +1,2014 @@
 ---
 fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
     
     dependencies {
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
     }
-  update_files:
-    - ~
 fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
     
     dependencies {
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
     }
-  update_files:
-    - ~
 fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
     
     dependencies {
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
     }
-  update_files:
-    - ~
 fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4087/937/elytrautilities-fabric-1.1.0%2b1.18.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
     
     dependencies {
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4087937')
     }
-  update_files:
-    - ~
 fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3723/96/elytrautilities-fabric-1.16.5-0.0.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
     
     dependencies {
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:3723096')
     }
+name: "Elytra Utilities"
+quilt-1.20.1:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/3/elytrautilities-quilt-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4816003')
+    }
+quilt-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/3/elytrautilities-quilt-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4816003')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/1/elytrautilities-forge-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4816001')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/1/elytrautilities-forge-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4816001')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/999/elytrautilities-fabric-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815999')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/999/elytrautilities-fabric-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815999')
+    }
+quilt-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/966/elytrautilities-quilt-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815966')
+    }
+quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/966/elytrautilities-quilt-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815966')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/964/elytrautilities-forge-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/964/elytrautilities-forge-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
+    }
+fabric-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/962/elytrautilities-fabric-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815962')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/962/elytrautilities-fabric-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815962')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/906/elytrautilities-forge-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+forge-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/906/elytrautilities-forge-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+forge-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/906/elytrautilities-forge-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4087/934/elytrautilities-forge-1.1.0%2b1.18.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4087934')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3723/94/elytrautilities-forge-1.16.5-0.0.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:3723094')
+    }
+name: "Elytra Utilities"
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
+    }
+fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
+    }
+fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4087/937/elytrautilities-fabric-1.1.0%2b1.18.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4087937')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3723/96/elytrautilities-fabric-1.16.5-0.0.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:3723096')
+    }
+name: "Elytra Utilities"
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/3/elytrautilities-quilt-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4816003')
+    }
+quilt-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/3/elytrautilities-quilt-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4816003')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/1/elytrautilities-forge-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4816001')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4816/1/elytrautilities-forge-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4816001')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/999/elytrautilities-fabric-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815999')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/999/elytrautilities-fabric-2.2.1%2b1.20.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815999')
+    }
+quilt-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/966/elytrautilities-quilt-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815966')
+    }
+quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/966/elytrautilities-quilt-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815966')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/964/elytrautilities-forge-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/964/elytrautilities-forge-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
+    }
+fabric-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/962/elytrautilities-fabric-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815962')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/962/elytrautilities-fabric-2.1.1%2b1.19.4.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815962')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/906/elytrautilities-forge-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+forge-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/906/elytrautilities-forge-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+forge-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/906/elytrautilities-forge-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4087/934/elytrautilities-forge-1.1.0%2b1.18.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:4087934')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3723/94/elytrautilities-forge-1.16.5-0.0.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:elytra-utilities-601932:3723094')
+    }
+name: "Elytra Utilities"
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
+    }
+fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
+    }
+fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4815/904/elytrautilities-fabric-2.0.3%2b1.19.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/4087/937/elytrautilities-fabric-1.1.0%2b1.18.2.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4087937')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/elytra_utilities.jar
+  resource_paths:
+    block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
+    item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
+    effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/effect'
+    environment_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/environment'
+    gui_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/gui'
+    font_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/font'
+    map_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/map'
+    misc_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/misc'
+    mob_effect_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/mob_effect'
+    models_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/models'
+    painting_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/painting'
+    particle_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/particle'
+    trims_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('elytra_utilities') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/3723/96/elytrautilities-fabric-1.16.5-0.0.1.jar', dest: 'lib/elytra_utilities.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn elytra_utilities
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:3723096')
+    }
 name: "Elytra Utilities"

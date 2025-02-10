@@ -1,24 +1,72 @@
 ---
 fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/724/aether-1.20.1-1.5.2-beta.2-fabric.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
     
     dependencies {
       modImplementation fg.deobf('curse.maven:aether-255308:6173724')
     }
-  update_files:
-    - ~
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6172/950/aether-1.21.1-1.5.4-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
     minecraft {
         runs {
             client {
@@ -40,29 +88,75 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:aether-255308:6172950')
       implementation fg.deobf('curse.maven:owo-lib-532610:6172950')
     }
-  update_files:
-    - ~
 fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6172/937/aether-1.21.1-1.5.4-fabric.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
     
     dependencies {
       modImplementation fg.deobf('curse.maven:aether-255308:6172937')
       modImplementation fg.deobf('curse.maven:owo-lib-532610:6172937')
     }
-  update_files:
-    - ~
 neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
     minecraft {
         runs {
             client {
@@ -83,15 +177,38 @@ neoforge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
     minecraft {
         runs {
             client {
@@ -112,6 +229,456 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
+name: "The Aether"
+fabric-1.20.1:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/724/aether-1.20.1-1.5.2-beta.2-fabric.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:aether-255308:6173724')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6172/950/aether-1.21.1-1.5.4-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aether-255308:6172950')
+      implementation fg.deobf('curse.maven:owo-lib-532610:6172950')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6172/937/aether-1.21.1-1.5.4-fabric.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:aether-255308:6172937')
+      modImplementation fg.deobf('curse.maven:owo-lib-532610:6172937')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aether-255308:6134920')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aether-255308:6134920')
+    }
+name: "The Aether"
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6173/724/aether-1.20.1-1.5.2-beta.2-fabric.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:aether-255308:6173724')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6172/950/aether-1.21.1-1.5.4-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aether-255308:6172950')
+      implementation fg.deobf('curse.maven:owo-lib-532610:6172950')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6172/937/aether-1.21.1-1.5.4-fabric.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:aether-255308:6172937')
+      modImplementation fg.deobf('curse.maven:owo-lib-532610:6172937')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aether-255308:6134920')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/aether.jar
+  resource_paths:
+    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
+    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
+    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
+    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
+    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
+    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
+    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
+    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
+    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
+    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
+    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
+    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
+    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('aether') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar', dest: 'lib/aether.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn aether
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:aether-255308:6134920')
+    }
 name: "The Aether"

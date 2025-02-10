@@ -1,11 +1,36 @@
 ---
 neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6117/735/irons_spellbooks-1.21-3.8.9.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
     minecraft {
         runs {
             client {
@@ -26,15 +51,38 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
     }
-  update_files:
-    - ~
 neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6117/735/irons_spellbooks-1.21-3.8.9.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
     minecraft {
         runs {
             client {
@@ -55,15 +103,38 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
     }
-  update_files:
-    - ~
 neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6054/196/irons_spellbooks-1.20.1-3.4.0.7.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
     minecraft {
         runs {
             client {
@@ -84,15 +155,38 @@ neoforge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
     }
-  update_files:
-    - ~
 forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  required_when_enabled: true
   gradle: |
     repositories {
       maven {
         url = 'https://cursemaven.com/'
       }
     }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6054/196/irons_spellbooks-1.20.1-3.4.0.7.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
     minecraft {
         runs {
             client {
@@ -113,6 +207,414 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
     }
+name: "Iron's Spells 'n Spellbooks"
+neoforge-1.21:
+  required_when_enabled: true
   update_files:
-    - ~
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6117/735/irons_spellbooks-1.21-3.8.9.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6117/735/irons_spellbooks-1.21-3.8.9.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6054/196/irons_spellbooks-1.20.1-3.4.0.7.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6054/196/irons_spellbooks-1.20.1-3.4.0.7.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
+    }
+name: "Iron's Spells 'n Spellbooks"
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6117/735/irons_spellbooks-1.21-3.8.9.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6117/735/irons_spellbooks-1.21-3.8.9.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6054/196/irons_spellbooks-1.20.1-3.4.0.7.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/irons_spellsn_spellbooks.jar
+  resource_paths:
+    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
+    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
+    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
+    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
+    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
+    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
+    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
+    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
+    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
+    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
+    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
+    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
+    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('irons_spellsn_spellbooks') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6054/196/irons_spellbooks-1.20.1-3.4.0.7.jar', dest: 'lib/irons_spellsn_spellbooks.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn irons_spellsn_spellbooks
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
+    }
 name: "Iron's Spells 'n Spellbooks"
