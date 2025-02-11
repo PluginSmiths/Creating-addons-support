@@ -1,0 +1,1 @@
+new ItemStack(${input$item}).is(ItemTags.create(new ResourceLocation("wizards_reborn:${field$name}")))

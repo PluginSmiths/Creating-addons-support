@@ -1,0 +1,1 @@
+ItemHelper.canInsertGem(${input$item})

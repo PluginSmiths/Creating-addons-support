@@ -1,0 +1,1 @@
+ThirstHelper.${field$name}(${input$item})

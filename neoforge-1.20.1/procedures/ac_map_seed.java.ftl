@@ -1,0 +1,1 @@
+CaveMapItem.getSeed(${input$item})

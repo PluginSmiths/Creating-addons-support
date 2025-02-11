@@ -1,0 +1,1 @@
+world instanceof Level _l025 && com.momosoftworks.coldsweat.api.util.Temperature.getTemperatureAt(new BlockPos(${input$X}, ${input$Y}, ${input$Z}), _l025)
