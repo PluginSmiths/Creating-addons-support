@@ -1,0 +1,1 @@
+HungerHelper.get${field$name}(${input$player})

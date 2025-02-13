@@ -1,0 +1,1 @@
+WaterPurity.is${field$name}Container(${input$itemstack})

@@ -1,0 +1,1 @@
+if(${input$entity} instanceof Player _pl031) ClientFlightController.toggleFlight(_pl031);

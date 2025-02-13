@@ -1,0 +1,1 @@
+if(${input$entity} instanceof ServerPlayer _ServerPl022) PlacementHandler.tryPlaceEntity(_ServerPl022, new BlockPos((int)${input$X},(int) ${input$Y},(int) ${input$Z}), ${input$dir}, null);

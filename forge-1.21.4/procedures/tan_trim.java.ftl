@@ -1,0 +1,1 @@
+${input$trim}.is(ModTags.Trims.${field$name}_TRIMS)

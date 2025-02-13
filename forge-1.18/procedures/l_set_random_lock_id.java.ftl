@@ -1,0 +1,1 @@
+KeyItem.setLockId(${input$item}, UUID.randomUUID());

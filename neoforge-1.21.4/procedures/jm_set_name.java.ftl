@@ -1,0 +1,1 @@
+${input$waypoint}.setName(${input$name});

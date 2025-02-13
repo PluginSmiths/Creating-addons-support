@@ -1,0 +1,1 @@
+${input$item}.is(ItemTags.create(new ResourceLocation("farmersdelight:${field$name}")))

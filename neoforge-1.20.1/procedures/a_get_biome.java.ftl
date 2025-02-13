@@ -1,0 +1,1 @@
+world.getBiome(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})).is(TagKey.create(Registries.BIOME, new ResourceLocation("aether:has_${field$name}")))

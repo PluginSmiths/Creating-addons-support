@@ -1,0 +1,1 @@
+MagnetUtil.setEntityMagneticDelta(${input$entity}, new Vec3((int) ${input$X},(int) ${input$Y},(int) ${input$Z}));

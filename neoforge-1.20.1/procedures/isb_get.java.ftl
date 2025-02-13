@@ -1,0 +1,1 @@
+${input$magic}.get${field$name}()

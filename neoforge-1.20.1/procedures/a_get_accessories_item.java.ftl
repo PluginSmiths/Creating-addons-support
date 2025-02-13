@@ -1,0 +1,1 @@
+${input$item}.is(ItemTags.create(new ResourceLocation("aether:accessories_${field$name}")))

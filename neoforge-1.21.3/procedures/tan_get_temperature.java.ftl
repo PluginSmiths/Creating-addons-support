@@ -1,0 +1,1 @@
+${input$entity} instanceof Player _pl039 && TemperatureHelper.getTemperatureForPlayer(_pl039).equals(TemperatureLevel.${field$number})

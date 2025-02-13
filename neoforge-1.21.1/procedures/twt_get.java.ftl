@@ -1,0 +1,1 @@
+ThirstHelper.get${field$name}(${input$itemstack})

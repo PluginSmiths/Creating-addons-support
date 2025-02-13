@@ -1,0 +1,1 @@
+${input$spell}.${field$name}()

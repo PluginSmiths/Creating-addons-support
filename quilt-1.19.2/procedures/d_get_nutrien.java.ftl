@@ -1,0 +1,1 @@
+${input$diet}.getValue("${field$nutrien}")

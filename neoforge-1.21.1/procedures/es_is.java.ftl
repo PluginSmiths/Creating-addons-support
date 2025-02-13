@@ -1,0 +1,1 @@
+${input$entity} instanceof LivingEntity _en030 && ElytraSlotCommonMod.${field$name}(_en030)

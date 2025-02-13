@@ -1,0 +1,1 @@
+if(${input$entity} instanceof LivingEntity _pl026) com.momosoftworks.coldsweat.api.util.Temperature.${field$type}(_pl026, com.momosoftworks.coldsweat.api.util.Temperature.Trait.${field$temperature}, ${input$number});

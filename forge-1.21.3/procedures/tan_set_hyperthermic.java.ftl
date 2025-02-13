@@ -1,0 +1,1 @@
+if(${input$entity} instanceof Player _pl044) TemperatureHelper.setTicksHyperthermic(_pl044, ${input$number});

@@ -1,0 +1,1 @@
+ItemHelper.hasSockets(${input$item})

@@ -1,0 +1,1 @@
+event.setBrightness(${input$number});

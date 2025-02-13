@@ -1,0 +1,1 @@
+(${input$entity} instanceof Player _pl053 ? _pl053.getCapability(ModCapabilities.PLAYER_THIRST).orElse(new PlayerThirst()) : null)

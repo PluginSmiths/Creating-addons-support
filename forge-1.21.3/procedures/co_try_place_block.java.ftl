@@ -1,0 +1,1 @@
+if(${input$entity} instanceof ServerPlayer _ServerPl021) PlacementHandler.tryPlaceBlock(_ServerPl021, world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z})), ${input$dir}, null);

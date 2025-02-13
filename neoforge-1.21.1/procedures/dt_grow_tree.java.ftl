@@ -1,0 +1,1 @@
+if(world instanceof Level _l029) TreeHelper.growPulse(_l029, BlockPos = new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}));
