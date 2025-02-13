@@ -1,3 +1,325 @@
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:5083225')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:5083225')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:5010316')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:5010316')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:5010316')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:5010316')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:4525734')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:4525734')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:4311685')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:4311685')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:3966273')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:3966273')
+    }
+forge-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/blue_skies.jar
+  resource_paths:
+    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
+    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
+    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
+    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
+    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
+    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
+    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
+    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
+    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
+    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
+    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
+    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
+    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:blue-skies-312918:3905041')
+      implementation fg.deobf('curse.maven:structure-gel-api-378802:3905041')
+    }
 forge-1.19:
   required_when_enabled: true
   update_files:

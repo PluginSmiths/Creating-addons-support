@@ -1,3 +1,1063 @@
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:6140316')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:6123307')
+    }
+forge-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632466')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632466')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632464')
+    }
+forge-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632464')
+    }
+forge-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632464')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632462')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632460')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632460')
+    }
+name: "Emotecraft"
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6140315')
+    }
+quilt-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6140315')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6123306')
+    }
+quilt-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6123306')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+    }
+quilt-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+    }
+quilt-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+    }
+quilt-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632465')
+    }
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+    }
+fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+    }
+fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+    }
+quilt-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+    }
+quilt-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+    }
+quilt-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632461')
+    }
+quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632461')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/emotecraft.jar
+  resource_paths:
+    block_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/block'
+    item_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/item'
+    effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/effect'
+    environment_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/environment'
+    gui_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/gui'
+    font_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/font'
+    map_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/map'
+    misc_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/misc'
+    mob_effect_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/mob_effect'
+    models_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/models'
+    painting_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/painting'
+    particle_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/particle'
+    trims_textures_dir: 'lib/emotecraft.jar!/assets/emotecraft/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632459')
+    }
 quilt-1.20:
   required_when_enabled: true
   update_files:

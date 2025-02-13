@@ -1,3 +1,325 @@
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:4711435')
+      implementation fg.deobf('curse.maven:placebo-283644:4711435')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:4711435')
+      implementation fg.deobf('curse.maven:placebo-283644:4711435')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:4679156')
+      implementation fg.deobf('curse.maven:placebo-283644:4679156')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:3755834')
+      implementation fg.deobf('curse.maven:placebo-283644:3755834')
+    }
+forge-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:3567088')
+      implementation fg.deobf('curse.maven:placebo-283644:3567088')
+    }
+forge-1.17.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:3561829')
+      implementation fg.deobf('curse.maven:placebo-283644:3561829')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/fast_suite.jar
+  resource_paths:
+    block_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/block'
+    item_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/item'
+    effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/effect'
+    environment_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/environment'
+    gui_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/gui'
+    font_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/font'
+    map_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/map'
+    misc_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/misc'
+    mob_effect_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/mob_effect'
+    models_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/models'
+    painting_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/painting'
+    particle_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/particle'
+    trims_textures_dir: 'lib/fast_suite.jar!/assets/fast_suite/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:fastsuite-475117:3419895')
+      implementation fg.deobf('curse.maven:placebo-283644:3419895')
+    }
 forge-1.16.4:
   required_when_enabled: true
   update_files:

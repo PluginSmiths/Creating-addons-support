@@ -1,3 +1,965 @@
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080328')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080326')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080325')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080323')
+    }
+fabric-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080323')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080321')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080319')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080318')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080318')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080316')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080314')
+    }
+fabric-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080311')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080311')
+    }
+forge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080309')
+    }
+fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080308')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080308')
+    }
+forge-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080305')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080305')
+    }
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080304')
+    }
+forge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080302')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080300')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080300')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080299')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080299')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:ping-wheel-734339:6080297')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/ping_wheel.jar
+  resource_paths:
+    block_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/block'
+    item_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/item'
+    effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/effect'
+    environment_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/environment'
+    gui_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/gui'
+    font_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/font'
+    map_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/map'
+    misc_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/misc'
+    mob_effect_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/mob_effect'
+    models_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/models'
+    painting_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/painting'
+    particle_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/particle'
+    trims_textures_dir: 'lib/ping_wheel.jar!/assets/ping_wheel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:ping-wheel-734339:6080296')
+    }
 fabric-1.19.3:
   required_when_enabled: true
   update_files:

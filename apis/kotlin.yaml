@@ -1,3 +1,3767 @@
+quilt-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:5804040')
+    }
+quilt-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:5232922')
+    }
+quilt-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:5107860')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:4750844')
+    }
+quilt-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:4587945')
+    }
+quilt-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:4490412')
+    }
+quilt-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:4439215')
+    }
+quilt-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:qkl-720410:4300780')
+    }
+name: "Quilt Kotlin Libraries"
+fabric-1.17.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.16.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.16.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.14.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.14.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.17:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.14.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.15:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.16:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.15.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.14:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.16.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.14.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.16.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.19:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.15.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+fabric-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    }
+name: "Fabric Language Kotlin"
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+neoforge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+forge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+forge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+forge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+neoforge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    }
+neoforge-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4983659')
+    }
+forge-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4983659')
+    }
+forge-1.18.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    }
+forge-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    }
+forge-1.18:
+  required_when_enabled: true
+  update_files:
+    - lib/kotlin.jar
+  resource_paths:
+    block_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/block'
+    item_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/item'
+    effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/effect'
+    environment_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/environment'
+    gui_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/gui'
+    font_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/font'
+    map_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/map'
+    misc_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/misc'
+    mob_effect_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/mob_effect'
+    models_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/models'
+    painting_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/painting'
+    particle_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/particle'
+    trims_textures_dir: 'lib/kotlin.jar!/assets/kotlin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    }
 forge-1.19:
   required_when_enabled: true
   update_files:

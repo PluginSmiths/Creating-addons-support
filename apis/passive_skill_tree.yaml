@@ -1,3 +1,50 @@
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/passive_skill_tree.jar
+  resource_paths:
+    block_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/block'
+    item_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/item'
+    effect_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/effect'
+    environment_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/environment'
+    gui_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/gui'
+    font_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/font'
+    map_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/map'
+    misc_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/misc'
+    mob_effect_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/mob_effect'
+    models_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/models'
+    painting_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/painting'
+    particle_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/particle'
+    trims_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:passive-skill-tree-850298:5729406')
+      implementation fg.deobf('curse.maven:item-production-lib-950401:5729406')
+      implementation fg.deobf('curse.maven:attributefix-280510:5729406')
+    }
 forge-1.20.1:
   required_when_enabled: true
   update_files:

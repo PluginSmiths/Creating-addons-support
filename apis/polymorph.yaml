@@ -1,3 +1,521 @@
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5995380')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5995380')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5995378')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5995378')
+    }
+forge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5995376')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5995376')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5995253')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5995253')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5995251')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5995251')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5995249')
+    }
+quilt-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5995249')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:polymorph-388800:5539324')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/polymorph.jar
+  resource_paths:
+    block_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/block'
+    item_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/item'
+    effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/effect'
+    environment_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/environment'
+    gui_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/gui'
+    font_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/font'
+    map_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/map'
+    misc_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/misc'
+    mob_effect_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/mob_effect'
+    models_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/models'
+    painting_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/painting'
+    particle_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/particle'
+    trims_textures_dir: 'lib/polymorph.jar!/assets/polymorph/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:polymorph-388800:5539321')
+    }
 forge-1.20.6:
   required_when_enabled: true
   update_files:

@@ -1,3 +1,984 @@
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011965')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011963')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011962')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011960')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011958')
+    }
+forge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011956')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
+    }
+fabric-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011951')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011951')
+    }
+neoforge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011951')
+    }
+forge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
+    }
+forge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011949')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011947')
+    }
+forge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011945')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011944')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011938')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011937')
+    }
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011935')
+    }
+neoforge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011933')
+    }
+forge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:first-person-model-333287:6011932')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/first_person_model.jar
+  resource_paths:
+    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
+    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
+    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
+    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
+    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
+    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
+    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
+    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
+    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
+    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
+    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
+    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
+    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:first-person-model-333287:6011930')
+    }
 forge-1.20.1:
   required_when_enabled: true
   update_files:

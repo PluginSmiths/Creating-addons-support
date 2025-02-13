@@ -1,3 +1,138 @@
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/origins.jar
+  resource_paths:
+    block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
+    item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
+    effect_textures_dir: 'lib/origins.jar!/assets/origins/textures/effect'
+    environment_textures_dir: 'lib/origins.jar!/assets/origins/textures/environment'
+    gui_textures_dir: 'lib/origins.jar!/assets/origins/textures/gui'
+    font_textures_dir: 'lib/origins.jar!/assets/origins/textures/font'
+    map_textures_dir: 'lib/origins.jar!/assets/origins/textures/map'
+    misc_textures_dir: 'lib/origins.jar!/assets/origins/textures/misc'
+    mob_effect_textures_dir: 'lib/origins.jar!/assets/origins/textures/mob_effect'
+    models_textures_dir: 'lib/origins.jar!/assets/origins/textures/models'
+    painting_textures_dir: 'lib/origins.jar!/assets/origins/textures/painting'
+    particle_textures_dir: 'lib/origins.jar!/assets/origins/textures/particle'
+    trims_textures_dir: 'lib/origins.jar!/assets/origins/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:origins-forge-474438:5314209')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/origins.jar
+  resource_paths:
+    block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
+    item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
+    effect_textures_dir: 'lib/origins.jar!/assets/origins/textures/effect'
+    environment_textures_dir: 'lib/origins.jar!/assets/origins/textures/environment'
+    gui_textures_dir: 'lib/origins.jar!/assets/origins/textures/gui'
+    font_textures_dir: 'lib/origins.jar!/assets/origins/textures/font'
+    map_textures_dir: 'lib/origins.jar!/assets/origins/textures/map'
+    misc_textures_dir: 'lib/origins.jar!/assets/origins/textures/misc'
+    mob_effect_textures_dir: 'lib/origins.jar!/assets/origins/textures/mob_effect'
+    models_textures_dir: 'lib/origins.jar!/assets/origins/textures/models'
+    painting_textures_dir: 'lib/origins.jar!/assets/origins/textures/painting'
+    particle_textures_dir: 'lib/origins.jar!/assets/origins/textures/particle'
+    trims_textures_dir: 'lib/origins.jar!/assets/origins/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:origins-forge-474438:5314209')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/origins.jar
+  resource_paths:
+    block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
+    item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
+    effect_textures_dir: 'lib/origins.jar!/assets/origins/textures/effect'
+    environment_textures_dir: 'lib/origins.jar!/assets/origins/textures/environment'
+    gui_textures_dir: 'lib/origins.jar!/assets/origins/textures/gui'
+    font_textures_dir: 'lib/origins.jar!/assets/origins/textures/font'
+    map_textures_dir: 'lib/origins.jar!/assets/origins/textures/map'
+    misc_textures_dir: 'lib/origins.jar!/assets/origins/textures/misc'
+    mob_effect_textures_dir: 'lib/origins.jar!/assets/origins/textures/mob_effect'
+    models_textures_dir: 'lib/origins.jar!/assets/origins/textures/models'
+    painting_textures_dir: 'lib/origins.jar!/assets/origins/textures/painting'
+    particle_textures_dir: 'lib/origins.jar!/assets/origins/textures/particle'
+    trims_textures_dir: 'lib/origins.jar!/assets/origins/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:origins-forge-474438:5314165')
+    }
 forge-1.18.2:
   required_when_enabled: true
   update_files:

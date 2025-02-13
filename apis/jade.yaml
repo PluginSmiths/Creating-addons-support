@@ -1,3 +1,476 @@
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6170888')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6155158')
+    }
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6155088')
+    }
+quilt-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6155088')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6154968')
+    }
+quilt-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6154968')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6106101')
+    }
+neoforge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6106101')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6106101')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6106101')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6106093')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6106093')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/jade.jar
+  resource_paths:
+    block_textures_dir: 'lib/jade.jar!/assets/jade/textures/block'
+    item_textures_dir: 'lib/jade.jar!/assets/jade/textures/item'
+    effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/effect'
+    environment_textures_dir: 'lib/jade.jar!/assets/jade/textures/environment'
+    gui_textures_dir: 'lib/jade.jar!/assets/jade/textures/gui'
+    font_textures_dir: 'lib/jade.jar!/assets/jade/textures/font'
+    map_textures_dir: 'lib/jade.jar!/assets/jade/textures/map'
+    misc_textures_dir: 'lib/jade.jar!/assets/jade/textures/misc'
+    mob_effect_textures_dir: 'lib/jade.jar!/assets/jade/textures/mob_effect'
+    models_textures_dir: 'lib/jade.jar!/assets/jade/textures/models'
+    painting_textures_dir: 'lib/jade.jar!/assets/jade/textures/painting'
+    particle_textures_dir: 'lib/jade.jar!/assets/jade/textures/particle'
+    trims_textures_dir: 'lib/jade.jar!/assets/jade/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:jade-324717:6106093')
+    }
 quilt-1.20:
   required_when_enabled: true
   update_files:

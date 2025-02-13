@@ -1,3 +1,408 @@
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+forge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cea-952442:5773159')
+      implementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+forge-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cea-952442:5773159')
+      implementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cea-952442:5773159')
+      implementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:cea-952442:5773159')
+      implementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+quilt-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+quilt-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
+quilt-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/fabric_entity_attributes.jar
+  resource_paths:
+    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
+    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
+    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
+    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
+    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
+    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
+    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
+    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
+    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
+    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
+    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
+    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
+    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cea-952442:5773159')
+      modImplementation fg.deobf('curse.maven:sinytra-connector-890127:5773159')
+      modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
+    }
 quilt-1.20.4:
   required_when_enabled: true
   update_files:

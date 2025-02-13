@@ -1,3 +1,768 @@
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5694215')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5694215')
+    }
+forge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5694213')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5694213')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5322502')
+    }
+forge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5322500')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5281763')
+    }
+forge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5281760')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5281700')
+    }
+neoforge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5281700')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5281700')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:5281700')
+    }
+forge-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:4807205')
+    }
+forge-1.19.3:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:4442066')
+    }
+forge-1.19.4:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:4442066')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:3929284')
+    }
+forge-1.19.1:
+  required_when_enabled: true
+  update_files:
+    - lib/caelus.jar
+  resource_paths:
+    block_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/block'
+    item_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/item'
+    effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/effect'
+    environment_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/environment'
+    gui_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/gui'
+    font_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/font'
+    map_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/map'
+    misc_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/misc'
+    mob_effect_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/mob_effect'
+    models_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/models'
+    painting_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/painting'
+    particle_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/particle'
+    trims_textures_dir: 'lib/caelus.jar!/assets/caelus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:caelus-308989:3929284')
+    }
 forge-1.19:
   required_when_enabled: true
   update_files:

@@ -1,3 +1,521 @@
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5864743')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5864743')
+    }
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:5864742')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:5864742')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:5864741')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:5864741')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586600')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586600')
+    }
+neoforge-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586595')
+    }
+neoforge-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5586595')
+    }
+fabric-1.20.5:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:5586594')
+    }
+fabric-1.20.6:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:5586594')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:appleskin-248787:5042105')
+    }
+fabric-1.20.3:
+  required_when_enabled: true
+  update_files:
+    - lib/apple_skin.jar
+  resource_paths:
+    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
+    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
+    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
+    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
+    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
+    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
+    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
+    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
+    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
+    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
+    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
+    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
+    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:appleskin-248787:4953893')
+    }
 fabric-1.20.4:
   required_when_enabled: true
   update_files:

@@ -1,3 +1,276 @@
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/oculus.jar
+  resource_paths:
+    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
+    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
+    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
+    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
+    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
+    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
+    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
+    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
+    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
+    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
+    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
+    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
+    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:oculus-581495:6020961')
+      implementation fg.deobf('curse.maven:rubidium-574856:6020961')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/oculus.jar
+  resource_paths:
+    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
+    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
+    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
+    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
+    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
+    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
+    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
+    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
+    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
+    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
+    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
+    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
+    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:oculus-581495:6020952')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/oculus.jar
+  resource_paths:
+    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
+    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
+    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
+    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
+    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
+    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
+    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
+    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
+    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
+    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
+    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
+    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
+    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:oculus-581495:6020952')
+    }
+forge-1.16.5:
+  required_when_enabled: true
+  update_files:
+    - lib/oculus.jar
+  resource_paths:
+    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
+    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
+    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
+    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
+    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
+    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
+    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
+    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
+    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
+    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
+    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
+    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
+    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:oculus-581495:5194273')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/oculus.jar
+  resource_paths:
+    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
+    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
+    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
+    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
+    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
+    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
+    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
+    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
+    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
+    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
+    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
+    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
+    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:oculus-581495:4578744')
+      implementation fg.deobf('curse.maven:rubidium-574856:4578744')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/oculus.jar
+  resource_paths:
+    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
+    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
+    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
+    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
+    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
+    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
+    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
+    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
+    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
+    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
+    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
+    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
+    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:oculus-581495:4578741')
+      implementation fg.deobf('curse.maven:rubidium-574856:4578741')
+    }
 forge-1.19.4:
   required_when_enabled: true
   update_files:

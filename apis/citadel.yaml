@@ -1,3 +1,138 @@
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/citadel.jar
+  resource_paths:
+    block_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/block'
+    item_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/item'
+    effect_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/effect'
+    environment_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/environment'
+    gui_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/gui'
+    font_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/font'
+    map_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/map'
+    misc_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/misc'
+    mob_effect_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/mob_effect'
+    models_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/models'
+    painting_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/painting'
+    particle_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/particle'
+    trims_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:6002521')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/citadel.jar
+  resource_paths:
+    block_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/block'
+    item_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/item'
+    effect_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/effect'
+    environment_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/environment'
+    gui_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/gui'
+    font_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/font'
+    map_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/map'
+    misc_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/misc'
+    mob_effect_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/mob_effect'
+    models_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/models'
+    painting_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/painting'
+    particle_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/particle'
+    trims_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:6002521')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/citadel.jar
+  resource_paths:
+    block_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/block'
+    item_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/item'
+    effect_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/effect'
+    environment_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/environment'
+    gui_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/gui'
+    font_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/font'
+    map_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/map'
+    misc_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/misc'
+    mob_effect_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/mob_effect'
+    models_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/models'
+    painting_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/painting'
+    particle_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/particle'
+    trims_textures_dir: 'lib/citadel.jar!/assets/citadel/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:citadel-331936:4579078')
+    }
 forge-1.19.2:
   required_when_enabled: true
   update_files:

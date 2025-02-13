@@ -1,3 +1,628 @@
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170448')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170439')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170430')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170430')
+    }
+forge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170429')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170429')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170423')
+    }
+forge-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6170423')
+    }
+neoforge-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6025248')
+    }
+neoforge-1.21.2:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6025248')
+    }
+name: "Balm"
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170438')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170427')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170427')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170424')
+    }
+fabric-1.20:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170424')
+    }
+fabric-1.21.3:
+  required_when_enabled: true
+  update_files:
+    - lib/balm.jar
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025240')
+    }
 fabric-1.21.2:
   required_when_enabled: true
   update_files:

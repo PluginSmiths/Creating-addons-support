@@ -1,3 +1,279 @@
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/toast_controll.jar
+  resource_paths:
+    block_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/block'
+    item_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/item'
+    effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/effect'
+    environment_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/environment'
+    gui_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/gui'
+    font_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/font'
+    map_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/map'
+    misc_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/misc'
+    mob_effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/mob_effect'
+    models_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/models'
+    painting_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/painting'
+    particle_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/particle'
+    trims_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:toast-control-271740:5530706')
+      implementation fg.deobf('curse.maven:placebo-283644:5530706')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/toast_controll.jar
+  resource_paths:
+    block_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/block'
+    item_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/item'
+    effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/effect'
+    environment_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/environment'
+    gui_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/gui'
+    font_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/font'
+    map_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/map'
+    misc_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/misc'
+    mob_effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/mob_effect'
+    models_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/models'
+    painting_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/painting'
+    particle_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/particle'
+    trims_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:toast-control-271740:5530706')
+      implementation fg.deobf('curse.maven:placebo-283644:5530706')
+    }
+neoforge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/toast_controll.jar
+  resource_paths:
+    block_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/block'
+    item_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/item'
+    effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/effect'
+    environment_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/environment'
+    gui_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/gui'
+    font_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/font'
+    map_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/map'
+    misc_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/misc'
+    mob_effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/mob_effect'
+    models_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/models'
+    painting_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/painting'
+    particle_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/particle'
+    trims_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:toast-control-271740:4711316')
+      implementation fg.deobf('curse.maven:placebo-283644:4711316')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/toast_controll.jar
+  resource_paths:
+    block_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/block'
+    item_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/item'
+    effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/effect'
+    environment_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/environment'
+    gui_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/gui'
+    font_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/font'
+    map_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/map'
+    misc_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/misc'
+    mob_effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/mob_effect'
+    models_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/models'
+    painting_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/painting'
+    particle_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/particle'
+    trims_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:toast-control-271740:4711316')
+      implementation fg.deobf('curse.maven:placebo-283644:4711316')
+    }
+forge-1.19.2:
+  required_when_enabled: true
+  update_files:
+    - lib/toast_controll.jar
+  resource_paths:
+    block_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/block'
+    item_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/item'
+    effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/effect'
+    environment_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/environment'
+    gui_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/gui'
+    font_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/font'
+    map_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/map'
+    misc_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/misc'
+    mob_effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/mob_effect'
+    models_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/models'
+    painting_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/painting'
+    particle_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/particle'
+    trims_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:toast-control-271740:4028343')
+      implementation fg.deobf('curse.maven:placebo-283644:4028343')
+    }
+forge-1.18.2:
+  required_when_enabled: true
+  update_files:
+    - lib/toast_controll.jar
+  resource_paths:
+    block_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/block'
+    item_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/item'
+    effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/effect'
+    environment_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/environment'
+    gui_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/gui'
+    font_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/font'
+    map_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/map'
+    misc_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/misc'
+    mob_effect_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/mob_effect'
+    models_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/models'
+    painting_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/painting'
+    particle_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/particle'
+    trims_textures_dir: 'lib/toast_controll.jar!/assets/toast_controll/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:toast-control-271740:3929072')
+      implementation fg.deobf('curse.maven:placebo-283644:3929072')
+    }
 forge-1.18.1:
   required_when_enabled: true
   update_files:

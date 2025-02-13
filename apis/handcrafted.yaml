@@ -1,3 +1,337 @@
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:handcrafted-538214:5617253')
+      modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5617253')
+    }
+neoforge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5617252')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5617252')
+    }
+fabric-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:handcrafted-538214:5436877')
+      modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5436877')
+    }
+neoforge-1.21:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5436875')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5436875')
+    }
+fabric-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:handcrafted-538214:5119203')
+      modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5119203')
+    }
+neoforge-1.20.4:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5119202')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5119202')
+    }
+fabric-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:handcrafted-538214:5118730')
+      modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5118730')
+    }
+forge-1.20.1:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:handcrafted-538214:5118729')
+      implementation fg.deobf('curse.maven:resourceful-lib-570073:5118729')
+    }
+fabric-1.20.2:
+  required_when_enabled: true
+  update_files:
+    - lib/handcrafted.jar
+  resource_paths:
+    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
+    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
+    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
+    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
+    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
+    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
+    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
+    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
+    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
+    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
+    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
+    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
+    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:handcrafted-538214:4876961')
+      modImplementation fg.deobf('curse.maven:resourceful-lib-570073:4876961')
+    }
 neoforge-1.20.2:
   required_when_enabled: true
   update_files:
