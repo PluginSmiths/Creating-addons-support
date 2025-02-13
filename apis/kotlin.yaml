@@ -1751,22 +1751,6 @@ neoforge-1.21:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
@@ -1805,22 +1789,6 @@ neoforge-1.21.4:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -1861,22 +1829,6 @@ neoforge-1.20.6:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
@@ -1915,22 +1867,6 @@ neoforge-1.21.3:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -1971,22 +1907,6 @@ neoforge-1.21.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
@@ -2025,22 +1945,6 @@ neoforge-1.21.2:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2081,22 +1985,6 @@ forge-1.21:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
@@ -2135,22 +2023,6 @@ forge-1.21.4:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2191,22 +2063,6 @@ forge-1.20.6:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
@@ -2245,22 +2101,6 @@ forge-1.21.3:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2301,22 +2141,6 @@ forge-1.21.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
@@ -2355,22 +2179,6 @@ forge-1.21.2:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2411,22 +2219,6 @@ neoforge-1.19.3:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -2465,22 +2257,6 @@ neoforge-1.20.2:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2521,22 +2297,6 @@ neoforge-1.19.4:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -2575,22 +2335,6 @@ neoforge-1.20.3:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2631,22 +2375,6 @@ neoforge-1.20.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -2685,22 +2413,6 @@ neoforge-1.20:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2741,22 +2453,6 @@ neoforge-1.20.4:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -2795,22 +2491,6 @@ forge-1.19.3:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2851,22 +2531,6 @@ forge-1.20.2:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -2905,22 +2569,6 @@ forge-1.19.4:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -2961,22 +2609,6 @@ forge-1.20.3:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -3015,22 +2647,6 @@ forge-1.20.1:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -3071,22 +2687,6 @@ forge-1.20:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
@@ -3125,22 +2725,6 @@ forge-1.20.4:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -3181,22 +2765,6 @@ neoforge-1.20.5:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4983659')
@@ -3235,22 +2803,6 @@ forge-1.20.5:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -3291,22 +2843,6 @@ forge-1.18.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
@@ -3345,22 +2881,6 @@ forge-1.18.2:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -3401,22 +2921,6 @@ forge-1.19.2:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
@@ -3455,22 +2959,6 @@ forge-1.19.1:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
@@ -3511,22 +2999,6 @@ forge-1.18:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     
     dependencies {
       implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
@@ -3565,22 +3037,6 @@ forge-1.19:
         implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
     }
     
     dependencies {
