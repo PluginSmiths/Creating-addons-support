@@ -1,2049 +1,3 @@
----
-quilt-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/840/dynamic-fps-3.7.7%2bminecraft-1.21.2-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959840')
-    }
-quilt-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/840/dynamic-fps-3.7.7%2bminecraft-1.21.2-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959840')
-    }
-quilt-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/840/dynamic-fps-3.7.7%2bminecraft-1.21.2-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959840')
-    }
-neoforge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/838/dynamic-fps-3.7.7%2bminecraft-1.21.2-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959838')
-    }
-neoforge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/838/dynamic-fps-3.7.7%2bminecraft-1.21.2-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959838')
-    }
-neoforge-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/838/dynamic-fps-3.7.7%2bminecraft-1.21.2-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959838')
-    }
-forge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/835/dynamic-fps-3.7.7%2bminecraft-1.21.2-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959835')
-    }
-forge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/835/dynamic-fps-3.7.7%2bminecraft-1.21.2-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959835')
-    }
-forge-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/835/dynamic-fps-3.7.7%2bminecraft-1.21.2-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959835')
-    }
-fabric-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/833/dynamic-fps-3.7.7%2bminecraft-1.21.2-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959833')
-    }
-fabric-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/833/dynamic-fps-3.7.7%2bminecraft-1.21.2-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959833')
-    }
-fabric-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/833/dynamic-fps-3.7.7%2bminecraft-1.21.2-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959833')
-    }
-quilt-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/830/dynamic-fps-3.7.7%2bminecraft-1.21.0-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959830')
-    }
-quilt-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/830/dynamic-fps-3.7.7%2bminecraft-1.21.0-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959830')
-    }
-neoforge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/826/dynamic-fps-3.7.7%2bminecraft-1.21.0-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959826')
-    }
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/826/dynamic-fps-3.7.7%2bminecraft-1.21.0-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959826')
-    }
-forge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/824/dynamic-fps-3.7.7%2bminecraft-1.21.0-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959824')
-    }
-forge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/824/dynamic-fps-3.7.7%2bminecraft-1.21.0-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959824')
-    }
-fabric-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/822/dynamic-fps-3.7.7%2bminecraft-1.21.0-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959822')
-    }
-fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/822/dynamic-fps-3.7.7%2bminecraft-1.21.0-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959822')
-    }
-quilt-1.20.5:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/819/dynamic-fps-3.7.7%2bminecraft-1.20.5-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959819')
-    }
-quilt-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/819/dynamic-fps-3.7.7%2bminecraft-1.20.5-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959819')
-    }
-neoforge-1.20.5:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/817/dynamic-fps-3.7.7%2bminecraft-1.20.5-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959817')
-    }
-neoforge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/817/dynamic-fps-3.7.7%2bminecraft-1.20.5-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959817')
-    }
-forge-1.20.5:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/815/dynamic-fps-3.7.7%2bminecraft-1.20.5-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959815')
-    }
-forge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/815/dynamic-fps-3.7.7%2bminecraft-1.20.5-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959815')
-    }
-fabric-1.20.5:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/813/dynamic-fps-3.7.7%2bminecraft-1.20.5-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959813')
-    }
-fabric-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/813/dynamic-fps-3.7.7%2bminecraft-1.20.5-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959813')
-    }
-quilt-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/809/dynamic-fps-3.7.7%2bminecraft-1.20.2-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959809')
-    }
-quilt-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/809/dynamic-fps-3.7.7%2bminecraft-1.20.2-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959809')
-    }
-quilt-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/809/dynamic-fps-3.7.7%2bminecraft-1.20.2-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959809')
-    }
-neoforge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/806/dynamic-fps-3.7.7%2bminecraft-1.20.2-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959806')
-    }
-neoforge-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/806/dynamic-fps-3.7.7%2bminecraft-1.20.2-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959806')
-    }
-neoforge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/806/dynamic-fps-3.7.7%2bminecraft-1.20.2-neoforge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959806')
-    }
-forge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/804/dynamic-fps-3.7.7%2bminecraft-1.20.2-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959804')
-    }
-forge-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/804/dynamic-fps-3.7.7%2bminecraft-1.20.2-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959804')
-    }
-forge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/804/dynamic-fps-3.7.7%2bminecraft-1.20.2-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959804')
-    }
-fabric-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/802/dynamic-fps-3.7.7%2bminecraft-1.20.2-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959802')
-    }
-fabric-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/802/dynamic-fps-3.7.7%2bminecraft-1.20.2-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959802')
-    }
-fabric-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/802/dynamic-fps-3.7.7%2bminecraft-1.20.2-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959802')
-    }
-quilt-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/800/dynamic-fps-3.7.7%2bminecraft-1.20.0-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959800')
-    }
-quilt-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/800/dynamic-fps-3.7.7%2bminecraft-1.20.0-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959800')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/798/dynamic-fps-3.7.7%2bminecraft-1.20.0-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959798')
-    }
-forge-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/798/dynamic-fps-3.7.7%2bminecraft-1.20.0-forge.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959798')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/796/dynamic-fps-3.7.7%2bminecraft-1.20.0-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959796')
-    }
-fabric-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/796/dynamic-fps-3.7.7%2bminecraft-1.20.0-fabric.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959796')
-    }
-quilt-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/dynamic_fps.jar
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/block'
-    item_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/item'
-    effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/effect'
-    environment_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/environment'
-    gui_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/gui'
-    font_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/font'
-    map_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/map'
-    misc_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/models'
-    painting_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/painting'
-    particle_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/particle'
-    trims_textures_dir: 'lib/dynamic_fps.jar!/assets/dynamic_fps/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('dynamic_fps') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5959/793/dynamic-fps-3.7.7%2bminecraft-1.19.4-quilt.jar', dest: 'lib/dynamic_fps.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn dynamic_fps
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959793')
-    }
-name: "Dynamic FPS"
 quilt-1.21.4:
   required_when_enabled: true
   update_files:
@@ -4075,7 +2029,7 @@ quilt-1.21.4:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959840')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.21.3:
   required_when_enabled: true
@@ -4110,7 +2064,7 @@ quilt-1.21.3:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959840')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.21.2:
   required_when_enabled: true
@@ -4145,7 +2099,7 @@ quilt-1.21.2:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959840')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.21.4:
   required_when_enabled: true
@@ -4196,7 +2150,7 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959838')
+      implementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.21.3:
   required_when_enabled: true
@@ -4247,7 +2201,7 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959838')
+      implementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.21.2:
   required_when_enabled: true
@@ -4298,7 +2252,7 @@ neoforge-1.21.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959838')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.21.4:
   required_when_enabled: true
@@ -4349,7 +2303,7 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959835')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.21.3:
   required_when_enabled: true
@@ -4400,7 +2354,7 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959835')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.21.2:
   required_when_enabled: true
@@ -4451,7 +2405,7 @@ forge-1.21.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959835')
+      implementation files("lib/dynamic_fps.jar")
     }
 fabric-1.21.4:
   required_when_enabled: true
@@ -4486,7 +2440,7 @@ fabric-1.21.4:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959833')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.21.3:
   required_when_enabled: true
@@ -4521,7 +2475,7 @@ fabric-1.21.3:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959833')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.21.2:
   required_when_enabled: true
@@ -4556,7 +2510,7 @@ fabric-1.21.2:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959833')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.21:
   required_when_enabled: true
@@ -4591,7 +2545,7 @@ quilt-1.21:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959830')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.21.1:
   required_when_enabled: true
@@ -4626,7 +2580,7 @@ quilt-1.21.1:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959830')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.21:
   required_when_enabled: true
@@ -4677,7 +2631,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959826')
+      implementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.21.1:
   required_when_enabled: true
@@ -4728,7 +2682,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959826')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.21:
   required_when_enabled: true
@@ -4779,7 +2733,7 @@ forge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959824')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.21.1:
   required_when_enabled: true
@@ -4830,7 +2784,7 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959824')
+      implementation files("lib/dynamic_fps.jar")
     }
 fabric-1.21:
   required_when_enabled: true
@@ -4865,7 +2819,7 @@ fabric-1.21:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959822')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.21.1:
   required_when_enabled: true
@@ -4900,7 +2854,7 @@ fabric-1.21.1:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959822')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20.5:
   required_when_enabled: true
@@ -4935,7 +2889,7 @@ quilt-1.20.5:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959819')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20.6:
   required_when_enabled: true
@@ -4970,7 +2924,7 @@ quilt-1.20.6:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959819')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.20.5:
   required_when_enabled: true
@@ -5021,7 +2975,7 @@ neoforge-1.20.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959817')
+      implementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.20.6:
   required_when_enabled: true
@@ -5072,7 +3026,7 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959817')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.20.5:
   required_when_enabled: true
@@ -5123,7 +3077,7 @@ forge-1.20.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959815')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.20.6:
   required_when_enabled: true
@@ -5174,7 +3128,7 @@ forge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959815')
+      implementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20.5:
   required_when_enabled: true
@@ -5209,7 +3163,7 @@ fabric-1.20.5:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959813')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20.6:
   required_when_enabled: true
@@ -5244,7 +3198,7 @@ fabric-1.20.6:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959813')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20.2:
   required_when_enabled: true
@@ -5279,7 +3233,7 @@ quilt-1.20.2:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959809')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20.3:
   required_when_enabled: true
@@ -5314,7 +3268,7 @@ quilt-1.20.3:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959809')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20.4:
   required_when_enabled: true
@@ -5349,7 +3303,7 @@ quilt-1.20.4:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959809')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.20.2:
   required_when_enabled: true
@@ -5400,7 +3354,7 @@ neoforge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959806')
+      implementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.20.3:
   required_when_enabled: true
@@ -5451,7 +3405,7 @@ neoforge-1.20.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959806')
+      implementation files("lib/dynamic_fps.jar")
     }
 neoforge-1.20.4:
   required_when_enabled: true
@@ -5502,7 +3456,7 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959806')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.20.2:
   required_when_enabled: true
@@ -5553,7 +3507,7 @@ forge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959804')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.20.3:
   required_when_enabled: true
@@ -5604,7 +3558,7 @@ forge-1.20.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959804')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.20.4:
   required_when_enabled: true
@@ -5655,7 +3609,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959804')
+      implementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20.2:
   required_when_enabled: true
@@ -5690,7 +3644,7 @@ fabric-1.20.2:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959802')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20.3:
   required_when_enabled: true
@@ -5725,7 +3679,7 @@ fabric-1.20.3:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959802')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20.4:
   required_when_enabled: true
@@ -5760,7 +3714,7 @@ fabric-1.20.4:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959802')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20.1:
   required_when_enabled: true
@@ -5795,7 +3749,7 @@ quilt-1.20.1:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959800')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.20:
   required_when_enabled: true
@@ -5830,7 +3784,7 @@ quilt-1.20:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959800')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -5881,7 +3835,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959798')
+      implementation files("lib/dynamic_fps.jar")
     }
 forge-1.20:
   required_when_enabled: true
@@ -5932,7 +3886,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:dynamic-fps-335493:5959798')
+      implementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -5967,7 +3921,7 @@ fabric-1.20.1:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959796')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 fabric-1.20:
   required_when_enabled: true
@@ -6002,7 +3956,7 @@ fabric-1.20:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959796')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 quilt-1.19.4:
   required_when_enabled: true
@@ -6037,6 +3991,6 @@ quilt-1.19.4:
     compileJava.dependsOn dynamic_fps
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:dynamic-fps-335493:5959793')
+      modImplementation files("lib/dynamic_fps.jar")
     }
 name: "Dynamic FPS"

@@ -1,1025 +1,3 @@
----
-fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/286/DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689286')
-    }
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/286/DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689286')
-    }
-fabric-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/282/DistantHorizons-2.2.1-a-1.20.6-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689282')
-    }
-neoforge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/282/DistantHorizons-2.2.1-a-1.20.6-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689282')
-    }
-fabric-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/281/DistantHorizons-2.2.1-a-1.20.4-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
-    }
-forge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/281/DistantHorizons-2.2.1-a-1.20.4-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
-    }
-fabric-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/280/DistantHorizons-2.2.1-a-1.20.2-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
-    }
-forge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/280/DistantHorizons-2.2.1-a-1.20.2-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/279/DistantHorizons-2.2.1-a-1.20.1-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/279/DistantHorizons-2.2.1-a-1.20.1-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
-    }
-fabric-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/278/DistantHorizons-2.2.1-a-1.19.4-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
-    }
-forge-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/278/DistantHorizons-2.2.1-a-1.19.4-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
-    }
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/272/DistantHorizons-2.2.1-a-1.19.2-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
-    }
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/272/DistantHorizons-2.2.1-a-1.19.2-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
-    }
-fabric-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/266/DistantHorizons-2.2.1-a-1.18.2-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
-    }
-forge-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/266/DistantHorizons-2.2.1-a-1.18.2-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
-    }
-fabric-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/265/DistantHorizons-2.2.1-a-1.17.1-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
-    }
-forge-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/265/DistantHorizons-2.2.1-a-1.17.1-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
-    }
-fabric-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/264/DistantHorizons-2.2.1-a-1.16.5-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
-    }
-forge-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5689/264/DistantHorizons-2.2.1-a-1.16.5-forge-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
-    }
-fabric-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5649/765/DistantHorizons-2.2.0-a-1.21.1-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5649765')
-    }
-neoforge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5649/765/DistantHorizons-2.2.0-a-1.21.1-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5649765')
-    }
-forge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/distant_horizons.jar
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('distant_horizons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5649/761/DistantHorizons-2.2.0-a-1.20.6-neo-fabric.jar', dest: 'lib/distant_horizons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn distant_horizons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5649761')
-    }
-name: "Distant Horizons: A Level of Detail mod"
 fabric-1.21.1:
   required_when_enabled: true
   update_files:
@@ -2051,7 +1029,7 @@ fabric-1.21.1:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689286')
+      modImplementation files("lib/distant_horizons.jar")
     }
 neoforge-1.21.1:
   required_when_enabled: true
@@ -2102,7 +1080,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689286')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.20.6:
   required_when_enabled: true
@@ -2137,7 +1115,7 @@ fabric-1.20.6:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689282')
+      modImplementation files("lib/distant_horizons.jar")
     }
 neoforge-1.20.6:
   required_when_enabled: true
@@ -2188,7 +1166,7 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689282')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.20.4:
   required_when_enabled: true
@@ -2223,7 +1201,7 @@ fabric-1.20.4:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.20.4:
   required_when_enabled: true
@@ -2274,7 +1252,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.20.2:
   required_when_enabled: true
@@ -2309,7 +1287,7 @@ fabric-1.20.2:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.20.2:
   required_when_enabled: true
@@ -2360,7 +1338,7 @@ forge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -2395,7 +1373,7 @@ fabric-1.20.1:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -2446,7 +1424,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.19.4:
   required_when_enabled: true
@@ -2481,7 +1459,7 @@ fabric-1.19.4:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.19.4:
   required_when_enabled: true
@@ -2532,7 +1510,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.19.2:
   required_when_enabled: true
@@ -2567,7 +1545,7 @@ fabric-1.19.2:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -2618,7 +1596,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.18.2:
   required_when_enabled: true
@@ -2653,7 +1631,7 @@ fabric-1.18.2:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.18.2:
   required_when_enabled: true
@@ -2704,7 +1682,7 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.17.1:
   required_when_enabled: true
@@ -2739,7 +1717,7 @@ fabric-1.17.1:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.17.1:
   required_when_enabled: true
@@ -2790,7 +1768,7 @@ forge-1.17.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.16.5:
   required_when_enabled: true
@@ -2825,7 +1803,7 @@ fabric-1.16.5:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
+      modImplementation files("lib/distant_horizons.jar")
     }
 forge-1.16.5:
   required_when_enabled: true
@@ -2876,7 +1854,7 @@ forge-1.16.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
+      implementation files("lib/distant_horizons.jar")
     }
 fabric-1.21:
   required_when_enabled: true
@@ -2911,7 +1889,7 @@ fabric-1.21:
     compileJava.dependsOn distant_horizons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:distant-horizons-508933:5649765')
+      modImplementation files("lib/distant_horizons.jar")
     }
 neoforge-1.21:
   required_when_enabled: true
@@ -2962,7 +1940,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5649765')
+      implementation files("lib/distant_horizons.jar")
     }
 forge-1.20.6:
   required_when_enabled: true
@@ -3013,6 +1991,6 @@ forge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:distant-horizons-508933:5649761')
+      implementation files("lib/distant_horizons.jar")
     }
 name: "Distant Horizons: A Level of Detail mod"

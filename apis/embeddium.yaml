@@ -1,405 +1,3 @@
----
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6118/392/embeddium-1.0.15%2bmc1.21.1.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:6118392')
-    }
-neoforge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6116/910/embeddium-1.0.12-beta.9999%2bmc1.21.4.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:6116910')
-    }
-neoforge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5681/725/embeddium-0.3.31%2bmc1.20.1.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5681725')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5681/725/embeddium-0.3.31%2bmc1.20.1.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5681725')
-    }
-neoforge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5556/146/embeddium-1.0.7%2bmc1.21.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5556146')
-    }
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5539/178/embeddium-0.3.18.1%2bmc1.19.2.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5539178')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5522/40/embeddium-fabric-0.3.25%2bmc1.20.1.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:embeddium-908741:5522040')
-    }
-neoforge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/embeddium.jar
-  resource_paths:
-    block_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/block'
-    item_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/item'
-    effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/effect'
-    environment_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/environment'
-    gui_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/gui'
-    font_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/font'
-    map_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/map'
-    misc_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/misc'
-    mob_effect_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/mob_effect'
-    models_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/models'
-    painting_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/painting'
-    particle_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/particle'
-    trims_textures_dir: 'lib/embeddium.jar!/assets/embeddium/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('embeddium') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5521/869/embeddium-0.3.25%2bmc1.20.4.jar', dest: 'lib/embeddium.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn embeddium
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5521869')
-    }
-name: "Embeddium"
 neoforge-1.21.1:
   required_when_enabled: true
   update_files:
@@ -842,7 +440,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:6118392')
+      implementation files("lib/embeddium.jar")
     }
 neoforge-1.21.4:
   required_when_enabled: true
@@ -893,7 +491,7 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:6116910')
+      implementation files("lib/embeddium.jar")
     }
 neoforge-1.20.1:
   required_when_enabled: true
@@ -944,7 +542,7 @@ neoforge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5681725')
+      implementation files("lib/embeddium.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -995,7 +593,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5681725')
+      implementation files("lib/embeddium.jar")
     }
 neoforge-1.21:
   required_when_enabled: true
@@ -1046,7 +644,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5556146')
+      implementation files("lib/embeddium.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -1097,7 +695,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5539178')
+      implementation files("lib/embeddium.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -1132,7 +730,7 @@ fabric-1.20.1:
     compileJava.dependsOn embeddium
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:embeddium-908741:5522040')
+      modImplementation files("lib/embeddium.jar")
     }
 neoforge-1.20.4:
   required_when_enabled: true
@@ -1183,6 +781,6 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:embeddium-908741:5521869')
+      implementation files("lib/embeddium.jar")
     }
 name: "Embeddium"

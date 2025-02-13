@@ -1,57 +1,3 @@
----
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/quests_and_reward.jar
-  resource_paths:
-    block_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/block'
-    item_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/item'
-    effect_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/effect'
-    environment_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/environment'
-    gui_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/gui'
-    font_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/font'
-    map_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/map'
-    misc_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/misc'
-    mob_effect_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/mob_effect'
-    models_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/models'
-    painting_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/painting'
-    particle_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/particle'
-    trims_textures_dir: 'lib/quests_and_reward.jar!/assets/quests_and_reward/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('quests_and_reward') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/quests_and_reward.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn quests_and_reward
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:realm-rpg-quests-rewards-1021783:5388398')
-    }
-name: "Realm RPG: Quests & Rewards"
 forge-1.20.1:
   required_when_enabled: true
   update_files:
@@ -153,6 +99,6 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:realm-rpg-quests-rewards-1021783:5388398')
+      implementation files("lib/quests_and_reward.jar")
     }
 name: "Realm RPG: Quests & Rewards"

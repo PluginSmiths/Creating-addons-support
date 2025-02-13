@@ -1,2329 +1,3 @@
----
-fabric-1.16.3:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.16.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.14.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.15:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.16:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.15.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.16.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.16.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-fabric-1.15.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.16.3:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.16.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.14.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.15:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.16:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.15.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.16.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.16.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-quilt-1.15.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/269/memoryleakfix-fabric-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
-    }
-forge-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.17:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.18:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/268/memoryleakfix-forge-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
-    }
-forge-1.16.3:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-forge-1.16.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-forge-1.16:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-forge-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-forge-1.15.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-forge-1.16.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-forge-1.16.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/267/memoryleakfix-forge-pre1.17-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
-    }
-fabric-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.17:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.18:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.17:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.18:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-quilt-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/memory_leak.jar
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('memory_leak') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4465/266/memoryleakfix-fabric-1.17%2b-1.0.0.jar', dest: 'lib/memory_leak.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn memory_leak
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
-    }
-name: "MemoryLeakFix"
 fabric-1.16.3:
   required_when_enabled: true
   update_files:
@@ -4625,7 +2299,7 @@ fabric-1.16.3:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.16.1:
   required_when_enabled: true
@@ -4660,7 +2334,7 @@ fabric-1.16.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.14.4:
   required_when_enabled: true
@@ -4695,7 +2369,7 @@ fabric-1.14.4:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.15:
   required_when_enabled: true
@@ -4730,7 +2404,7 @@ fabric-1.15:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.16:
   required_when_enabled: true
@@ -4765,7 +2439,7 @@ fabric-1.16:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.16.5:
   required_when_enabled: true
@@ -4800,7 +2474,7 @@ fabric-1.16.5:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.15.2:
   required_when_enabled: true
@@ -4835,7 +2509,7 @@ fabric-1.15.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.16.4:
   required_when_enabled: true
@@ -4870,7 +2544,7 @@ fabric-1.16.4:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.16.2:
   required_when_enabled: true
@@ -4905,7 +2579,7 @@ fabric-1.16.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.15.1:
   required_when_enabled: true
@@ -4940,7 +2614,7 @@ fabric-1.15.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.16.3:
   required_when_enabled: true
@@ -4975,7 +2649,7 @@ quilt-1.16.3:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.16.1:
   required_when_enabled: true
@@ -5010,7 +2684,7 @@ quilt-1.16.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.14.4:
   required_when_enabled: true
@@ -5045,7 +2719,7 @@ quilt-1.14.4:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.15:
   required_when_enabled: true
@@ -5080,7 +2754,7 @@ quilt-1.15:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.16:
   required_when_enabled: true
@@ -5115,7 +2789,7 @@ quilt-1.16:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.16.5:
   required_when_enabled: true
@@ -5150,7 +2824,7 @@ quilt-1.16.5:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.15.2:
   required_when_enabled: true
@@ -5185,7 +2859,7 @@ quilt-1.15.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.16.4:
   required_when_enabled: true
@@ -5220,7 +2894,7 @@ quilt-1.16.4:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.16.2:
   required_when_enabled: true
@@ -5255,7 +2929,7 @@ quilt-1.16.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.15.1:
   required_when_enabled: true
@@ -5290,7 +2964,7 @@ quilt-1.15.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
+      modImplementation files("lib/memory_leak.jar")
     }
 forge-1.17.1:
   required_when_enabled: true
@@ -5341,7 +3015,7 @@ forge-1.17.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.19.3:
   required_when_enabled: true
@@ -5392,7 +3066,7 @@ forge-1.19.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.18.1:
   required_when_enabled: true
@@ -5443,7 +3117,7 @@ forge-1.18.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.17:
   required_when_enabled: true
@@ -5494,7 +3168,7 @@ forge-1.17:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.19.4:
   required_when_enabled: true
@@ -5545,7 +3219,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.18.2:
   required_when_enabled: true
@@ -5596,7 +3270,7 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -5647,7 +3321,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.19.1:
   required_when_enabled: true
@@ -5698,7 +3372,7 @@ forge-1.19.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.18:
   required_when_enabled: true
@@ -5749,7 +3423,7 @@ forge-1.18:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.19:
   required_when_enabled: true
@@ -5800,7 +3474,7 @@ forge-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.16.3:
   required_when_enabled: true
@@ -5851,7 +3525,7 @@ forge-1.16.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.16.1:
   required_when_enabled: true
@@ -5902,7 +3576,7 @@ forge-1.16.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.16:
   required_when_enabled: true
@@ -5953,7 +3627,7 @@ forge-1.16:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.16.5:
   required_when_enabled: true
@@ -6004,7 +3678,7 @@ forge-1.16.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.15.2:
   required_when_enabled: true
@@ -6055,7 +3729,7 @@ forge-1.15.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.16.4:
   required_when_enabled: true
@@ -6106,7 +3780,7 @@ forge-1.16.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 forge-1.16.2:
   required_when_enabled: true
@@ -6157,7 +3831,7 @@ forge-1.16.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
+      implementation files("lib/memory_leak.jar")
     }
 fabric-1.17.1:
   required_when_enabled: true
@@ -6192,7 +3866,7 @@ fabric-1.17.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.19.3:
   required_when_enabled: true
@@ -6227,7 +3901,7 @@ fabric-1.19.3:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.18.1:
   required_when_enabled: true
@@ -6262,7 +3936,7 @@ fabric-1.18.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.17:
   required_when_enabled: true
@@ -6297,7 +3971,7 @@ fabric-1.17:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.19.4:
   required_when_enabled: true
@@ -6332,7 +4006,7 @@ fabric-1.19.4:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.18.2:
   required_when_enabled: true
@@ -6367,7 +4041,7 @@ fabric-1.18.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.19.2:
   required_when_enabled: true
@@ -6402,7 +4076,7 @@ fabric-1.19.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.19.1:
   required_when_enabled: true
@@ -6437,7 +4111,7 @@ fabric-1.19.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.18:
   required_when_enabled: true
@@ -6472,7 +4146,7 @@ fabric-1.18:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 fabric-1.19:
   required_when_enabled: true
@@ -6507,7 +4181,7 @@ fabric-1.19:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.17.1:
   required_when_enabled: true
@@ -6542,7 +4216,7 @@ quilt-1.17.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.19.3:
   required_when_enabled: true
@@ -6577,7 +4251,7 @@ quilt-1.19.3:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.18.1:
   required_when_enabled: true
@@ -6612,7 +4286,7 @@ quilt-1.18.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.17:
   required_when_enabled: true
@@ -6647,7 +4321,7 @@ quilt-1.17:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.19.4:
   required_when_enabled: true
@@ -6682,7 +4356,7 @@ quilt-1.19.4:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.18.2:
   required_when_enabled: true
@@ -6717,7 +4391,7 @@ quilt-1.18.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.19.2:
   required_when_enabled: true
@@ -6752,7 +4426,7 @@ quilt-1.19.2:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.19.1:
   required_when_enabled: true
@@ -6787,7 +4461,7 @@ quilt-1.19.1:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.18:
   required_when_enabled: true
@@ -6822,7 +4496,7 @@ quilt-1.18:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 quilt-1.19:
   required_when_enabled: true
@@ -6857,6 +4531,6 @@ quilt-1.19:
     compileJava.dependsOn memory_leak
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
+      modImplementation files("lib/memory_leak.jar")
     }
 name: "MemoryLeakFix"

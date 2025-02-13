@@ -1,729 +1,3 @@
----
-forge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4818/909/culinaryconstruct-forge-6.0.0%2b1.20.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4818909')
-    }
-fabric-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4818/907/culinaryconstruct-fabric-6.0.0%2b1.20.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4818907')
-    }
-quilt-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/122/culinaryconstruct-quilt-5.2.1%2b1.20.1.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
-    }
-quilt-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/122/culinaryconstruct-quilt-5.2.1%2b1.20.1.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/120/culinaryconstruct-forge-5.2.1%2b1.20.1.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
-    }
-forge-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/120/culinaryconstruct-forge-5.2.1%2b1.20.1.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/118/culinaryconstruct-fabric-5.2.1%2b1.20.1.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
-    }
-fabric-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/118/culinaryconstruct-fabric-5.2.1%2b1.20.1.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
-    }
-quilt-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/112/culinaryconstruct-quilt-5.1.1%2b1.19.4.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814112')
-    }
-forge-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/110/culinaryconstruct-forge-5.1.1%2b1.19.4.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814110')
-    }
-fabric-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/108/culinaryconstruct-fabric-5.1.1%2b1.19.4.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814108')
-    }
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/66/culinaryconstruct-forge-5.0.1%2b1.19.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
-    }
-forge-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/66/culinaryconstruct-forge-5.0.1%2b1.19.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
-    }
-forge-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/66/culinaryconstruct-forge-5.0.1%2b1.19.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
-    }
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/64/culinaryconstruct-fabric-5.0.1%2b1.19.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
-    }
-fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/64/culinaryconstruct-fabric-5.0.1%2b1.19.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
-    }
-fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/culinary_construct.jar
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('culinary_construct') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/64/culinaryconstruct-fabric-5.0.1%2b1.19.2.jar', dest: 'lib/culinary_construct.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn culinary_construct
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
-    }
-name: "Culinary Construct"
 forge-1.20.2:
   required_when_enabled: true
   update_files:
@@ -1481,7 +755,7 @@ forge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4818909')
+      implementation files("lib/culinary_construct.jar")
     }
 fabric-1.20.2:
   required_when_enabled: true
@@ -1516,7 +790,7 @@ fabric-1.20.2:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4818907')
+      modImplementation files("lib/culinary_construct.jar")
     }
 quilt-1.20.1:
   required_when_enabled: true
@@ -1551,7 +825,7 @@ quilt-1.20.1:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
+      modImplementation files("lib/culinary_construct.jar")
     }
 quilt-1.20:
   required_when_enabled: true
@@ -1586,7 +860,7 @@ quilt-1.20:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
+      modImplementation files("lib/culinary_construct.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -1637,7 +911,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
+      implementation files("lib/culinary_construct.jar")
     }
 forge-1.20:
   required_when_enabled: true
@@ -1688,7 +962,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
+      implementation files("lib/culinary_construct.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -1723,7 +997,7 @@ fabric-1.20.1:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
+      modImplementation files("lib/culinary_construct.jar")
     }
 fabric-1.20:
   required_when_enabled: true
@@ -1758,7 +1032,7 @@ fabric-1.20:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
+      modImplementation files("lib/culinary_construct.jar")
     }
 quilt-1.19.4:
   required_when_enabled: true
@@ -1793,7 +1067,7 @@ quilt-1.19.4:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814112')
+      modImplementation files("lib/culinary_construct.jar")
     }
 forge-1.19.4:
   required_when_enabled: true
@@ -1844,7 +1118,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814110')
+      implementation files("lib/culinary_construct.jar")
     }
 fabric-1.19.4:
   required_when_enabled: true
@@ -1879,7 +1153,7 @@ fabric-1.19.4:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814108')
+      modImplementation files("lib/culinary_construct.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -1930,7 +1204,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
+      implementation files("lib/culinary_construct.jar")
     }
 forge-1.19.1:
   required_when_enabled: true
@@ -1981,7 +1255,7 @@ forge-1.19.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
+      implementation files("lib/culinary_construct.jar")
     }
 forge-1.19:
   required_when_enabled: true
@@ -2032,7 +1306,7 @@ forge-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
+      implementation files("lib/culinary_construct.jar")
     }
 fabric-1.19.2:
   required_when_enabled: true
@@ -2067,7 +1341,7 @@ fabric-1.19.2:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
+      modImplementation files("lib/culinary_construct.jar")
     }
 fabric-1.19.1:
   required_when_enabled: true
@@ -2102,7 +1376,7 @@ fabric-1.19.1:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
+      modImplementation files("lib/culinary_construct.jar")
     }
 fabric-1.19:
   required_when_enabled: true
@@ -2137,6 +1411,6 @@ fabric-1.19:
     compileJava.dependsOn culinary_construct
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
+      modImplementation files("lib/culinary_construct.jar")
     }
 name: "Culinary Construct"

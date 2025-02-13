@@ -1,373 +1,3 @@
----
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6020/961/oculus-mc1.19.2-1.6.9a.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:6020961')
-      implementation fg.deobf('curse.maven:rubidium-574856:6020961')
-    }
-neoforge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:6020952')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:6020952')
-    }
-forge-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5194/273/oculus-mc1.16.5-1.4.8.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:5194273')
-    }
-forge-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4578/744/oculus-mc1.18.2-1.6.4.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:4578744')
-      implementation fg.deobf('curse.maven:rubidium-574856:4578744')
-    }
-forge-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4578/741/oculus-mc1.20-1.6.4.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:4578741')
-      implementation fg.deobf('curse.maven:rubidium-574856:4578741')
-    }
-forge-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/oculus.jar
-  resource_paths:
-    block_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/block'
-    item_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/item'
-    effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/effect'
-    environment_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/environment'
-    gui_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/gui'
-    font_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/font'
-    map_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/map'
-    misc_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/misc'
-    mob_effect_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/mob_effect'
-    models_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/models'
-    painting_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/painting'
-    particle_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/particle'
-    trims_textures_dir: 'lib/oculus.jar!/assets/oculus/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('oculus') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4451/142/oculus-1.5.2.jar', dest: 'lib/oculus.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn oculus
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:4451142')
-      implementation fg.deobf('curse.maven:rubidium-574856:4451142')
-    }
-name: "Oculus"
 forge-1.19.2:
   required_when_enabled: true
   update_files:
@@ -779,7 +409,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:6020961')
+      implementation files("lib/oculus.jar")
       implementation fg.deobf('curse.maven:rubidium-574856:6020961')
     }
 neoforge-1.20.1:
@@ -831,7 +461,7 @@ neoforge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:6020952')
+      implementation files("lib/oculus.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -882,7 +512,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:6020952')
+      implementation files("lib/oculus.jar")
     }
 forge-1.16.5:
   required_when_enabled: true
@@ -933,7 +563,7 @@ forge-1.16.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:5194273')
+      implementation files("lib/oculus.jar")
     }
 forge-1.18.2:
   required_when_enabled: true
@@ -984,7 +614,7 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:4578744')
+      implementation files("lib/oculus.jar")
       implementation fg.deobf('curse.maven:rubidium-574856:4578744')
     }
 forge-1.20:
@@ -1036,7 +666,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:4578741')
+      implementation files("lib/oculus.jar")
       implementation fg.deobf('curse.maven:rubidium-574856:4578741')
     }
 forge-1.19.4:
@@ -1088,7 +718,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:oculus-581495:4451142')
+      implementation files("lib/oculus.jar")
       implementation fg.deobf('curse.maven:rubidium-574856:4451142')
     }
 name: "Oculus"

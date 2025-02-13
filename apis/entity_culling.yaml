@@ -1,1073 +1,3 @@
----
-fabric-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968862')
-    }
-forge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968861')
-    }
-neoforge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968860')
-    }
-fabric-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968859')
-    }
-forge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968857')
-    }
-neoforge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968856')
-    }
-fabric-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968855')
-    }
-fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968855')
-    }
-neoforge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968853')
-    }
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968853')
-    }
-forge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968852')
-    }
-forge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968852')
-    }
-fabric-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968850')
-    }
-neoforge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968848')
-    }
-forge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968847')
-    }
-fabric-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968846')
-    }
-neoforge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968845')
-    }
-forge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968843')
-    }
-fabric-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968842')
-    }
-neoforge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968841')
-    }
-forge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968840')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968678')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/entity_culling.jar
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('entity_culling') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'None', dest: 'lib/entity_culling.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn entity_culling
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968677')
-    }
-name: "Entity Culling Fabric/Forge"
 fabric-1.21.4:
   required_when_enabled: true
   update_files:
@@ -2147,7 +1077,7 @@ fabric-1.21.4:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968862')
+      modImplementation files("lib/entity_culling.jar")
     }
 forge-1.21.4:
   required_when_enabled: true
@@ -2198,7 +1128,7 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968861')
+      implementation files("lib/entity_culling.jar")
     }
 neoforge-1.21.4:
   required_when_enabled: true
@@ -2249,7 +1179,7 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968860')
+      implementation files("lib/entity_culling.jar")
     }
 fabric-1.21.3:
   required_when_enabled: true
@@ -2284,7 +1214,7 @@ fabric-1.21.3:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968859')
+      modImplementation files("lib/entity_culling.jar")
     }
 forge-1.21.3:
   required_when_enabled: true
@@ -2335,7 +1265,7 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968857')
+      implementation files("lib/entity_culling.jar")
     }
 neoforge-1.21.3:
   required_when_enabled: true
@@ -2386,7 +1316,7 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968856')
+      implementation files("lib/entity_culling.jar")
     }
 fabric-1.21:
   required_when_enabled: true
@@ -2421,7 +1351,7 @@ fabric-1.21:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968855')
+      modImplementation files("lib/entity_culling.jar")
     }
 fabric-1.21.1:
   required_when_enabled: true
@@ -2456,7 +1386,7 @@ fabric-1.21.1:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968855')
+      modImplementation files("lib/entity_culling.jar")
     }
 neoforge-1.21:
   required_when_enabled: true
@@ -2507,7 +1437,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968853')
+      implementation files("lib/entity_culling.jar")
     }
 neoforge-1.21.1:
   required_when_enabled: true
@@ -2558,7 +1488,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968853')
+      implementation files("lib/entity_culling.jar")
     }
 forge-1.21:
   required_when_enabled: true
@@ -2609,7 +1539,7 @@ forge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968852')
+      implementation files("lib/entity_culling.jar")
     }
 forge-1.21.1:
   required_when_enabled: true
@@ -2660,7 +1590,7 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968852')
+      implementation files("lib/entity_culling.jar")
     }
 fabric-1.20.6:
   required_when_enabled: true
@@ -2695,7 +1625,7 @@ fabric-1.20.6:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968850')
+      modImplementation files("lib/entity_culling.jar")
     }
 neoforge-1.20.6:
   required_when_enabled: true
@@ -2746,7 +1676,7 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968848')
+      implementation files("lib/entity_culling.jar")
     }
 forge-1.20.6:
   required_when_enabled: true
@@ -2797,7 +1727,7 @@ forge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968847')
+      implementation files("lib/entity_culling.jar")
     }
 fabric-1.20.4:
   required_when_enabled: true
@@ -2832,7 +1762,7 @@ fabric-1.20.4:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968846')
+      modImplementation files("lib/entity_culling.jar")
     }
 neoforge-1.20.4:
   required_when_enabled: true
@@ -2883,7 +1813,7 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968845')
+      implementation files("lib/entity_culling.jar")
     }
 forge-1.20.4:
   required_when_enabled: true
@@ -2934,7 +1864,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968843')
+      implementation files("lib/entity_culling.jar")
     }
 fabric-1.20.2:
   required_when_enabled: true
@@ -2969,7 +1899,7 @@ fabric-1.20.2:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968842')
+      modImplementation files("lib/entity_culling.jar")
     }
 neoforge-1.20.2:
   required_when_enabled: true
@@ -3020,7 +1950,7 @@ neoforge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968841')
+      implementation files("lib/entity_culling.jar")
     }
 forge-1.20.2:
   required_when_enabled: true
@@ -3071,7 +2001,7 @@ forge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968840')
+      implementation files("lib/entity_culling.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -3106,7 +2036,7 @@ fabric-1.20.1:
     compileJava.dependsOn entity_culling
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:entityculling-448233:5968678')
+      modImplementation files("lib/entity_culling.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -3157,6 +2087,6 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:entityculling-448233:5968677')
+      implementation files("lib/entity_culling.jar")
     }
 name: "Entity Culling Fabric/Forge"

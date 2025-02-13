@@ -1,724 +1,3 @@
----
-fabric-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6168/711/ItemBorders-1.21.4-fabric-1.2.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:6168711')
-    }
-fabric-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5991/625/ItemBorders-1.21.3-fabric-1.2.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5991625')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5991625')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991625')
-    }
-fabric-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5591/3/ItemBorders-1.21-fabric-1.2.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5591003')
-    }
-fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5591/3/ItemBorders-1.21-fabric-1.2.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5591003')
-    }
-fabric-1.20.5:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5343/818/ItemBorders-1.20.6-fabric-1.2.3.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
-    }
-fabric-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5343/818/ItemBorders-1.20.6-fabric-1.2.3.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5108/408/ItemBorders-1.20.1-fabric-1.2.2.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5108408')
-    }
-fabric-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4940/619/ItemBorders-1.20.1-fabric-1.2.1.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4940619')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940619')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940619')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940619')
-    }
-fabric-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4938/114/ItemBorders-1.20.2-fabric-1.2.1.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
-    }
-fabric-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4938/114/ItemBorders-1.20.2-fabric-1.2.1.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
-    }
-fabric-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4499/855/ItemBorders-1.19.4-fabric-1.2.0.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4499855')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4499855')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4499855')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4499855')
-    }
-fabric-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4343/667/ItemBorders-1.19.3-fabric-1.2.0.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4343667')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4343667')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4343667')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4343667')
-    }
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3849/750/ItemBorders-1.19-fabric-1.1.6.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
-    }
-fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3849/750/ItemBorders-1.19-fabric-1.1.6.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
-    }
-fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3849/750/ItemBorders-1.19-fabric-1.1.6.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
-    }
-fabric-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3583/880/ItemBorders-1.18-fabric-1.1.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
-    }
-fabric-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3583/880/ItemBorders-1.18-fabric-1.1.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
-    }
-fabric-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3583/860/ItemBorders-1.17.1-fabric-1.1.5.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583860')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583860')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583860')
-    }
-fabric-1.18:
-  required_when_enabled: true
-  update_files:
-    - lib/item_borders.jar
-  resource_paths:
-    block_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/block'
-    item_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/item'
-    effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/effect'
-    environment_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/environment'
-    gui_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/gui'
-    font_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/font'
-    map_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/map'
-    misc_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/misc'
-    mob_effect_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/mob_effect'
-    models_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/models'
-    painting_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/painting'
-    particle_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/particle'
-    trims_textures_dir: 'lib/item_borders.jar!/assets/item_borders/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('item_borders') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3549/412/ItemBorders-1.18-fabric-1.1.4.jar', dest: 'lib/item_borders.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn item_borders
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3549412')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549412')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549412')
-    }
-name: "Item Borders [Fabric]"
 forge-1.21.4:
   required_when_enabled: true
   update_files:
@@ -2520,7 +1799,7 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:6168722')
+      implementation files("lib/item_borders.jar")
     }
 neoforge-1.21.4:
   required_when_enabled: true
@@ -2571,7 +1850,7 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:6168720')
+      implementation files("lib/item_borders.jar")
     }
 forge-1.21.3:
   required_when_enabled: true
@@ -2622,7 +1901,7 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5991628')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:5991628')
       implementation fg.deobf('curse.maven:iceberg-520110:5991628')
     }
@@ -2675,7 +1954,7 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5991626')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:iceberg-520110:5991626')
       implementation fg.deobf('curse.maven:prism-lib-638111:5991626')
     }
@@ -2728,7 +2007,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5903326')
+      implementation files("lib/item_borders.jar")
     }
 neoforge-1.21:
   required_when_enabled: true
@@ -2779,7 +2058,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591010')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:5591010')
       implementation fg.deobf('curse.maven:iceberg-520110:5591010')
     }
@@ -2832,7 +2111,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591010')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:5591010')
       implementation fg.deobf('curse.maven:iceberg-520110:5591010')
     }
@@ -2885,7 +2164,7 @@ forge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591005')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:5591005')
       implementation fg.deobf('curse.maven:iceberg-520110:5591005')
     }
@@ -2938,7 +2217,7 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591005')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:5591005')
       implementation fg.deobf('curse.maven:iceberg-520110:5591005')
     }
@@ -2991,7 +2270,7 @@ forge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5365032')
+      implementation files("lib/item_borders.jar")
     }
 neoforge-1.20.1:
   required_when_enabled: true
@@ -3042,7 +2321,7 @@ neoforge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4985587')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:4985587')
       implementation fg.deobf('curse.maven:iceberg-520110:4985587')
     }
@@ -3095,7 +2374,7 @@ forge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4918156')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:4918156')
       implementation fg.deobf('curse.maven:iceberg-520110:4918156')
     }
@@ -3148,7 +2427,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4918156')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:4918156')
       implementation fg.deobf('curse.maven:iceberg-520110:4918156')
     }
@@ -3201,7 +2480,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4655513')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:4655513')
       implementation fg.deobf('curse.maven:iceberg-520110:4655513')
     }
@@ -3254,7 +2533,7 @@ forge-1.12.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4590380')
+      implementation files("lib/item_borders.jar")
     }
 forge-1.19.4:
   required_when_enabled: true
@@ -3305,7 +2584,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4499850')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:4499850')
       implementation fg.deobf('curse.maven:iceberg-520110:4499850')
     }
@@ -3358,7 +2637,7 @@ forge-1.19.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4277021')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:4277021')
       implementation fg.deobf('curse.maven:iceberg-520110:4277021')
     }
@@ -3411,7 +2690,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:3912057')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
       implementation fg.deobf('curse.maven:iceberg-520110:3912057')
     }
@@ -3464,7 +2743,7 @@ forge-1.19.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:3912057')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
       implementation fg.deobf('curse.maven:iceberg-520110:3912057')
     }
@@ -3517,7 +2796,7 @@ forge-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:3912057')
+      implementation files("lib/item_borders.jar")
       implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
       implementation fg.deobf('curse.maven:iceberg-520110:3912057')
     }
@@ -3555,7 +2834,7 @@ fabric-1.21.4:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:6168711')
+      modImplementation files("lib/item_borders.jar")
     }
 fabric-1.21.3:
   required_when_enabled: true
@@ -3590,7 +2869,7 @@ fabric-1.21.3:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5991625')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5991625')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991625')
     }
@@ -3627,7 +2906,7 @@ fabric-1.21:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5591003')
+      modImplementation files("lib/item_borders.jar")
     }
 fabric-1.21.1:
   required_when_enabled: true
@@ -3662,7 +2941,7 @@ fabric-1.21.1:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5591003')
+      modImplementation files("lib/item_borders.jar")
     }
 fabric-1.20.5:
   required_when_enabled: true
@@ -3697,7 +2976,7 @@ fabric-1.20.5:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
     }
@@ -3734,7 +3013,7 @@ fabric-1.20.6:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
     }
@@ -3771,7 +3050,7 @@ fabric-1.20.1:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5108408')
+      modImplementation files("lib/item_borders.jar")
     }
 fabric-1.20:
   required_when_enabled: true
@@ -3806,7 +3085,7 @@ fabric-1.20:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4940619')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940619')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940619')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940619')
@@ -3844,7 +3123,7 @@ fabric-1.20.2:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
@@ -3882,7 +3161,7 @@ fabric-1.20.4:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
@@ -3920,7 +3199,7 @@ fabric-1.19.4:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4499855')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4499855')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4499855')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4499855')
@@ -3958,7 +3237,7 @@ fabric-1.19.3:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4343667')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4343667')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4343667')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4343667')
@@ -3996,7 +3275,7 @@ fabric-1.19.2:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
     }
@@ -4033,7 +3312,7 @@ fabric-1.19.1:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
     }
@@ -4070,7 +3349,7 @@ fabric-1.19:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
     }
@@ -4107,7 +3386,7 @@ fabric-1.18.1:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
     }
@@ -4144,7 +3423,7 @@ fabric-1.18.2:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
     }
@@ -4181,7 +3460,7 @@ fabric-1.17.1:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583860')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583860')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583860')
     }
@@ -4218,7 +3497,7 @@ fabric-1.18:
     compileJava.dependsOn item_borders
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3549412')
+      modImplementation files("lib/item_borders.jar")
       modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549412')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549412')
     }

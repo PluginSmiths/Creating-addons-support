@@ -1,785 +1,3 @@
----
-forge-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4633/0/sanitydim-mc1.18-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4633000')
-    }
-forge-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4633/0/sanitydim-mc1.18-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4633000')
-    }
-forge-1.18:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4633/0/sanitydim-mc1.18-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4633000')
-    }
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4632/886/sanitydim-mc1.19.2-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4632886')
-    }
-forge-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4632/886/sanitydim-mc1.19.2-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4632886')
-    }
-forge-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4632/886/sanitydim-mc1.19.2-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4632886')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4625/236/sanitydim-mc1.20-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4625236')
-    }
-forge-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4625/236/sanitydim-mc1.20-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4625236')
-    }
-forge-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4625/44/sanitydim-mc1.19.4-1.1.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4625044')
-    }
-forge-1.16.3:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4603/185/sanitydim-mc1.16-1.0.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
-    }
-forge-1.16.1:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4603/185/sanitydim-mc1.16-1.0.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
-    }
-forge-1.16:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4603/185/sanitydim-mc1.16-1.0.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
-    }
-forge-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4603/185/sanitydim-mc1.16-1.0.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
-    }
-forge-1.16.4:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4603/185/sanitydim-mc1.16-1.0.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
-    }
-forge-1.16.2:
-  required_when_enabled: true
-  update_files:
-    - lib/sanity.jar
-  resource_paths:
-    block_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/block'
-    item_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/item'
-    effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/effect'
-    environment_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/environment'
-    gui_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/gui'
-    font_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/font'
-    map_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/map'
-    misc_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/misc'
-    mob_effect_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/mob_effect'
-    models_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/models'
-    painting_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/painting'
-    particle_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/particle'
-    trims_textures_dir: 'lib/sanity.jar!/assets/sanity/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('sanity') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4603/185/sanitydim-mc1.16-1.0.0.jar', dest: 'lib/sanity.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn sanity
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
-    }
-name: "Sanity: Descent Into Madness"
 forge-1.18.1:
   required_when_enabled: true
   update_files:
@@ -1595,7 +813,7 @@ forge-1.18.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4633000')
+      implementation files("lib/sanity.jar")
     }
 forge-1.18.2:
   required_when_enabled: true
@@ -1646,7 +864,7 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4633000')
+      implementation files("lib/sanity.jar")
     }
 forge-1.18:
   required_when_enabled: true
@@ -1697,7 +915,7 @@ forge-1.18:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4633000')
+      implementation files("lib/sanity.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -1748,7 +966,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4632886')
+      implementation files("lib/sanity.jar")
     }
 forge-1.19.1:
   required_when_enabled: true
@@ -1799,7 +1017,7 @@ forge-1.19.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4632886')
+      implementation files("lib/sanity.jar")
     }
 forge-1.19:
   required_when_enabled: true
@@ -1850,7 +1068,7 @@ forge-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4632886')
+      implementation files("lib/sanity.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -1901,7 +1119,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4625236')
+      implementation files("lib/sanity.jar")
     }
 forge-1.20:
   required_when_enabled: true
@@ -1952,7 +1170,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4625236')
+      implementation files("lib/sanity.jar")
     }
 forge-1.19.4:
   required_when_enabled: true
@@ -2003,7 +1221,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4625044')
+      implementation files("lib/sanity.jar")
     }
 forge-1.16.3:
   required_when_enabled: true
@@ -2054,7 +1272,7 @@ forge-1.16.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
+      implementation files("lib/sanity.jar")
     }
 forge-1.16.1:
   required_when_enabled: true
@@ -2105,7 +1323,7 @@ forge-1.16.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
+      implementation files("lib/sanity.jar")
     }
 forge-1.16:
   required_when_enabled: true
@@ -2156,7 +1374,7 @@ forge-1.16:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
+      implementation files("lib/sanity.jar")
     }
 forge-1.16.5:
   required_when_enabled: true
@@ -2207,7 +1425,7 @@ forge-1.16.5:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
+      implementation files("lib/sanity.jar")
     }
 forge-1.16.4:
   required_when_enabled: true
@@ -2258,7 +1476,7 @@ forge-1.16.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
+      implementation files("lib/sanity.jar")
     }
 forge-1.16.2:
   required_when_enabled: true
@@ -2309,6 +1527,6 @@ forge-1.16.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:sanity-descent-into-madness-876448:4603185')
+      implementation files("lib/sanity.jar")
     }
 name: "Sanity: Descent Into Madness"

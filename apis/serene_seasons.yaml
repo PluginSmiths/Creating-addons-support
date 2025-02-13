@@ -1,147 +1,3 @@
----
-fabric-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/112/SereneSeasons-fabric-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5987112')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5987112')
-    }
-neoforge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/111/SereneSeasons-neoforge-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5987111')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987111')
-    }
-forge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/108/SereneSeasons-forge-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5987108')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987108')
-    }
 fabric-1.21.3:
   required_when_enabled: true
   update_files:
@@ -160,7 +16,6 @@ fabric-1.21.3:
     painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
     particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
     trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
   gradle: |
     repositories {
       maven {
@@ -170,14 +25,14 @@ fabric-1.21.3:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/336/SereneSeasons-fabric-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6184/7/SereneSeasons-fabric-1.21.3-10.2.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5861336')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5861336')
+      modImplementation fg.deobf('curse.maven:serene-seasons-291874:6184007')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6184007')
     }
 neoforge-1.21.3:
   required_when_enabled: true
@@ -197,7 +52,6 @@ neoforge-1.21.3:
     painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
     particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
     trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
   gradle: |
     repositories {
       maven {
@@ -207,7 +61,7 @@ neoforge-1.21.3:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/335/SereneSeasons-neoforge-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6184/6/SereneSeasons-neoforge-1.21.3-10.2.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -229,8 +83,8 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5861335')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861335')
+      implementation fg.deobf('curse.maven:serene-seasons-291874:6184006')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6184006')
     }
 forge-1.21.3:
   required_when_enabled: true
@@ -250,7 +104,6 @@ forge-1.21.3:
     painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
     particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
     trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
   gradle: |
     repositories {
       maven {
@@ -260,7 +113,7 @@ forge-1.21.3:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/334/SereneSeasons-forge-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6184/5/SereneSeasons-forge-1.21.3-10.2.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -282,98 +135,8 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5861334')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861334')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5790/654/SereneSeasons-fabric-1.20.1-9.1.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5790654')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5790654')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5790/653/SereneSeasons-forge-1.20.1-9.1.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5790653')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5790653')
+      implementation fg.deobf('curse.maven:serene-seasons-291874:6184005')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6184005')
     }
 neoforge-1.21.1:
   required_when_enabled: true
@@ -393,7 +156,6 @@ neoforge-1.21.1:
     painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
     particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
     trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  required_when_enabled: true
   gradle: |
     repositories {
       maven {
@@ -403,7 +165,7 @@ neoforge-1.21.1:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5753/503/SereneSeasons-neoforge-1.21.1-10.1.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6182/596/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -425,150 +187,238 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5753503')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5753503')
+      implementation fg.deobf('curse.maven:serene-seasons-291874:6182596')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6182596')
+    }
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6182/595/SereneSeasons-fabric-1.21.1-10.1.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:serene-seasons-291874:6182595')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6182595')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6182/592/SereneSeasons-forge-1.21.1-10.1.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:serene-seasons-291874:6182592')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6182592')
+    }
+fabric-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6179/364/SereneSeasons-fabric-1.21.4-10.4.0.2.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    
+    dependencies {
+      modImplementation fg.deobf('curse.maven:serene-seasons-291874:6179364')
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6179364')
+    }
+neoforge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6179/363/SereneSeasons-neoforge-1.21.4-10.4.0.2.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:serene-seasons-291874:6179363')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6179363')
+    }
+forge-1.21.4:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6179/361/SereneSeasons-forge-1.21.4-10.4.0.2.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation fg.deobf('curse.maven:serene-seasons-291874:6179361')
+      implementation fg.deobf('curse.maven:glitchcore-955399:6179361')
     }
 name: "Serene Seasons"
-fabric-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/112/SereneSeasons-fabric-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5987112')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5987112')
-    }
-neoforge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/111/SereneSeasons-neoforge-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5987111')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987111')
-    }
-forge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/108/SereneSeasons-forge-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5987108')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987108')
-    }
 fabric-1.21.3:
   required_when_enabled: true
   update_files:
@@ -596,14 +446,14 @@ fabric-1.21.3:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/336/SereneSeasons-fabric-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6184/7/SereneSeasons-fabric-1.21.3-10.2.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5861336')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5861336')
+      modImplementation files("lib/serene_seasons.jar")
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6184007')
     }
 neoforge-1.21.3:
   required_when_enabled: true
@@ -632,7 +482,7 @@ neoforge-1.21.3:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/335/SereneSeasons-neoforge-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6184/6/SereneSeasons-neoforge-1.21.3-10.2.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -654,8 +504,8 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5861335')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861335')
+      implementation files("lib/serene_seasons.jar")
+      implementation fg.deobf('curse.maven:glitchcore-955399:6184006')
     }
 forge-1.21.3:
   required_when_enabled: true
@@ -684,7 +534,7 @@ forge-1.21.3:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/334/SereneSeasons-forge-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6184/5/SereneSeasons-forge-1.21.3-10.2.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -706,96 +556,8 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5861334')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861334')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5790/654/SereneSeasons-fabric-1.20.1-9.1.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5790654')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5790654')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5790/653/SereneSeasons-forge-1.20.1-9.1.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5790653')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5790653')
+      implementation files("lib/serene_seasons.jar")
+      implementation fg.deobf('curse.maven:glitchcore-955399:6184005')
     }
 neoforge-1.21.1:
   required_when_enabled: true
@@ -824,7 +586,7 @@ neoforge-1.21.1:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5753/503/SereneSeasons-neoforge-1.21.1-10.1.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6182/596/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -846,10 +608,97 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5753503')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5753503')
+      implementation files("lib/serene_seasons.jar")
+      implementation fg.deobf('curse.maven:glitchcore-955399:6182596')
     }
-name: "Serene Seasons"
+fabric-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6182/595/SereneSeasons-fabric-1.21.1-10.1.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    
+    dependencies {
+      modImplementation files("lib/serene_seasons.jar")
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6182595')
+    }
+forge-1.21.1:
+  required_when_enabled: true
+  update_files:
+    - lib/serene_seasons.jar
+  resource_paths:
+    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
+    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
+    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
+    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
+    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
+    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
+    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
+    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
+    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
+    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
+    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
+    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
+    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+
+    tasks.register('serene_seasons') {
+      ant.mkdir(dir: 'lib/');
+      ant.get(src: 'https://edge.forgecdn.net/files/6182/592/SereneSeasons-forge-1.21.1-10.1.0.3.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+    }
+
+    compileJava.dependsOn serene_seasons
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    
+    dependencies {
+      implementation files("lib/serene_seasons.jar")
+      implementation fg.deobf('curse.maven:glitchcore-955399:6182592')
+    }
 fabric-1.21.4:
   required_when_enabled: true
   update_files:
@@ -877,14 +726,14 @@ fabric-1.21.4:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/112/SereneSeasons-fabric-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6179/364/SereneSeasons-fabric-1.21.4-10.4.0.2.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5987112')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5987112')
+      modImplementation files("lib/serene_seasons.jar")
+      modImplementation fg.deobf('curse.maven:glitchcore-955399:6179364')
     }
 neoforge-1.21.4:
   required_when_enabled: true
@@ -913,7 +762,7 @@ neoforge-1.21.4:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/111/SereneSeasons-neoforge-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6179/363/SereneSeasons-neoforge-1.21.4-10.4.0.2.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -935,8 +784,8 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5987111')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987111')
+      implementation files("lib/serene_seasons.jar")
+      implementation fg.deobf('curse.maven:glitchcore-955399:6179363')
     }
 forge-1.21.4:
   required_when_enabled: true
@@ -965,7 +814,7 @@ forge-1.21.4:
 
     tasks.register('serene_seasons') {
       ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5987/108/SereneSeasons-forge-1.21.4-10.4.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
+      ant.get(src: 'https://edge.forgecdn.net/files/6179/361/SereneSeasons-forge-1.21.4-10.4.0.2.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
     }
 
     compileJava.dependsOn serene_seasons
@@ -987,287 +836,7 @@ forge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5987108')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5987108')
-    }
-fabric-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/336/SereneSeasons-fabric-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5861336')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5861336')
-    }
-neoforge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/335/SereneSeasons-neoforge-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5861335')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861335')
-    }
-forge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5861/334/SereneSeasons-forge-1.21.3-10.2.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5861334')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5861334')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5790/654/SereneSeasons-fabric-1.20.1-9.1.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:serene-seasons-291874:5790654')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:5790654')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5790/653/SereneSeasons-forge-1.20.1-9.1.0.0.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5790653')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5790653')
-    }
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/serene_seasons.jar
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('serene_seasons') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5753/503/SereneSeasons-neoforge-1.21.1-10.1.0.1.jar', dest: 'lib/serene_seasons.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn serene_seasons
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:serene-seasons-291874:5753503')
-      implementation fg.deobf('curse.maven:glitchcore-955399:5753503')
+      implementation files("lib/serene_seasons.jar")
+      implementation fg.deobf('curse.maven:glitchcore-955399:6179361')
     }
 name: "Serene Seasons"

@@ -1,369 +1,3 @@
----
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6087/105/twilightforest-1.21.1-4.6.3003-universal.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:6087105')
-    }
-neoforge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5468/648/twilightforest-1.20.1-4.3.2508-universal.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5468648')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5468/648/twilightforest-1.20.1-4.3.2508-universal.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5468648')
-    }
-neoforge-1.20.6:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5448/253/twilightforest-1.20.6-4.5.2490-universal.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5448253')
-    }
-neoforge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5320/183/twilightforest-1.20.4-4.4.2276-universal.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5320183')
-    }
-neoforge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4936/836/twilightforest-1.20.2-4.4.1977-universal.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:4936836')
-    }
-forge-1.7.10:
-  required_when_enabled: true
-  update_files:
-    - lib/twilight_forest.jar
-  resource_paths:
-    block_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/block'
-    item_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/item'
-    effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/effect'
-    environment_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/environment'
-    gui_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/gui'
-    font_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/font'
-    map_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/map'
-    misc_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/misc'
-    mob_effect_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/mob_effect'
-    models_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/models'
-    painting_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/painting'
-    particle_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/particle'
-    trims_textures_dir: 'lib/twilight_forest.jar!/assets/twilight_forest/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('twilight_forest') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4629/338/TwilightForest-2.4.3.jar', dest: 'lib/twilight_forest.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn twilight_forest
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:4629338')
-    }
-name: "The Twilight Forest"
 neoforge-1.21.1:
   required_when_enabled: true
   update_files:
@@ -771,7 +405,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:6087105')
+      implementation files("lib/twilight_forest.jar")
     }
 neoforge-1.20.1:
   required_when_enabled: true
@@ -822,7 +456,7 @@ neoforge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5468648')
+      implementation files("lib/twilight_forest.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -873,7 +507,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5468648')
+      implementation files("lib/twilight_forest.jar")
     }
 neoforge-1.20.6:
   required_when_enabled: true
@@ -924,7 +558,7 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5448253')
+      implementation files("lib/twilight_forest.jar")
     }
 neoforge-1.20.4:
   required_when_enabled: true
@@ -975,7 +609,7 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:5320183')
+      implementation files("lib/twilight_forest.jar")
     }
 neoforge-1.20.2:
   required_when_enabled: true
@@ -1026,7 +660,7 @@ neoforge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:4936836')
+      implementation files("lib/twilight_forest.jar")
     }
 forge-1.7.10:
   required_when_enabled: true
@@ -1077,6 +711,6 @@ forge-1.7.10:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:the-twilight-forest-227639:4629338')
+      implementation files("lib/twilight_forest.jar")
     }
 name: "The Twilight Forest"

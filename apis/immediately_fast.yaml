@@ -1,1981 +1,3 @@
----
-neoforge-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/876/ImmediatelyFast-NeoForge-1.3.4%2b1.21.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124876')
-    }
-fabric-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/875/ImmediatelyFast-Fabric-1.3.4%2b1.21.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124875')
-    }
-quilt-1.21.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/875/ImmediatelyFast-Fabric-1.3.4%2b1.21.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124875')
-    }
-forge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/863/ImmediatelyFast-Forge-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124863')
-    }
-forge-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/863/ImmediatelyFast-Forge-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124863')
-    }
-fabric-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/862/ImmediatelyFast-Fabric-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
-    }
-fabric-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/862/ImmediatelyFast-Fabric-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
-    }
-quilt-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/862/ImmediatelyFast-Fabric-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
-    }
-quilt-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/862/ImmediatelyFast-Fabric-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
-    }
-neoforge-1.21.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/861/ImmediatelyFast-NeoForge-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124861')
-    }
-neoforge-1.21.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/861/ImmediatelyFast-NeoForge-1.3.4%2b1.21.3.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124861')
-    }
-forge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/853/ImmediatelyFast-Forge-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124853')
-    }
-forge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/853/ImmediatelyFast-Forge-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124853')
-    }
-neoforge-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/852/ImmediatelyFast-NeoForge-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124852')
-    }
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/852/ImmediatelyFast-NeoForge-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124852')
-    }
-fabric-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/851/ImmediatelyFast-Fabric-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
-    }
-fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/851/ImmediatelyFast-Fabric-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
-    }
-quilt-1.21:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/851/ImmediatelyFast-Fabric-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
-    }
-quilt-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/851/ImmediatelyFast-Fabric-1.3.4%2b1.21.1.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
-    }
-forge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/841/ImmediatelyFast-Forge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/841/ImmediatelyFast-Forge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/841/ImmediatelyFast-Forge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/841/ImmediatelyFast-Forge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/841/ImmediatelyFast-Forge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-fabric-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-fabric-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-fabric-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-fabric-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-quilt-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-quilt-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-quilt-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-quilt-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-quilt-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/840/ImmediatelyFast-Fabric-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
-    }
-neoforge-1.20.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/839/ImmediatelyFast-NeoForge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
-    }
-neoforge-1.20.3:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/839/ImmediatelyFast-NeoForge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
-    }
-neoforge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/839/ImmediatelyFast-NeoForge-1.3.4%2b1.20.4.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
-    }
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/834/ImmediatelyFast-Fabric-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/834/ImmediatelyFast-Fabric-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/834/ImmediatelyFast-Fabric-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-quilt-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/834/ImmediatelyFast-Fabric-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-quilt-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/834/ImmediatelyFast-Fabric-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-quilt-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/834/ImmediatelyFast-Fabric-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/833/ImmediatelyFast-Forge-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
-    }
-forge-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/833/ImmediatelyFast-Forge-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
-    }
-forge-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/immediately_fast.jar
-  resource_paths:
-    block_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/block'
-    item_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/item'
-    effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/effect'
-    environment_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/environment'
-    gui_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/gui'
-    font_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/font'
-    map_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/map'
-    misc_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/misc'
-    mob_effect_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/mob_effect'
-    models_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/models'
-    painting_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/painting'
-    particle_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/particle'
-    trims_textures_dir: 'lib/immediately_fast.jar!/assets/immediately_fast/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('immediately_fast') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/6124/833/ImmediatelyFast-Forge-1.3.4%2b1.19.2.jar', dest: 'lib/immediately_fast.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn immediately_fast
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
-    }
-name: "ImmediatelyFast"
 neoforge-1.21.4:
   required_when_enabled: true
   update_files:
@@ -3956,7 +1978,7 @@ neoforge-1.21.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124876')
+      implementation files("lib/immediately_fast.jar")
     }
 fabric-1.21.4:
   required_when_enabled: true
@@ -3991,7 +2013,7 @@ fabric-1.21.4:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124875')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.21.4:
   required_when_enabled: true
@@ -4026,7 +2048,7 @@ quilt-1.21.4:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124875')
+      modImplementation files("lib/immediately_fast.jar")
     }
 forge-1.21.3:
   required_when_enabled: true
@@ -4077,7 +2099,7 @@ forge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124863')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.21.2:
   required_when_enabled: true
@@ -4128,7 +2150,7 @@ forge-1.21.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124863')
+      implementation files("lib/immediately_fast.jar")
     }
 fabric-1.21.3:
   required_when_enabled: true
@@ -4163,7 +2185,7 @@ fabric-1.21.3:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.21.2:
   required_when_enabled: true
@@ -4198,7 +2220,7 @@ fabric-1.21.2:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.21.3:
   required_when_enabled: true
@@ -4233,7 +2255,7 @@ quilt-1.21.3:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.21.2:
   required_when_enabled: true
@@ -4268,7 +2290,7 @@ quilt-1.21.2:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation files("lib/immediately_fast.jar")
     }
 neoforge-1.21.3:
   required_when_enabled: true
@@ -4319,7 +2341,7 @@ neoforge-1.21.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124861')
+      implementation files("lib/immediately_fast.jar")
     }
 neoforge-1.21.2:
   required_when_enabled: true
@@ -4370,7 +2392,7 @@ neoforge-1.21.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124861')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.21:
   required_when_enabled: true
@@ -4421,7 +2443,7 @@ forge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124853')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.21.1:
   required_when_enabled: true
@@ -4472,7 +2494,7 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124853')
+      implementation files("lib/immediately_fast.jar")
     }
 neoforge-1.21:
   required_when_enabled: true
@@ -4523,7 +2545,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124852')
+      implementation files("lib/immediately_fast.jar")
     }
 neoforge-1.21.1:
   required_when_enabled: true
@@ -4574,7 +2596,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124852')
+      implementation files("lib/immediately_fast.jar")
     }
 fabric-1.21:
   required_when_enabled: true
@@ -4609,7 +2631,7 @@ fabric-1.21:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.21.1:
   required_when_enabled: true
@@ -4644,7 +2666,7 @@ fabric-1.21.1:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.21:
   required_when_enabled: true
@@ -4679,7 +2701,7 @@ quilt-1.21:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.21.1:
   required_when_enabled: true
@@ -4714,7 +2736,7 @@ quilt-1.21.1:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation files("lib/immediately_fast.jar")
     }
 forge-1.20.2:
   required_when_enabled: true
@@ -4765,7 +2787,7 @@ forge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.20.3:
   required_when_enabled: true
@@ -4816,7 +2838,7 @@ forge-1.20.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -4867,7 +2889,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.20:
   required_when_enabled: true
@@ -4918,7 +2940,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.20.4:
   required_when_enabled: true
@@ -4969,7 +2991,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
+      implementation files("lib/immediately_fast.jar")
     }
 fabric-1.20.2:
   required_when_enabled: true
@@ -5004,7 +3026,7 @@ fabric-1.20.2:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.20.3:
   required_when_enabled: true
@@ -5039,7 +3061,7 @@ fabric-1.20.3:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -5074,7 +3096,7 @@ fabric-1.20.1:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.20:
   required_when_enabled: true
@@ -5109,7 +3131,7 @@ fabric-1.20:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.20.4:
   required_when_enabled: true
@@ -5144,7 +3166,7 @@ fabric-1.20.4:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.20.2:
   required_when_enabled: true
@@ -5179,7 +3201,7 @@ quilt-1.20.2:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.20.3:
   required_when_enabled: true
@@ -5214,7 +3236,7 @@ quilt-1.20.3:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.20.1:
   required_when_enabled: true
@@ -5249,7 +3271,7 @@ quilt-1.20.1:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.20:
   required_when_enabled: true
@@ -5284,7 +3306,7 @@ quilt-1.20:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.20.4:
   required_when_enabled: true
@@ -5319,7 +3341,7 @@ quilt-1.20.4:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation files("lib/immediately_fast.jar")
     }
 neoforge-1.20.2:
   required_when_enabled: true
@@ -5370,7 +3392,7 @@ neoforge-1.20.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
+      implementation files("lib/immediately_fast.jar")
     }
 neoforge-1.20.3:
   required_when_enabled: true
@@ -5421,7 +3443,7 @@ neoforge-1.20.3:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
+      implementation files("lib/immediately_fast.jar")
     }
 neoforge-1.20.4:
   required_when_enabled: true
@@ -5472,7 +3494,7 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
+      implementation files("lib/immediately_fast.jar")
     }
 fabric-1.19.2:
   required_when_enabled: true
@@ -5507,7 +3529,7 @@ fabric-1.19.2:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.19.1:
   required_when_enabled: true
@@ -5542,7 +3564,7 @@ fabric-1.19.1:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      modImplementation files("lib/immediately_fast.jar")
     }
 fabric-1.19:
   required_when_enabled: true
@@ -5577,7 +3599,7 @@ fabric-1.19:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.19.2:
   required_when_enabled: true
@@ -5612,7 +3634,7 @@ quilt-1.19.2:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.19.1:
   required_when_enabled: true
@@ -5647,7 +3669,7 @@ quilt-1.19.1:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      modImplementation files("lib/immediately_fast.jar")
     }
 quilt-1.19:
   required_when_enabled: true
@@ -5682,7 +3704,7 @@ quilt-1.19:
     compileJava.dependsOn immediately_fast
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      modImplementation files("lib/immediately_fast.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -5733,7 +3755,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.19.1:
   required_when_enabled: true
@@ -5784,7 +3806,7 @@ forge-1.19.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
+      implementation files("lib/immediately_fast.jar")
     }
 forge-1.19:
   required_when_enabled: true
@@ -5835,6 +3857,6 @@ forge-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
+      implementation files("lib/immediately_fast.jar")
     }
 name: "ImmediatelyFast"

@@ -1,451 +1,3 @@
----
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5420/267/elytraslot-fabric-6.1.3%2b1.19.2.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:5420267')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
-    }
-fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5420/267/elytraslot-fabric-6.1.3%2b1.19.2.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:5420267')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
-    }
-fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5420/267/elytraslot-fabric-6.1.3%2b1.19.2.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:5420267')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
-    }
-fabric-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3567/467/elytratrinket-fabric-3.0.0-1.18.1.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3567467')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:3567467')
-    }
-fabric-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3567/467/elytratrinket-fabric-3.0.0-1.18.1.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3567467')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:3567467')
-    }
-fabric-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3567/364/elytratrinket-fabric-3.0.0-1.17.1.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3567364')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:3567364')
-    }
-fabric-1.17:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3343/240/elytratrinket-fabric-2.0.1-1.17.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3343240')
-      modImplementation fg.deobf('curse.maven:trinkets-341284:3343240')
-    }
-fabric-1.16.3:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3175/797/curiouselytra-fabric-1.1.1-1.16.5.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3175797')
-      modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
-    }
-fabric-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3175/797/curiouselytra-fabric-1.1.1-1.16.5.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3175797')
-      modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
-    }
-fabric-1.16.4:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3175/797/curiouselytra-fabric-1.1.1-1.16.5.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3175797')
-      modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
-    }
-fabric-1.16.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3030/857/curiouselytra-fabric-1.0.1-1.16.2.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3030857')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3030857')
-      modImplementation fg.deobf('curse.maven:curios-fabric-394941:3030857')
-    }
-fabric-1.16.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_slot.jar
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('elytra_slot') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3016/586/curiouselytra-fabric-1.0.0-1.16.1.jar', dest: 'lib/elytra_slot.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn elytra_slot
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3016586')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3016586')
-      modImplementation fg.deobf('curse.maven:curios-fabric-394941:3016586')
-    }
-name: "Elytra Slot"
 forge-1.20.1:
   required_when_enabled: true
   update_files:
@@ -1527,7 +1079,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5778734')
+      implementation files("lib/elytra_slot.jar")
     }
 forge-1.20:
   required_when_enabled: true
@@ -1578,7 +1130,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5778734')
+      implementation files("lib/elytra_slot.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -1613,7 +1165,7 @@ fabric-1.20.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5778732')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778732')
     }
 fabric-1.20:
@@ -1649,7 +1201,7 @@ fabric-1.20:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5778732')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778732')
     }
 quilt-1.20.1:
@@ -1685,7 +1237,7 @@ quilt-1.20.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5778730')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778730')
     }
 quilt-1.20:
@@ -1721,7 +1273,7 @@ quilt-1.20:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5778730')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778730')
     }
 neoforge-1.21:
@@ -1773,7 +1325,7 @@ neoforge-1.21:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5778461')
+      implementation files("lib/elytra_slot.jar")
       implementation fg.deobf('curse.maven:curios-continuation-1037991:5778461')
     }
 neoforge-1.21.1:
@@ -1825,7 +1377,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5778461')
+      implementation files("lib/elytra_slot.jar")
       implementation fg.deobf('curse.maven:curios-continuation-1037991:5778461')
     }
 fabric-1.21:
@@ -1861,7 +1413,7 @@ fabric-1.21:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5770052')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5770052')
     }
 fabric-1.21.1:
@@ -1897,7 +1449,7 @@ fabric-1.21.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5770052')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5770052')
     }
 fabric-1.20.6:
@@ -1933,7 +1485,7 @@ fabric-1.20.6:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5539628')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5539628')
     }
 fabric-1.20.4:
@@ -1969,7 +1521,7 @@ fabric-1.20.4:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-317716:5539614')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5539614')
     }
 neoforge-1.20.6:
@@ -2021,7 +1573,7 @@ neoforge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5421068')
+      implementation files("lib/elytra_slot.jar")
     }
 forge-1.20.6:
   required_when_enabled: true
@@ -2072,7 +1624,7 @@ forge-1.20.6:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:elytra-slot-317716:5421064')
+      implementation files("lib/elytra_slot.jar")
     }
 name: "Elytra Slot"
 fabric-1.19.2:
@@ -2108,7 +1660,7 @@ fabric-1.19.2:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:5420267')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
     }
 fabric-1.19.1:
@@ -2144,7 +1696,7 @@ fabric-1.19.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:5420267')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
     }
 fabric-1.19:
@@ -2180,7 +1732,7 @@ fabric-1.19:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:5420267')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
     }
 fabric-1.18.1:
@@ -2216,7 +1768,7 @@ fabric-1.18.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3567467')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:3567467')
     }
 fabric-1.18.2:
@@ -2252,7 +1804,7 @@ fabric-1.18.2:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3567467')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:3567467')
     }
 fabric-1.17.1:
@@ -2288,7 +1840,7 @@ fabric-1.17.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3567364')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:3567364')
     }
 fabric-1.17:
@@ -2324,7 +1876,7 @@ fabric-1.17:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3343240')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:trinkets-341284:3343240')
     }
 fabric-1.16.3:
@@ -2360,7 +1912,7 @@ fabric-1.16.3:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3175797')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
     }
 fabric-1.16.5:
@@ -2396,7 +1948,7 @@ fabric-1.16.5:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3175797')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
     }
 fabric-1.16.4:
@@ -2432,7 +1984,7 @@ fabric-1.16.4:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3175797')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
     }
 fabric-1.16.2:
@@ -2468,7 +2020,7 @@ fabric-1.16.2:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3030857')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3030857')
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3030857')
     }
@@ -2505,7 +2057,7 @@ fabric-1.16.1:
     compileJava.dependsOn elytra_slot
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:elytra-slot-fabric-397903:3016586')
+      modImplementation files("lib/elytra_slot.jar")
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3016586')
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3016586')
     }

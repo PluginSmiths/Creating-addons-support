@@ -1,441 +1,3 @@
----
-fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/230/colytra-fabric-6.0.2%2b1.19.2.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
-    }
-fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/230/colytra-fabric-6.0.2%2b1.19.2.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
-    }
-fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/4814/230/colytra-fabric-6.0.2%2b1.19.2.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
-    }
-fabric-1.18.1:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3725/141/colytra-fabric-2.1.1-1.18.1.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
-    }
-fabric-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3725/141/colytra-fabric-2.1.1-1.18.1.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
-    }
-fabric-1.17.1:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3346/110/colytra-fabric-2.0.0-1.17.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
-    }
-fabric-1.17:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3346/110/colytra-fabric-2.0.0-1.17.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
-    }
-fabric-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3113/959/colytra-fabric-1.3.0-1.16.4.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
-    }
-fabric-1.16.4:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3113/959/colytra-fabric-1.3.0-1.16.4.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
-    }
-fabric-1.16.3:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3067/382/colytra-fabric-1.2.0-1.16.3.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3067382')
-    }
-fabric-1.16.2:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3034/700/colytra-fabric-1.1.0-1.16.2.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3034700')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3034700')
-    }
-fabric-1.16.1:
-  required_when_enabled: true
-  update_files:
-    - lib/colytra.jar
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('colytra') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/3023/89/colytra-fabric-1.0.1-1.16.1.jar', dest: 'lib/colytra.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn colytra
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3023089')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3023089')
-    }
-name: "Colytra"
 quilt-1.20.1:
   required_when_enabled: true
   update_files:
@@ -1513,7 +1075,7 @@ quilt-1.20.1:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814401')
+      modImplementation files("lib/colytra.jar")
     }
 quilt-1.20:
   required_when_enabled: true
@@ -1548,7 +1110,7 @@ quilt-1.20:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814401')
+      modImplementation files("lib/colytra.jar")
     }
 forge-1.20.1:
   required_when_enabled: true
@@ -1599,7 +1161,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814399')
+      implementation files("lib/colytra.jar")
     }
 forge-1.20:
   required_when_enabled: true
@@ -1650,7 +1212,7 @@ forge-1.20:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814399')
+      implementation files("lib/colytra.jar")
     }
 fabric-1.20.1:
   required_when_enabled: true
@@ -1685,7 +1247,7 @@ fabric-1.20.1:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814397')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.20:
   required_when_enabled: true
@@ -1720,7 +1282,7 @@ fabric-1.20:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814397')
+      modImplementation files("lib/colytra.jar")
     }
 quilt-1.19.4:
   required_when_enabled: true
@@ -1755,7 +1317,7 @@ quilt-1.19.4:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814386')
+      modImplementation files("lib/colytra.jar")
     }
 forge-1.19.4:
   required_when_enabled: true
@@ -1806,7 +1368,7 @@ forge-1.19.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814384')
+      implementation files("lib/colytra.jar")
     }
 fabric-1.19.4:
   required_when_enabled: true
@@ -1841,7 +1403,7 @@ fabric-1.19.4:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814382')
+      modImplementation files("lib/colytra.jar")
     }
 forge-1.19.2:
   required_when_enabled: true
@@ -1892,7 +1454,7 @@ forge-1.19.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814228')
+      implementation files("lib/colytra.jar")
     }
 forge-1.19.1:
   required_when_enabled: true
@@ -1943,7 +1505,7 @@ forge-1.19.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814228')
+      implementation files("lib/colytra.jar")
     }
 forge-1.19:
   required_when_enabled: true
@@ -1994,7 +1556,7 @@ forge-1.19:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814228')
+      implementation files("lib/colytra.jar")
     }
 forge-1.18.1:
   required_when_enabled: true
@@ -2045,7 +1607,7 @@ forge-1.18.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4087911')
+      implementation files("lib/colytra.jar")
     }
 forge-1.18.2:
   required_when_enabled: true
@@ -2096,7 +1658,7 @@ forge-1.18.2:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4087911')
+      implementation files("lib/colytra.jar")
     }
 name: "Colytra"
 fabric-1.19.2:
@@ -2132,7 +1694,7 @@ fabric-1.19.2:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.19.1:
   required_when_enabled: true
@@ -2167,7 +1729,7 @@ fabric-1.19.1:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.19:
   required_when_enabled: true
@@ -2202,7 +1764,7 @@ fabric-1.19:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.18.1:
   required_when_enabled: true
@@ -2237,7 +1799,7 @@ fabric-1.18.1:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.18.2:
   required_when_enabled: true
@@ -2272,7 +1834,7 @@ fabric-1.18.2:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.17.1:
   required_when_enabled: true
@@ -2307,7 +1869,7 @@ fabric-1.17.1:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.17:
   required_when_enabled: true
@@ -2342,7 +1904,7 @@ fabric-1.17:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.16.5:
   required_when_enabled: true
@@ -2377,7 +1939,7 @@ fabric-1.16.5:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
+      modImplementation files("lib/colytra.jar")
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
     }
 fabric-1.16.4:
@@ -2413,7 +1975,7 @@ fabric-1.16.4:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
+      modImplementation files("lib/colytra.jar")
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
     }
 fabric-1.16.3:
@@ -2449,7 +2011,7 @@ fabric-1.16.3:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3067382')
+      modImplementation files("lib/colytra.jar")
     }
 fabric-1.16.2:
   required_when_enabled: true
@@ -2484,7 +2046,7 @@ fabric-1.16.2:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3034700')
+      modImplementation files("lib/colytra.jar")
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3034700')
     }
 fabric-1.16.1:
@@ -2520,7 +2082,7 @@ fabric-1.16.1:
     compileJava.dependsOn colytra
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3023089')
+      modImplementation files("lib/colytra.jar")
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3023089')
     }
 name: "Colytra"

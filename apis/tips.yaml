@@ -1,549 +1,3 @@
----
-neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5844/57/tipsmod-neoforge-1.21.1-21.1.2.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5844057')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5844057')
-      implementation fg.deobf('curse.maven:prickle-1023259:5844057')
-    }
-forge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5844/55/Tips-forge-1.21.1-21.1.2.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5844055')
-      implementation fg.deobf('curse.maven:prickle-1023259:5844055')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5844055')
-    }
-fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5844/53/tipsmod-fabric-1.21.1-21.1.2.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5844053')
-      modImplementation fg.deobf('curse.maven:prickle-1023259:5844053')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
-    }
-quilt-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5844/53/tipsmod-fabric-1.21.1-21.1.2.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5844053')
-      modImplementation fg.deobf('curse.maven:prickle-1023259:5844053')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
-    }
-fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5547/512/Tips-Fabric-1.20.1-12.1.8.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5547512')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
-    }
-quilt-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5547/512/Tips-Fabric-1.20.1-12.1.8.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5547512')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
-    }
-neoforge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5547/510/Tips-Forge-1.20.1-12.1.8.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5547510')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
-    }
-forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5547/510/Tips-Forge-1.20.1-12.1.8.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5547510')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
-    }
-neoforge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5166/152/Tips-NeoForge-1.20.4-15.0.4.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5166152')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5166152')
-    }
-forge-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5166/151/Tips-Forge-1.20.4-15.0.4.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5166151')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5166151')
-    }
-fabric-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5166/150/Tips-Fabric-1.20.4-15.0.4.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5166150')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
-    }
-quilt-1.20.4:
-  required_when_enabled: true
-  update_files:
-    - lib/tips.jar
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
-  required_when_enabled: true
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-
-    tasks.register('tips') {
-      ant.mkdir(dir: 'lib/');
-      ant.get(src: 'https://edge.forgecdn.net/files/5166/150/Tips-Fabric-1.20.4-15.0.4.jar', dest: 'lib/tips.jar', skipexisting: 'true');
-    }
-
-    compileJava.dependsOn tips
-    
-    dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5166150')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
-    }
-name: "Tips"
 neoforge-1.21.1:
   required_when_enabled: true
   update_files:
@@ -1126,7 +580,7 @@ neoforge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5844057')
+      implementation files("lib/tips.jar")
       implementation fg.deobf('curse.maven:bookshelf-228525:5844057')
       implementation fg.deobf('curse.maven:prickle-1023259:5844057')
     }
@@ -1179,7 +633,7 @@ forge-1.21.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5844055')
+      implementation files("lib/tips.jar")
       implementation fg.deobf('curse.maven:prickle-1023259:5844055')
       implementation fg.deobf('curse.maven:bookshelf-228525:5844055')
     }
@@ -1216,7 +670,7 @@ fabric-1.21.1:
     compileJava.dependsOn tips
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5844053')
+      modImplementation files("lib/tips.jar")
       modImplementation fg.deobf('curse.maven:prickle-1023259:5844053')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
     }
@@ -1253,7 +707,7 @@ quilt-1.21.1:
     compileJava.dependsOn tips
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5844053')
+      modImplementation files("lib/tips.jar")
       modImplementation fg.deobf('curse.maven:prickle-1023259:5844053')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
     }
@@ -1290,7 +744,7 @@ fabric-1.20.1:
     compileJava.dependsOn tips
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5547512')
+      modImplementation files("lib/tips.jar")
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
     }
 quilt-1.20.1:
@@ -1326,7 +780,7 @@ quilt-1.20.1:
     compileJava.dependsOn tips
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5547512')
+      modImplementation files("lib/tips.jar")
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
     }
 neoforge-1.20.1:
@@ -1378,7 +832,7 @@ neoforge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5547510')
+      implementation files("lib/tips.jar")
       implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
 forge-1.20.1:
@@ -1430,7 +884,7 @@ forge-1.20.1:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5547510')
+      implementation files("lib/tips.jar")
       implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
 neoforge-1.20.4:
@@ -1482,7 +936,7 @@ neoforge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5166152')
+      implementation files("lib/tips.jar")
       implementation fg.deobf('curse.maven:bookshelf-228525:5166152')
     }
 forge-1.20.4:
@@ -1534,7 +988,7 @@ forge-1.20.4:
     }
     
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5166151')
+      implementation files("lib/tips.jar")
       implementation fg.deobf('curse.maven:bookshelf-228525:5166151')
     }
 fabric-1.20.4:
@@ -1570,7 +1024,7 @@ fabric-1.20.4:
     compileJava.dependsOn tips
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5166150')
+      modImplementation files("lib/tips.jar")
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
     }
 quilt-1.20.4:
@@ -1606,7 +1060,7 @@ quilt-1.20.4:
     compileJava.dependsOn tips
     
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5166150')
+      modImplementation files("lib/tips.jar")
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
     }
 name: "Tips"
