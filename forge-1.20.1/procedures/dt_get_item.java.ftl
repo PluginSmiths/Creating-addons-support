@@ -1,1 +1,0 @@
-${input$item}.is(ItemTags.create(new ResourceLocation("dynamictrees:${field$name}")))

@@ -1,0 +1,1 @@
+Waypoint.at(${input$X}, ${input$Y}, ${input$Z}, Type.${field$type}, ${input$dimension})

@@ -1,1 +1,0 @@
-${input$entity} instanceof PlayerEntity _pl6546 ? new InventoryLock(Identifier.of(${modid}), Math.random(), true).isLocking(_pl6546, ${field$node}) : null;

@@ -1,1 +1,0 @@
-ElytraTag.getElytra(${input$chestplate})

@@ -1,1 +1,0 @@
-world instanceof Level _l047 && ${input$entity} instanceof Player _pl048 && ChopUtil.canChopWithTool(_pl048, _l047, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))

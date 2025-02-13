@@ -1,1 +1,0 @@
-${input$item}.is(ItemTags.create(new ResourceLocation("alexsmobs:mimic_octopus_${field$name}_items")))

@@ -1,1 +1,0 @@
-${input$entity} instanceof ServerPlayer _ServerPl011 && PickupHandler.canCarryGeneral(_ServerPl011, new Vec3((int)${input$X},(int) ${input$Y},(int) ${input$Z}))

@@ -1,1 +1,0 @@
-${input$block}.defaultBlockState().is(BlockTags.create(new ResourceLocation("alexscaves:${field$name}_bone_blocks")))

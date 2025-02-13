@@ -1,1 +1,0 @@
-${input$entity}.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("locksmith:lockable")))

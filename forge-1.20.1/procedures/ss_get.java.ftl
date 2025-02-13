@@ -1,1 +1,0 @@
-${input$season_state}.get${field$name}()

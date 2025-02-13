@@ -1,1 +1,0 @@
-WaterPurity.getPurityText(${input$purity})

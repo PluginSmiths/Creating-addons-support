@@ -1,1 +1,0 @@
-new ItemStack(${input$item}).is(ItemTags.create(new ResourceLocation("sereneseasons:${field$name}")))

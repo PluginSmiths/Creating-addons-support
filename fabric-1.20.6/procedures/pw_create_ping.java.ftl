@@ -1,1 +1,0 @@
-nx.pingwheel.common.helper.Ping ping = new Ping(new Vec3((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), ${input$entity}.getUUID(), new PlayerInfo(${input$entity}.getUUID(), ${input$entity}.getName().getString(), 0, null), 1, 0, System.currentTimeMillis());

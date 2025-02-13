@@ -1,1 +1,0 @@
-ElytraTag.hasUpgrade(${input$chestplate})

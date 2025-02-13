@@ -1,1 +1,0 @@
-${input$entity} instanceof Player _pl042 && TemperatureHelperisFullyHyperthermic(_pl042)

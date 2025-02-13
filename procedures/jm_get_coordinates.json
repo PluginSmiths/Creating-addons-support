@@ -1,0 +1,45 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "X",
+          "X"
+        ],
+        [
+          "Y",
+          "Y"
+        ],
+        [
+          "Z",
+          "Z"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "waypoint",
+      "check": "waypoint"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "journey_map_support",
+    "toolbox_init": [
+      "<value name=\"waypoint\"><block type=\"variables_get_waypoint\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "waypoint"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "journey_map"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "waypoint",
+      "check": "waypoint"
+    },
+    {
+      "type": "input_value",
+      "name": "name",
+      "check": "String"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#ffffff",
+  "mcreator": {
+    "toolbox_id": "journey_map_support",
+    "toolbox_init": [
+      "<value name=\"waypoint\"><block type=\"variables_get_waypoint\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>",
+      "<value name=\"name\"><block type=\"text\"><field name=\"TEXT\">text</field></block></value>"
+    ],
+    "inputs": [
+      "waypoint",
+      "name"
+    ],
+    "required_apis": [
+      "journey_map"
+    ]
+  }
+}

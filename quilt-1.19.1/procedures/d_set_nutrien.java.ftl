@@ -1,1 +1,0 @@
-${input$diet}.setValue("${field$nutrien}", ${input$number});

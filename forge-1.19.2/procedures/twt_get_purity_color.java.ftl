@@ -1,1 +1,0 @@
-WaterPurity.getPurityColor(${input$purity})

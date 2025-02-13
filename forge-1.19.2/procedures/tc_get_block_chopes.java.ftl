@@ -1,1 +1,0 @@
-world instanceof Level _l050 && ChopUtil.getNumChops(_l050, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))
