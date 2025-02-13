@@ -1,7 +1,4 @@
 fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/aether.jar
   resource_paths:
     block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
     item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
@@ -28,9 +25,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:aether-255308:6173724')
     }
 neoforge-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/aether.jar
   resource_paths:
     block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
     item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
@@ -74,9 +68,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:owo-lib-532610:6172950')
     }
 fabric-1.21.1:
-  required_when_enabled: true
-  update_files:
-    - lib/aether.jar
   resource_paths:
     block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
     item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
@@ -104,9 +95,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:owo-lib-532610:6172937')
     }
 neoforge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/aether.jar
   resource_paths:
     block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
     item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
@@ -149,9 +137,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
 forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/aether.jar
   resource_paths:
     block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
     item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'

@@ -1,7 +1,4 @@
 quilt-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -28,9 +25,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4816003')
     }
 quilt-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -57,9 +51,6 @@ quilt-1.20:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4816003')
     }
 forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -102,9 +93,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4816001')
     }
 forge-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -147,9 +135,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4816001')
     }
 fabric-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -176,9 +161,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815999')
     }
 fabric-1.20:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -205,9 +187,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815999')
     }
 quilt-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -234,9 +213,6 @@ quilt-1.19.3:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815966')
     }
 quilt-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -263,9 +239,6 @@ quilt-1.19.4:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815966')
     }
 forge-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -308,9 +281,6 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
     }
 forge-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -353,9 +323,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
     }
 fabric-1.19.3:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -382,9 +349,6 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815962')
     }
 fabric-1.19.4:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -411,9 +375,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:elytra-utilities-601932:4815962')
     }
 forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -456,9 +417,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
     }
 forge-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -501,9 +459,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
     }
 forge-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -546,9 +501,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
     }
 forge-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -591,9 +543,6 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:elytra-utilities-601932:4087934')
     }
 forge-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -637,9 +586,6 @@ forge-1.16.5:
     }
 name: "Elytra Utilities"
 fabric-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -666,9 +612,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
     }
 fabric-1.19.1:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -695,9 +638,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
     }
 fabric-1.19:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -724,9 +664,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4815904')
     }
 fabric-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'
@@ -753,9 +690,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:elytra-utilities-fabric-601996:4087937')
     }
 fabric-1.16.5:
-  required_when_enabled: true
-  update_files:
-    - lib/elytra_utilities.jar
   resource_paths:
     block_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/block'
     item_textures_dir: 'lib/elytra_utilities.jar!/assets/elytra_utilities/textures/item'

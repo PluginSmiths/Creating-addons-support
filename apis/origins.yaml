@@ -1,7 +1,4 @@
 neoforge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/origins.jar
   resource_paths:
     block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
     item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
@@ -44,9 +41,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:origins-forge-474438:5314209')
     }
 forge-1.20.1:
-  required_when_enabled: true
-  update_files:
-    - lib/origins.jar
   resource_paths:
     block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
     item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
@@ -89,9 +83,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:origins-forge-474438:5314209')
     }
 forge-1.19.2:
-  required_when_enabled: true
-  update_files:
-    - lib/origins.jar
   resource_paths:
     block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
     item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
@@ -134,9 +125,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:origins-forge-474438:5314165')
     }
 forge-1.18.2:
-  required_when_enabled: true
-  update_files:
-    - lib/origins.jar
   resource_paths:
     block_textures_dir: 'lib/origins.jar!/assets/origins/textures/block'
     item_textures_dir: 'lib/origins.jar!/assets/origins/textures/item'
