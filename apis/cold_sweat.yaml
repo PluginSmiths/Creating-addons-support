@@ -1,3 +1,27 @@
+forge-1.18.2:
+  resource_paths:
+    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
+    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
+    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
+    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
+    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
+    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
+    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
+    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
+    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
+    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
+    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
+    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
+    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cold-sweat-506194:6189563')
+    }
 forge-1.19.2:
   resource_paths:
     block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
@@ -19,7 +43,6 @@ forge-1.19.2:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6176797')
     }
@@ -44,7 +67,6 @@ forge-1.20.1:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6176793')
     }
@@ -69,7 +91,6 @@ neoforge-1.21.1:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6176789')
     }
@@ -94,7 +115,6 @@ forge-1.20:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6058311')
     }
@@ -119,33 +139,7 @@ neoforge-1.21:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       implementation fg.deobf('curse.maven:cold-sweat-506194:6058306')
-    }
-forge-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/block'
-    item_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/item'
-    effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/effect'
-    environment_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/environment'
-    gui_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/gui'
-    font_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/font'
-    map_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/map'
-    misc_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/misc'
-    mob_effect_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/mob_effect'
-    models_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/models'
-    painting_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/painting'
-    particle_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/particle'
-    trims_textures_dir: 'lib/cold_sweat.jar!/assets/cold_sweat/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:cold-sweat-506194:5874642')
     }
 name: "Cold Sweat"

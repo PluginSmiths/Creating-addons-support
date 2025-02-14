@@ -19,9 +19,8 @@ neoforge-1.21.4:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170448')
+      implementation fg.deobf('curse.maven:balm-531761:6189433')
     }
 forge-1.21.4:
   resource_paths:
@@ -44,59 +43,8 @@ forge-1.21.4:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170439')
-    }
-neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
-    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
-    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
-    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
-    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
-    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
-    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
-    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
-    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
-    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
-    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
-    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
-    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170430')
-    }
-neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
-    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
-    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
-    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
-    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
-    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
-    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
-    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
-    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
-    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
-    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
-    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
-    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170430')
+      implementation fg.deobf('curse.maven:balm-531761:6189432')
     }
 forge-1.21:
   resource_paths:
@@ -119,9 +67,8 @@ forge-1.21:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170429')
+      implementation fg.deobf('curse.maven:balm-531761:6189427')
     }
 forge-1.21.1:
   resource_paths:
@@ -144,9 +91,56 @@ forge-1.21.1:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170429')
+      implementation fg.deobf('curse.maven:balm-531761:6189427')
+    }
+neoforge-1.21:
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6189424')
+    }
+neoforge-1.21.1:
+  resource_paths:
+    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
+    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
+    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
+    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
+    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
+    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
+    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
+    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
+    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
+    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
+    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
+    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
+    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:balm-531761:6189424')
     }
 forge-1.20.1:
   resource_paths:
@@ -169,9 +163,8 @@ forge-1.20.1:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170423')
+      implementation fg.deobf('curse.maven:balm-531761:6189418')
     }
 forge-1.20:
   resource_paths:
@@ -194,59 +187,8 @@ forge-1.20:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6170423')
-    }
-neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
-    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
-    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
-    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
-    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
-    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
-    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
-    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
-    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
-    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
-    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
-    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
-    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6025248')
-    }
-neoforge-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/balm.jar!/assets/balm/textures/block'
-    item_textures_dir: 'lib/balm.jar!/assets/balm/textures/item'
-    effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/effect'
-    environment_textures_dir: 'lib/balm.jar!/assets/balm/textures/environment'
-    gui_textures_dir: 'lib/balm.jar!/assets/balm/textures/gui'
-    font_textures_dir: 'lib/balm.jar!/assets/balm/textures/font'
-    map_textures_dir: 'lib/balm.jar!/assets/balm/textures/map'
-    misc_textures_dir: 'lib/balm.jar!/assets/balm/textures/misc'
-    mob_effect_textures_dir: 'lib/balm.jar!/assets/balm/textures/mob_effect'
-    models_textures_dir: 'lib/balm.jar!/assets/balm/textures/models'
-    painting_textures_dir: 'lib/balm.jar!/assets/balm/textures/painting'
-    particle_textures_dir: 'lib/balm.jar!/assets/balm/textures/particle'
-    trims_textures_dir: 'lib/balm.jar!/assets/balm/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    
-    dependencies {
-      implementation fg.deobf('curse.maven:balm-531761:6025248')
+      implementation fg.deobf('curse.maven:balm-531761:6189418')
     }
 name: "Balm"
 fabric-1.21.4:
@@ -270,9 +212,8 @@ fabric-1.21.4:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170438')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6189431')
     }
 fabric-1.21:
   resource_paths:
@@ -295,9 +236,8 @@ fabric-1.21:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170427')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6189422')
     }
 fabric-1.21.1:
   resource_paths:
@@ -320,9 +260,8 @@ fabric-1.21.1:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170427')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6189422')
     }
 fabric-1.20.1:
   resource_paths:
@@ -345,9 +284,8 @@ fabric-1.20.1:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170424')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6189417')
     }
 fabric-1.20:
   resource_paths:
@@ -370,9 +308,8 @@ fabric-1.20:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
-      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6170424')
+      modImplementation fg.deobf('curse.maven:balm-fabric-500525:6189417')
     }
 fabric-1.21.3:
   resource_paths:
@@ -395,7 +332,6 @@ fabric-1.21.3:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025240')
     }
@@ -420,7 +356,6 @@ fabric-1.21.2:
         url = 'https://cursemaven.com/'
       }
     }
-    
     dependencies {
       modImplementation fg.deobf('curse.maven:balm-fabric-500525:6025240')
     }
