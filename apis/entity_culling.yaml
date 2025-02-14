@@ -1,18 +1,4 @@
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968862')
     }
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:entityculling-448233:5968861')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:entityculling-448233:5968860')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968859')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:entityculling-448233:5968857')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:entityculling-448233:5968856')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968855')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968855')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:entityculling-448233:5968853')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:entityculling-448233:5968853')
     }
 forge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ forge-1.21:
       implementation fg.deobf('curse.maven:entityculling-448233:5968852')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:entityculling-448233:5968852')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968850')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:entityculling-448233:5968848')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ forge-1.20.6:
       implementation fg.deobf('curse.maven:entityculling-448233:5968847')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,20 +159,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968846')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -407,20 +169,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:entityculling-448233:5968845')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -431,20 +179,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:entityculling-448233:5968843')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -455,20 +189,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968842')
     }
 neoforge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -479,20 +199,6 @@ neoforge-1.20.2:
       implementation fg.deobf('curse.maven:entityculling-448233:5968841')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -503,20 +209,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:entityculling-448233:5968840')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -527,20 +219,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:entityculling-448233:5968678')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/block'
-    item_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/item'
-    effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/effect'
-    environment_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/environment'
-    gui_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/gui'
-    font_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/font'
-    map_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/map'
-    misc_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/misc'
-    mob_effect_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/mob_effect'
-    models_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/models'
-    painting_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/painting'
-    particle_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/particle'
-    trims_textures_dir: 'lib/entity_culling.jar!/assets/entity_culling/textures/trims'
   gradle: |
     repositories {
       maven {

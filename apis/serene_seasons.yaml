@@ -1,18 +1,4 @@
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6184007')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:glitchcore-955399:6184006')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:glitchcore-955399:6184005')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:glitchcore-955399:6182596')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -124,20 +54,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6182595')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -149,20 +65,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:glitchcore-955399:6182592')
     }
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -174,20 +76,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6179364')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -199,20 +87,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:glitchcore-955399:6179363')
     }
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/block'
-    item_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/item'
-    effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/effect'
-    environment_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/environment'
-    gui_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/gui'
-    font_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/font'
-    map_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/map'
-    misc_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/misc'
-    mob_effect_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/mob_effect'
-    models_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/models'
-    painting_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/painting'
-    particle_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/particle'
-    trims_textures_dir: 'lib/serene_seasons.jar!/assets/serene_seasons/textures/trims'
   gradle: |
     repositories {
       maven {

@@ -1,18 +1,4 @@
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/block'
-    item_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/item'
-    effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/effect'
-    environment_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/environment'
-    gui_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/gui'
-    font_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/font'
-    map_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/map'
-    misc_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/misc'
-    mob_effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/mob_effect'
-    models_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/models'
-    painting_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/painting'
-    particle_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/particle'
-    trims_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -25,20 +11,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6152944')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/block'
-    item_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/item'
-    effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/effect'
-    environment_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/environment'
-    gui_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/gui'
-    font_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/font'
-    map_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/map'
-    misc_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/misc'
-    mob_effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/mob_effect'
-    models_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/models'
-    painting_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/painting'
-    particle_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/particle'
-    trims_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -51,20 +23,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:glitchcore-955399:6152943')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/block'
-    item_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/item'
-    effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/effect'
-    environment_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/environment'
-    gui_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/gui'
-    font_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/font'
-    map_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/map'
-    misc_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/misc'
-    mob_effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/mob_effect'
-    models_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/models'
-    painting_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/painting'
-    particle_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/particle'
-    trims_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -77,20 +35,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:terrablender-563928:6152939')
     }
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/block'
-    item_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/item'
-    effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/effect'
-    environment_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/environment'
-    gui_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/gui'
-    font_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/font'
-    map_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/map'
-    misc_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/misc'
-    mob_effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/mob_effect'
-    models_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/models'
-    painting_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/painting'
-    particle_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/particle'
-    trims_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -103,20 +47,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6083660')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/block'
-    item_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/item'
-    effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/effect'
-    environment_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/environment'
-    gui_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/gui'
-    font_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/font'
-    map_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/map'
-    misc_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/misc'
-    mob_effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/mob_effect'
-    models_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/models'
-    painting_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/painting'
-    particle_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/particle'
-    trims_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -129,20 +59,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:glitchcore-955399:6083659')
     }
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/block'
-    item_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/item'
-    effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/effect'
-    environment_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/environment'
-    gui_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/gui'
-    font_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/font'
-    map_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/map'
-    misc_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/misc'
-    mob_effect_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/mob_effect'
-    models_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/models'
-    painting_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/painting'
-    particle_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/particle'
-    trims_textures_dir: 'lib/biomes_o_plenty.jar!/assets/biomes_o_plenty/textures/trims'
   gradle: |
     repositories {
       maven {

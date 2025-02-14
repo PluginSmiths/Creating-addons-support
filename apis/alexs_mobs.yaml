@@ -1,18 +1,4 @@
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:5698791')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:5698791')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:4618074')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:4574680')
     }
 forge-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:4391893')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:4159154')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:alexs-mobs-426558:4071154')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/block'
-    item_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/item'
-    effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/effect'
-    environment_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/environment'
-    gui_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/gui'
-    font_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/font'
-    map_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/map'
-    misc_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/models'
-    painting_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/painting'
-    particle_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/particle'
-    trims_textures_dir: 'lib/alexs_mobs.jar!/assets/alexs_mobs/textures/trims'
   gradle: |
     repositories {
       maven {

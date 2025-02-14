@@ -1,18 +1,4 @@
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011965')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011963')
     }
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011962')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011960')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011958')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011956')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
     }
 fabric-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ fabric-1.21.2:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011954')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011951')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011951')
     }
 neoforge-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ neoforge-1.21.2:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011951')
     }
 forge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ forge-1.21:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
     }
 forge-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ forge-1.21.2:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,20 +159,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011949')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -407,20 +169,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011947')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -431,20 +179,6 @@ forge-1.20.6:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011945')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -455,20 +189,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011944')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -479,20 +199,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011938')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -503,20 +209,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011937')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -527,20 +219,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011935')
     }
 neoforge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -551,20 +229,6 @@ neoforge-1.20.2:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011933')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -575,20 +239,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:first-person-model-333287:6011932')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -599,20 +249,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:first-person-model-333287:6011930')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/block'
-    item_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/item'
-    effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/effect'
-    environment_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/environment'
-    gui_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/gui'
-    font_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/font'
-    map_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/map'
-    misc_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/misc'
-    mob_effect_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/mob_effect'
-    models_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/models'
-    painting_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/painting'
-    particle_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/particle'
-    trims_textures_dir: 'lib/first_person_model.jar!/assets/first_person_model/textures/trims'
   gradle: |
     repositories {
       maven {

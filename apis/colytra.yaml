@@ -1,18 +1,4 @@
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:colytra-280200:4814401')
     }
 quilt-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ quilt-1.20:
       modImplementation fg.deobf('curse.maven:colytra-280200:4814401')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:colytra-280200:4814399')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:colytra-280200:4814399')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:colytra-280200:4814397')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:colytra-280200:4814397')
     }
 quilt-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ quilt-1.19.4:
       modImplementation fg.deobf('curse.maven:colytra-280200:4814386')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:colytra-280200:4814384')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:colytra-280200:4814382')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:colytra-280200:4814228')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:colytra-280200:4814228')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:colytra-280200:4814228')
     }
 forge-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:colytra-280200:4087911')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -334,22 +138,7 @@ forge-1.18.2:
     dependencies {
       implementation fg.deobf('curse.maven:colytra-280200:4087911')
     }
-name: "Colytra"
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -360,20 +149,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -384,20 +159,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -408,20 +169,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
     }
 fabric-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -432,20 +179,6 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -456,20 +189,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
     }
 fabric-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -480,20 +199,6 @@ fabric-1.17.1:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
     }
 fabric-1.17:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -504,20 +209,6 @@ fabric-1.17:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
     }
 fabric-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -529,20 +220,6 @@ fabric-1.16.5:
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
     }
 fabric-1.16.4:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -554,20 +231,6 @@ fabric-1.16.4:
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
     }
 fabric-1.16.3:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -578,20 +241,6 @@ fabric-1.16.3:
       modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3067382')
     }
 fabric-1.16.2:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -603,20 +252,6 @@ fabric-1.16.2:
       modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3034700')
     }
 fabric-1.16.1:
-  resource_paths:
-    block_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/block'
-    item_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/item'
-    effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/effect'
-    environment_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/environment'
-    gui_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/gui'
-    font_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/font'
-    map_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/map'
-    misc_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/misc'
-    mob_effect_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/mob_effect'
-    models_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/models'
-    painting_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/painting'
-    particle_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/particle'
-    trims_textures_dir: 'lib/colytra.jar!/assets/colytra/textures/trims'
   gradle: |
     repositories {
       maven {

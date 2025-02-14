@@ -1,18 +1,4 @@
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
-    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
-    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
-    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
-    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
-    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
-    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
-    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
-    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
-    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
-    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
-    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
-    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:accessories-938917:6190583')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
-    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
-    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
-    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
-    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
-    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
-    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
-    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
-    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
-    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
-    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
-    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
-    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:owo-lib-532610:6172950')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
-    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
-    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
-    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
-    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
-    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
-    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
-    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
-    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
-    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
-    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
-    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
-    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:owo-lib-532610:6172937')
     }
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
-    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
-    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
-    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
-    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
-    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
-    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
-    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
-    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
-    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
-    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
-    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
-    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -98,20 +42,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/aether.jar!/assets/aether/textures/block'
-    item_textures_dir: 'lib/aether.jar!/assets/aether/textures/item'
-    effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/effect'
-    environment_textures_dir: 'lib/aether.jar!/assets/aether/textures/environment'
-    gui_textures_dir: 'lib/aether.jar!/assets/aether/textures/gui'
-    font_textures_dir: 'lib/aether.jar!/assets/aether/textures/font'
-    map_textures_dir: 'lib/aether.jar!/assets/aether/textures/map'
-    misc_textures_dir: 'lib/aether.jar!/assets/aether/textures/misc'
-    mob_effect_textures_dir: 'lib/aether.jar!/assets/aether/textures/mob_effect'
-    models_textures_dir: 'lib/aether.jar!/assets/aether/textures/models'
-    painting_textures_dir: 'lib/aether.jar!/assets/aether/textures/painting'
-    particle_textures_dir: 'lib/aether.jar!/assets/aether/textures/particle'
-    trims_textures_dir: 'lib/aether.jar!/assets/aether/textures/trims'
   gradle: |
     repositories {
       maven {

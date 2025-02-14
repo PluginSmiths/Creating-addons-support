@@ -1,18 +1,4 @@
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:appleskin-248787:5864743')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:appleskin-248787:5864743')
     }
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:appleskin-248787:5864742')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:appleskin-248787:5864742')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:appleskin-248787:5864741')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:appleskin-248787:5864741')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:appleskin-248787:5586600')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:appleskin-248787:5586600')
     }
 neoforge-1.20.5:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ neoforge-1.20.5:
       implementation fg.deobf('curse.maven:appleskin-248787:5586595')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:appleskin-248787:5586595')
     }
 fabric-1.20.5:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ fabric-1.20.5:
       modImplementation fg.deobf('curse.maven:appleskin-248787:5586594')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:appleskin-248787:5586594')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:appleskin-248787:5042105')
     }
 fabric-1.20.3:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ fabric-1.20.3:
       modImplementation fg.deobf('curse.maven:appleskin-248787:4953893')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/block'
-    item_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/item'
-    effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/effect'
-    environment_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/environment'
-    gui_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/gui'
-    font_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/font'
-    map_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/map'
-    misc_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/misc'
-    mob_effect_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/mob_effect'
-    models_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/models'
-    painting_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/painting'
-    particle_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/particle'
-    trims_textures_dir: 'lib/apple_skin.jar!/assets/apple_skin/textures/trims'
   gradle: |
     repositories {
       maven {

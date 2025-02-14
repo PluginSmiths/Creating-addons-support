@@ -1,18 +1,4 @@
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:carry-on-274259:6058855')
     }
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:carry-on-274259:6050816')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:carry-on-274259:6050813')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:carry-on-274259:6033270')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:carry-on-274259:6033268')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:carry-on-274259:6027761')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:carry-on-274259:6027759')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:carry-on-274259:5649345')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:carry-on-274259:5649344')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:carry-on-274259:5591952')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:carry-on-274259:5541347')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:carry-on-274259:5541211')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:carry-on-274259:5521253')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:carry-on-274259:5141764')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:carry-on-274259:5141763')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/block'
-    item_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/item'
-    effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/effect'
-    environment_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/environment'
-    gui_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/gui'
-    font_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/font'
-    map_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/map'
-    misc_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/misc'
-    mob_effect_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/mob_effect'
-    models_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/models'
-    painting_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/painting'
-    particle_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/particle'
-    trims_textures_dir: 'lib/carry_on.jar!/assets/carry_on/textures/trims'
   gradle: |
     repositories {
       maven {

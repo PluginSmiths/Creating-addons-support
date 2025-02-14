@@ -1,18 +1,4 @@
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/block'
-    item_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/item'
-    effect_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/effect'
-    environment_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/environment'
-    gui_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/gui'
-    font_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/font'
-    map_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/map'
-    misc_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/misc'
-    mob_effect_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/mob_effect'
-    models_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/models'
-    painting_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/painting'
-    particle_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/particle'
-    trims_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -25,20 +11,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:attributefix-280510:5729406')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/block'
-    item_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/item'
-    effect_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/effect'
-    environment_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/environment'
-    gui_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/gui'
-    font_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/font'
-    map_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/map'
-    misc_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/misc'
-    mob_effect_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/mob_effect'
-    models_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/models'
-    painting_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/painting'
-    particle_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/particle'
-    trims_textures_dir: 'lib/passive_skill_tree.jar!/assets/passive_skill_tree/textures/trims'
   gradle: |
     repositories {
       maven {

@@ -1,18 +1,4 @@
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/block'
-    item_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/item'
-    effect_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/effect'
-    environment_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/environment'
-    gui_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/gui'
-    font_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/font'
-    map_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/map'
-    misc_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/models'
-    painting_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/painting'
-    particle_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/particle'
-    trims_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:alexs-caves-924854:5848216')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/block'
-    item_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/item'
-    effect_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/effect'
-    environment_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/environment'
-    gui_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/gui'
-    font_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/font'
-    map_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/map'
-    misc_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/misc'
-    mob_effect_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/mob_effect'
-    models_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/models'
-    painting_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/painting'
-    particle_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/particle'
-    trims_textures_dir: 'lib/alexs_caves.jar!/assets/alexs_caves/textures/trims'
   gradle: |
     repositories {
       maven {

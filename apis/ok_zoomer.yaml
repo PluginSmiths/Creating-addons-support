@@ -1,18 +1,4 @@
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:ok-zoomer-354047:6129136')
     }
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:6129133')
     }
 quilt-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ quilt-1.21.4:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:6129133')
     }
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:ok-zoomer-354047:6121880')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:ok-zoomer-354047:6121880')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:6121878')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:6121878')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:ok-zoomer-354047:5993094')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:ok-zoomer-354047:5993094')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:5993091')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:5993091')
     }
 quilt-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ quilt-1.21:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:5993091')
     }
 quilt-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,28 +129,3 @@ quilt-1.21.1:
       modImplementation fg.deobf('curse.maven:ok-zoomer-354047:5993091')
     }
 name: "Ok Zoomer - It's Zoom!"
-fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/block'
-    item_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/item'
-    effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/effect'
-    environment_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/environment'
-    gui_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/gui'
-    font_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/font'
-    map_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/map'
-    misc_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/misc'
-    mob_effect_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/mob_effect'
-    models_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/models'
-    painting_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/painting'
-    particle_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/particle'
-    trims_textures_dir: 'lib/ok_zoomer.jar!/assets/ok_zoomer/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:fabricated-zoomer-902823:4706437')
-    }
-name: "Fabricated Zoomer"

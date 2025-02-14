@@ -1,18 +1,4 @@
 fabric-1.16.3:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ fabric-1.16.3:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.16.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ fabric-1.16.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.14.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ fabric-1.14.4:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.15:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ fabric-1.15:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.16:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ fabric-1.16:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.16.5:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.15.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.15.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.16.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ fabric-1.16.4:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.16.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ fabric-1.16.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 fabric-1.15.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ fabric-1.15.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.16.3:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ quilt-1.16.3:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.16.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ quilt-1.16.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.14.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ quilt-1.14.4:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.15:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ quilt-1.15:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.16:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ quilt-1.16:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,20 +159,6 @@ quilt-1.16.5:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.15.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -407,20 +169,6 @@ quilt-1.15.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.16.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -431,20 +179,6 @@ quilt-1.16.4:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.16.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -455,20 +189,6 @@ quilt-1.16.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 quilt-1.15.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -479,20 +199,6 @@ quilt-1.15.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465269')
     }
 forge-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -503,20 +209,6 @@ forge-1.17.1:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -527,20 +219,6 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -551,20 +229,6 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.17:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -575,20 +239,6 @@ forge-1.17:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -599,20 +249,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -623,20 +259,6 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -647,20 +269,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -671,20 +279,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.18:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -695,20 +289,6 @@ forge-1.18:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -719,20 +299,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465268')
     }
 forge-1.16.3:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -743,20 +309,6 @@ forge-1.16.3:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 forge-1.16.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -767,20 +319,6 @@ forge-1.16.1:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 forge-1.16:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -791,20 +329,6 @@ forge-1.16:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 forge-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -815,20 +339,6 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 forge-1.15.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -839,20 +349,6 @@ forge-1.15.2:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 forge-1.16.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -863,20 +359,6 @@ forge-1.16.4:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 forge-1.16.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -887,20 +369,6 @@ forge-1.16.2:
       implementation fg.deobf('curse.maven:memoryleakfix-627566:4465267')
     }
 fabric-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -911,20 +379,6 @@ fabric-1.17.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -935,20 +389,6 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -959,20 +399,6 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.17:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -983,20 +409,6 @@ fabric-1.17:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1007,20 +419,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1031,20 +429,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1055,20 +439,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1079,20 +449,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.18:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1103,20 +459,6 @@ fabric-1.18:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1127,20 +469,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1151,20 +479,6 @@ quilt-1.17.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1175,20 +489,6 @@ quilt-1.19.3:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1199,20 +499,6 @@ quilt-1.18.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.17:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1223,20 +509,6 @@ quilt-1.17:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1247,20 +519,6 @@ quilt-1.19.4:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1271,20 +529,6 @@ quilt-1.18.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1295,20 +539,6 @@ quilt-1.19.2:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1319,20 +549,6 @@ quilt-1.19.1:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.18:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -1343,20 +559,6 @@ quilt-1.18:
       modImplementation fg.deobf('curse.maven:memoryleakfix-627566:4465266')
     }
 quilt-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/block'
-    item_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/item'
-    effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/effect'
-    environment_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/environment'
-    gui_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/gui'
-    font_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/font'
-    map_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/map'
-    misc_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/misc'
-    mob_effect_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/mob_effect'
-    models_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/models'
-    painting_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/painting'
-    particle_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/particle'
-    trims_textures_dir: 'lib/memory_leak.jar!/assets/memory_leak/textures/trims'
   gradle: |
     repositories {
       maven {

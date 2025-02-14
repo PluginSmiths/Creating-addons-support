@@ -1,18 +1,4 @@
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
-    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
-    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
-    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
-    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
-    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
-    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
-    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
-    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
-    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
-    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
-    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
-    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:treechop-421377:5856018')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
-    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
-    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
-    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
-    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
-    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
-    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
-    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
-    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
-    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
-    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
-    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
-    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:treechop-421377:5570188')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
-    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
-    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
-    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
-    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
-    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
-    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
-    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
-    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
-    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
-    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
-    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
-    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:treechop-421377:5570187')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
-    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
-    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
-    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
-    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
-    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
-    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
-    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
-    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
-    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
-    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
-    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
-    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:treechop-421377:5565422')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/block'
-    item_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/item'
-    effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/effect'
-    environment_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/environment'
-    gui_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/gui'
-    font_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/font'
-    map_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/map'
-    misc_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/misc'
-    mob_effect_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/mob_effect'
-    models_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/models'
-    painting_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/painting'
-    particle_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/particle'
-    trims_textures_dir: 'lib/tree_chop.jar!/assets/tree_chop/textures/trims'
   gradle: |
     repositories {
       maven {

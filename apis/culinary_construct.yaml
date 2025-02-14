@@ -1,18 +1,4 @@
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4818909')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4818907')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
     }
 quilt-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ quilt-1.20:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
     }
 quilt-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ quilt-1.19.4:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814112')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4814110')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814108')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,20 +159,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/block'
-    item_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/item'
-    effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/effect'
-    environment_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/environment'
-    gui_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/gui'
-    font_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/font'
-    map_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/map'
-    misc_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/misc'
-    mob_effect_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/mob_effect'
-    models_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/models'
-    painting_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/painting'
-    particle_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/particle'
-    trims_textures_dir: 'lib/culinary_construct.jar!/assets/culinary_construct/textures/trims'
   gradle: |
     repositories {
       maven {

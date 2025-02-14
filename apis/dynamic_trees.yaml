@@ -1,18 +1,4 @@
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/block'
-    item_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/item'
-    effect_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/effect'
-    environment_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/environment'
-    gui_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/gui'
-    font_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/font'
-    map_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/map'
-    misc_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/models'
-    painting_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/painting'
-    particle_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/particle'
-    trims_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:dynamictrees-252818:6116872')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/block'
-    item_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/item'
-    effect_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/effect'
-    environment_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/environment'
-    gui_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/gui'
-    font_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/font'
-    map_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/map'
-    misc_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/models'
-    painting_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/painting'
-    particle_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/particle'
-    trims_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:dynamictrees-252818:6111832')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/block'
-    item_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/item'
-    effect_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/effect'
-    environment_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/environment'
-    gui_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/gui'
-    font_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/font'
-    map_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/map'
-    misc_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/misc'
-    mob_effect_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/mob_effect'
-    models_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/models'
-    painting_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/painting'
-    particle_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/particle'
-    trims_textures_dir: 'lib/dynamic_trees.jar!/assets/dynamic_trees/textures/trims'
   gradle: |
     repositories {
       maven {

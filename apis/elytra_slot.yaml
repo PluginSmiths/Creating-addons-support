@@ -1,18 +1,4 @@
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:elytra-slot-317716:5778734')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:elytra-slot-317716:5778734')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -72,20 +30,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778732')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -97,20 +41,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778732')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -122,20 +52,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778730')
     }
 quilt-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -147,20 +63,6 @@ quilt-1.20:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5778730')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -172,20 +74,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:curios-continuation-1037991:5778461')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -197,20 +85,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:curios-continuation-1037991:5778461')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -222,20 +96,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5770052')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -247,20 +107,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5770052')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -272,20 +118,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5539628')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -297,20 +129,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5539614')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -321,20 +139,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:elytra-slot-317716:5421068')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -344,22 +148,7 @@ forge-1.20.6:
     dependencies {
       implementation fg.deobf('curse.maven:elytra-slot-317716:5421064')
     }
-name: "Elytra Slot"
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -371,20 +160,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -396,20 +171,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -421,20 +182,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:trinkets-341284:5420267')
     }
 fabric-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -446,20 +193,6 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:trinkets-341284:3567467')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -471,20 +204,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:trinkets-341284:3567467')
     }
 fabric-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -496,20 +215,6 @@ fabric-1.17.1:
       modImplementation fg.deobf('curse.maven:trinkets-341284:3567364')
     }
 fabric-1.17:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -521,20 +226,6 @@ fabric-1.17:
       modImplementation fg.deobf('curse.maven:trinkets-341284:3343240')
     }
 fabric-1.16.3:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -546,20 +237,6 @@ fabric-1.16.3:
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
     }
 fabric-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -571,20 +248,6 @@ fabric-1.16.5:
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
     }
 fabric-1.16.4:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -596,20 +259,6 @@ fabric-1.16.4:
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3175797')
     }
 fabric-1.16.2:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -622,20 +271,6 @@ fabric-1.16.2:
       modImplementation fg.deobf('curse.maven:curios-fabric-394941:3030857')
     }
 fabric-1.16.1:
-  resource_paths:
-    block_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/block'
-    item_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/item'
-    effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/effect'
-    environment_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/environment'
-    gui_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/gui'
-    font_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/font'
-    map_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/map'
-    misc_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/misc'
-    mob_effect_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/mob_effect'
-    models_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/models'
-    painting_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/painting'
-    particle_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/particle'
-    trims_textures_dir: 'lib/elytra_slot.jar!/assets/elytra_slot/textures/trims'
   gradle: |
     repositories {
       maven {

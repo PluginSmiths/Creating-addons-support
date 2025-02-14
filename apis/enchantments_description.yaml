@@ -1,18 +1,4 @@
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5855250')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5855250')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -125,20 +55,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:prickle-1023259:5824116')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -151,20 +67,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:prickle-1023259:5824115')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -177,20 +79,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
     }
 quilt-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -203,20 +91,6 @@ quilt-1.21.1:
       modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -228,20 +102,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5585610')
     }
 quilt-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/block'
-    item_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/item'
-    effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/effect'
-    environment_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/environment'
-    gui_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/gui'
-    font_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/font'
-    map_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/map'
-    misc_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/misc'
-    mob_effect_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/mob_effect'
-    models_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/models'
-    painting_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/painting'
-    particle_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/particle'
-    trims_textures_dir: 'lib/enchantments_description.jar!/assets/enchantments_description/textures/trims'
   gradle: |
     repositories {
       maven {

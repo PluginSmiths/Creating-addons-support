@@ -1,18 +1,4 @@
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -25,20 +11,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 fabric-1.20.3:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -51,20 +23,6 @@ fabric-1.20.3:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -77,20 +35,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -103,20 +47,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -129,20 +59,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 forge-1.20.3:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -155,20 +71,6 @@ forge-1.20.3:
       implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -181,20 +83,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -207,20 +95,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 quilt-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -233,20 +107,6 @@ quilt-1.20.2:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 quilt-1.20.3:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -259,20 +119,6 @@ quilt-1.20.3:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -285,20 +131,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:necronomicon-586157:5773159')
     }
 quilt-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/block'
-    item_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/item'
-    effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/effect'
-    environment_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/environment'
-    gui_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/gui'
-    font_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/font'
-    map_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/map'
-    misc_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/misc'
-    mob_effect_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/mob_effect'
-    models_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/models'
-    painting_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/painting'
-    particle_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/particle'
-    trims_textures_dir: 'lib/fabric_entity_attributes.jar!/assets/fabric_entity_attributes/textures/trims'
   gradle: |
     repositories {
       maven {

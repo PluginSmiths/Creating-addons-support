@@ -1,18 +1,4 @@
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
-    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
-    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
-    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
-    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
-    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
-    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
-    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
-    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
-    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
-    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
-    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
-    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
-    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
-    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
-    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
-    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
-    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
-    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
-    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
-    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
-    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
-    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
-    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
-    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6117735')
     }
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
-    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
-    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
-    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
-    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
-    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
-    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
-    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
-    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
-    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
-    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
-    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
-    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:irons-spells-n-spellbooks-855414:6054196')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/block'
-    item_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/item'
-    effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/effect'
-    environment_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/environment'
-    gui_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/gui'
-    font_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/font'
-    map_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/map'
-    misc_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/misc'
-    mob_effect_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/mob_effect'
-    models_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/models'
-    painting_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/painting'
-    particle_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/particle'
-    trims_textures_dir: 'lib/irons_spellsn_spellbooks.jar!/assets/irons_spellsn_spellbooks/textures/trims'
   gradle: |
     repositories {
       maven {

@@ -1,18 +1,4 @@
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:another-furniture-610492:5850327')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:another-furniture-610492:5850324')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:another-furniture-610492:4815126')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:another-furniture-610492:4815124')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:another-furniture-610492:4675542')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:another-furniture-610492:4675539')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:another-furniture-610492:4034016')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:another-furniture-610492:4034013')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:another-furniture-610492:3901785')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/block'
-    item_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/item'
-    effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/effect'
-    environment_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/environment'
-    gui_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/gui'
-    font_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/font'
-    map_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/map'
-    misc_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/misc'
-    mob_effect_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/mob_effect'
-    models_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/models'
-    painting_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/painting'
-    particle_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/particle'
-    trims_textures_dir: 'lib/another_furniture.jar!/assets/another_furniture/textures/trims'
   gradle: |
     repositories {
       maven {

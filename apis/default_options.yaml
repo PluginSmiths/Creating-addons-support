@@ -1,18 +1,4 @@
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:default-options-232131:6085939')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:default-options-232131:6024330')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:default-options-232131:6024329')
     }
 neoforge-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ neoforge-1.21.2:
       implementation fg.deobf('curse.maven:default-options-232131:6024329')
     }
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:default-options-232131:6024327')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:default-options-232131:6024325')
     }
 fabric-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.21.2:
       modImplementation fg.deobf('curse.maven:default-options-232131:6024325')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:default-options-232131:6024321')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:default-options-232131:6024321')
     }
 forge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.21:
       implementation fg.deobf('curse.maven:default-options-232131:6024299')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:default-options-232131:6024299')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:default-options-232131:5485068')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -310,22 +128,7 @@ forge-1.20.6:
     dependencies {
       implementation fg.deobf('curse.maven:default-options-232131:5485062')
     }
-name: "Default Options"
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -336,20 +139,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:6024297')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,69 +148,7 @@ fabric-1.21.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:6024297')
     }
-fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
-    }
-fabric-1.21.2:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5838325')
-    }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -432,20 +159,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5485055')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -456,20 +169,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:5263463')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -480,20 +179,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4770904')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -504,20 +189,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635892')
     }
 fabric-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -528,20 +199,6 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635888')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -552,20 +209,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -576,20 +219,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -600,20 +229,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635887')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -624,20 +239,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635875')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -648,20 +249,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:default-options-fabric-547694:4635875')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/block'
-    item_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/item'
-    effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/effect'
-    environment_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/environment'
-    gui_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/gui'
-    font_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/font'
-    map_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/map'
-    misc_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/misc'
-    mob_effect_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/mob_effect'
-    models_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/models'
-    painting_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/painting'
-    particle_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/particle'
-    trims_textures_dir: 'lib/default_options.jar!/assets/default_options/textures/trims'
   gradle: |
     repositories {
       maven {

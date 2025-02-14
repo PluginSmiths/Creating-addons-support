@@ -1,18 +1,4 @@
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
-    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
-    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
-    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
-    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
-    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
-    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
-    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
-    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
-    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
-    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
-    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
-    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
-    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
-    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
-    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
-    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
-    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
-    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
-    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
-    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
-    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
-    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
-    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
-    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
     }
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
-    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
-    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
-    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
-    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
-    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
-    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
-    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
-    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
-    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
-    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
-    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
-    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
-    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
-    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
-    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
-    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
-    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
-    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
-    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
-    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
-    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
-    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
-    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
-    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6029445')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
-    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
-    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
-    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
-    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
-    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
-    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
-    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
-    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
-    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
-    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
-    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
-    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -124,20 +54,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/block'
-    item_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/item'
-    effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/effect'
-    environment_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/environment'
-    gui_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/gui'
-    font_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/font'
-    map_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/map'
-    misc_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/misc'
-    mob_effect_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/mob_effect'
-    models_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/models'
-    painting_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/painting'
-    particle_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/particle'
-    trims_textures_dir: 'lib/tought_as_nails.jar!/assets/tought_as_nails/textures/trims'
   gradle: |
     repositories {
       maven {

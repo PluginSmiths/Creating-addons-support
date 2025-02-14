@@ -1,18 +1,4 @@
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5617253')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5617252')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5436877')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5436875')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -124,20 +54,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5119203')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -149,20 +65,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5119202')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -174,20 +76,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5118730')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -199,20 +87,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5118729')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -224,20 +98,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:4876961')
     }
 neoforge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/block'
-    item_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/item'
-    effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/effect'
-    environment_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/environment'
-    gui_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/gui'
-    font_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/font'
-    map_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/map'
-    misc_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/misc'
-    mob_effect_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/mob_effect'
-    models_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/models'
-    painting_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/painting'
-    particle_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/particle'
-    trims_textures_dir: 'lib/handcrafted.jar!/assets/handcrafted/textures/trims'
   gradle: |
     repositories {
       maven {

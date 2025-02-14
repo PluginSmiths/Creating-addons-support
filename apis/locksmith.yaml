@@ -1,18 +1,4 @@
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:pollen-544350:4650917')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:pollen-544350:4650915')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:pollen-544350:4650911')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:pollen-544350:4650906')
     }
 fabric-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -124,20 +54,6 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
     }
 fabric-1.18:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -149,20 +65,6 @@ fabric-1.18:
       modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
     }
 forge-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -174,20 +76,6 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:pollen-544350:3889833')
     }
 forge-1.18:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -199,20 +87,6 @@ forge-1.18:
       implementation fg.deobf('curse.maven:pollen-544350:3889833')
     }
 fabric-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -224,20 +98,6 @@ fabric-1.16.5:
       modImplementation fg.deobf('curse.maven:pollen-544350:3889832')
     }
 forge-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/block'
-    item_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/item'
-    effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/effect'
-    environment_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/environment'
-    gui_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/gui'
-    font_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/font'
-    map_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/map'
-    misc_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/misc'
-    mob_effect_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/mob_effect'
-    models_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/models'
-    painting_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/painting'
-    particle_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/particle'
-    trims_textures_dir: 'lib/locksmith.jar!/assets/locksmith/textures/trims'
   gradle: |
     repositories {
       maven {

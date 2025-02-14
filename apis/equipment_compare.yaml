@@ -1,18 +1,4 @@
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:iceberg-520110:6168686')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:iceberg-520110:6168685')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -73,20 +31,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5991594')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -97,20 +41,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5991591')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -122,20 +52,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:iceberg-520110:5591001')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -147,20 +63,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:iceberg-520110:5591001')
     }
 forge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -172,20 +74,6 @@ forge-1.21:
       implementation fg.deobf('curse.maven:iceberg-520110:5590997')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -197,20 +85,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:iceberg-520110:5590997')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -222,20 +96,6 @@ forge-1.20.6:
       implementation fg.deobf('curse.maven:iceberg-520110:5421728')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -247,20 +107,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
 forge-1.20.3:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -272,20 +118,6 @@ forge-1.20.3:
       implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -297,20 +129,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -322,20 +140,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:iceberg-520110:4650073')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -347,20 +151,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:iceberg-520110:4650073')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -372,20 +162,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:iceberg-520110:4487910')
     }
 forge-1.12.2:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -396,20 +172,6 @@ forge-1.12.2:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4360293')
     }
 forge-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -421,20 +183,6 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:iceberg-520110:4360142')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -445,22 +193,7 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
       implementation fg.deobf('curse.maven:iceberg-520110:4360142')
     }
-name: "Equipment Compare [Neo/Forge]"
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -471,20 +204,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:6168677')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -496,20 +215,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991588')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -520,20 +225,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -544,20 +235,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
     }
 fabric-1.20.5:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -568,20 +245,6 @@ fabric-1.20.5:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -592,20 +255,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -618,20 +267,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -644,20 +279,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -670,20 +291,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -696,20 +303,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -722,20 +315,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4500115')
     }
 fabric-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -747,20 +326,6 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4335113')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -772,20 +337,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -797,20 +348,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -822,20 +359,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
 fabric-1.18.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -848,20 +371,6 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:cloth-config-348521:3723542')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -874,20 +383,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:cloth-config-348521:3723542')
     }
 fabric-1.18:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -900,20 +395,6 @@ fabric-1.18:
       modImplementation fg.deobf('curse.maven:cloth-config-348521:3548173')
     }
 fabric-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/block'
-    item_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/item'
-    effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/effect'
-    environment_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/environment'
-    gui_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/gui'
-    font_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/font'
-    map_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/map'
-    misc_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/misc'
-    mob_effect_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/mob_effect'
-    models_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/models'
-    painting_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/painting'
-    particle_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/particle'
-    trims_textures_dir: 'lib/equipment_compare.jar!/assets/equipment_compare/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -925,4 +406,4 @@ fabric-1.17.1:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3538163')
       modImplementation fg.deobf('curse.maven:cloth-config-348521:3538163')
     }
-name: "Equipment Compare [Fabric]"
+name: "Equipment Compare"

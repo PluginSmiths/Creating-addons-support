@@ -1,18 +1,4 @@
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5966854')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5961480')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5850033')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5840786')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5610835')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5610814')
     }
 forge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ forge-1.21:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5427314')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5427303')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ forge-1.20.6:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5415843')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5303368')
     }
 neoforge-1.20.5:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ neoforge-1.20.5:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5302314')
     }
 forge-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5131968')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:5082294')
     }
 neoforge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ neoforge-1.20.2:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:4942497')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:4938380')
     }
 forge-1.20.3:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,20 +159,6 @@ forge-1.20.3:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:4934468')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -407,20 +169,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:cosmetic-armor-reworked-237307:4764779')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/block'
-    item_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/item'
-    effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/effect'
-    environment_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/environment'
-    gui_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/gui'
-    font_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/font'
-    map_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/map'
-    misc_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/misc'
-    mob_effect_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/mob_effect'
-    models_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/models'
-    painting_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/painting'
-    particle_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/particle'
-    trims_textures_dir: 'lib/cosmetic_armory.jar!/assets/cosmetic_armory/textures/trims'
   gradle: |
     repositories {
       maven {

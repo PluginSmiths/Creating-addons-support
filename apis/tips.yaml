@@ -1,18 +1,4 @@
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -25,20 +11,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:prickle-1023259:5844057')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -51,20 +23,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5844055')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -77,20 +35,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
     }
 quilt-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -103,20 +47,6 @@ quilt-1.21.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -128,20 +58,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -153,20 +69,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
     }
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -178,20 +80,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -203,20 +91,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -228,20 +102,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:bookshelf-228525:5166152')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -253,20 +113,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:bookshelf-228525:5166151')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -278,20 +124,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
     }
 quilt-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/tips.jar!/assets/tips/textures/block'
-    item_textures_dir: 'lib/tips.jar!/assets/tips/textures/item'
-    effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/effect'
-    environment_textures_dir: 'lib/tips.jar!/assets/tips/textures/environment'
-    gui_textures_dir: 'lib/tips.jar!/assets/tips/textures/gui'
-    font_textures_dir: 'lib/tips.jar!/assets/tips/textures/font'
-    map_textures_dir: 'lib/tips.jar!/assets/tips/textures/map'
-    misc_textures_dir: 'lib/tips.jar!/assets/tips/textures/misc'
-    mob_effect_textures_dir: 'lib/tips.jar!/assets/tips/textures/mob_effect'
-    models_textures_dir: 'lib/tips.jar!/assets/tips/textures/models'
-    painting_textures_dir: 'lib/tips.jar!/assets/tips/textures/painting'
-    particle_textures_dir: 'lib/tips.jar!/assets/tips/textures/particle'
-    trims_textures_dir: 'lib/tips.jar!/assets/tips/textures/trims'
   gradle: |
     repositories {
       maven {

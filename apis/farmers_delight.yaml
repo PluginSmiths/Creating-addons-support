@@ -1,18 +1,4 @@
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:farmers-delight-398521:6154807')
     }
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:farmers-delight-398521:6154802')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:farmers-delight-398521:6154802')
     }
 neoforge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ neoforge-1.20:
       implementation fg.deobf('curse.maven:farmers-delight-398521:5962797')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:farmers-delight-398521:5962797')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:farmers-delight-398521:5566383')
     }
 neoforge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ neoforge-1.19.2:
       implementation fg.deobf('curse.maven:farmers-delight-398521:5051241')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:farmers-delight-398521:5051241')
     }
 neoforge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ neoforge-1.18.2:
       implementation fg.deobf('curse.maven:farmers-delight-398521:4679315')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:farmers-delight-398521:4679315')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:farmers-delight-398521:4525646')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -286,22 +118,7 @@ forge-1.19:
     dependencies {
       implementation fg.deobf('curse.maven:farmers-delight-398521:4525646')
     }
-name: "Farmer's Delight"
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -312,20 +129,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:farmers-delight-refabricated-993166:6189989')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -336,20 +139,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:farmers-delight-refabricated-993166:6189989')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -360,20 +149,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:farmers-delight-refabricated-993166:6189875')
     }
 quilt-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/block'
-    item_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/item'
-    effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/effect'
-    environment_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/environment'
-    gui_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/gui'
-    font_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/font'
-    map_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/map'
-    misc_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/misc'
-    mob_effect_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/mob_effect'
-    models_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/models'
-    painting_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/painting'
-    particle_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/particle'
-    trims_textures_dir: 'lib/farmers_delight.jar!/assets/farmers_delight/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,4 +158,4 @@ quilt-1.21.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:farmers-delight-refabricated-993166:6189875')
     }
-name: "Farmer's Delight Refabricated"
+name: "Farmer's Delight"

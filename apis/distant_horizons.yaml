@@ -1,18 +1,4 @@
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689286')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689286')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689282')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689282')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -383,20 +159,6 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
     }
 fabric-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -407,20 +169,6 @@ fabric-1.17.1:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
     }
 forge-1.17.1:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -431,20 +179,6 @@ forge-1.17.1:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
     }
 fabric-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -455,20 +189,6 @@ fabric-1.16.5:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
     }
 forge-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -479,20 +199,6 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -503,20 +209,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:distant-horizons-508933:5649765')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -527,20 +219,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:distant-horizons-508933:5649765')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/block'
-    item_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/item'
-    effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/effect'
-    environment_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/environment'
-    gui_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/gui'
-    font_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/font'
-    map_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/map'
-    misc_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/misc'
-    mob_effect_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/mob_effect'
-    models_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/models'
-    painting_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/painting'
-    particle_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/particle'
-    trims_textures_dir: 'lib/distant_horizons.jar!/assets/distant_horizons/textures/trims'
   gradle: |
     repositories {
       maven {

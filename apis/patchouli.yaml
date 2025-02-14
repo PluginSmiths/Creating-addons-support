@@ -1,18 +1,4 @@
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:patchouli-306770:6164617')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:patchouli-306770:6164617')
     }
 neoforge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ neoforge-1.20.6:
       implementation fg.deobf('curse.maven:patchouli-306770:6164591')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:patchouli-306770:6164575')
     }
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:patchouli-306770:5240286')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:patchouli-306770:4636289')
     }
 forge-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:patchouli-306770:4391051')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:patchouli-306770:4031402')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:patchouli-306770:3877555')
     }
 forge-1.16.5:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:patchouli-306770:3847029')
     }
 forge-1.16.4:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ forge-1.16.4:
       implementation fg.deobf('curse.maven:patchouli-306770:3847029')
     }
 forge-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/block'
-    item_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/item'
-    effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/effect'
-    environment_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/environment'
-    gui_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/gui'
-    font_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/font'
-    map_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/map'
-    misc_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/misc'
-    mob_effect_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/mob_effect'
-    models_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/models'
-    painting_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/painting'
-    particle_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/particle'
-    trims_textures_dir: 'lib/patchouli.jar!/assets/patchouli/textures/trims'
   gradle: |
     repositories {
       maven {

@@ -1,18 +1,4 @@
 forge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:6168674')
     }
 neoforge-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:6168671')
     }
 forge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -73,20 +31,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:prism-lib-638111:5991567')
     }
 neoforge-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:prism-lib-638111:5991565')
     }
 forge-1.12.2:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -123,20 +53,6 @@ forge-1.12.2:
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5734973')
     }
 neoforge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -147,20 +63,6 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5591027')
     }
 neoforge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -171,20 +73,6 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5591027')
     }
 forge-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -197,20 +85,6 @@ forge-1.21:
       implementation fg.deobf('curse.maven:prism-lib-638111:5591022')
     }
 forge-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -223,20 +97,6 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:prism-lib-638111:5591022')
     }
 forge-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -247,20 +107,6 @@ forge-1.20.6:
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5365021')
     }
 forge-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -273,20 +119,6 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:iceberg-520110:4918173')
     }
 forge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -299,20 +131,6 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:iceberg-520110:4918173')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -325,20 +143,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:iceberg-520110:4662781')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -350,22 +154,7 @@ forge-1.20:
       implementation fg.deobf('curse.maven:prism-lib-638111:4662781')
       implementation fg.deobf('curse.maven:iceberg-520110:4662781')
     }
-name: "Legendary Tooltips [Neo/Forge]"
 fabric-1.21.4:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -376,20 +165,6 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:legendary-tooltips-fabric-542478:6168669')
     }
 fabric-1.21.3:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -402,20 +177,6 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5991564')
     }
 fabric-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -426,20 +187,6 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:legendary-tooltips-fabric-542478:5659462')
     }
 fabric-1.21:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -452,20 +199,6 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5591020')
     }
 fabric-1.21.1:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -478,20 +211,6 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5591020')
     }
 fabric-1.20.5:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -504,20 +223,6 @@ fabric-1.20.5:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343802')
     }
 fabric-1.20.6:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -530,20 +235,6 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343802')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -557,20 +248,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940615')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -584,20 +261,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940615')
     }
 fabric-1.20.2:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -611,20 +274,6 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938105')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -638,20 +287,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938105')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -665,20 +300,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4515925')
     }
 fabric-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -692,20 +313,6 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4335100')
     }
 fabric-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -719,20 +326,6 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3998293')
     }
 fabric-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -746,20 +339,6 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3998293')
     }
 fabric-1.18.2:
-  resource_paths:
-    block_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/block'
-    item_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/item'
-    effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/effect'
-    environment_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/environment'
-    gui_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/gui'
-    font_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/font'
-    map_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/map'
-    misc_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/misc'
-    mob_effect_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/mob_effect'
-    models_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/models'
-    painting_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/painting'
-    particle_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/particle'
-    trims_textures_dir: 'lib/legendary_tooltips.jar!/assets/legendary_tooltips/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -772,4 +351,4 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:3964264')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3964264')
     }
-name: "Legendary Tooltips [Fabric]"
+name: "Legendary Tooltips"

@@ -1,18 +1,4 @@
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -23,20 +9,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:expandability-465066:5428824')
     }
 fabric-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -47,20 +19,6 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:expandability-465066:5428823')
     }
 quilt-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -71,20 +29,6 @@ quilt-1.20.4:
       modImplementation fg.deobf('curse.maven:expandability-465066:5428823')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -95,20 +39,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:expandability-465066:5301414')
     }
 forge-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -119,20 +49,6 @@ forge-1.20:
       implementation fg.deobf('curse.maven:expandability-465066:5301414')
     }
 fabric-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -143,20 +59,6 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:expandability-465066:5301413')
     }
 fabric-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -167,20 +69,6 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:expandability-465066:5301413')
     }
 quilt-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -191,20 +79,6 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:expandability-465066:5301413')
     }
 quilt-1.20:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -215,20 +89,6 @@ quilt-1.20:
       modImplementation fg.deobf('curse.maven:expandability-465066:5301413')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -239,20 +99,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:expandability-465066:4452372')
     }
 fabric-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -263,20 +109,6 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:expandability-465066:4452371')
     }
 quilt-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -287,20 +119,6 @@ quilt-1.19.4:
       modImplementation fg.deobf('curse.maven:expandability-465066:4452371')
     }
 forge-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -311,20 +129,6 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:expandability-465066:3984029')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -335,20 +139,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:expandability-465066:3984029')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -359,20 +149,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:expandability-465066:3984029')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/block'
-    item_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/item'
-    effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/effect'
-    environment_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/environment'
-    gui_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/gui'
-    font_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/font'
-    map_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/map'
-    misc_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/misc'
-    mob_effect_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/mob_effect'
-    models_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/models'
-    painting_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/painting'
-    particle_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/particle'
-    trims_textures_dir: 'lib/expand_ability.jar!/assets/expand_ability/textures/trims'
   gradle: |
     repositories {
       maven {

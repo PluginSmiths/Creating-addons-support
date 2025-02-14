@@ -1,18 +1,4 @@
 neoforge-1.20.4:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -24,20 +10,6 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:5083225')
     }
 neoforge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -49,20 +21,6 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:5010316')
     }
 forge-1.20.1:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -74,20 +32,6 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:5010316')
     }
 forge-1.19.4:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -99,20 +43,6 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:4525734')
     }
 forge-1.19.3:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -124,20 +54,6 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:4311685')
     }
 forge-1.19.2:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -149,20 +65,6 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:3966273')
     }
 forge-1.19.1:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
@@ -174,20 +76,6 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:structure-gel-api-378802:3905041')
     }
 forge-1.19:
-  resource_paths:
-    block_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/block'
-    item_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/item'
-    effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/effect'
-    environment_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/environment'
-    gui_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/gui'
-    font_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/font'
-    map_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/map'
-    misc_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/misc'
-    mob_effect_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/mob_effect'
-    models_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/models'
-    painting_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/painting'
-    particle_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/particle'
-    trims_textures_dir: 'lib/blue_skies.jar!/assets/blue_skies/textures/trims'
   gradle: |
     repositories {
       maven {
