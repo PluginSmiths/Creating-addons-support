@@ -31,7 +31,7 @@
  - Apple skin: ![Progress](https://geps.dev/progress/100)
  - Epic fight: ![Progress](https://geps.dev/progress/0)
  - Emotecraft: ![Progress](https://geps.dev/progress/0)
- - Journey map: ![Progress](https://geps.dev/progress/0)
+ - Journey map: ![Progress](https://geps.dev/progress/100)
  - Default options: ![Progress](https://geps.dev/progress/100)
  - Tips: ![Progress](https://geps.dev/progress/0)
  - Character leveling: ![Progress](https://geps.dev/progress/0)
@@ -71,4 +71,6 @@
  - Expand ability: ![Progress](https://geps.dev/progress/100)
  - Fall flying lib: ![Progress](https://geps.dev/progress/100)
  - Culinary construct: ![Progress](https://geps.dev/progress/0)
+ - Printer: ![Progress](https://geps.dev/progress/100)
+ - Cloth Config: ![Progress](https://geps.dev/progress/0)
 

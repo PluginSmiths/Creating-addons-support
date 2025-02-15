@@ -1,3 +1,213 @@
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5987045')
+    }
+forge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5987043')
+    }
+forge-1.21.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5987043')
+    }
+fabric-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5987042')
+    }
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5986999')
+    }
+neoforge-1.21.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5986999')
+    }
+fabric-1.21.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5986997')
+    }
+fabric-1.21.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5986997')
+    }
+neoforge-1.20.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729139')
+    }
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729139')
+    }
+forge-1.20.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729138')
+    }
+forge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729138')
+    }
+fabric-1.20.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5729136')
+    }
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5729136')
+    }
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729127')
+    }
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729127')
+    }
+forge-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729126')
+    }
+forge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729126')
+    }
+fabric-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5729125')
+    }
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5729125')
+    }
+neoforge-1.20.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729121')
+    }
 forge-1.20.2:
   gradle: |
     repositories {
@@ -6,7 +216,7 @@ forge-1.20.2:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4818909')
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729120')
     }
 fabric-1.20.2:
   gradle: |
@@ -16,9 +226,9 @@ fabric-1.20.2:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4818907')
+      modImplementation fg.deobf('curse.maven:cloth-config-348521:5729119')
     }
-quilt-1.20.1:
+neoforge-1.20.5:
   gradle: |
     repositories {
       maven {
@@ -26,9 +236,9 @@ quilt-1.20.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729118')
     }
-quilt-1.20:
+neoforge-1.20.6:
   gradle: |
     repositories {
       maven {
@@ -36,136 +246,6 @@ quilt-1.20:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814122')
+      implementation fg.deobf('curse.maven:cloth-config-348521:5729118')
     }
-forge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
-    }
-forge-1.20:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814120')
-    }
-fabric-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
-    }
-fabric-1.20:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814118')
-    }
-quilt-1.19.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814112')
-    }
-forge-1.19.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814110')
-    }
-fabric-1.19.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814108')
-    }
-forge-1.19.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
-    }
-forge-1.19.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
-    }
-forge-1.19:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:culinary-construct-296676:4814066')
-    }
-fabric-1.19.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
-    }
-fabric-1.19.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
-    }
-fabric-1.19:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:culinary-construct-296676:4814064')
-    }
-name: "Culinary Construct"
+name: "Cloth Config API"
