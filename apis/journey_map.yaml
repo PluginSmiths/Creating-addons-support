@@ -6,7 +6,7 @@ neoforge-1.21.4:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:6124717')
+      implementation fg.deobf('curse.maven:journeymap-32274:6213341')
     }
 fabric-1.21.4:
   gradle: |
@@ -16,7 +16,7 @@ fabric-1.21.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:6124716')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6213340')
     }
 quilt-1.21.4:
   gradle: |
@@ -26,7 +26,7 @@ quilt-1.21.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:6124716')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6213340')
     }
 forge-1.21.4:
   gradle: |
@@ -36,7 +36,7 @@ forge-1.21.4:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:6124715')
+      implementation fg.deobf('curse.maven:journeymap-32274:6213339')
     }
 neoforge-1.21.1:
   gradle: |
@@ -46,7 +46,7 @@ neoforge-1.21.1:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:6124693')
+      implementation fg.deobf('curse.maven:journeymap-32274:6213329')
     }
 fabric-1.21.1:
   gradle: |
@@ -56,7 +56,7 @@ fabric-1.21.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:6124692')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6213328')
     }
 quilt-1.21.1:
   gradle: |
@@ -66,7 +66,7 @@ quilt-1.21.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:journeymap-32274:6124692')
+      modImplementation fg.deobf('curse.maven:journeymap-32274:6213328')
     }
 forge-1.21.1:
   gradle: |
@@ -76,16 +76,6 @@ forge-1.21.1:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:6124691')
-    }
-forge-1.7.10:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:journeymap-32274:6114227')
+      implementation fg.deobf('curse.maven:journeymap-32274:6213327')
     }
 name: "JourneyMap"

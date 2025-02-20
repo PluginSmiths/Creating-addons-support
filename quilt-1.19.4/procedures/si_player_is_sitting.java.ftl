@@ -1,0 +1,1 @@
+${input$entity} instanceof Player _pl4756 && SitUtil.isPlayerSitting(_pl4756)

@@ -1,3 +1,23 @@
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6197134')
+    }
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6197134')
+    }
 fabric-1.21:
   gradle: |
     repositories {
@@ -17,26 +37,6 @@ fabric-1.21.1:
     }
     dependencies {
       modImplementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6174425')
-    }
-neoforge-1.21:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6174424')
-    }
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:just-enough-effect-descriptions-jeed-532286:6174424')
     }
 forge-1.20.1:
   gradle: |

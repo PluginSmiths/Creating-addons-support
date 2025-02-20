@@ -1,0 +1,30 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "cold_sweat_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
+    ],
+    "required_apis": [
+      "cold_sweat"
+    ]
+  }
+}

@@ -1,3 +1,13 @@
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:jade-324717:6198776')
+    }
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -7,16 +17,6 @@ neoforge-1.21.4:
     }
     dependencies {
       implementation fg.deobf('curse.maven:jade-324717:6170888')
-    }
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:jade-324717:6155158')
     }
 fabric-1.21.4:
   gradle: |

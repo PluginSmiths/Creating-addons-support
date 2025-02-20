@@ -1,0 +1,29 @@
+{
+  "args0": [
+    {
+      "type": "field_data_list_selector",
+      "name": "biome",
+      "datalist": "biomes"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "cold_sweat_support",
+    "toolbox_init": [
+    ],
+    "fields": [
+      "biome"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
+    ],
+    "required_apis": [
+      "cold_sweat"
+    ]
+  }
+}
