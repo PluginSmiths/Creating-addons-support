@@ -6,7 +6,7 @@ neoforge-1.21.4:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-forge-403422:6201010')
+      implementation fg.deobf('curse.maven:emotecraft-forge-403422:6217368')
     }
 neoforge-1.21.1:
   gradle: |
@@ -68,16 +68,6 @@ forge-1.19:
     dependencies {
       implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632464')
     }
-forge-1.19.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-forge-403422:4632462')
-    }
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -86,7 +76,7 @@ fabric-1.21.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:6201009')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6217369')
     }
 quilt-1.21.4:
   gradle: |
@@ -96,7 +86,7 @@ quilt-1.21.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:6201009')
+      modImplementation fg.deobf('curse.maven:emotecraft-397809:6217369')
     }
 fabric-1.21.1:
   gradle: |
@@ -237,25 +227,5 @@ quilt-1.19:
     }
     dependencies {
       modImplementation fg.deobf('curse.maven:emotecraft-397809:4632463')
-    }
-fabric-1.19.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632461')
-    }
-quilt-1.19.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:4632461')
     }
 name: "Emotecraft"

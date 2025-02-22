@@ -1,3 +1,47 @@
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219630')
+      implementation fg.deobf('curse.maven:bookshelf-228525:6219630')
+    }
+forge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219628')
+      implementation fg.deobf('curse.maven:bookshelf-228525:6219628')
+    }
+fabric-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219627')
+      modImplementation fg.deobf('curse.maven:bookshelf-228525:6219627')
+    }
+quilt-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219627')
+      modImplementation fg.deobf('curse.maven:bookshelf-228525:6219627')
+    }
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -89,27 +133,5 @@ quilt-1.21.1:
       modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824114')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5824114')
       modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
-    }
-fabric-1.20.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5585610')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5585610')
-    }
-quilt-1.20.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5585610')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5585610')
     }
 name: "Enchantment Descriptions"
