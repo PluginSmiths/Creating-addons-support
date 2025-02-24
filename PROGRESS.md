@@ -73,4 +73,7 @@
  - Culinary construct: ![Progress](https://geps.dev/progress/0)
  - Printer: ![Progress](https://geps.dev/progress/100)
  - Cloth Config: ![Progress](https://geps.dev/progress/0)
+ - Sit: ![Progress](https://geps.dev/progress/100)
+ - Hex casting: ![Progress](https://geps.dev/progress/0)
+ - Apothic attributes: ![Progress](https://geps.dev/progress/100)
 
