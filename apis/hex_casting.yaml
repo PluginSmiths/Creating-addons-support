@@ -1,0 +1,113 @@
+fabric-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:hexcasting-569849:5937034')
+    }
+quilt-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:hexcasting-569849:5937034')
+    }
+neoforge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:hexcasting-569849:5937033')
+    }
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:hexcasting-569849:5937033')
+    }
+forge-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:hexcasting-569849:4166956')
+      implementation fg.deobf('curse.maven:paucal-597824:4166956')
+    }
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:hexcasting-569849:4132955')
+      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4132955')
+      modImplementation fg.deobf('curse.maven:cardinal-components-api-318449:4132955')
+      modImplementation fg.deobf('curse.maven:paucal-597824:4132955')
+    }
+quilt-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:hexcasting-569849:4132955')
+      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4132955')
+      modImplementation fg.deobf('curse.maven:cardinal-components-api-318449:4132955')
+      modImplementation fg.deobf('curse.maven:paucal-597824:4132955')
+    }
+forge-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:hexcasting-569849:4074347')
+      implementation fg.deobf('curse.maven:paucal-597824:4074347')
+    }
+fabric-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:hexcasting-569849:4074344')
+      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4074344')
+      modImplementation fg.deobf('curse.maven:paucal-597824:4074344')
+    }
+quilt-1.18.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:hexcasting-569849:4074344')
+      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4074344')
+      modImplementation fg.deobf('curse.maven:paucal-597824:4074344')
+    }
+name: "Hex Casting"
