@@ -10,3 +10,4 @@
 - Upgraded netherite
 - Cobblemon
 - Pixelmon
+- Apotheosis
