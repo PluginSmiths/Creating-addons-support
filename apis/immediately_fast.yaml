@@ -1,3 +1,13 @@
+forge-1.21.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236716')
+    }
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -6,7 +16,7 @@ neoforge-1.21.4:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124876')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236715')
     }
 fabric-1.21.4:
   gradle: |
@@ -16,7 +26,7 @@ fabric-1.21.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124875')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236714')
     }
 quilt-1.21.4:
   gradle: |
@@ -26,7 +36,7 @@ quilt-1.21.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124875')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236714')
     }
 forge-1.21.3:
   gradle: |
@@ -36,7 +46,7 @@ forge-1.21.3:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124863')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236710')
     }
 forge-1.21.2:
   gradle: |
@@ -46,7 +56,7 @@ forge-1.21.2:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124863')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236710')
     }
 fabric-1.21.3:
   gradle: |
@@ -56,7 +66,7 @@ fabric-1.21.3:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236709')
     }
 fabric-1.21.2:
   gradle: |
@@ -66,7 +76,7 @@ fabric-1.21.2:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236709')
     }
 quilt-1.21.3:
   gradle: |
@@ -76,7 +86,7 @@ quilt-1.21.3:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236709')
     }
 quilt-1.21.2:
   gradle: |
@@ -86,7 +96,7 @@ quilt-1.21.2:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124862')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236709')
     }
 neoforge-1.21.3:
   gradle: |
@@ -96,7 +106,7 @@ neoforge-1.21.3:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124861')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236708')
     }
 neoforge-1.21.2:
   gradle: |
@@ -106,27 +116,7 @@ neoforge-1.21.2:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124861')
-    }
-forge-1.21:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124853')
-    }
-forge-1.21.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124853')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236708')
     }
 neoforge-1.21:
   gradle: |
@@ -136,7 +126,7 @@ neoforge-1.21:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124852')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236703')
     }
 neoforge-1.21.1:
   gradle: |
@@ -146,7 +136,27 @@ neoforge-1.21.1:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124852')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236703')
+    }
+forge-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236702')
+    }
+forge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236702')
     }
 fabric-1.21:
   gradle: |
@@ -156,7 +166,7 @@ fabric-1.21:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236701')
     }
 fabric-1.21.1:
   gradle: |
@@ -166,7 +176,7 @@ fabric-1.21.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236701')
     }
 quilt-1.21:
   gradle: |
@@ -176,7 +186,7 @@ quilt-1.21:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236701')
     }
 quilt-1.21.1:
   gradle: |
@@ -186,57 +196,7 @@ quilt-1.21.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124851')
-    }
-forge-1.20.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20.3:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
-    }
-forge-1.20.4:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124841')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236701')
     }
 fabric-1.20.2:
   gradle: |
@@ -246,7 +206,7 @@ fabric-1.20.2:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 fabric-1.20.3:
   gradle: |
@@ -256,7 +216,7 @@ fabric-1.20.3:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 fabric-1.20.1:
   gradle: |
@@ -266,7 +226,7 @@ fabric-1.20.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 fabric-1.20:
   gradle: |
@@ -276,7 +236,7 @@ fabric-1.20:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 fabric-1.20.4:
   gradle: |
@@ -286,7 +246,7 @@ fabric-1.20.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 quilt-1.20.2:
   gradle: |
@@ -296,7 +256,7 @@ quilt-1.20.2:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 quilt-1.20.3:
   gradle: |
@@ -306,7 +266,7 @@ quilt-1.20.3:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 quilt-1.20.1:
   gradle: |
@@ -316,7 +276,7 @@ quilt-1.20.1:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 quilt-1.20:
   gradle: |
@@ -326,7 +286,7 @@ quilt-1.20:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
     }
 quilt-1.20.4:
   gradle: |
@@ -336,7 +296,57 @@ quilt-1.20.4:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124840')
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236697')
+    }
+forge-1.20.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236696')
+    }
+forge-1.20.3:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236696')
+    }
+forge-1.20.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236696')
+    }
+forge-1.20:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236696')
+    }
+forge-1.20.4:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236696')
     }
 neoforge-1.20.2:
   gradle: |
@@ -346,7 +356,7 @@ neoforge-1.20.2:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236695')
     }
 neoforge-1.20.3:
   gradle: |
@@ -356,7 +366,7 @@ neoforge-1.20.3:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236695')
     }
 neoforge-1.20.4:
   gradle: |
@@ -366,67 +376,7 @@ neoforge-1.20.4:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124839')
-    }
-fabric-1.19.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-fabric-1.19.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-fabric-1.19:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-quilt-1.19.2:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-quilt-1.19.1:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
-    }
-quilt-1.19:
-  gradle: |
-    repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
-    }
-    dependencies {
-      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6124834')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236695')
     }
 forge-1.19.2:
   gradle: |
@@ -436,7 +386,7 @@ forge-1.19.2:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236691')
     }
 forge-1.19.1:
   gradle: |
@@ -446,7 +396,7 @@ forge-1.19.1:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236691')
     }
 forge-1.19:
   gradle: |
@@ -456,6 +406,66 @@ forge-1.19:
       }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:immediatelyfast-686911:6124833')
+      implementation fg.deobf('curse.maven:immediatelyfast-686911:6236691')
+    }
+fabric-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236690')
+    }
+fabric-1.19.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236690')
+    }
+fabric-1.19:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236690')
+    }
+quilt-1.19.2:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236690')
+    }
+quilt-1.19.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236690')
+    }
+quilt-1.19:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:immediatelyfast-686911:6236690')
     }
 name: "ImmediatelyFast"
