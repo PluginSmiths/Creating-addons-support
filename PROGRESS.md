@@ -25,7 +25,6 @@
  - Quests & reward: ![Progress](https://geps.dev/progress/100)
  - Thirst was taken: ![Progress](https://geps.dev/progress/100)
  - Enchantments description: ![Progress](https://geps.dev/progress/100)
- - Just enough effect description: ![Progress](https://geps.dev/progress/0)
  - First person model: ![Progress](https://geps.dev/progress/100)
  - Female gender: ![Progress](https://geps.dev/progress/0)
  - Apple skin: ![Progress](https://geps.dev/progress/100)
@@ -76,4 +75,5 @@
  - Sit: ![Progress](https://geps.dev/progress/100)
  - Hex casting: ![Progress](https://geps.dev/progress/0)
  - Apothic attributes: ![Progress](https://geps.dev/progress/100)
-
+ - Scala: ![Progress](https://geps.dev/progress/100)
+ - Groovy: ![Progress](https://geps.dev/progress/100)
