@@ -6,7 +6,37 @@ fabric-1.21:
       }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:treechop-421377:5856018')
+      modImplementation fg.deobf('curse.maven:treechop-421377:6258834')
+    }
+fabric-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      modImplementation fg.deobf('curse.maven:treechop-421377:6258834')
+    }
+neoforge-1.21:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:treechop-421377:6254465')
+    }
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+      maven {
+        url = 'https://cursemaven.com/'
+      }
+    }
+    dependencies {
+      implementation fg.deobf('curse.maven:treechop-421377:6254465')
     }
 forge-1.19.2:
   gradle: |
