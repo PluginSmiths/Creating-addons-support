@@ -2,96 +2,208 @@
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:5698791')
+    	implementation 'curse.maven:alexs-mobs-426558:5698791'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:5698791')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:5698791')
     }
   update_files:
     - ~
 forge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:4618074')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:4618074')
     }
   update_files:
     - ~
 forge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:4574680')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:4574680')
     }
   update_files:
     - ~
 forge-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:4391893')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:4391893')
     }
   update_files:
     - ~
 forge-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:4159154')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:4159154')
     }
   update_files:
     - ~
 forge-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:4071154')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:4071154')
     }
   update_files:
     - ~
 forge-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:alexs-mobs-426558:4021371')
+    	implementation fg.deobf('curse.maven:alexs-mobs-426558:4021371')
     }
   update_files:
     - ~

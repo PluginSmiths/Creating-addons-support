@@ -2,316 +2,444 @@
 quilt-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814401')
+    	modImplementation 'curse.maven:colytra-280200:4814401'
     }
   update_files:
     - ~
 quilt-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814401')
+    	modImplementation 'curse.maven:colytra-280200:4814401'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814399')
+    	implementation fg.deobf('curse.maven:colytra-280200:4814399')
     }
   update_files:
     - ~
 forge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814399')
+    	implementation fg.deobf('curse.maven:colytra-280200:4814399')
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814397')
+    	modImplementation 'curse.maven:colytra-280200:4814397'
     }
   update_files:
     - ~
 fabric-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814397')
+    	modImplementation 'curse.maven:colytra-280200:4814397'
     }
   update_files:
     - ~
 quilt-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814386')
+    	modImplementation 'curse.maven:colytra-280200:4814386'
     }
   update_files:
     - ~
 forge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814384')
+    	implementation fg.deobf('curse.maven:colytra-280200:4814384')
     }
   update_files:
     - ~
 fabric-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-280200:4814382')
+    	modImplementation 'curse.maven:colytra-280200:4814382'
     }
   update_files:
     - ~
 forge-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814228')
+    	implementation fg.deobf('curse.maven:colytra-280200:4814228')
     }
   update_files:
     - ~
 forge-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814228')
+    	implementation fg.deobf('curse.maven:colytra-280200:4814228')
     }
   update_files:
     - ~
 forge-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4814228')
+    	implementation fg.deobf('curse.maven:colytra-280200:4814228')
     }
   update_files:
     - ~
 forge-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4087911')
+    	implementation fg.deobf('curse.maven:colytra-280200:4087911')
     }
   update_files:
     - ~
 forge-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:colytra-280200:4087911')
+    	implementation fg.deobf('curse.maven:colytra-280200:4087911')
     }
   update_files:
     - ~
 fabric-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+    	modImplementation 'curse.maven:colytra-fabric-398089:4814230'
     }
   update_files:
     - ~
 fabric-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+    	modImplementation 'curse.maven:colytra-fabric-398089:4814230'
     }
   update_files:
     - ~
 fabric-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:4814230')
+    	modImplementation 'curse.maven:colytra-fabric-398089:4814230'
     }
   update_files:
     - ~
 fabric-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3725141'
     }
   update_files:
     - ~
 fabric-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3725141')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3725141'
     }
   update_files:
     - ~
 fabric-1.17.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3346110'
     }
   update_files:
     - ~
 fabric-1.17:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3346110')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3346110'
     }
   update_files:
     - ~
 fabric-1.16.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3113959'
+    	modImplementation 'curse.maven:caelus-fabric-397876:3113959'
     }
   update_files:
     - ~
 fabric-1.16.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3113959')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3113959')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3113959'
+    	modImplementation 'curse.maven:caelus-fabric-397876:3113959'
     }
   update_files:
     - ~
 fabric-1.16.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3067382')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3067382'
     }
   update_files:
     - ~
 fabric-1.16.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3034700')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3034700')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3034700'
+    	modImplementation 'curse.maven:caelus-fabric-397876:3034700'
     }
   update_files:
     - ~
 fabric-1.16.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:colytra-fabric-398089:3023089')
-      modImplementation fg.deobf('curse.maven:caelus-fabric-397876:3023089')
+    	modImplementation 'curse.maven:colytra-fabric-398089:3023089'
+    	modImplementation 'curse.maven:caelus-fabric-397876:3023089'
     }
   update_files:
     - ~

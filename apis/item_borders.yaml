@@ -2,533 +2,773 @@
 forge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:6168722')
+    	implementation fg.deobf('curse.maven:item-borders-513769:6168722')
     }
   update_files:
     - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:6168720')
+    	implementation 'curse.maven:item-borders-513769:6168720'
     }
   update_files:
     - ~
 forge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5991628')
-      implementation fg.deobf('curse.maven:prism-lib-638111:5991628')
-      implementation fg.deobf('curse.maven:iceberg-520110:5991628')
+    	implementation fg.deobf('curse.maven:item-borders-513769:5991628')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:5991628')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5991628')
     }
   update_files:
     - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5991626')
-      implementation fg.deobf('curse.maven:iceberg-520110:5991626')
-      implementation fg.deobf('curse.maven:prism-lib-638111:5991626')
+    	implementation 'curse.maven:item-borders-513769:5991626'
+    	implementation 'curse.maven:iceberg-520110:5991626'
+    	implementation 'curse.maven:prism-lib-638111:5991626'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5903326')
+    	implementation fg.deobf('curse.maven:item-borders-513769:5903326')
     }
   update_files:
     - ~
 neoforge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591010')
-      implementation fg.deobf('curse.maven:prism-lib-638111:5591010')
-      implementation fg.deobf('curse.maven:iceberg-520110:5591010')
+    	implementation 'curse.maven:item-borders-513769:5591010'
+    	implementation 'curse.maven:prism-lib-638111:5591010'
+    	implementation 'curse.maven:iceberg-520110:5591010'
     }
   update_files:
     - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591010')
-      implementation fg.deobf('curse.maven:prism-lib-638111:5591010')
-      implementation fg.deobf('curse.maven:iceberg-520110:5591010')
+    	implementation 'curse.maven:item-borders-513769:5591010'
+    	implementation 'curse.maven:prism-lib-638111:5591010'
+    	implementation 'curse.maven:iceberg-520110:5591010'
     }
   update_files:
     - ~
 forge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591005')
-      implementation fg.deobf('curse.maven:prism-lib-638111:5591005')
-      implementation fg.deobf('curse.maven:iceberg-520110:5591005')
+    	implementation fg.deobf('curse.maven:item-borders-513769:5591005')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:5591005')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5591005')
     }
   update_files:
     - ~
 forge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5591005')
-      implementation fg.deobf('curse.maven:prism-lib-638111:5591005')
-      implementation fg.deobf('curse.maven:iceberg-520110:5591005')
+    	implementation fg.deobf('curse.maven:item-borders-513769:5591005')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:5591005')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5591005')
     }
   update_files:
     - ~
 forge-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:5365032')
+    	implementation fg.deobf('curse.maven:item-borders-513769:5365032')
     }
   update_files:
     - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4985587')
-      implementation fg.deobf('curse.maven:prism-lib-638111:4985587')
-      implementation fg.deobf('curse.maven:iceberg-520110:4985587')
+    	implementation 'curse.maven:item-borders-513769:4985587'
+    	implementation 'curse.maven:prism-lib-638111:4985587'
+    	implementation 'curse.maven:iceberg-520110:4985587'
     }
   update_files:
     - ~
 forge-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4918156')
-      implementation fg.deobf('curse.maven:prism-lib-638111:4918156')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918156')
+    	implementation fg.deobf('curse.maven:item-borders-513769:4918156')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:4918156')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918156')
     }
   update_files:
     - ~
 forge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4918156')
-      implementation fg.deobf('curse.maven:prism-lib-638111:4918156')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918156')
+    	implementation fg.deobf('curse.maven:item-borders-513769:4918156')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:4918156')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918156')
     }
   update_files:
     - ~
 forge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4655513')
-      implementation fg.deobf('curse.maven:prism-lib-638111:4655513')
-      implementation fg.deobf('curse.maven:iceberg-520110:4655513')
+    	implementation fg.deobf('curse.maven:item-borders-513769:4655513')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:4655513')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4655513')
     }
   update_files:
     - ~
 forge-1.12.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4590380')
+    	implementation fg.deobf('curse.maven:item-borders-513769:4590380')
     }
   update_files:
     - ~
 forge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4499850')
-      implementation fg.deobf('curse.maven:prism-lib-638111:4499850')
-      implementation fg.deobf('curse.maven:iceberg-520110:4499850')
+    	implementation fg.deobf('curse.maven:item-borders-513769:4499850')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:4499850')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4499850')
     }
   update_files:
     - ~
 forge-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:4277021')
-      implementation fg.deobf('curse.maven:prism-lib-638111:4277021')
-      implementation fg.deobf('curse.maven:iceberg-520110:4277021')
+    	implementation fg.deobf('curse.maven:item-borders-513769:4277021')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:4277021')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4277021')
     }
   update_files:
     - ~
 forge-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:3912057')
-      implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
-      implementation fg.deobf('curse.maven:iceberg-520110:3912057')
+    	implementation fg.deobf('curse.maven:item-borders-513769:3912057')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
+    	implementation fg.deobf('curse.maven:iceberg-520110:3912057')
     }
   update_files:
     - ~
 forge-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:3912057')
-      implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
-      implementation fg.deobf('curse.maven:iceberg-520110:3912057')
+    	implementation fg.deobf('curse.maven:item-borders-513769:3912057')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
+    	implementation fg.deobf('curse.maven:iceberg-520110:3912057')
     }
   update_files:
     - ~
 forge-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-borders-513769:3912057')
-      implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
-      implementation fg.deobf('curse.maven:iceberg-520110:3912057')
+    	implementation fg.deobf('curse.maven:item-borders-513769:3912057')
+    	implementation fg.deobf('curse.maven:prism-lib-638111:3912057')
+    	implementation fg.deobf('curse.maven:iceberg-520110:3912057')
     }
   update_files:
     - ~
 fabric-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:6168711')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:6168711'
     }
   update_files:
     - ~
 fabric-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5991625')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5991625')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991625')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:5991625'
+    	modImplementation 'curse.maven:prism-fabric-665526:5991625'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:5991625'
     }
   update_files:
     - ~
 fabric-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5591003')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:5591003'
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5591003')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:5591003'
     }
   update_files:
     - ~
 fabric-1.20.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:5343818'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:5343818'
+    	modImplementation 'curse.maven:prism-fabric-665526:5343818'
     }
   update_files:
     - ~
 fabric-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5343818')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343818')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343818')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:5343818'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:5343818'
+    	modImplementation 'curse.maven:prism-fabric-665526:5343818'
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:5108408')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:5108408'
     }
   update_files:
     - ~
 fabric-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4940619')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940619')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940619')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940619')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:4940619'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4940619'
+    	modImplementation 'curse.maven:prism-fabric-665526:4940619'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4940619'
     }
   update_files:
     - ~
 fabric-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:4938114'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4938114'
+    	modImplementation 'curse.maven:prism-fabric-665526:4938114'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4938114'
     }
   update_files:
     - ~
 fabric-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4938114')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938114')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938114')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938114')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:4938114'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4938114'
+    	modImplementation 'curse.maven:prism-fabric-665526:4938114'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4938114'
     }
   update_files:
     - ~
 fabric-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4499855')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4499855')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4499855')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4499855')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:4499855'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4499855'
+    	modImplementation 'curse.maven:prism-fabric-665526:4499855'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4499855'
     }
   update_files:
     - ~
 fabric-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:4343667')
-      modImplementation fg.deobf('curse.maven:prism-fabric-665526:4343667')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4343667')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4343667')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:4343667'
+    	modImplementation 'curse.maven:prism-fabric-665526:4343667'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4343667'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4343667'
     }
   update_files:
     - ~
 fabric-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3849750'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3849750'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3849750'
     }
   update_files:
     - ~
 fabric-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3849750'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3849750'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3849750'
     }
   update_files:
     - ~
 fabric-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3849750')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3849750')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3849750')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3849750'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3849750'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3849750'
     }
   update_files:
     - ~
 fabric-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3583880'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3583880'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3583880'
     }
   update_files:
     - ~
 fabric-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583880')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583880')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583880')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3583880'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3583880'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3583880'
     }
   update_files:
     - ~
 fabric-1.17.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3583860')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3583860')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3583860')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3583860'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3583860'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3583860'
     }
   update_files:
     - ~
 fabric-1.18:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-borders-fabric-541604:3549412')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549412')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549412')
+    	modImplementation 'curse.maven:item-borders-fabric-541604:3549412'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3549412'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3549412'
     }
   update_files:
     - ~

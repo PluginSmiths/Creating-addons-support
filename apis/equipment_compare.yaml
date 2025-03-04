@@ -2,478 +2,702 @@
 forge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:6168686')
-      implementation fg.deobf('curse.maven:iceberg-520110:6168686')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:6168686')
+    	implementation fg.deobf('curse.maven:iceberg-520110:6168686')
     }
   update_files:
     - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:6168685')
-      implementation fg.deobf('curse.maven:iceberg-520110:6168685')
+    	implementation 'curse.maven:equipment-compare-502561:6168685'
+    	implementation 'curse.maven:iceberg-520110:6168685'
     }
   update_files:
     - ~
 forge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5991594')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:5991594')
     }
   update_files:
     - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5991591')
+    	implementation 'curse.maven:equipment-compare-502561:5991591'
     }
   update_files:
     - ~
 neoforge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5591001')
-      implementation fg.deobf('curse.maven:iceberg-520110:5591001')
+    	implementation 'curse.maven:equipment-compare-502561:5591001'
+    	implementation 'curse.maven:iceberg-520110:5591001'
     }
   update_files:
     - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5591001')
-      implementation fg.deobf('curse.maven:iceberg-520110:5591001')
+    	implementation 'curse.maven:equipment-compare-502561:5591001'
+    	implementation 'curse.maven:iceberg-520110:5591001'
     }
   update_files:
     - ~
 forge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
-      implementation fg.deobf('curse.maven:iceberg-520110:5590997')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5590997')
     }
   update_files:
     - ~
 forge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
-      implementation fg.deobf('curse.maven:iceberg-520110:5590997')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5590997')
     }
   update_files:
     - ~
 forge-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:5421728')
-      implementation fg.deobf('curse.maven:iceberg-520110:5421728')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:5421728')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5421728')
     }
   update_files:
     - ~
 forge-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918179')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
   update_files:
     - ~
 forge-1.20.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918179')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
   update_files:
     - ~
 forge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918179')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4650073')
-      implementation fg.deobf('curse.maven:iceberg-520110:4650073')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4650073')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4650073')
     }
   update_files:
     - ~
 forge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4650073')
-      implementation fg.deobf('curse.maven:iceberg-520110:4650073')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4650073')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4650073')
     }
   update_files:
     - ~
 forge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4487910')
-      implementation fg.deobf('curse.maven:iceberg-520110:4487910')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4487910')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4487910')
     }
   update_files:
     - ~
 forge-1.12.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4360293')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4360293')
     }
   update_files:
     - ~
 forge-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
-      implementation fg.deobf('curse.maven:iceberg-520110:4360142')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4360142')
     }
   update_files:
     - ~
 forge-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
-      implementation fg.deobf('curse.maven:iceberg-520110:4360142')
+    	implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4360142')
     }
   update_files:
     - ~
 fabric-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:6168677')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:6168677'
     }
   update_files:
     - ~
 fabric-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5991588')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991588')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:5991588'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:5991588'
     }
   update_files:
     - ~
 fabric-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:5590992'
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:5590992'
     }
   update_files:
     - ~
 fabric-1.20.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:5343810'
     }
   update_files:
     - ~
 fabric-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:5343810'
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4940609')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940609')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4940609'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4940609'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4940609'
     }
   update_files:
     - ~
 fabric-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4940609')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940609')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4940609'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4940609'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4940609'
     }
   update_files:
     - ~
 fabric-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4938108')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938108')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4938108'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4938108'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4938108'
     }
   update_files:
     - ~
 fabric-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4938108')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938108')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4938108'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4938108'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4938108'
     }
   update_files:
     - ~
 fabric-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4500115')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4500115')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4500115')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4500115'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4500115'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4500115'
     }
   update_files:
     - ~
 fabric-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4335113')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4335113')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4335113'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4335113'
     }
   update_files:
     - ~
 fabric-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3848278'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3848278'
     }
   update_files:
     - ~
 fabric-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3848278'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3848278'
     }
   update_files:
     - ~
 fabric-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3848278'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3848278'
     }
   update_files:
     - ~
 fabric-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3723542')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3723542')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3723542'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3723542'
     }
   update_files:
     - ~
 fabric-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3723542')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3723542')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3723542'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3723542'
     }
   update_files:
     - ~
 fabric-1.18:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3548173')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3548173')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3548173'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3548173'
     }
   update_files:
     - ~
 fabric-1.17.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3538163')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3538163')
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3538163'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3538163'
     }
   update_files:
     - ~

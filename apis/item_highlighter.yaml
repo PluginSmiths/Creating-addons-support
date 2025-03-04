@@ -2,519 +2,759 @@
 forge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:6168705')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:6168705')
     }
   update_files:
     - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:6168704')
+    	implementation 'curse.maven:item-highlighter-521590:6168704'
     }
   update_files:
     - ~
 forge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5991612')
-      implementation fg.deobf('curse.maven:iceberg-520110:5991612')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:5991612')
+    	implementation fg.deobf('curse.maven:iceberg-520110:5991612')
     }
   update_files:
     - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5991611')
-      implementation fg.deobf('curse.maven:iceberg-520110:5991611')
+    	implementation 'curse.maven:item-highlighter-521590:5991611'
+    	implementation 'curse.maven:iceberg-520110:5991611'
     }
   update_files:
     - ~
 neoforge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5591015')
+    	implementation 'curse.maven:item-highlighter-521590:5591015'
     }
   update_files:
     - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5591015')
+    	implementation 'curse.maven:item-highlighter-521590:5591015'
     }
   update_files:
     - ~
 forge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5591014')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:5591014')
     }
   update_files:
     - ~
 forge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5591014')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:5591014')
     }
   update_files:
     - ~
 forge-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:5365033')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:5365033')
     }
   update_files:
     - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4985588')
-      implementation fg.deobf('curse.maven:iceberg-520110:4985588')
+    	implementation 'curse.maven:item-highlighter-521590:4985588'
+    	implementation 'curse.maven:iceberg-520110:4985588'
     }
   update_files:
     - ~
 neoforge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4985588')
-      implementation fg.deobf('curse.maven:iceberg-520110:4985588')
+    	implementation 'curse.maven:item-highlighter-521590:4985588'
+    	implementation 'curse.maven:iceberg-520110:4985588'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4985588')
-      implementation fg.deobf('curse.maven:iceberg-520110:4985588')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4985588')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4985588')
     }
   update_files:
     - ~
 forge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4985588')
-      implementation fg.deobf('curse.maven:iceberg-520110:4985588')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4985588')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4985588')
     }
   update_files:
     - ~
 forge-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4918160')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918160')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4918160')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918160')
     }
   update_files:
     - ~
 forge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4918160')
-      implementation fg.deobf('curse.maven:iceberg-520110:4918160')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4918160')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4918160')
     }
   update_files:
     - ~
 forge-1.12.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4698918')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4698918')
     }
   update_files:
     - ~
 forge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4501019')
-      implementation fg.deobf('curse.maven:iceberg-520110:4501019')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4501019')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4501019')
     }
   update_files:
     - ~
 fabric-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-521590:4499747')
-      modImplementation fg.deobf('curse.maven:iceberg-520110:4499747')
+    	modImplementation 'curse.maven:item-highlighter-521590:4499747'
+    	modImplementation 'curse.maven:iceberg-520110:4499747'
     }
   update_files:
     - ~
 forge-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:4276948')
-      implementation fg.deobf('curse.maven:iceberg-520110:4276948')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:4276948')
+    	implementation fg.deobf('curse.maven:iceberg-520110:4276948')
     }
   update_files:
     - ~
 forge-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:3907155')
-      implementation fg.deobf('curse.maven:iceberg-520110:3907155')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:3907155')
+    	implementation fg.deobf('curse.maven:iceberg-520110:3907155')
     }
   update_files:
     - ~
 forge-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:3907155')
-      implementation fg.deobf('curse.maven:iceberg-520110:3907155')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:3907155')
+    	implementation fg.deobf('curse.maven:iceberg-520110:3907155')
     }
   update_files:
     - ~
 forge-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:item-highlighter-521590:3907155')
-      implementation fg.deobf('curse.maven:iceberg-520110:3907155')
+    	implementation fg.deobf('curse.maven:item-highlighter-521590:3907155')
+    	implementation fg.deobf('curse.maven:iceberg-520110:3907155')
     }
   update_files:
     - ~
 fabric-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:6168703')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:6168703'
     }
   update_files:
     - ~
 fabric-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5991609')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991609')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5991609'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:5991609'
     }
   update_files:
     - ~
 fabric-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5591012')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5591012'
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5591012')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5591012'
     }
   update_files:
     - ~
 fabric-1.20.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5343926')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5343926'
     }
   update_files:
     - ~
 fabric-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:5343926')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5343926'
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4940605')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940605')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940605')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:4940605'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4940605'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4940605'
     }
   update_files:
     - ~
 fabric-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4940605')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940605')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940605')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:4940605'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4940605'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4940605'
     }
   update_files:
     - ~
 fabric-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4938119')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938119')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938119')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:4938119'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4938119'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4938119'
     }
   update_files:
     - ~
 fabric-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:4938119')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938119')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938119')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:4938119'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:4938119'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4938119'
     }
   update_files:
     - ~
 fabric-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3921941')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3921941')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3921941')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3921941'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3921941'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3921941'
     }
   update_files:
     - ~
 fabric-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3921941')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3921941')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3921941')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3921941'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3921941'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3921941'
     }
   update_files:
     - ~
 fabric-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3921941')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3921941')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3921941')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3921941'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3921941'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3921941'
     }
   update_files:
     - ~
 fabric-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3921941')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3921941')
-      modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3921941')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3921941'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3921941'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3921941'
     }
   update_files:
     - ~
 fabric-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3549393')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549393')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549393')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3549393'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3549393'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3549393'
     }
   update_files:
     - ~
 fabric-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3549393')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549393')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549393')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3549393'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3549393'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3549393'
     }
   update_files:
     - ~
 fabric-1.18:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3549393')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3549393')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3549393')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3549393'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3549393'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3549393'
     }
   update_files:
     - ~
 fabric-1.17.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:item-highlighter-fabric-541578:3548202')
-      modImplementation fg.deobf('curse.maven:cloth-config-legacy-319057:3548202')
-      modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3548202')
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:3548202'
+    	modImplementation 'curse.maven:cloth-config-legacy-319057:3548202'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:3548202'
     }
   update_files:
     - ~

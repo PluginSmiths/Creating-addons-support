@@ -2,132 +2,180 @@
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:hexcasting-569849:5937034')
+    	modImplementation 'curse.maven:hexcasting-569849:5937034'
     }
   update_files:
     - ~
 quilt-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:hexcasting-569849:5937034')
+    	modImplementation 'curse.maven:hexcasting-569849:5937034'
     }
   update_files:
     - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:hexcasting-569849:5937033')
+    	implementation 'curse.maven:hexcasting-569849:5937033'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:hexcasting-569849:5937033')
+    	implementation fg.deobf('curse.maven:hexcasting-569849:5937033')
     }
   update_files:
     - ~
 forge-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:hexcasting-569849:4166956')
-      implementation fg.deobf('curse.maven:paucal-597824:4166956')
+    	implementation fg.deobf('curse.maven:hexcasting-569849:4166956')
+    	implementation fg.deobf('curse.maven:paucal-597824:4166956')
     }
   update_files:
     - ~
 fabric-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:hexcasting-569849:4132955')
-      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4132955')
-      modImplementation fg.deobf('curse.maven:cardinal-components-api-318449:4132955')
-      modImplementation fg.deobf('curse.maven:paucal-597824:4132955')
+    	modImplementation 'curse.maven:hexcasting-569849:4132955'
+    	modImplementation 'curse.maven:patchouli-fabric-393236:4132955'
+    	modImplementation 'curse.maven:cardinal-components-api-318449:4132955'
+    	modImplementation 'curse.maven:paucal-597824:4132955'
     }
   update_files:
     - ~
 quilt-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:hexcasting-569849:4132955')
-      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4132955')
-      modImplementation fg.deobf('curse.maven:cardinal-components-api-318449:4132955')
-      modImplementation fg.deobf('curse.maven:paucal-597824:4132955')
+    	modImplementation 'curse.maven:hexcasting-569849:4132955'
+    	modImplementation 'curse.maven:patchouli-fabric-393236:4132955'
+    	modImplementation 'curse.maven:cardinal-components-api-318449:4132955'
+    	modImplementation 'curse.maven:paucal-597824:4132955'
     }
   update_files:
     - ~
 forge-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:hexcasting-569849:4074347')
-      implementation fg.deobf('curse.maven:paucal-597824:4074347')
+    	implementation fg.deobf('curse.maven:hexcasting-569849:4074347')
+    	implementation fg.deobf('curse.maven:paucal-597824:4074347')
     }
   update_files:
     - ~
 fabric-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:hexcasting-569849:4074344')
-      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4074344')
-      modImplementation fg.deobf('curse.maven:paucal-597824:4074344')
+    	modImplementation 'curse.maven:hexcasting-569849:4074344'
+    	modImplementation 'curse.maven:patchouli-fabric-393236:4074344'
+    	modImplementation 'curse.maven:paucal-597824:4074344'
     }
   update_files:
     - ~
 quilt-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:hexcasting-569849:4074344')
-      modImplementation fg.deobf('curse.maven:patchouli-fabric-393236:4074344')
-      modImplementation fg.deobf('curse.maven:paucal-597824:4074344')
+    	modImplementation 'curse.maven:hexcasting-569849:4074344'
+    	modImplementation 'curse.maven:patchouli-fabric-393236:4074344'
+    	modImplementation 'curse.maven:paucal-597824:4074344'
     }
   update_files:
     - ~

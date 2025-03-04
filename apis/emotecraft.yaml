@@ -2,72 +2,72 @@
 neoforge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-forge-403422:6236155')
+    	implementation 'curse.maven:emotecraft-forge-403422:6236155'
     }
   update_files:
     - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:emotecraft-forge-403422:6123307')
+    	implementation 'curse.maven:emotecraft-forge-403422:6123307'
     }
   update_files:
     - ~
 fabric-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:6236153')
+    	modImplementation 'curse.maven:emotecraft-397809:6236153'
     }
   update_files:
     - ~
 quilt-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:6236153')
+    	modImplementation 'curse.maven:emotecraft-397809:6236153'
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:6123306')
+    	modImplementation 'curse.maven:emotecraft-397809:6123306'
     }
   update_files:
     - ~
 quilt-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:emotecraft-397809:6123306')
+    	modImplementation 'curse.maven:emotecraft-397809:6123306'
     }
   update_files:
     - ~

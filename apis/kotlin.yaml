@@ -2,9 +2,9 @@
 quilt-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -20,16 +20,16 @@ quilt-1.21:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:5804040')
+    	modImplementation 'curse.maven:qkl-720410:5804040'
     }
   update_files:
     - ~
 quilt-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -45,16 +45,16 @@ quilt-1.20.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:5232922')
+    	modImplementation 'curse.maven:qkl-720410:5232922'
     }
   update_files:
     - ~
 quilt-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -70,16 +70,16 @@ quilt-1.20.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:5107860')
+    	modImplementation 'curse.maven:qkl-720410:5107860'
     }
   update_files:
     - ~
 quilt-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -95,16 +95,16 @@ quilt-1.20.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:4750844')
+    	modImplementation 'curse.maven:qkl-720410:4750844'
     }
   update_files:
     - ~
 quilt-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -120,16 +120,16 @@ quilt-1.20:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:4587945')
+    	modImplementation 'curse.maven:qkl-720410:4587945'
     }
   update_files:
     - ~
 quilt-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -145,16 +145,16 @@ quilt-1.19.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:4490412')
+    	modImplementation 'curse.maven:qkl-720410:4490412'
     }
   update_files:
     - ~
 quilt-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -170,16 +170,16 @@ quilt-1.19.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:4439215')
+    	modImplementation 'curse.maven:qkl-720410:4439215'
     }
   update_files:
     - ~
 quilt-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -195,16 +195,16 @@ quilt-1.19.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:qkl-720410:4300780')
+    	modImplementation 'curse.maven:qkl-720410:4300780'
     }
   update_files:
     - ~
 fabric-1.17.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -220,16 +220,16 @@ fabric-1.17.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.16.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -245,16 +245,16 @@ fabric-1.16.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -270,16 +270,16 @@ fabric-1.19.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -295,16 +295,16 @@ fabric-1.20.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -320,16 +320,16 @@ fabric-1.21:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.16.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -345,16 +345,16 @@ fabric-1.16.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -370,16 +370,16 @@ fabric-1.18.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -395,16 +395,16 @@ fabric-1.20.5:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.14.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -420,16 +420,16 @@ fabric-1.14.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.14.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -445,16 +445,16 @@ fabric-1.14.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.17:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -470,16 +470,16 @@ fabric-1.17:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.14.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -495,16 +495,16 @@ fabric-1.14.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.15:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -520,16 +520,16 @@ fabric-1.15:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.16:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -545,16 +545,16 @@ fabric-1.16:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -570,16 +570,16 @@ fabric-1.19.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.16.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -595,16 +595,16 @@ fabric-1.16.5:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -620,16 +620,16 @@ fabric-1.21.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -645,16 +645,16 @@ fabric-1.18.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -670,16 +670,16 @@ fabric-1.19.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -695,16 +695,16 @@ fabric-1.20.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.15.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -720,16 +720,16 @@ fabric-1.15.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.14:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -745,16 +745,16 @@ fabric-1.14:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -770,16 +770,16 @@ fabric-1.20.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -795,16 +795,16 @@ fabric-1.20:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -820,16 +820,16 @@ fabric-1.20.6:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -845,16 +845,16 @@ fabric-1.19.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -870,16 +870,16 @@ fabric-1.20.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -895,16 +895,16 @@ fabric-1.21.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -920,16 +920,16 @@ fabric-1.21.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.18:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -945,16 +945,16 @@ fabric-1.18:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.16.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -970,16 +970,16 @@ fabric-1.16.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.14.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -995,16 +995,16 @@ fabric-1.14.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.16.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1020,16 +1020,16 @@ fabric-1.16.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1045,16 +1045,16 @@ fabric-1.19:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.15.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1070,16 +1070,16 @@ fabric-1.15.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 fabric-1.21.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1095,16 +1095,16 @@ fabric-1.21.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:fabric-language-kotlin-308769:6133024')
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
     }
   update_files:
     - ~
 neoforge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1120,16 +1120,16 @@ neoforge-1.21:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
     }
   update_files:
     - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1145,16 +1145,16 @@ neoforge-1.21.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
     }
   update_files:
     - ~
 neoforge-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1170,16 +1170,16 @@ neoforge-1.20.6:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
     }
   update_files:
     - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1195,16 +1195,16 @@ neoforge-1.21.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
     }
   update_files:
     - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1220,16 +1220,16 @@ neoforge-1.21.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
     }
   update_files:
     - ~
 neoforge-1.21.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1245,16 +1245,16 @@ neoforge-1.21.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
     }
   update_files:
     - ~
 forge-1.21:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1269,17 +1269,33 @@ forge-1.21:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
     }
   update_files:
     - ~
 forge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1294,17 +1310,33 @@ forge-1.21.4:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
     }
   update_files:
     - ~
 forge-1.20.6:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1319,17 +1351,33 @@ forge-1.20.6:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
     }
   update_files:
     - ~
 forge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1344,17 +1392,33 @@ forge-1.21.3:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
     }
   update_files:
     - ~
 forge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1369,17 +1433,33 @@ forge-1.21.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
     }
   update_files:
     - ~
 forge-1.21.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1394,17 +1474,33 @@ forge-1.21.2:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
     }
   update_files:
     - ~
 neoforge-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1420,16 +1516,16 @@ neoforge-1.19.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 neoforge-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1445,16 +1541,16 @@ neoforge-1.20.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 neoforge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1470,16 +1566,16 @@ neoforge-1.19.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 neoforge-1.20.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1495,16 +1591,16 @@ neoforge-1.20.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1520,16 +1616,16 @@ neoforge-1.20.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 neoforge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1545,16 +1641,16 @@ neoforge-1.20:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 neoforge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1570,16 +1666,16 @@ neoforge-1.20.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation 'curse.maven:kotlin-for-forge-351264:5402061'
     }
   update_files:
     - ~
 forge-1.19.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1594,17 +1690,33 @@ forge-1.19.3:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 forge-1.20.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1619,17 +1731,33 @@ forge-1.20.2:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 forge-1.19.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1644,17 +1772,33 @@ forge-1.19.4:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 forge-1.20.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1669,17 +1813,33 @@ forge-1.20.3:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1694,17 +1854,33 @@ forge-1.20.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 forge-1.20:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1719,17 +1895,33 @@ forge-1.20:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 forge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1744,17 +1936,33 @@ forge-1.20.4:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5402061')
     }
   update_files:
     - ~
 neoforge-1.20.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1770,16 +1978,16 @@ neoforge-1.20.5:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4983659')
+    	implementation 'curse.maven:kotlin-for-forge-351264:4983659'
     }
   update_files:
     - ~
 forge-1.20.5:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1794,17 +2002,33 @@ forge-1.20.5:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4983659')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4983659')
     }
   update_files:
     - ~
 forge-1.18.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1819,17 +2043,33 @@ forge-1.18.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
     }
   update_files:
     - ~
 forge-1.18.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1844,17 +2084,33 @@ forge-1.18.2:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
     }
   update_files:
     - ~
 forge-1.19.2:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1869,17 +2125,33 @@ forge-1.19.2:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
     }
   update_files:
     - ~
 forge-1.19.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1894,17 +2166,33 @@ forge-1.19.1:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
     }
   update_files:
     - ~
 forge-1.18:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1919,17 +2207,33 @@ forge-1.18:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
     }
   update_files:
     - ~
 forge-1.19:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     plugins {
         id "org.jetbrains.kotlin.jvm" version "2.1.10+"
@@ -1944,8 +2248,24 @@ forge-1.19:
         implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
     dependencies {
-      implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:4513187')
     }
   update_files:
     - ~

@@ -2,78 +2,110 @@
 fabric-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6173796')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
+    	modImplementation 'curse.maven:tough-as-nails-246391:6173796'
+    	modImplementation 'curse.maven:glitchcore-955399:6173796'
     }
   update_files:
     - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173795')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
+    	implementation 'curse.maven:tough-as-nails-246391:6173795'
+    	implementation 'curse.maven:glitchcore-955399:6173795'
     }
   update_files:
     - ~
 forge-1.21.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
+    	implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
     }
   update_files:
     - ~
 fabric-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6029445')
-      modImplementation fg.deobf('curse.maven:glitchcore-955399:6029445')
+    	modImplementation 'curse.maven:tough-as-nails-246391:6029445'
+    	modImplementation 'curse.maven:glitchcore-955399:6029445'
     }
   update_files:
     - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029444')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
+    	implementation 'curse.maven:tough-as-nails-246391:6029444'
+    	implementation 'curse.maven:glitchcore-955399:6029444'
     }
   update_files:
     - ~
 forge-1.21.3:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
-      implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
+    	implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
     }
   update_files:
     - ~

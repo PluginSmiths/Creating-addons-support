@@ -2,160 +2,208 @@
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5844057')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5844057')
-      implementation fg.deobf('curse.maven:prickle-1023259:5844057')
+    	implementation 'curse.maven:tips-306549:5844057'
+    	implementation 'curse.maven:bookshelf-228525:5844057'
+    	implementation 'curse.maven:prickle-1023259:5844057'
     }
   update_files:
     - ~
 forge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5844055')
-      implementation fg.deobf('curse.maven:prickle-1023259:5844055')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5844055')
+    	implementation fg.deobf('curse.maven:tips-306549:5844055')
+    	implementation fg.deobf('curse.maven:prickle-1023259:5844055')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:5844055')
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5844053')
-      modImplementation fg.deobf('curse.maven:prickle-1023259:5844053')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
+    	modImplementation 'curse.maven:tips-306549:5844053'
+    	modImplementation 'curse.maven:prickle-1023259:5844053'
+    	modImplementation 'curse.maven:bookshelf-228525:5844053'
     }
   update_files:
     - ~
 quilt-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5844053')
-      modImplementation fg.deobf('curse.maven:prickle-1023259:5844053')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5844053')
+    	modImplementation 'curse.maven:tips-306549:5844053'
+    	modImplementation 'curse.maven:prickle-1023259:5844053'
+    	modImplementation 'curse.maven:bookshelf-228525:5844053'
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5547512')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
+    	modImplementation 'curse.maven:tips-306549:5547512'
+    	modImplementation 'curse.maven:bookshelf-228525:5547512'
     }
   update_files:
     - ~
 quilt-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5547512')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5547512')
+    	modImplementation 'curse.maven:tips-306549:5547512'
+    	modImplementation 'curse.maven:bookshelf-228525:5547512'
     }
   update_files:
     - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5547510')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
+    	implementation 'curse.maven:tips-306549:5547510'
+    	implementation 'curse.maven:bookshelf-228525:5547510'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5547510')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
+    	implementation fg.deobf('curse.maven:tips-306549:5547510')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:5547510')
     }
   update_files:
     - ~
 neoforge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5166152')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5166152')
+    	implementation 'curse.maven:tips-306549:5166152'
+    	implementation 'curse.maven:bookshelf-228525:5166152'
     }
   update_files:
     - ~
 forge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:tips-306549:5166151')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5166151')
+    	implementation fg.deobf('curse.maven:tips-306549:5166151')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:5166151')
     }
   update_files:
     - ~
 fabric-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5166150')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
+    	modImplementation 'curse.maven:tips-306549:5166150'
+    	modImplementation 'curse.maven:bookshelf-228525:5166150'
     }
   update_files:
     - ~
 quilt-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:tips-306549:5166150')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5166150')
+    	modImplementation 'curse.maven:tips-306549:5166150'
+    	modImplementation 'curse.maven:bookshelf-228525:5166150'
     }
   update_files:
     - ~

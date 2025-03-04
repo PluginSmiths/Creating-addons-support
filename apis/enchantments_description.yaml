@@ -2,160 +2,208 @@
 neoforge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219630')
-      implementation fg.deobf('curse.maven:bookshelf-228525:6219630')
+    	implementation 'curse.maven:enchantment-descriptions-250419:6219630'
+    	implementation 'curse.maven:bookshelf-228525:6219630'
     }
   update_files:
     - ~
 forge-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219628')
-      implementation fg.deobf('curse.maven:bookshelf-228525:6219628')
+    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219628')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:6219628')
     }
   update_files:
     - ~
 fabric-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219627')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:6219627')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:6219627'
+    	modImplementation 'curse.maven:bookshelf-228525:6219627'
     }
   update_files:
     - ~
 quilt-1.20.4:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219627')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:6219627')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:6219627'
+    	modImplementation 'curse.maven:bookshelf-228525:6219627'
     }
   update_files:
     - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855251')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
+    	implementation 'curse.maven:enchantment-descriptions-250419:5855251'
+    	implementation 'curse.maven:bookshelf-228525:5855251'
     }
   update_files:
     - ~
 forge-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855251')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
+    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855251')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
     }
   update_files:
     - ~
 fabric-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855250')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5855250')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:5855250'
+    	modImplementation 'curse.maven:bookshelf-228525:5855250'
     }
   update_files:
     - ~
 quilt-1.20.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855250')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5855250')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:5855250'
+    	modImplementation 'curse.maven:bookshelf-228525:5855250'
     }
   update_files:
     - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824116')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5824116')
-      implementation fg.deobf('curse.maven:prickle-1023259:5824116')
+    	implementation 'curse.maven:enchantment-descriptions-250419:5824116'
+    	implementation 'curse.maven:bookshelf-228525:5824116'
+    	implementation 'curse.maven:prickle-1023259:5824116'
     }
   update_files:
     - ~
 forge-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
     }
     dependencies {
-      implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824115')
-      implementation fg.deobf('curse.maven:bookshelf-228525:5824115')
-      implementation fg.deobf('curse.maven:prickle-1023259:5824115')
+    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824115')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:5824115')
+    	implementation fg.deobf('curse.maven:prickle-1023259:5824115')
     }
   update_files:
     - ~
 fabric-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824114')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5824114')
-      modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:5824114'
+    	modImplementation 'curse.maven:bookshelf-228525:5824114'
+    	modImplementation 'curse.maven:prickle-1023259:5824114'
     }
   update_files:
     - ~
 quilt-1.21.1:
   gradle: |
     repositories {
-      maven {
-        url = 'https://cursemaven.com/'
-      }
+        maven {
+            url = 'https://cursemaven.com/'
+        }
     }
     dependencies {
-      modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5824114')
-      modImplementation fg.deobf('curse.maven:bookshelf-228525:5824114')
-      modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:5824114'
+    	modImplementation 'curse.maven:bookshelf-228525:5824114'
+    	modImplementation 'curse.maven:prickle-1023259:5824114'
     }
   update_files:
     - ~
