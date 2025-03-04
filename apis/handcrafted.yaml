@@ -1,3 +1,4 @@
+---
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:handcrafted-538214:5617253')
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5617253')
     }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:handcrafted-538214:5617252')
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5617252')
     }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:handcrafted-538214:5436877')
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5436877')
     }
+  update_files:
+    - ~
 neoforge-1.21:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:handcrafted-538214:5436875')
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5436875')
     }
+  update_files:
+    - ~
 fabric-1.20.4:
   gradle: |
     repositories {
@@ -53,6 +62,8 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:handcrafted-538214:5119203')
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5119203')
     }
+  update_files:
+    - ~
 neoforge-1.20.4:
   gradle: |
     repositories {
@@ -64,6 +75,8 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:handcrafted-538214:5119202')
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5119202')
     }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -75,6 +88,8 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:handcrafted-538214:5118730')
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:5118730')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -86,6 +101,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:handcrafted-538214:5118729')
       implementation fg.deobf('curse.maven:resourceful-lib-570073:5118729')
     }
+  update_files:
+    - ~
 fabric-1.20.2:
   gradle: |
     repositories {
@@ -97,6 +114,8 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:handcrafted-538214:4876961')
       modImplementation fg.deobf('curse.maven:resourceful-lib-570073:4876961')
     }
+  update_files:
+    - ~
 neoforge-1.20.2:
   gradle: |
     repositories {
@@ -108,4 +127,6 @@ neoforge-1.20.2:
       implementation fg.deobf('curse.maven:handcrafted-538214:4876960')
       implementation fg.deobf('curse.maven:resourceful-lib-570073:4876960')
     }
+  update_files:
+    - ~
 name: "Handcrafted"

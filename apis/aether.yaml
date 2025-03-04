@@ -1,3 +1,4 @@
+---
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:aether-255308:6211116')
       implementation fg.deobf('curse.maven:owo-lib-532610:6211116')
     }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:aether-255308:6211114')
       modImplementation fg.deobf('curse.maven:owo-lib-532610:6211114')
     }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:aether-255308:6207026')
       modImplementation fg.deobf('curse.maven:accessories-938917:6207026')
     }
+  update_files:
+    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -41,6 +48,8 @@ neoforge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -51,4 +60,6 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
+  update_files:
+    - ~
 name: "The Aether"

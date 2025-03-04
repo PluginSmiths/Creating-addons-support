@@ -1,3 +1,4 @@
+---
 neoforge-1.20.4:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:blue-skies-312918:5083225')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:5083225')
     }
+  update_files:
+    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:blue-skies-312918:5010316')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:5010316')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:blue-skies-312918:5010316')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:5010316')
     }
+  update_files:
+    - ~
 forge-1.19.4:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:blue-skies-312918:4525734')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:4525734')
     }
+  update_files:
+    - ~
 forge-1.19.3:
   gradle: |
     repositories {
@@ -53,6 +62,8 @@ forge-1.19.3:
       implementation fg.deobf('curse.maven:blue-skies-312918:4311685')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:4311685')
     }
+  update_files:
+    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -64,6 +75,8 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:blue-skies-312918:3966273')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:3966273')
     }
+  update_files:
+    - ~
 forge-1.19.1:
   gradle: |
     repositories {
@@ -75,6 +88,8 @@ forge-1.19.1:
       implementation fg.deobf('curse.maven:blue-skies-312918:3905041')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:3905041')
     }
+  update_files:
+    - ~
 forge-1.19:
   gradle: |
     repositories {
@@ -86,4 +101,6 @@ forge-1.19:
       implementation fg.deobf('curse.maven:blue-skies-312918:3876236')
       implementation fg.deobf('curse.maven:structure-gel-api-378802:3876236')
     }
+  update_files:
+    - ~
 name: "Blue Skies"

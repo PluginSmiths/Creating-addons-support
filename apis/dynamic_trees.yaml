@@ -1,3 +1,4 @@
+---
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -8,6 +9,8 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:dynamictrees-252818:6196673')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -18,6 +21,8 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:dynamictrees-252818:6116872')
     }
+  update_files:
+    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -28,4 +33,6 @@ forge-1.19.2:
     dependencies {
       implementation fg.deobf('curse.maven:dynamictrees-252818:5600544')
     }
+  update_files:
+    - ~
 name: "Dynamic Trees"

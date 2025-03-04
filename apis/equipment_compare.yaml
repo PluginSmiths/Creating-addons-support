@@ -1,3 +1,4 @@
+---
 forge-1.21.4:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:equipment-compare-502561:6168686')
       implementation fg.deobf('curse.maven:iceberg-520110:6168686')
     }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:equipment-compare-502561:6168685')
       implementation fg.deobf('curse.maven:iceberg-520110:6168685')
     }
+  update_files:
+    - ~
 forge-1.21.3:
   gradle: |
     repositories {
@@ -30,6 +35,8 @@ forge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:equipment-compare-502561:5991594')
     }
+  update_files:
+    - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
@@ -40,6 +47,8 @@ neoforge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:equipment-compare-502561:5991591')
     }
+  update_files:
+    - ~
 neoforge-1.21:
   gradle: |
     repositories {
@@ -51,6 +60,8 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5591001')
       implementation fg.deobf('curse.maven:iceberg-520110:5591001')
     }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -62,6 +73,8 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5591001')
       implementation fg.deobf('curse.maven:iceberg-520110:5591001')
     }
+  update_files:
+    - ~
 forge-1.21:
   gradle: |
     repositories {
@@ -73,6 +86,8 @@ forge-1.21:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
       implementation fg.deobf('curse.maven:iceberg-520110:5590997')
     }
+  update_files:
+    - ~
 forge-1.21.1:
   gradle: |
     repositories {
@@ -84,6 +99,8 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
       implementation fg.deobf('curse.maven:iceberg-520110:5590997')
     }
+  update_files:
+    - ~
 forge-1.20.6:
   gradle: |
     repositories {
@@ -95,6 +112,8 @@ forge-1.20.6:
       implementation fg.deobf('curse.maven:equipment-compare-502561:5421728')
       implementation fg.deobf('curse.maven:iceberg-520110:5421728')
     }
+  update_files:
+    - ~
 forge-1.20.2:
   gradle: |
     repositories {
@@ -106,6 +125,8 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
       implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
+  update_files:
+    - ~
 forge-1.20.3:
   gradle: |
     repositories {
@@ -117,6 +138,8 @@ forge-1.20.3:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
       implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
+  update_files:
+    - ~
 forge-1.20.4:
   gradle: |
     repositories {
@@ -128,6 +151,8 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4918179')
       implementation fg.deobf('curse.maven:iceberg-520110:4918179')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -139,6 +164,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4650073')
       implementation fg.deobf('curse.maven:iceberg-520110:4650073')
     }
+  update_files:
+    - ~
 forge-1.20:
   gradle: |
     repositories {
@@ -150,6 +177,8 @@ forge-1.20:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4650073')
       implementation fg.deobf('curse.maven:iceberg-520110:4650073')
     }
+  update_files:
+    - ~
 forge-1.19.4:
   gradle: |
     repositories {
@@ -161,6 +190,8 @@ forge-1.19.4:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4487910')
       implementation fg.deobf('curse.maven:iceberg-520110:4487910')
     }
+  update_files:
+    - ~
 forge-1.12.2:
   gradle: |
     repositories {
@@ -171,6 +202,8 @@ forge-1.12.2:
     dependencies {
       implementation fg.deobf('curse.maven:equipment-compare-502561:4360293')
     }
+  update_files:
+    - ~
 forge-1.18.1:
   gradle: |
     repositories {
@@ -182,6 +215,8 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
       implementation fg.deobf('curse.maven:iceberg-520110:4360142')
     }
+  update_files:
+    - ~
 forge-1.18.2:
   gradle: |
     repositories {
@@ -193,6 +228,8 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:equipment-compare-502561:4360142')
       implementation fg.deobf('curse.maven:iceberg-520110:4360142')
     }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -203,6 +240,8 @@ fabric-1.21.4:
     dependencies {
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:6168677')
     }
+  update_files:
+    - ~
 fabric-1.21.3:
   gradle: |
     repositories {
@@ -214,6 +253,8 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5991588')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991588')
     }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -224,6 +265,8 @@ fabric-1.21:
     dependencies {
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
     }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -234,6 +277,8 @@ fabric-1.21.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5590992')
     }
+  update_files:
+    - ~
 fabric-1.20.5:
   gradle: |
     repositories {
@@ -244,6 +289,8 @@ fabric-1.20.5:
     dependencies {
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
     }
+  update_files:
+    - ~
 fabric-1.20.6:
   gradle: |
     repositories {
@@ -254,6 +301,8 @@ fabric-1.20.6:
     dependencies {
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:5343810')
     }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -266,6 +315,8 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940609')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
     }
+  update_files:
+    - ~
 fabric-1.20:
   gradle: |
     repositories {
@@ -278,6 +329,8 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940609')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4940609')
     }
+  update_files:
+    - ~
 fabric-1.20.2:
   gradle: |
     repositories {
@@ -290,6 +343,8 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938108')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
     }
+  update_files:
+    - ~
 fabric-1.20.4:
   gradle: |
     repositories {
@@ -302,6 +357,8 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4938108')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938108')
     }
+  update_files:
+    - ~
 fabric-1.19.4:
   gradle: |
     repositories {
@@ -314,6 +371,8 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4500115')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4500115')
     }
+  update_files:
+    - ~
 fabric-1.19.3:
   gradle: |
     repositories {
@@ -325,6 +384,8 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:4335113')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4335113')
     }
+  update_files:
+    - ~
 fabric-1.19.2:
   gradle: |
     repositories {
@@ -336,6 +397,8 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
+  update_files:
+    - ~
 fabric-1.19.1:
   gradle: |
     repositories {
@@ -347,6 +410,8 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
+  update_files:
+    - ~
 fabric-1.19:
   gradle: |
     repositories {
@@ -358,6 +423,8 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3848278')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3848278')
     }
+  update_files:
+    - ~
 fabric-1.18.1:
   gradle: |
     repositories {
@@ -369,6 +436,8 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3723542')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3723542')
     }
+  update_files:
+    - ~
 fabric-1.18.2:
   gradle: |
     repositories {
@@ -380,6 +449,8 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3723542')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3723542')
     }
+  update_files:
+    - ~
 fabric-1.18:
   gradle: |
     repositories {
@@ -391,6 +462,8 @@ fabric-1.18:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3548173')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3548173')
     }
+  update_files:
+    - ~
 fabric-1.17.1:
   gradle: |
     repositories {
@@ -402,4 +475,6 @@ fabric-1.17.1:
       modImplementation fg.deobf('curse.maven:equipment-compare-fabric-541329:3538163')
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:3538163')
     }
+  update_files:
+    - ~
 name: "Equipment Compare"

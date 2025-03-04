@@ -1,3 +1,4 @@
+---
 neoforge-1.20.4:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ neoforge-1.20.4:
       implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219630')
       implementation fg.deobf('curse.maven:bookshelf-228525:6219630')
     }
+  update_files:
+    - ~
 forge-1.20.4:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219628')
       implementation fg.deobf('curse.maven:bookshelf-228525:6219628')
     }
+  update_files:
+    - ~
 fabric-1.20.4:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219627')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:6219627')
     }
+  update_files:
+    - ~
 quilt-1.20.4:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ quilt-1.20.4:
       modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219627')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:6219627')
     }
+  update_files:
+    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -53,6 +62,8 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855251')
       implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -64,6 +75,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855251')
       implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
     }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -75,6 +88,8 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855250')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5855250')
     }
+  update_files:
+    - ~
 quilt-1.20.1:
   gradle: |
     repositories {
@@ -86,6 +101,8 @@ quilt-1.20.1:
       modImplementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855250')
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5855250')
     }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -98,6 +115,8 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5824116')
       implementation fg.deobf('curse.maven:prickle-1023259:5824116')
     }
+  update_files:
+    - ~
 forge-1.21.1:
   gradle: |
     repositories {
@@ -110,6 +129,8 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:bookshelf-228525:5824115')
       implementation fg.deobf('curse.maven:prickle-1023259:5824115')
     }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -122,6 +143,8 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5824114')
       modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
     }
+  update_files:
+    - ~
 quilt-1.21.1:
   gradle: |
     repositories {
@@ -134,4 +157,6 @@ quilt-1.21.1:
       modImplementation fg.deobf('curse.maven:bookshelf-228525:5824114')
       modImplementation fg.deobf('curse.maven:prickle-1023259:5824114')
     }
+  update_files:
+    - ~
 name: "Enchantment Descriptions"

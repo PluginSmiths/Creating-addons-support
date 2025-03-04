@@ -1,3 +1,4 @@
+---
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6173796')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6173796')
     }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6173795')
       implementation fg.deobf('curse.maven:glitchcore-955399:6173795')
     }
+  update_files:
+    - ~
 forge-1.21.4:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6173794')
       implementation fg.deobf('curse.maven:glitchcore-955399:6173794')
     }
+  update_files:
+    - ~
 fabric-1.21.3:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:tough-as-nails-246391:6029445')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6029445')
     }
+  update_files:
+    - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
@@ -53,6 +62,8 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6029444')
       implementation fg.deobf('curse.maven:glitchcore-955399:6029444')
     }
+  update_files:
+    - ~
 forge-1.21.3:
   gradle: |
     repositories {
@@ -64,4 +75,6 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:tough-as-nails-246391:6029443')
       implementation fg.deobf('curse.maven:glitchcore-955399:6029443')
     }
+  update_files:
+    - ~
 name: "Tough As Nails"

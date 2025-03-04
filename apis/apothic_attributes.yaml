@@ -1,3 +1,4 @@
+---
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:apothic-attributes-898963:6148951')
       implementation fg.deobf('curse.maven:placebo-283644:6148951')
     }
+  update_files:
+    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:apothic-attributes-898963:5634071')
       implementation fg.deobf('curse.maven:placebo-283644:5634071')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:apothic-attributes-898963:5634071')
       implementation fg.deobf('curse.maven:placebo-283644:5634071')
     }
+  update_files:
+    - ~
 neoforge-1.21:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ neoforge-1.21:
       implementation fg.deobf('curse.maven:apothic-attributes-898963:5597608')
       implementation fg.deobf('curse.maven:placebo-283644:5597608')
     }
+  update_files:
+    - ~
 neoforge-1.20.4:
   gradle: |
     repositories {
@@ -52,4 +61,6 @@ neoforge-1.20.4:
     dependencies {
       implementation fg.deobf('curse.maven:apothic-attributes-898963:5226594')
     }
+  update_files:
+    - ~
 name: "Apothic Attributes"

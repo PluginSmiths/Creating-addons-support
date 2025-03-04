@@ -1,3 +1,4 @@
+---
 forge-1.21.4:
   gradle: |
     repositories {
@@ -8,6 +9,8 @@ forge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:6168674')
     }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -18,6 +21,8 @@ neoforge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:6168671')
     }
+  update_files:
+    - ~
 forge-1.21.3:
   gradle: |
     repositories {
@@ -30,6 +35,8 @@ forge-1.21.3:
       implementation fg.deobf('curse.maven:iceberg-520110:5991567')
       implementation fg.deobf('curse.maven:prism-lib-638111:5991567')
     }
+  update_files:
+    - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ neoforge-1.21.3:
       implementation fg.deobf('curse.maven:iceberg-520110:5991565')
       implementation fg.deobf('curse.maven:prism-lib-638111:5991565')
     }
+  update_files:
+    - ~
 forge-1.12.2:
   gradle: |
     repositories {
@@ -52,6 +61,8 @@ forge-1.12.2:
     dependencies {
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5734973')
     }
+  update_files:
+    - ~
 neoforge-1.21:
   gradle: |
     repositories {
@@ -62,6 +73,8 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5591027')
     }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -72,6 +85,8 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5591027')
     }
+  update_files:
+    - ~
 forge-1.21:
   gradle: |
     repositories {
@@ -84,6 +99,8 @@ forge-1.21:
       implementation fg.deobf('curse.maven:iceberg-520110:5591022')
       implementation fg.deobf('curse.maven:prism-lib-638111:5591022')
     }
+  update_files:
+    - ~
 forge-1.21.1:
   gradle: |
     repositories {
@@ -96,6 +113,8 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:iceberg-520110:5591022')
       implementation fg.deobf('curse.maven:prism-lib-638111:5591022')
     }
+  update_files:
+    - ~
 forge-1.20.6:
   gradle: |
     repositories {
@@ -106,6 +125,8 @@ forge-1.20.6:
     dependencies {
       implementation fg.deobf('curse.maven:legendary-tooltips-532127:5365021')
     }
+  update_files:
+    - ~
 forge-1.20.2:
   gradle: |
     repositories {
@@ -118,6 +139,8 @@ forge-1.20.2:
       implementation fg.deobf('curse.maven:prism-lib-638111:4918173')
       implementation fg.deobf('curse.maven:iceberg-520110:4918173')
     }
+  update_files:
+    - ~
 forge-1.20.4:
   gradle: |
     repositories {
@@ -130,6 +153,8 @@ forge-1.20.4:
       implementation fg.deobf('curse.maven:prism-lib-638111:4918173')
       implementation fg.deobf('curse.maven:iceberg-520110:4918173')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -142,6 +167,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:prism-lib-638111:4662781')
       implementation fg.deobf('curse.maven:iceberg-520110:4662781')
     }
+  update_files:
+    - ~
 forge-1.20:
   gradle: |
     repositories {
@@ -154,6 +181,8 @@ forge-1.20:
       implementation fg.deobf('curse.maven:prism-lib-638111:4662781')
       implementation fg.deobf('curse.maven:iceberg-520110:4662781')
     }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -164,6 +193,8 @@ fabric-1.21.4:
     dependencies {
       modImplementation fg.deobf('curse.maven:legendary-tooltips-fabric-542478:6168669')
     }
+  update_files:
+    - ~
 fabric-1.21.3:
   gradle: |
     repositories {
@@ -176,6 +207,8 @@ fabric-1.21.3:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5991564')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5991564')
     }
+  update_files:
+    - ~
 fabric-1.19.2:
   gradle: |
     repositories {
@@ -186,6 +219,8 @@ fabric-1.19.2:
     dependencies {
       modImplementation fg.deobf('curse.maven:legendary-tooltips-fabric-542478:5659462')
     }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -198,6 +233,8 @@ fabric-1.21:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5591020')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5591020')
     }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -210,6 +247,8 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5591020')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5591020')
     }
+  update_files:
+    - ~
 fabric-1.20.5:
   gradle: |
     repositories {
@@ -222,6 +261,8 @@ fabric-1.20.5:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343802')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343802')
     }
+  update_files:
+    - ~
 fabric-1.20.6:
   gradle: |
     repositories {
@@ -234,6 +275,8 @@ fabric-1.20.6:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:5343802')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:5343802')
     }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -247,6 +290,8 @@ fabric-1.20.1:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940615')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940615')
     }
+  update_files:
+    - ~
 fabric-1.20:
   gradle: |
     repositories {
@@ -260,6 +305,8 @@ fabric-1.20:
       modImplementation fg.deobf('curse.maven:iceberg-fabric-539382:4940615')
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4940615')
     }
+  update_files:
+    - ~
 fabric-1.20.2:
   gradle: |
     repositories {
@@ -273,6 +320,8 @@ fabric-1.20.2:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938105')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938105')
     }
+  update_files:
+    - ~
 fabric-1.20.4:
   gradle: |
     repositories {
@@ -286,6 +335,8 @@ fabric-1.20.4:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4938105')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4938105')
     }
+  update_files:
+    - ~
 fabric-1.19.4:
   gradle: |
     repositories {
@@ -299,6 +350,8 @@ fabric-1.19.4:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4515925')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4515925')
     }
+  update_files:
+    - ~
 fabric-1.19.3:
   gradle: |
     repositories {
@@ -312,6 +365,8 @@ fabric-1.19.3:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:4335100')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:4335100')
     }
+  update_files:
+    - ~
 fabric-1.19.1:
   gradle: |
     repositories {
@@ -325,6 +380,8 @@ fabric-1.19.1:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:3998293')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3998293')
     }
+  update_files:
+    - ~
 fabric-1.19:
   gradle: |
     repositories {
@@ -338,6 +395,8 @@ fabric-1.19:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:3998293')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3998293')
     }
+  update_files:
+    - ~
 fabric-1.18.2:
   gradle: |
     repositories {
@@ -351,4 +410,6 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:prism-fabric-665526:3964264')
       modImplementation fg.deobf('curse.maven:forge-config-api-port-fabric-547434:3964264')
     }
+  update_files:
+    - ~
 name: "Legendary Tooltips"

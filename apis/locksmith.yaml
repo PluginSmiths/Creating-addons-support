@@ -1,3 +1,4 @@
+---
 fabric-1.19.2:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ fabric-1.19.2:
       modImplementation fg.deobf('curse.maven:locksmith-544352:4650917')
       modImplementation fg.deobf('curse.maven:pollen-544350:4650917')
     }
+  update_files:
+    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:locksmith-544352:4650915')
       implementation fg.deobf('curse.maven:pollen-544350:4650915')
     }
+  update_files:
+    - ~
 fabric-1.18.2:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ fabric-1.18.2:
       modImplementation fg.deobf('curse.maven:locksmith-544352:4650911')
       modImplementation fg.deobf('curse.maven:pollen-544350:4650911')
     }
+  update_files:
+    - ~
 forge-1.18.2:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:locksmith-544352:4650906')
       implementation fg.deobf('curse.maven:pollen-544350:4650906')
     }
+  update_files:
+    - ~
 fabric-1.18.1:
   gradle: |
     repositories {
@@ -53,6 +62,8 @@ fabric-1.18.1:
       modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
       modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
     }
+  update_files:
+    - ~
 fabric-1.18:
   gradle: |
     repositories {
@@ -64,6 +75,8 @@ fabric-1.18:
       modImplementation fg.deobf('curse.maven:locksmith-544352:3889834')
       modImplementation fg.deobf('curse.maven:pollen-544350:3889834')
     }
+  update_files:
+    - ~
 forge-1.18.1:
   gradle: |
     repositories {
@@ -75,6 +88,8 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:locksmith-544352:3889833')
       implementation fg.deobf('curse.maven:pollen-544350:3889833')
     }
+  update_files:
+    - ~
 forge-1.18:
   gradle: |
     repositories {
@@ -86,6 +101,8 @@ forge-1.18:
       implementation fg.deobf('curse.maven:locksmith-544352:3889833')
       implementation fg.deobf('curse.maven:pollen-544350:3889833')
     }
+  update_files:
+    - ~
 fabric-1.16.5:
   gradle: |
     repositories {
@@ -97,6 +114,8 @@ fabric-1.16.5:
       modImplementation fg.deobf('curse.maven:locksmith-544352:3889832')
       modImplementation fg.deobf('curse.maven:pollen-544350:3889832')
     }
+  update_files:
+    - ~
 forge-1.16.5:
   gradle: |
     repositories {
@@ -108,4 +127,6 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:locksmith-544352:3889830')
       implementation fg.deobf('curse.maven:pollen-544350:3889830')
     }
+  update_files:
+    - ~
 name: "Locksmith"

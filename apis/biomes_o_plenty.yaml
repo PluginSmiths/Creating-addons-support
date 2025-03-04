@@ -1,3 +1,4 @@
+---
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -10,6 +11,8 @@ fabric-1.21.1:
       modImplementation fg.deobf('curse.maven:terrablender-fabric-565956:6152944')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6152944')
     }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -22,6 +25,8 @@ neoforge-1.21.1:
       implementation fg.deobf('curse.maven:terrablender-neoforge-940057:6152943')
       implementation fg.deobf('curse.maven:glitchcore-955399:6152943')
     }
+  update_files:
+    - ~
 forge-1.21.1:
   gradle: |
     repositories {
@@ -34,6 +39,8 @@ forge-1.21.1:
       implementation fg.deobf('curse.maven:glitchcore-955399:6152939')
       implementation fg.deobf('curse.maven:terrablender-563928:6152939')
     }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -46,6 +53,8 @@ fabric-1.21.4:
       modImplementation fg.deobf('curse.maven:terrablender-fabric-565956:6083660')
       modImplementation fg.deobf('curse.maven:glitchcore-955399:6083660')
     }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -58,6 +67,8 @@ neoforge-1.21.4:
       implementation fg.deobf('curse.maven:terrablender-neoforge-940057:6083659')
       implementation fg.deobf('curse.maven:glitchcore-955399:6083659')
     }
+  update_files:
+    - ~
 forge-1.21.4:
   gradle: |
     repositories {
@@ -70,4 +81,6 @@ forge-1.21.4:
       implementation fg.deobf('curse.maven:terrablender-563928:6083658')
       implementation fg.deobf('curse.maven:glitchcore-955399:6083658')
     }
+  update_files:
+    - ~
 name: "Biomes O' Plenty"

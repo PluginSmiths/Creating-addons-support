@@ -1,3 +1,4 @@
+---
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -9,6 +10,8 @@ neoforge-1.20.1:
       implementation fg.deobf('curse.maven:fastsuite-475117:4711435')
       implementation fg.deobf('curse.maven:placebo-283644:4711435')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -20,6 +23,8 @@ forge-1.20.1:
       implementation fg.deobf('curse.maven:fastsuite-475117:4711435')
       implementation fg.deobf('curse.maven:placebo-283644:4711435')
     }
+  update_files:
+    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -31,6 +36,8 @@ forge-1.19.2:
       implementation fg.deobf('curse.maven:fastsuite-475117:4679156')
       implementation fg.deobf('curse.maven:placebo-283644:4679156')
     }
+  update_files:
+    - ~
 forge-1.18.2:
   gradle: |
     repositories {
@@ -42,6 +49,8 @@ forge-1.18.2:
       implementation fg.deobf('curse.maven:fastsuite-475117:3755834')
       implementation fg.deobf('curse.maven:placebo-283644:3755834')
     }
+  update_files:
+    - ~
 forge-1.18.1:
   gradle: |
     repositories {
@@ -53,6 +62,8 @@ forge-1.18.1:
       implementation fg.deobf('curse.maven:fastsuite-475117:3567088')
       implementation fg.deobf('curse.maven:placebo-283644:3567088')
     }
+  update_files:
+    - ~
 forge-1.17.1:
   gradle: |
     repositories {
@@ -64,6 +75,8 @@ forge-1.17.1:
       implementation fg.deobf('curse.maven:fastsuite-475117:3561829')
       implementation fg.deobf('curse.maven:placebo-283644:3561829')
     }
+  update_files:
+    - ~
 forge-1.16.5:
   gradle: |
     repositories {
@@ -75,6 +88,8 @@ forge-1.16.5:
       implementation fg.deobf('curse.maven:fastsuite-475117:3419895')
       implementation fg.deobf('curse.maven:placebo-283644:3419895')
     }
+  update_files:
+    - ~
 forge-1.16.4:
   gradle: |
     repositories {
@@ -86,4 +101,6 @@ forge-1.16.4:
       implementation fg.deobf('curse.maven:fastsuite-475117:3419895')
       implementation fg.deobf('curse.maven:placebo-283644:3419895')
     }
+  update_files:
+    - ~
 name: "FastSuite"

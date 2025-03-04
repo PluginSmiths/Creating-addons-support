@@ -1,3 +1,4 @@
+---
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -8,6 +9,8 @@ fabric-1.21.4:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239774')
     }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -18,6 +21,8 @@ neoforge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239769')
     }
+  update_files:
+    - ~
 forge-1.21.4:
   gradle: |
     repositories {
@@ -28,6 +33,8 @@ forge-1.21.4:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239752')
     }
+  update_files:
+    - ~
 fabric-1.21.3:
   gradle: |
     repositories {
@@ -38,6 +45,8 @@ fabric-1.21.3:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239721')
     }
+  update_files:
+    - ~
 neoforge-1.21.3:
   gradle: |
     repositories {
@@ -48,6 +57,8 @@ neoforge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239710')
     }
+  update_files:
+    - ~
 forge-1.21.3:
   gradle: |
     repositories {
@@ -58,6 +69,8 @@ forge-1.21.3:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239693')
     }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -68,6 +81,8 @@ fabric-1.21:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239681')
     }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -78,6 +93,8 @@ fabric-1.21.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239681')
     }
+  update_files:
+    - ~
 neoforge-1.21:
   gradle: |
     repositories {
@@ -88,6 +105,8 @@ neoforge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239667')
     }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -98,6 +117,8 @@ neoforge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239667')
     }
+  update_files:
+    - ~
 forge-1.21:
   gradle: |
     repositories {
@@ -108,6 +129,8 @@ forge-1.21:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239663')
     }
+  update_files:
+    - ~
 forge-1.21.1:
   gradle: |
     repositories {
@@ -118,6 +141,8 @@ forge-1.21.1:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239663')
     }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -128,6 +153,8 @@ fabric-1.20.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239644')
     }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -138,6 +165,8 @@ forge-1.20.1:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239618')
     }
+  update_files:
+    - ~
 quilt-1.20.1:
   gradle: |
     repositories {
@@ -148,6 +177,8 @@ quilt-1.20.1:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239608')
     }
+  update_files:
+    - ~
 fabric-1.19.2:
   gradle: |
     repositories {
@@ -158,6 +189,8 @@ fabric-1.19.2:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239595')
     }
+  update_files:
+    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -168,6 +201,8 @@ forge-1.19.2:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239588')
     }
+  update_files:
+    - ~
 quilt-1.19.2:
   gradle: |
     repositories {
@@ -178,6 +213,8 @@ quilt-1.19.2:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239510')
     }
+  update_files:
+    - ~
 fabric-1.18.2:
   gradle: |
     repositories {
@@ -188,6 +225,8 @@ fabric-1.18.2:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239492')
     }
+  update_files:
+    - ~
 forge-1.18.2:
   gradle: |
     repositories {
@@ -198,6 +237,8 @@ forge-1.18.2:
     dependencies {
       implementation fg.deobf('curse.maven:simple-voice-chat-416089:6239480')
     }
+  update_files:
+    - ~
 quilt-1.18.2:
   gradle: |
     repositories {
@@ -208,4 +249,6 @@ quilt-1.18.2:
     dependencies {
       modImplementation fg.deobf('curse.maven:simple-voice-chat-416089:6239470')
     }
+  update_files:
+    - ~
 name: "Simple Voice Chat"
