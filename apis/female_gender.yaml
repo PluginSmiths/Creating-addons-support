@@ -7,7 +7,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6269120'
+    	implementation 'curse.maven:female-gender-neoforge-481655:5579007'
     }
   update_files:
     - ~
@@ -19,67 +19,11 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6269120'
+    	implementation 'curse.maven:female-gender-neoforge-481655:5579007'
     }
   update_files:
     - ~
-forge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6269119')
-    }
-  update_files:
-    - ~
-forge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6269119')
-    }
-  update_files:
-    - ~
-fabric-1.21:
+neoforge-1.20.4:
   gradle: |
     repositories {
         maven {
@@ -87,11 +31,11 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6269118'
+    	implementation 'curse.maven:female-gender-neoforge-481655:5357649'
     }
   update_files:
     - ~
-fabric-1.21.1:
+neoforge-1.20.1:
   gradle: |
     repositories {
         maven {
@@ -99,279 +43,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6269118'
-    }
-  update_files:
-    - ~
-quilt-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6269118'
-    }
-  update_files:
-    - ~
-quilt-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6269118'
-    }
-  update_files:
-    - ~
-neoforge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6264784'
-    }
-  update_files:
-    - ~
-fabric-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264783'
-    }
-  update_files:
-    - ~
-quilt-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264783'
-    }
-  update_files:
-    - ~
-forge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264782')
-    }
-  update_files:
-    - ~
-forge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264777')
-    }
-  update_files:
-    - ~
-forge-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264777')
-    }
-  update_files:
-    - ~
-fabric-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264776'
-    }
-  update_files:
-    - ~
-fabric-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264776'
-    }
-  update_files:
-    - ~
-quilt-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264776'
-    }
-  update_files:
-    - ~
-quilt-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264776'
-    }
-  update_files:
-    - ~
-neoforge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6264775'
-    }
-  update_files:
-    - ~
-neoforge-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6264775'
-    }
-  update_files:
-    - ~
-forge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264746')
-    }
-  update_files:
-    - ~
-forge-1.20.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264746')
+    	implementation 'curse.maven:female-gender-neoforge-481655:4896743'
     }
   update_files:
     - ~
@@ -399,11 +71,11 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264746')
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:4896743')
     }
   update_files:
     - ~
-forge-1.20:
+forge-1.19.3:
   gradle: |
     repositories {
         maven {
@@ -427,11 +99,11 @@ forge-1.20:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264746')
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:4382527')
     }
   update_files:
     - ~
-forge-1.20.4:
+forge-1.18.2:
   gradle: |
     repositories {
         maven {
@@ -455,235 +127,7 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264746')
-    }
-  update_files:
-    - ~
-neoforge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6264745'
-    }
-  update_files:
-    - ~
-neoforge-1.20.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6264745'
-    }
-  update_files:
-    - ~
-neoforge-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:immediatelyfast-686911:6264745'
-    }
-  update_files:
-    - ~
-fabric-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-fabric-1.20.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-fabric-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-fabric-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-quilt-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-quilt-1.20.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-quilt-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-quilt-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-quilt-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264744'
-    }
-  update_files:
-    - ~
-fabric-1.19.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264732'
-    }
-  update_files:
-    - ~
-fabric-1.19.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264732'
-    }
-  update_files:
-    - ~
-fabric-1.19:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264732'
-    }
-  update_files:
-    - ~
-quilt-1.19.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264732'
-    }
-  update_files:
-    - ~
-quilt-1.19.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264732'
-    }
-  update_files:
-    - ~
-quilt-1.19:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:immediatelyfast-686911:6264732'
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3920306')
     }
   update_files:
     - ~
@@ -711,7 +155,7 @@ forge-1.19.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264731')
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3920268')
     }
   update_files:
     - ~
@@ -739,7 +183,7 @@ forge-1.19.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264731')
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3920268')
     }
   update_files:
     - ~
@@ -767,8 +211,288 @@ forge-1.19:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:immediatelyfast-686911:6264731')
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3920268')
     }
   update_files:
     - ~
-name: "ImmediatelyFast"
+forge-1.18.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3582764')
+    }
+  update_files:
+    - ~
+forge-1.16.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3459078')
+    }
+  update_files:
+    - ~
+forge-1.17.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3412463')
+    }
+  update_files:
+    - ~
+forge-1.16.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:female-gender-neoforge-481655:3358079')
+    }
+  update_files:
+    - ~
+fabric-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5979089'
+    }
+  update_files:
+    - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5961189'
+    }
+  update_files:
+    - ~
+fabric-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5935087'
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5478368'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5478368'
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5357613'
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:5357579'
+    }
+  update_files:
+    - ~
+fabric-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:4927778'
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:4600149'
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:4600149'
+    }
+  update_files:
+    - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:4552937'
+    }
+  update_files:
+    - ~
+fabric-1.19.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:4417474'
+    }
+  update_files:
+    - ~
+fabric-1.19.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:4023966'
+    }
+  update_files:
+    - ~
+fabric-1.19:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:3853479'
+    }
+  update_files:
+    - ~
+name: "Female Gender Mod"

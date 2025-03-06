@@ -4,11 +4,16 @@
       "type": "input_value",
       "name": "entity",
       "check": "Entity"
+    },
+    {
+      "type": "field_data_list_selector",
+      "name": "gender",
+      "datalist": "genders"
     }
   ],
   "inputsInline": true,
-  "output": "Number",
-  "colour": "#609986",
+  "output": "Boolean",
+  "colour": "#607c99",
   "mcreator": {
     "toolbox_id": "female_gender_support",
     "toolbox_init": [
@@ -16,6 +21,9 @@
     ],
     "inputs": [
       "entity"
+    ],
+    "fields": [
+      "gender"
     ],
     "required_apis": [
       "female_gender"
