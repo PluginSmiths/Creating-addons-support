@@ -1,0 +1,1 @@
+WildfireAPI.getPlayerById(${input$entity}.getUUID()).update${field$name}(${input$number}f);

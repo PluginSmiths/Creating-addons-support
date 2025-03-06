@@ -1,4 +1,84 @@
 ---
+neoforge-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:jade-324717:6271475'
+    }
+  update_files:
+    - ~
+neoforge-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:jade-324717:6271475'
+    }
+  update_files:
+    - ~
+forge-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:jade-324717:6271475')
+    }
+  update_files:
+    - ~
+forge-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:jade-324717:6271475')
+    }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -68,86 +148,6 @@ quilt-1.21.1:
     }
     dependencies {
     	modImplementation 'curse.maven:jade-324717:6154968'
-    }
-  update_files:
-    - ~
-neoforge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:jade-324717:6106101'
-    }
-  update_files:
-    - ~
-neoforge-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:jade-324717:6106101'
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:jade-324717:6106101')
-    }
-  update_files:
-    - ~
-forge-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:jade-324717:6106101')
     }
   update_files:
     - ~

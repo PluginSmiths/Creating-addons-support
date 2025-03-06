@@ -1,0 +1,1 @@
+new GenderPlayer(${input$entity}.getUUID()).updateGender(GenderPlayer.Gender.${field$gender});

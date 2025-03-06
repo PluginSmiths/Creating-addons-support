@@ -1,0 +1,1 @@
+new GenderPlayer(${input$entity}.getUUID()).get${field$name}()

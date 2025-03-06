@@ -1,0 +1,1 @@
+WildfireAPI.getPlayerGender(${input$entity}.getUUID())==Gender.${field$gender}

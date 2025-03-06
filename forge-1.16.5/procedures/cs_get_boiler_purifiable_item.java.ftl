@@ -1,0 +1,1 @@
+${input$item}.is(ItemTags.create(new ResourceLocati${input$item}.is(ItemTags.create(new ResourceLocation("cold_sweat:compat/boiler_purifiable")))
