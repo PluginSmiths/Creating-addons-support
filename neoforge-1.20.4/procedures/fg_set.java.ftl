@@ -1,1 +1,1 @@
-new GenderPlayer(${input$entity}.getUUID()).update${field$name}(${input$number}f);
+WildfireGender.getOrAddPlayerById(${input$entity}.getUUID()).update${field$name}(${input$number}f);

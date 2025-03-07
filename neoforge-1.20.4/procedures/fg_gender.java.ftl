@@ -1,1 +1,1 @@
-new GenderPlayer(${input$entity}.getUUID()).getGender()==GenderPlayer.Gender.${field$gender}
+WildfireGender.getOrAddPlayerById(${input$entity}.getUUID()).getGender()==Gender.${field$gender}
