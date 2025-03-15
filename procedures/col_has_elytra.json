@@ -12,7 +12,7 @@
   "mcreator": {
     "toolbox_id": "colytra_support",
     "toolbox_init": [
-      "<value name=\"chestplate\"><block type=\"mcitem_all\"><field name=\"value\"></field></block></value>"
+      "<value name=\"chestplate\"><block type=\"itemstack_to_mcitem\"><field name=\"value\"></field></block></value>"
     ],
     "inputs": [
       "chestplate"
