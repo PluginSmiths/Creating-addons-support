@@ -1,4 +1,17 @@
 ---
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:fastsuite-475117:6322692'
+    	implementation 'curse.maven:placebo-283644:6322692'
+    }
+  update_files:
+    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -7,8 +20,8 @@ neoforge-1.20.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:fastsuite-475117:4711435'
-    	implementation 'curse.maven:placebo-283644:4711435'
+    	implementation 'curse.maven:fastsuite-475117:6318054'
+    	implementation 'curse.maven:placebo-283644:6318054'
     }
   update_files:
     - ~
@@ -36,8 +49,8 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:fastsuite-475117:4711435')
-    	implementation fg.deobf('curse.maven:placebo-283644:4711435')
+    	implementation fg.deobf('curse.maven:fastsuite-475117:6318054')
+    	implementation fg.deobf('curse.maven:placebo-283644:6318054')
     }
   update_files:
     - ~

@@ -239,6 +239,30 @@ forge-1.19:
     }
   update_files:
     - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6324963'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6324963'
+    }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -260,18 +284,6 @@ quilt-1.20.1:
     }
     dependencies {
     	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6189989'
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6189875'
     }
   update_files:
     - ~

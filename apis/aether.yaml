@@ -1,27 +1,30 @@
 ---
-neoforge-1.21.1:
+forge-1.12.2:
   gradle: |
     repositories {
         maven {
             url = 'https://cursemaven.com/'
         }
     }
-    dependencies {
-    	implementation 'curse.maven:aether-255308:6211116'
-    	implementation 'curse.maven:owo-lib-532610:6211116'
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:aether-255308:6211114'
-    	modImplementation 'curse.maven:owo-lib-532610:6211114'
+    	implementation fg.deobf('curse.maven:aether-255308:6316434')
+    	implementation fg.deobf('curse.maven:owo-lib-532610:6316434')
     }
   update_files:
     - ~
@@ -33,8 +36,34 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:aether-255308:6207026'
-    	modImplementation 'curse.maven:accessories-938917:6207026'
+    	modImplementation 'curse.maven:aether-255308:6307789'
+    	modImplementation 'curse.maven:accessories-938917:6307789'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:aether-255308:6301515'
+    	modImplementation 'curse.maven:owo-lib-532610:6301515'
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:aether-255308:6301444'
+    	implementation 'curse.maven:owo-lib-532610:6301444'
     }
   update_files:
     - ~

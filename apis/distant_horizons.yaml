@@ -1,4 +1,52 @@
 ---
+fabric-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:distant-horizons-508933:6251741'
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:distant-horizons-508933:6251741'
+    }
+  update_files:
+    - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:distant-horizons-508933:6251737'
+    }
+  update_files:
+    - ~
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:distant-horizons-508933:6251737'
+    }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -7,7 +55,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689286'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251735'
     }
   update_files:
     - ~
@@ -19,7 +67,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:distant-horizons-508933:5689286'
+    	implementation 'curse.maven:distant-horizons-508933:6251735'
     }
   update_files:
     - ~
@@ -31,7 +79,7 @@ fabric-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689282'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251733'
     }
   update_files:
     - ~
@@ -43,7 +91,7 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:distant-horizons-508933:5689282'
+    	implementation 'curse.maven:distant-horizons-508933:6251733'
     }
   update_files:
     - ~
@@ -55,7 +103,7 @@ fabric-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689281'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251730'
     }
   update_files:
     - ~
@@ -83,7 +131,7 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689281')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251730')
     }
   update_files:
     - ~
@@ -95,7 +143,7 @@ fabric-1.20.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689280'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251729'
     }
   update_files:
     - ~
@@ -123,7 +171,7 @@ forge-1.20.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689280')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251729')
     }
   update_files:
     - ~
@@ -135,7 +183,7 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689279'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251728'
     }
   update_files:
     - ~
@@ -163,7 +211,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689279')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251728')
     }
   update_files:
     - ~
@@ -175,7 +223,7 @@ fabric-1.19.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689278'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251719'
     }
   update_files:
     - ~
@@ -203,7 +251,7 @@ forge-1.19.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689278')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251719')
     }
   update_files:
     - ~
@@ -215,7 +263,7 @@ fabric-1.19.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689272'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251718'
     }
   update_files:
     - ~
@@ -243,7 +291,7 @@ forge-1.19.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689272')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251718')
     }
   update_files:
     - ~
@@ -255,7 +303,7 @@ fabric-1.18.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689266'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251708'
     }
   update_files:
     - ~
@@ -283,7 +331,7 @@ forge-1.18.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689266')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251708')
     }
   update_files:
     - ~
@@ -295,7 +343,7 @@ fabric-1.17.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689265'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251699'
     }
   update_files:
     - ~
@@ -323,7 +371,7 @@ forge-1.17.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689265')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251699')
     }
   update_files:
     - ~
@@ -335,7 +383,7 @@ fabric-1.16.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5689264'
+    	modImplementation 'curse.maven:distant-horizons-508933:6251677'
     }
   update_files:
     - ~
@@ -363,59 +411,7 @@ forge-1.16.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5689264')
-    }
-  update_files:
-    - ~
-fabric-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:distant-horizons-508933:5649765'
-    }
-  update_files:
-    - ~
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:distant-horizons-508933:5649765'
-    }
-  update_files:
-    - ~
-forge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:distant-horizons-508933:5649761')
+    	implementation fg.deobf('curse.maven:distant-horizons-508933:6251677')
     }
   update_files:
     - ~

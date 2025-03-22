@@ -1,5 +1,5 @@
 ---
-neoforge-1.21:
+neoforge-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -7,11 +7,11 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:irons-spells-n-spellbooks-855414:6197625'
+    	implementation 'curse.maven:irons-spells-n-spellbooks-855414:6312581'
     }
   update_files:
     - ~
-neoforge-1.21.1:
+neoforge-1.21:
   gradle: |
     repositories {
         maven {

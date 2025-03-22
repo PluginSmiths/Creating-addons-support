@@ -23,18 +23,6 @@ fabric-1.20.4:
     }
   update_files:
     - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:locki-483059:5432857'
-    }
-  update_files:
-    - ~
 quilt-1.20.1:
   gradle: |
     repositories {
@@ -43,7 +31,7 @@ quilt-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:locki-483059:4999028'
+    	modImplementation 'curse.maven:locki-483059:5432857'
     }
   update_files:
     - ~
