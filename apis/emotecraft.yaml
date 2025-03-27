@@ -1,4 +1,16 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:emotecraft-forge-403422:6331653'
+    }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -7,7 +19,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:emotecraft-forge-403422:6311397'
+    	implementation 'curse.maven:emotecraft-forge-403422:6331588'
     }
   update_files:
     - ~
@@ -23,6 +35,30 @@ neoforge-1.21.1:
     }
   update_files:
     - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:emotecraft-397809:6331654'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:emotecraft-397809:6331654'
+    }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -31,7 +67,7 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6311398'
+    	modImplementation 'curse.maven:emotecraft-397809:6331589'
     }
   update_files:
     - ~
@@ -43,7 +79,7 @@ quilt-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6311398'
+    	modImplementation 'curse.maven:emotecraft-397809:6331589'
     }
   update_files:
     - ~

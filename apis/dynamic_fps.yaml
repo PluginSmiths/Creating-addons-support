@@ -1,4 +1,40 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:dynamic-fps-335493:6351246'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347468'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347454'
+    }
+  update_files:
+    - ~
 quilt-1.21.4:
   gradle: |
     repositories {
@@ -7,7 +43,7 @@ quilt-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6274442'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347450'
     }
   update_files:
     - ~
@@ -19,7 +55,7 @@ quilt-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6274442'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347450'
     }
   update_files:
     - ~
@@ -31,7 +67,7 @@ quilt-1.21.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6274442'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347450'
     }
   update_files:
     - ~
@@ -43,7 +79,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6274440'
+    	implementation 'curse.maven:dynamic-fps-335493:6347448'
     }
   update_files:
     - ~
@@ -55,7 +91,7 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6274440'
+    	implementation 'curse.maven:dynamic-fps-335493:6347448'
     }
   update_files:
     - ~
@@ -67,7 +103,7 @@ neoforge-1.21.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6274440'
+    	implementation 'curse.maven:dynamic-fps-335493:6347448'
     }
   update_files:
     - ~
@@ -95,7 +131,7 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6274438')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347446')
     }
   update_files:
     - ~
@@ -123,7 +159,7 @@ forge-1.21.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6274438')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347446')
     }
   update_files:
     - ~
@@ -151,7 +187,7 @@ forge-1.21.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6274438')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347446')
     }
   update_files:
     - ~
@@ -163,7 +199,7 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6274436'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347443'
     }
   update_files:
     - ~
@@ -175,7 +211,7 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6274436'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347443'
     }
   update_files:
     - ~
@@ -187,7 +223,7 @@ fabric-1.21.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6274436'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347443'
     }
   update_files:
     - ~
@@ -199,7 +235,7 @@ quilt-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6250879'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347440'
     }
   update_files:
     - ~
@@ -211,7 +247,7 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6250879'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347440'
     }
   update_files:
     - ~
@@ -223,7 +259,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6250877'
+    	implementation 'curse.maven:dynamic-fps-335493:6347438'
     }
   update_files:
     - ~
@@ -235,7 +271,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6250877'
+    	implementation 'curse.maven:dynamic-fps-335493:6347438'
     }
   update_files:
     - ~
@@ -263,7 +299,7 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6250875')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347435')
     }
   update_files:
     - ~
@@ -291,7 +327,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6250875')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347435')
     }
   update_files:
     - ~
@@ -303,7 +339,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6250872'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347433'
     }
   update_files:
     - ~
@@ -315,7 +351,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6250872'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347433'
     }
   update_files:
     - ~
@@ -327,7 +363,7 @@ quilt-1.20.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6250863'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347426'
     }
   update_files:
     - ~
@@ -339,7 +375,7 @@ quilt-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6250863'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347426'
     }
   update_files:
     - ~
@@ -351,7 +387,7 @@ neoforge-1.20.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6250860'
+    	implementation 'curse.maven:dynamic-fps-335493:6347424'
     }
   update_files:
     - ~
@@ -363,7 +399,303 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6250860'
+    	implementation 'curse.maven:dynamic-fps-335493:6347424'
+    }
+  update_files:
+    - ~
+forge-1.20.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347422')
+    }
+  update_files:
+    - ~
+forge-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347422')
+    }
+  update_files:
+    - ~
+fabric-1.20.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347420'
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347420'
+    }
+  update_files:
+    - ~
+quilt-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347414'
+    }
+  update_files:
+    - ~
+quilt-1.20.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347414'
+    }
+  update_files:
+    - ~
+quilt-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347414'
+    }
+  update_files:
+    - ~
+neoforge-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:dynamic-fps-335493:6347412'
+    }
+  update_files:
+    - ~
+neoforge-1.20.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:dynamic-fps-335493:6347412'
+    }
+  update_files:
+    - ~
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:dynamic-fps-335493:6347412'
+    }
+  update_files:
+    - ~
+forge-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347410')
+    }
+  update_files:
+    - ~
+forge-1.20.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347410')
+    }
+  update_files:
+    - ~
+forge-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347410')
+    }
+  update_files:
+    - ~
+fabric-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347408'
+    }
+  update_files:
+    - ~
+fabric-1.20.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347408'
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347408'
+    }
+  update_files:
+    - ~
+quilt-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347404'
+    }
+  update_files:
+    - ~
+quilt-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6347404'
     }
   update_files:
     - ~

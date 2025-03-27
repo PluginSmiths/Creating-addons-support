@@ -1,4 +1,28 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:cloth-config-348521:6351757'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:cloth-config-348521:6351756'
+    }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -372,42 +396,6 @@ forge-1.20.2:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:cloth-config-348521:5729120')
-    }
-  update_files:
-    - ~
-fabric-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:cloth-config-348521:5729119'
-    }
-  update_files:
-    - ~
-neoforge-1.20.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:cloth-config-348521:5729118'
-    }
-  update_files:
-    - ~
-neoforge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:cloth-config-348521:5729118'
     }
   update_files:
     - ~

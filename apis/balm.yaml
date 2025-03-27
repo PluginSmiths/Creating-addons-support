@@ -1,5 +1,5 @@
 ---
-neoforge-1.21.4:
+neoforge-1.21.5:
   gradle: |
     repositories {
         maven {
@@ -7,35 +7,43 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:balm-531761:6319707'
+    	implementation 'curse.maven:balm-531761:6351413'
     }
   update_files:
     - ~
-forge-1.21.4:
+fabric-1.21.5:
   gradle: |
     repositories {
         maven {
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
+    dependencies {
+    	modImplementation 'curse.maven:balm-531761:6351409'
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:balm-531761:6319703')
+    	implementation 'curse.maven:balm-531761:6338302'
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:balm-531761:6338302'
     }
   update_files:
     - ~
@@ -63,7 +71,7 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:balm-531761:6319699')
+    	implementation fg.deobf('curse.maven:balm-531761:6338301')
     }
   update_files:
     - ~
@@ -91,11 +99,39 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:balm-531761:6319699')
+    	implementation fg.deobf('curse.maven:balm-531761:6338301')
     }
   update_files:
     - ~
-neoforge-1.21:
+forge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:balm-531761:6338300')
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
   gradle: |
     repositories {
         maven {
@@ -103,19 +139,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:balm-531761:6319698'
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:balm-531761:6319698'
+    	implementation 'curse.maven:balm-531761:6338299'
     }
   update_files:
     - ~
@@ -143,7 +167,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:balm-531761:6319694')
+    	implementation fg.deobf('curse.maven:balm-531761:6338295')
     }
   update_files:
     - ~
@@ -171,43 +195,7 @@ forge-1.20:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:balm-531761:6319694')
-    }
-  update_files:
-    - ~
-fabric-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:balm-fabric-500525:6319697'
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:balm-fabric-500525:6319692'
-    }
-  update_files:
-    - ~
-fabric-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:balm-fabric-500525:6319692'
+    	implementation fg.deobf('curse.maven:balm-531761:6338295')
     }
   update_files:
     - ~
@@ -219,7 +207,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:balm-fabric-500525:6319688'
+    	modImplementation 'curse.maven:balm-fabric-500525:6338294'
     }
   update_files:
     - ~
@@ -231,7 +219,43 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:balm-fabric-500525:6319688'
+    	modImplementation 'curse.maven:balm-fabric-500525:6338294'
+    }
+  update_files:
+    - ~
+fabric-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:balm-fabric-500525:6338293'
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:balm-fabric-500525:6338292'
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:balm-fabric-500525:6338292'
     }
   update_files:
     - ~

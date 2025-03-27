@@ -1,0 +1,1 @@
+new Waypoint(${input$name}, ${input$X}, ${input$Y}, ${input$Z}, true, 0, 0, 0, Type.${field$type}, Origin.JourneyMap, ${input$dimension}).setRandomColor()

@@ -220,7 +220,7 @@ fabric-1.17.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -245,7 +245,7 @@ fabric-1.16.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -270,7 +270,7 @@ fabric-1.19.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -295,7 +295,7 @@ fabric-1.20.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -320,7 +320,7 @@ fabric-1.21:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -345,7 +345,7 @@ fabric-1.16.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -370,7 +370,7 @@ fabric-1.18.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -395,7 +395,32 @@ fabric-1.20.5:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -420,7 +445,7 @@ fabric-1.14.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -445,7 +470,7 @@ fabric-1.14.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -470,7 +495,7 @@ fabric-1.17:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -495,7 +520,7 @@ fabric-1.14.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -520,7 +545,7 @@ fabric-1.15:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -545,7 +570,7 @@ fabric-1.16:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -570,7 +595,7 @@ fabric-1.19.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -595,7 +620,7 @@ fabric-1.16.5:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -620,7 +645,7 @@ fabric-1.21.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -645,7 +670,7 @@ fabric-1.18.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -670,7 +695,7 @@ fabric-1.19.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -695,7 +720,7 @@ fabric-1.20.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -720,7 +745,7 @@ fabric-1.15.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -745,7 +770,7 @@ fabric-1.14:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -770,7 +795,7 @@ fabric-1.20.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -795,7 +820,7 @@ fabric-1.20:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -820,7 +845,7 @@ fabric-1.20.6:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -845,7 +870,7 @@ fabric-1.19.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -870,7 +895,7 @@ fabric-1.20.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -895,7 +920,7 @@ fabric-1.21.3:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -920,7 +945,7 @@ fabric-1.21.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -945,7 +970,7 @@ fabric-1.18:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -970,7 +995,7 @@ fabric-1.16.4:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -995,7 +1020,7 @@ fabric-1.14.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -1020,7 +1045,7 @@ fabric-1.16.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -1045,7 +1070,7 @@ fabric-1.19:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -1070,7 +1095,7 @@ fabric-1.15.1:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
@@ -1095,7 +1120,7 @@ fabric-1.21.2:
         runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
     }
     dependencies {
-    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6133024'
+    	modImplementation 'curse.maven:fabric-language-kotlin-308769:6327842'
     }
   update_files:
     - ~
