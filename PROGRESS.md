@@ -77,3 +77,5 @@
  - Apothic attributes: ![Progress](https://geps.dev/progress/100)
  - Scala: ![Progress](https://geps.dev/progress/100)
  - Groovy: ![Progress](https://geps.dev/progress/100)
+ - Gravity: ![Progress](https://geps.dev/progress/0)
+
