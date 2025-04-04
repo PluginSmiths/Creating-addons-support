@@ -1,5 +1,5 @@
 ---
-fabric-1.21.4:
+neoforge-1.21.5:
   gradle: |
     repositories {
         maven {
@@ -7,7 +7,50 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011965'
+    	implementation 'curse.maven:first-person-model-333287:6356599'
+    	implementation 'curse.maven:not-enough-animations-433760:6356599'
+    }
+  update_files:
+    - ~
+forge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356598')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356598')
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:first-person-model-333287:6356597'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356597'
     }
   update_files:
     - ~
@@ -19,7 +62,8 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011963'
+    	implementation 'curse.maven:first-person-model-333287:6356596'
+    	implementation 'curse.maven:not-enough-animations-433760:6356596'
     }
   update_files:
     - ~
@@ -47,11 +91,12 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011962')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356595')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356595')
     }
   update_files:
     - ~
-fabric-1.21.3:
+fabric-1.21.4:
   gradle: |
     repositories {
         maven {
@@ -59,7 +104,8 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011960'
+    	modImplementation 'curse.maven:first-person-model-333287:6356594'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356594'
     }
   update_files:
     - ~
@@ -71,7 +117,8 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011958'
+    	implementation 'curse.maven:first-person-model-333287:6356593'
+    	implementation 'curse.maven:not-enough-animations-433760:6356593'
     }
   update_files:
     - ~
@@ -99,11 +146,12 @@ forge-1.21.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011956')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356592')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356592')
     }
   update_files:
     - ~
-fabric-1.21:
+fabric-1.21.3:
   gradle: |
     repositories {
         maven {
@@ -111,31 +159,8 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011954'
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011954'
-    }
-  update_files:
-    - ~
-fabric-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011954'
+    	modImplementation 'curse.maven:first-person-model-333287:6356590'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356590'
     }
   update_files:
     - ~
@@ -147,7 +172,8 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011951'
+    	implementation 'curse.maven:first-person-model-333287:6356589'
+    	implementation 'curse.maven:not-enough-animations-433760:6356589'
     }
   update_files:
     - ~
@@ -159,19 +185,8 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011951'
-    }
-  update_files:
-    - ~
-neoforge-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011951'
+    	implementation 'curse.maven:first-person-model-333287:6356589'
+    	implementation 'curse.maven:not-enough-animations-433760:6356589'
     }
   update_files:
     - ~
@@ -199,7 +214,8 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356588')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356588')
     }
   update_files:
     - ~
@@ -227,39 +243,12 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356588')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356588')
     }
   update_files:
     - ~
-forge-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011950')
-    }
-  update_files:
-    - ~
-fabric-1.20.6:
+fabric-1.21:
   gradle: |
     repositories {
         maven {
@@ -267,7 +256,21 @@ fabric-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011949'
+    	modImplementation 'curse.maven:first-person-model-333287:6356587'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356587'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:first-person-model-333287:6356587'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356587'
     }
   update_files:
     - ~
@@ -279,7 +282,8 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011947'
+    	implementation 'curse.maven:first-person-model-333287:6356586'
+    	implementation 'curse.maven:not-enough-animations-433760:6356586'
     }
   update_files:
     - ~
@@ -307,11 +311,12 @@ forge-1.20.6:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011945')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356584')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356584')
     }
   update_files:
     - ~
-fabric-1.20.4:
+fabric-1.20.6:
   gradle: |
     repositories {
         maven {
@@ -319,7 +324,8 @@ fabric-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011944'
+    	modImplementation 'curse.maven:first-person-model-333287:6356583'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356583'
     }
   update_files:
     - ~
@@ -331,7 +337,8 @@ neoforge-1.20.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011938'
+    	implementation 'curse.maven:first-person-model-333287:6356582'
+    	implementation 'curse.maven:not-enough-animations-433760:6356582'
     }
   update_files:
     - ~
@@ -359,11 +366,12 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011937')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356581')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356581')
     }
   update_files:
     - ~
-fabric-1.20.2:
+fabric-1.20.4:
   gradle: |
     repositories {
         maven {
@@ -371,7 +379,8 @@ fabric-1.20.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011935'
+    	modImplementation 'curse.maven:first-person-model-333287:6356580'
+    	modImplementation 'curse.maven:not-enough-animations-433760:6356580'
     }
   update_files:
     - ~
@@ -383,7 +392,8 @@ neoforge-1.20.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:first-person-model-333287:6011933'
+    	implementation 'curse.maven:first-person-model-333287:6356579'
+    	implementation 'curse.maven:not-enough-animations-433760:6356579'
     }
   update_files:
     - ~
@@ -411,47 +421,8 @@ forge-1.20.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011932')
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:first-person-model-333287:6011930'
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:first-person-model-333287:6011928')
+    	implementation fg.deobf('curse.maven:first-person-model-333287:6356578')
+    	implementation fg.deobf('curse.maven:not-enough-animations-433760:6356578')
     }
   update_files:
     - ~

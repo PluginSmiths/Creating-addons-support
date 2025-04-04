@@ -2,18 +2,18 @@
 
 ---
 
-- Chunk Manager 2.0:
+- Requires Chunk Manager 2.0:
   - Balm
-- Trims Manager:
+- Requires Trims Manager:
   - Tough as nails
   - Blue skies
   - Twilight forest
   - Aether
   - Undergarden
-- Player poses:
+- Requires Player poses:
   - Balm
   - Citadel
-- Attributes:
+- Requires Attributes:
   - Caelus API
-- File Manager:
+- Requires File Manager:
   - Default options

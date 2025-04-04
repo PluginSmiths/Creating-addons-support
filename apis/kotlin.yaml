@@ -1149,6 +1149,31 @@ neoforge-1.21:
     }
   update_files:
     - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    dependencies {
+    	implementation 'curse.maven:kotlin-for-forge-351264:5978393'
+    }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -1275,6 +1300,47 @@ neoforge-1.21.2:
   update_files:
     - ~
 forge-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    plugins {
+        id "org.jetbrains.kotlin.jvm" version "2.1.10+"
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = java.toolchain.languageVersion.get()
+        }
+    }
+    dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.20-Beta2")
+        implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20-Beta2")
+        runtimeOnly("org.jetbrains.kotlin:kotlin-compiler:2.1.20-Beta2")
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:kotlin-for-forge-351264:5978393')
+    }
+  update_files:
+    - ~
+forge-1.21.5:
   gradle: |
     repositories {
         maven {

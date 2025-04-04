@@ -1,1 +1,0 @@
-world instanceof Level _l454 && WorldHelper.getBlockTemperature(_l454, ${input$block})

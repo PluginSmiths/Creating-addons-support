@@ -1,4 +1,16 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:sit-278717:5844512'
+    }
+  update_files:
+    - ~
 neoforge-1.21.4:
   gradle: |
     repositories {
@@ -452,6 +464,30 @@ forge-1.17.1:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:sit-278717:3398644')
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:sit-fabric-328163:6377985'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:sit-fabric-328163:6377985'
     }
   update_files:
     - ~
@@ -944,18 +980,6 @@ fabric-1.17.1:
     }
     dependencies {
     	modImplementation 'curse.maven:sit-fabric-328163:3434198'
-    }
-  update_files:
-    - ~
-fabric-1.17:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:sit-fabric-328163:3343912'
     }
   update_files:
     - ~

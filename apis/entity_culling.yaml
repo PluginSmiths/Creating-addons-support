@@ -1,5 +1,5 @@
 ---
-fabric-1.21.4:
+neoforge-1.21.5:
   gradle: |
     repositories {
         maven {
@@ -7,7 +7,59 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236209'
+    	implementation 'curse.maven:entityculling-448233:6355883'
+    }
+  update_files:
+    - ~
+forge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355882')
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:entityculling-448233:6355881'
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:entityculling-448233:6355880'
     }
   update_files:
     - ~
@@ -35,11 +87,11 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236208')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355879')
     }
   update_files:
     - ~
-neoforge-1.21.4:
+fabric-1.21.4:
   gradle: |
     repositories {
         maven {
@@ -47,11 +99,11 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236207'
+    	modImplementation 'curse.maven:entityculling-448233:6355878'
     }
   update_files:
     - ~
-fabric-1.21.3:
+neoforge-1.21.3:
   gradle: |
     repositories {
         maven {
@@ -59,7 +111,7 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236206'
+    	implementation 'curse.maven:entityculling-448233:6355877'
     }
   update_files:
     - ~
@@ -87,11 +139,11 @@ forge-1.21.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236205')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355876')
     }
   update_files:
     - ~
-neoforge-1.21.3:
+fabric-1.21.3:
   gradle: |
     repositories {
         maven {
@@ -99,31 +151,7 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236203'
-    }
-  update_files:
-    - ~
-fabric-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236202'
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236202'
+    	modImplementation 'curse.maven:entityculling-448233:6355875'
     }
   update_files:
     - ~
@@ -135,7 +163,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236200'
+    	implementation 'curse.maven:entityculling-448233:6355874'
     }
   update_files:
     - ~
@@ -147,7 +175,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236200'
+    	implementation 'curse.maven:entityculling-448233:6355874'
     }
   update_files:
     - ~
@@ -175,7 +203,7 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236197')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355873')
     }
   update_files:
     - ~
@@ -203,11 +231,11 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236197')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355873')
     }
   update_files:
     - ~
-fabric-1.20.6:
+fabric-1.21:
   gradle: |
     repositories {
         maven {
@@ -215,7 +243,19 @@ fabric-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236194'
+    	modImplementation 'curse.maven:entityculling-448233:6355872'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:entityculling-448233:6355872'
     }
   update_files:
     - ~
@@ -227,7 +267,7 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236193'
+    	implementation 'curse.maven:entityculling-448233:6355871'
     }
   update_files:
     - ~
@@ -255,11 +295,11 @@ forge-1.20.6:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236191')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355869')
     }
   update_files:
     - ~
-fabric-1.20.4:
+fabric-1.20.6:
   gradle: |
     repositories {
         maven {
@@ -267,7 +307,7 @@ fabric-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236190'
+    	modImplementation 'curse.maven:entityculling-448233:6355868'
     }
   update_files:
     - ~
@@ -279,7 +319,7 @@ neoforge-1.20.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236189'
+    	implementation 'curse.maven:entityculling-448233:6355867'
     }
   update_files:
     - ~
@@ -307,11 +347,11 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236188')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355866')
     }
   update_files:
     - ~
-fabric-1.20.2:
+fabric-1.20.4:
   gradle: |
     repositories {
         maven {
@@ -319,7 +359,7 @@ fabric-1.20.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236062'
+    	modImplementation 'curse.maven:entityculling-448233:6355865'
     }
   update_files:
     - ~
@@ -331,7 +371,7 @@ neoforge-1.20.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6236061'
+    	implementation 'curse.maven:entityculling-448233:6355864'
     }
   update_files:
     - ~
@@ -359,47 +399,7 @@ forge-1.20.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236060')
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6236057'
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6236056')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6355863')
     }
   update_files:
     - ~

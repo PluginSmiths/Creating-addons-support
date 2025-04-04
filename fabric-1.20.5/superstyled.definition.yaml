@@ -1,0 +1,13 @@
+templates:
+  - template: superstyled/border.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/superstyled/@NAMEBorder.java"
+    condition: border
+
+  - template: superstyled/highlighter.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/superstyled/@NAMEHighlighter.java"
+    condition: highlighter
+
+  - template: superstyled/tooltips.json.ftl
+    writer: json
+    name: "@RESROOT/assets/legendarytooltips/frame_definitions.json"
+    condition: tooltip

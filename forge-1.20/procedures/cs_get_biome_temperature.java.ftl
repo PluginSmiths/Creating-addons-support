@@ -1,1 +1,0 @@
-WorldHelper.getBlockTemperature(world, new Holder<>(${field$biome}))

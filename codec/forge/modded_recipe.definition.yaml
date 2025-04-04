@@ -1,0 +1,135 @@
+templates:
+  - template: modded_recipe/cutting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/cutting/@registryname.json"
+    condition: "recipe_type %= cutting"
+    
+  - template: modded_recipe/cooking.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/cooking/@registryname.json"
+    condition: "recipe_type %= cooking"
+
+  - template: modded_recipe/compacting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/compacting/@registryname.json"
+    condition: "recipe_type %= compacting"
+
+  - template: modded_recipe/crushing.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/crushing/@registryname.json"
+    condition: "recipe_type %= crushing"
+
+  - template: modded_recipe/deploying.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/deploying/@registryname.json"
+    condition: "recipe_type %= deploying"
+
+  - template: modded_recipe/emptying.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/emptying/@registryname.json"
+    condition: "recipe_type %= emptying"
+
+  - template: modded_recipe/filling.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/filling/@registryname.json"
+    condition: "recipe_type %= filling"
+
+  - template: modded_recipe/haunting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/haunting/@registryname.json"
+    condition: "recipe_type %= haunting"
+
+  - template: modded_recipe/item_application.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/item_application/@registryname.json"
+    condition: "recipe_type %= item_application"
+
+  - template: modded_recipe/milling.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/milling/@registryname.json"
+    condition: "recipe_type %= milling"
+
+  - template: modded_recipe/mixing.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/mixing/@registryname.json"
+    condition: "recipe_type %= mixing"
+
+  - template: modded_recipe/pressing.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/pressing/@registryname.json"
+    condition: "recipe_type %= pressing"
+
+  - template: modded_recipe/sandpaper_polishing.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/sandpaper_polishing/@registryname.json"
+    condition: "recipe_type %= sandpaper_polishing"
+
+  - template: modded_recipe/splashing.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/splashing/@registryname.json"
+    condition: "recipe_type %= splashing"
+
+  - template: modded_recipe/focusing.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/focusing/@registryname.json"
+    condition: "recipe_type %= focusing"
+
+  - template: modded_recipe/disenchanting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/disenchanting/@registryname.json"
+    condition: "recipe_type %= disenchanting"
+
+  - template: modded_recipe/fermentation.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/fermentation/@registryname.json"
+    condition: "recipe_type %= fermentation"
+
+  - template: modded_recipe/basin_fermenting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/basin_fermenting/@registryname.json"
+    condition: "recipe_type %= basin_fermenting"
+
+  - template: modded_recipe/alloying.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/alloying/@registryname.json"
+    condition: "recipe_type %= alloying"
+
+  - template: modded_recipe/casting_basin.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/casting_in_basin/@registryname.json"
+    condition: "recipe_type %= casting_basin"
+
+  - template: modded_recipe/casting_table.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/casting_in_table/@registryname.json"
+    condition: "recipe_type %= casting_table"
+
+  - template: modded_recipe/grinding.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/grinding/@registryname.json"
+    condition: "recipe_type %= grinding"
+
+  - template: modded_recipe/melting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/melting/@registryname.json"
+    condition: "recipe_type %= melting"
+
+  - template: modded_recipe/casting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/casting/@registryname.json"
+    condition: "recipe_type %= casting"
+
+  - template: modded_recipe/industrial_blasting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/industrial_blasting/@registryname.json"
+    condition: "recipe_type %= industrial_blasting"
+
+  - template: modded_recipe/industrial_distillation.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/distillation/@registryname.json"
+    condition: "recipe_type %= industrial_distillation"
+
+  - template: modded_recipe/woodcutting.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/woodcutting/@registryname.json"
+    condition: "recipe_type %= woodcutting"
