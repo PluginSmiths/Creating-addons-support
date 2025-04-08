@@ -1,1 +1,0 @@
-${input$value} instanceof RegistryObject _obj00 ? _obj00.get() : ${input$value}

@@ -1,4 +1,62 @@
 ---
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:biomes-o-plenty-220318:6384687'
+    	implementation 'curse.maven:terrablender-neoforge-940057:6384687'
+    	implementation 'curse.maven:glitchcore-955399:6384687'
+    }
+  update_files:
+    - ~
+fabric-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:biomes-o-plenty-220318:6384686'
+    	modImplementation 'curse.maven:terrablender-fabric-565956:6384686'
+    	modImplementation 'curse.maven:glitchcore-955399:6384686'
+    }
+  update_files:
+    - ~
+forge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6384685')
+    	implementation fg.deobf('curse.maven:terrablender-563928:6384685')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6384685')
+    }
+  update_files:
+    - ~
 fabric-1.20.1:
   gradle: |
     repositories {
@@ -40,64 +98,6 @@ forge-1.20.1:
     	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6364065')
     	implementation fg.deobf('curse.maven:terrablender-563928:6364065')
     	implementation fg.deobf('curse.maven:glitchcore-955399:6364065')
-    }
-  update_files:
-    - ~
-neoforge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:biomes-o-plenty-220318:6301773'
-    	implementation 'curse.maven:glitchcore-955399:6301773'
-    	implementation 'curse.maven:terrablender-neoforge-940057:6301773'
-    }
-  update_files:
-    - ~
-fabric-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:biomes-o-plenty-220318:6301772'
-    	modImplementation 'curse.maven:glitchcore-955399:6301772'
-    	modImplementation 'curse.maven:terrablender-fabric-565956:6301772'
-    }
-  update_files:
-    - ~
-forge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6301769')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6301769')
-    	implementation fg.deobf('curse.maven:terrablender-563928:6301769')
     }
   update_files:
     - ~

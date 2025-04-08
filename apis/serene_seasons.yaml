@@ -1,4 +1,59 @@
 ---
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:serene-seasons-291874:6394012'
+    	modImplementation 'curse.maven:glitchcore-955399:6394012'
+    }
+  update_files:
+    - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:serene-seasons-291874:6394011'
+    	implementation 'curse.maven:glitchcore-955399:6394011'
+    }
+  update_files:
+    - ~
+forge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    minecraft {
+        runs {
+            client {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            server {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+            data {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
+            }
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:serene-seasons-291874:6394010')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6394010')
+    }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -93,116 +148,6 @@ forge-1.20.1:
     dependencies {
     	implementation fg.deobf('curse.maven:serene-seasons-291874:6229152')
     	implementation fg.deobf('curse.maven:glitchcore-955399:6229152')
-    }
-  update_files:
-    - ~
-fabric-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:serene-seasons-291874:6184007'
-    	modImplementation 'curse.maven:glitchcore-955399:6184007'
-    }
-  update_files:
-    - ~
-neoforge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:serene-seasons-291874:6184006'
-    	implementation 'curse.maven:glitchcore-955399:6184006'
-    }
-  update_files:
-    - ~
-forge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:serene-seasons-291874:6184005')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6184005')
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:serene-seasons-291874:6182596'
-    	implementation 'curse.maven:glitchcore-955399:6182596'
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:serene-seasons-291874:6182595'
-    	modImplementation 'curse.maven:glitchcore-955399:6182595'
-    }
-  update_files:
-    - ~
-forge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:serene-seasons-291874:6182592')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6182592')
     }
   update_files:
     - ~

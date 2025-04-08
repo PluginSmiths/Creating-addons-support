@@ -11,3 +11,7 @@ templates:
     writer: json
     name: "@RESROOT/assets/legendarytooltips/frame_definitions.json"
     condition: tooltip
+
+  - template: superstyled/beam.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/superstyled/@NAMEBeam.java"
+    condition: beam

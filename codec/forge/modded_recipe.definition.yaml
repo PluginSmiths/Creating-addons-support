@@ -133,3 +133,8 @@ templates:
     writer: json
     name: "@MODDATAROOT/recipes/woodcutting/@registryname.json"
     condition: "recipe_type %= woodcutting"
+
+  - template: modded_recipe/purifying.json.ftl
+    writer: json
+    name: "@MODDATAROOT/recipes/@registryname.json"
+    condition: "recipe_type %= purifying"

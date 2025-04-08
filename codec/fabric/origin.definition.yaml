@@ -1,10 +1,13 @@
 templates:
-  - template: origins/origin_power.json.ftl
+  - template: origins/origin.json.ftl
     writer: json
     name: "@RESROOT/data/@modid/origins/@registryname.json"
+  - template: origins/origins.json.ftl
+    writer: json
+    name: "@RESROOT/data/origins/origin_layers/origin.json"
 
 localizationkeys:
   - key: origin.@modid.@registryname.name
-    mapto: text
+    mapto: originName
   - key: origin.@modid.@registryname.description
-    mapto: text
+    mapto: originDescription

@@ -1,16 +1,4 @@
 ---
-neoforge-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:jade-324717:6353729'
-    }
-  update_files:
-    - ~
 fabric-1.21.5:
   gradle: |
     repositories {
@@ -19,7 +7,7 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6353726'
+    	modImplementation 'curse.maven:jade-324717:6389824'
     }
   update_files:
     - ~
@@ -31,7 +19,19 @@ quilt-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6353726'
+    	modImplementation 'curse.maven:jade-324717:6389824'
+    }
+  update_files:
+    - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:jade-324717:6389812'
     }
   update_files:
     - ~
