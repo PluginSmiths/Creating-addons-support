@@ -1,0 +1,39 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "from",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "to",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#999960",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"from\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>",
+      "<value name=\"to\"><block type=\"math_number\"><field name=\"NUM\">10</field></block></value>",
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "from",
+      "to",
+      "block"
+    ],
+    "required_apis": [
+      "create"
+    ]
+  }
+}

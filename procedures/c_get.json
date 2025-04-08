@@ -1,0 +1,49 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Provider",
+          "Provider"
+        ],
+        [
+          "Impact",
+          "Impact"
+        ],
+        [
+          "Capacity",
+          "Capacity"
+        ],
+        [
+          "GeneratedRPM",
+          "GeneratedRPM"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "block"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "create"
+    ]
+  }
+}

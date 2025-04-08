@@ -1,0 +1,51 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "X",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Y",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Z",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "direction",
+      "check": "Direction"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"X\"><block type=\"coord_x\"></block></value>",
+      "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
+      "<value name=\"Z\"><block type=\"coord_z\"></block></value>",
+      "<value name=\"direction\"><block type=\"direction_unspecified\"></block></value>"
+    ],
+    "inputs": [
+      "X",
+      "Y",
+      "Z",
+      "direction"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
+    ],
+    "required_apis": [
+      "create"
+    ]
+  }
+}

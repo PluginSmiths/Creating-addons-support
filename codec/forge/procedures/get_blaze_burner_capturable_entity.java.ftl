@@ -1,0 +1,1 @@
+${input$entity}.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("create:blaze_burner_capturable")))

@@ -23,7 +23,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:legendary-tooltips-532127:6382180')
+    	implementation fg.deobf('curse.maven:legendary-tooltips-532127:6396885')
     }
   update_files:
     - ~
@@ -35,7 +35,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:legendary-tooltips-532127:6382176'
+    	implementation 'curse.maven:legendary-tooltips-532127:6396880'
     }
   update_files:
     - ~
@@ -187,34 +187,6 @@ forge-1.21:
     }
   update_files:
     - ~
-forge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:legendary-tooltips-532127:5365021')
-    }
-  update_files:
-    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -223,7 +195,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:6382175'
+    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:6396876'
     }
   update_files:
     - ~
@@ -400,19 +372,6 @@ fabric-1.19:
     dependencies {
     	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:3998293'
     	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3998293'
-    }
-  update_files:
-    - ~
-fabric-1.18.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:3964264'
-    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3964264'
     }
   update_files:
     - ~

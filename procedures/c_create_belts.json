@@ -1,0 +1,66 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "X",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Y",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Z",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "X2",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Y2",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Z2",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#999960",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"X\"><block type=\"coord_x\"></block></value>",
+      "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
+      "<value name=\"Z\"><block type=\"coord_z\"></block></value>",
+      "<value name=\"X2\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"Y2\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+      "<value name=\"Z2\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
+    ],
+    "inputs": [
+      "X",
+      "Y",
+      "Z",
+      "X2",
+      "Y2",
+      "Z2"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
+    ],
+    "required_apis": [
+      "create"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "speed",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"speed\"><block type=\"math_number\"><field name=\"NUM\">10</field></block></value>"
+    ],
+    "inputs": [
+      "speed"
+    ],
+    "required_apis": [
+      "create"
+    ]
+  }
+}

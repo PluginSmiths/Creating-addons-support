@@ -1,0 +1,49 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Impact",
+          "Impact"
+        ],
+        [
+          "Capacity",
+          "Capacity"
+        ]
+      ]
+    },
+    {
+      "type": "input_value",
+      "name": "number",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "block",
+      "check": "MCItemBlock"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#999960",
+  "mcreator": {
+    "toolbox_id": "create_support",
+    "toolbox_init": [
+      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>",
+      "<value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>"
+    ],
+    "inputs": [
+      "number",
+      "block"
+    ],
+    "fields": [
+      "name"
+    ],
+    "required_apis": [
+      "create"
+    ]
+  }
+}

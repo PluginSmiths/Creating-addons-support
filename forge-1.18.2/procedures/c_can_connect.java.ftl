@@ -1,0 +1,1 @@
+world instanceof Level _level && BeltConnectorItem.canConnect(_level, new BlockPos((int)${input$X},(int) ${input$Y},(int) ${input$Z}), new BlockPos((int)${input$X2},(int) ${input$Y2},(int) ${input$Z2})

@@ -1,0 +1,1 @@
+Double.valueOf(BeltHelper.getBeltVector(world.getBlockState(BlockPos.containing(${input$X}, ${input$Y}, ${input$Z}))))
