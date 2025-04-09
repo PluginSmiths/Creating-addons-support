@@ -1,122 +1,322 @@
 - aerial_combatant:
   readable_name: "Aerial Combatant"
-- air_from_potions:
-  readable_name: "Air From Potions"
+  description: "You deal substantially more damage while in Elytra flight."
 - aqua_affinity:
   readable_name: "Aqua Affinity"
+  description: "You may break blocks underwater as others do on land."
+- burn_in_daylight:
+  readable_name: "Burn In Daylight"
+  description: "You begin to burn in daylight if you are not invisible."
+- burning_wrath:
+  readable_name: "Burning Wrath"
+  description: "When on fire, you deal additional damage with your attacks."
+- carnivore:
+  readable_name: "Carnivore"
+  description: "Your diet is restricted to meat, you can't eat vegetables."
+- cat_vision:
+  readable_name: "Cat Vision"
+  description: "You can slightly see in the dark when not in water."
+- claustrophobia:
+  readable_name: "Claustrophobia"
+  description: "Being somewhere with a low ceiling for too long will weaken you and make you slower."
+- climbing:
+  readable_name: "Climbing"
+  description: "You are able to climb up any kind of wall, not just ladders."
+- elytra:
+  readable_name: "Elytra"
+  description: "You have Elytra wings without needing to equip any."
+- end_spawn:
+  readable_name: "End Spawn"
+  description: "Your journey begins in the End."
+- extra_reach:
+  readable_name: "Extra Reach"
+  description: "You can reach blocks and entities further away."
+- fall_immunity:
+  readable_name: "Fall Immunity"
+  description: "You never take fall damage, no matter from which height you fall."
+- fire_immunity:
+  readable_name: "Fire Immunity"
+  description: "You are immune to all types of fire damage."
+- fragile:
+  readable_name: "Fragile"
+  description: "You have 3 less hearts of health than humans."
+- fresh_air:
+  readable_name: "Fresh Air"
+  description: "When sleeping, your bed needs to be at an altitude of at least 86 blocks, so you can breathe fresh air."
+- hotblooded:
+  readable_name: "Hotblooded"
+  description: "Due to your hot body, venoms burn up, making you immune to poison and hunger status effects."
+- hunger_over_time:
+  readable_name: "Hunger Over Time"
+  description: "Being phantomized causes you to become hungry."
+- invisibility:
+  readable_name: "Invisibility"
+  description: "While phantomized, you are invisible."
+- launch_into_air:
+  readable_name: "Launch Into Air"
+  description: "Every 30 seconds, you are able to launch about 20 blocks up into the air."
+- lay_eggs:
+  readable_name: "Lay Eggs"
+  description: "Whenever you wake up in the morning, you will lay an egg."
+- light_armor:
+  readable_name: "Light Armor"
+  description: "You can not wear any heavy armor (armor with protection values higher than chainmail)."
+- like_air:
+  readable_name: "Like Air"
+  description: "Modifiers to your walking speed also apply while you're airborne."
+- like_water:
+  readable_name: "Like Water"
+  description: "When underwater, you do not sink to the ground unless you want to."
+- master_of_webs:
+  readable_name: "Master Of Webs"
+  description: "You navigate cobweb perfectly, and are able to climb in them. When you hit an enemy in melee, they get stuck in cobweb for a while. Non-arthropods stuck in cobweb will be sensed by you. You are able to craft cobweb from string."
+- more_exhaustion:
+  readable_name: "More Exhaustion"
+  description: "You exhaust much quicker than others, thus requiring you to eat more."
+- more_kinetic_damage:
+  readable_name: "More Kinetic Damage"
+  description: "You take more damage from falling and flying into blocks."
+- natural_armor:
+  readable_name: "Natural Armor"
+  description: "Even without wearing armor, your skin provides natural protection."
+- nether_spawn:
+  readable_name: "Nether Spawn"
+  description: "Your natural spawn will be in the Nether."
+- nine_lives:
+  readable_name: "Nine Lives"
+  description: "You have 1 less heart of health than humans."
+- no_shield:
+  readable_name: "No Shield"
+  description: "The way your hands are formed provide no way of holding a shield upright."
+- phantomize:
+  readable_name: "Phantomize"
+  description: "You can switch between human and phantom form at will, but only while you are saturated enough to sprint."
+- phasing:
+  readable_name: "Phasing"
+  description: "While phantomized, you can walk through solid material, except Obsidian."
+- pumpkin_hate:
+  readable_name: "Pumpkin Hate"
+  description: "You are afraid of pumpkins. For a good reason."
+- scare_creepers:
+  readable_name: "Scare Creepers"
+  description: "Creepers are scared of you and will only explode if you attack them first."
+- shulker_inventory:
+  readable_name: "Shulker Inventory"
+  description: "You have access to an additional 9 slots of inventory, which keep the items on death."
+- slow_falling:
+  readable_name: "Slow Falling"
+  description: "You fall as gently to the ground as a feather would, unless you sneak."
+- sprint_jump:
+  readable_name: "Sprint Jump"
+  description: "You are able to jump higher by jumping while sprinting."
+- strong_arms:
+  readable_name: "Strong Arms"
+  description: "You are strong enough to break natural stones without using a pickaxe."
+- swim_speed:
+  readable_name: "Swim Speed"
+  description: "Your underwater speed is increased."
+- tailwind:
+  readable_name: "Tailwind"
+  description: "You are a little bit quicker on foot than others."
+- throw_ender_pearl:
+  readable_name: "Throw Ender Pearl"
+  description: "Whenever you want, you may throw an ender pearl which deals no damage, allowing you to teleport."
+- translucent:
+  readable_name: "Translucent"
+  description: "Your skin is translucent."
+- vegetarian:
+  readable_name: "Vegetarian"
+  description: "You can't digest any meat."
+- velvet_paws:
+  readable_name: "Velvet Paws"
+  description: "Your footsteps don't cause any vibrations which could otherwise be picked up by nearby lifeforms."
+- water_breathing:
+  readable_name: "Water Breathing"
+  description: "You can breathe underwater, but not on land."
+- water_vision:
+  readable_name: "Water Vision"
+  description: "Your vision underwater is perfect."
+- water_vulnerability:
+  readable_name: "Water Vulnerability"
+  description: "You receive damage over time while in contact with water."
+- weak_arms:
+  readable_name: "Weak Arms"
+  description: "When not under the effect of a strength potion, you can only mine natural stone if there are at most 2 other natural stone blocks adjacent to it."
 - aquatic:
   readable_name: "Aquatic"
 - arcane_skin:
   readable_name: "Arcane Skin"
 - arthropod:
   readable_name: "Arthropod"
-- burn_in_daylight:
-  readable_name: "Burn In Daylight"
-- burning_wrath:
-  readable_name: "Burning Wrath"
-- carnivore:
-  readable_name: "Carnivore"
-- cat_vision:
-  readable_name: "Cat Vision"
-- claustrophobia:
-  readable_name: "Claustrophobia"
-- climbing:
-  readable_name: "Climbing"
 - conduit_power_on_land:
   readable_name: "Conduit Power On Land"
 - damage_from_potions:
   readable_name: "Damage From Potions"
 - damage_from_snowballs:
   readable_name: "Damage From Snowballs"
-- elytra:
-  readable_name: "Elytra"
-- end_spawn:
-  readable_name: "End Spawn"
 - ender_particles:
   readable_name: "Ender Particles"
-- extra_reach:
-  readable_name: "Extra Reach"
-- fall_immunity:
-  readable_name: "Fall Immunity"
-- fire_immunity:
-  readable_name: "Fire Immunity"
 - flame_particles:
   readable_name: "Flame Particles"
-- fragile:
-  readable_name: "Fragile"
-- fresh_air:
-  readable_name: "Fresh Air"
-- hotblooded:
-  readable_name: "Hotblooded"
-- hunger_over_time:
-  readable_name: "Hunger Over Time"
-- invisibility:
-  readable_name: "Invisibility"
-- launch_into_air:
-  readable_name: "Launch Into Air"
-- lay_eggs:
-  readable_name: "Lay Eggs"
-- light_armor:
-  readable_name: "Light Armor"
-- like_air:
-  readable_name: "Like Air"
-- like_water:
-  readable_name: "Like Water"
-- master_of_webs:
-  readable_name: "Master Of Webs"
-- more_exhaustion:
-  readable_name: "More Exhaustion"
-- more_kinetic_damage:
-  readable_name: "More Kinetic Damage"
-- natural_armor:
-  readable_name: "Natural Armor"
-- nether_spawn:
-  readable_name: "Nether Spawn"
-- nine_lives:
-  readable_name: "Nine Lives"
 - no_cobweb_slowdown:
   readable_name: "No Cobweb Slowdown"
-- no_shield:
-  readable_name: "No Shield"
-- phantomize:
-  readable_name: "Phantomize"
 - phantomize_overlay:
   readable_name: "Phantomize Overlay"
-- phasing:
-  readable_name: "Phasing"
-- pumpkin_hate:
-  readable_name: "Pumpkin Hate"
-- scare_creepers:
-  readable_name: "Scare Creepers"
-- shulker_inventory:
-  readable_name: "Shulker Inventory"
-- slow_falling:
-  readable_name: "Slow Falling"
-- sprint_jump:
-  readable_name: "Sprint Jump"
-- strong_arms:
-  readable_name: "Strong Arms"
 - strong_arms_break_speed:
   readable_name: "Strong Arms Break Speed"
-- swim_speed:
-  readable_name: "Swim Speed"
-- tailwind:
-  readable_name: "Tailwind"
-- throw_ender_pearl:
-  readable_name: "Throw Ender Pearl"
-- translucent:
-  readable_name: "Translucent"
-- vegetarian:
-  readable_name: "Vegetarian"
-- velvet_paws:
-  readable_name: "Velvet Paws"
-- water_breathing:
-  readable_name: "Water Breathing"
-- water_vision:
-  readable_name: "Water Vision"
-- water_vulnerability:
-  readable_name: "Water Vulnerability"
-- weak_arms:
-  readable_name: "Weak Arms"
-- webbing:
-  readable_name: "Webbing"
+- heat_protection:
+  readable_name: "Heat Protection"
+  description: "Protects certain origins from overheating"
+- ground_spikes:
+  readable_name: "Ground Spikes"
+  description: "Prevents certain origins from slipping on land"
+- heat_weakness:
+  readable_name: "Heat Weakness"
+  description: "You take damage over time in hot biomes"
+- greater_golems:
+  readable_name: "Greater Golems"
+  description: "Snow Golems you make are more powerful"
+- stronger_snowballs:
+  readable_name: "Stronger Snowballs"
+  description: "Snowballs you throw are packed with ice, and deal 1 damage!"
+- snow_trail:
+  readable_name: "Snow Trail"
+  description: "You leave a trail of snow."
+- frigid_strength:
+  readable_name: "Frigid Strength"
+  description: "Deal more damage in cold areas."
+- potion_action:
+  readable_name: "Potion Action"
+  description: "Get a random potion effect, based on the situation you are in."
+- pillager_aligned:
+  readable_name: "Pillager Aligned"
+  description: "Villagers don't like you, and pillagers like you!"
+- better_potions:
+  readable_name: "Better Potions"
+  description: "You consume potions better than most, Potions will last longer when you drink them."
+- lava_walk:
+  readable_name: "Lava Walk"
+  description: "You have the ability to walk on lava source blocks! You are also quicker while walking on lava, and slower on land."
+- rideable_creature:
+  readable_name: "Rideable Creature"
+  description: "Other players can ride you!"
+- summon_fangs:
+  readable_name: "Summon Fangs"
+  description: "You gain the ability to summon fangs!"
+- lower_totem_chance:
+  readable_name: "Lower Totem Chance"
+  description: "Totems have a 10% not to break on use"
+- guardian_spikes:
+  readable_name: "Guardian Spikes"
+  description: "Spikes that have a chance to damage attackers!"
+- guardian_ally:
+  readable_name: "Guardian Ally"
+  description: "Guardians don't attack you!"
+- monument_spawn:
+  readable_name: "Monument Spawn"
+  description: "You spawn at a Ocean Monument"
+- surface_weakness:
+  readable_name: "Surface Weakness"
+  description: "You are weakened while on land"
+- prismarine_skin:
+  readable_name: "Prismarine Skin"
+  description: "Your skin is made of prismarine, and you get natural armor from it."
+- slippery:
+  readable_name: "Slippery"
+  description: "While on land, everything feels slippery."
+- elder_magic:
+  readable_name: "Elder Magic"
+  description: "Summon a effect cloud of mining fatigue"
+- mining_fatigue_immune:
+  readable_name: "Mining Fatigue Immune"
+  description: "Immune to getting Mining Fatigue"
+- elder_spikes:
+  readable_name: "Elder Spikes"
+  description: "Stronger Spikes that have a chance to damage attackers!"
+- bouncy:
+  readable_name: "Bouncy"
+  description: "All blocks act like slime blocks"
+- split:
+  readable_name: "Split"
+  description: "Turn your food points into a small slime to defend you!"
+- small_weak:
+  readable_name: "Small Weak"
+  description: "When at less than 2 hearts, you deal almost no damage, but your attacks have stronger knockback!"
+- alpha_wolf:
+  readable_name: "Alpha Wolf"
+  description: "Wolves you tame are stronger!"
+- full_moon:
+  readable_name: "Full Moon"
+  description: "During a full moon, you get Faster, Stronger, and Healthier"
+- wolf_body:
+  readable_name: "Wolf Body"
+  description: "You have 2 less hearts of health than humans."
+- stinger:
+  readable_name: "Stinger"
+  description: "When you punch someone with your fist, you poison them for a few seconds"
+- flower_power:
+  readable_name: "Flower Power"
+  description: "When near multiple flowers, you gain regeneration."
+- queen_bee:
+  readable_name: "Queen Bee"
+  description: "When you collect honey, the bees won't try to attack you."
+- small_bug:
+  readable_name: "Small Bug"
+  description: "You have 2 less hearts of health than humans."
+- bee_wings:
+  readable_name: "Bee Wings"
+  description: "You can use your tiny bee wings to descend slower as an ability"
+- timid_creature:
+  readable_name: "Timid Creature"
+  description: "Your speed increases when you are around more than 3 other players."
+- better_berries:
+  readable_name: "Better Berries"
+  description: "Berries taste extra delicious to you!"
+- careful_gatherer:
+  readable_name: "Careful Gatherer"
+  description: "Sweet Berry Bushes don't hurt you at all."
+- item_collector:
+  readable_name: "Item Collector"
+  description: "You have a larger item pickup radius."
+- sly:
+  readable_name: "Sly"
+  description: "You are quicker."
+- small_fox:
+  readable_name: "Small Fox"
+  description: "You have 2 less hearts of health than humans."
+- wolf_howl:
+  readable_name: "Wolf Howl"
+  description: "You can use your active ability key to howl, and give speed and strength to nearby wolves and yourself."
+- wolf_pack:
+  readable_name: "Wolf Pack"
+  description: "When you are near at least 4 wolves, you gain speed and attack damage."
+- drowned_vision:
+  readable_name: "Drowned Vision"
+  description: "Your eyes are adapted to the water, and when outside of it, everything seems blue."
+- trident_expert:
+  readable_name: "Trident Expert"
+  description: "You're a master of the trident, dealing +2 damage when you throw it, and +2 melee damage with it. You can also use channeling with thunder, and use riptide without rain/water at the price of extra durability."
+- seas_storm:
+  readable_name: "Seas Storm"
+  description: "You can use channeling enchant on tridents irregardless of the weather."
+- zombie_hunger:
+  readable_name: "Zombie Hunger"
+  description: "Your constant hunger for flesh makes you exhaust quicker than a human."
+- undead:
+  readable_name: "Undead"
+  description: "You are undead, and burn in the daylight. You also take more damage from smite."
+- overheat:
+  readable_name: "Overheat"
+  description: "You have a temperature bar that slowly begins to fill in hot biomes, and cool in other biomes."
+- melting:
+  readable_name: "Melting"
+  description: "As your temperature bar fills up, you'll slowly begin to melt in hot biomes, losing health and speed."
+- warped_fungus_eater:
+  readable_name: "Warped Fungus Eater"
+  description: "You can eat warped fungus to recover some hunger, along with a small speed boost."
+- water_combatant:
+  readable_name: "Water Combatant"
+  description: "You deal more damage while in water."
+- dyeable:
+  readable_name: "Dyeable"
+  description: "You can click with dye to change the tint of yourself."
