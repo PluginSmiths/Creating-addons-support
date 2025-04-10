@@ -1,0 +1,1 @@
+${input$entity}.getCapability(OriginCapability.CAPABILITY).ifPresent(newCap -> newCap.setOrigin(${input$entity}, Origins.getByName(${field$origin})));

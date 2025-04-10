@@ -1,4 +1,112 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:ok-zoomer-354047:6404066'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404063'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404063'
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:ok-zoomer-354047:6404035'
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:ok-zoomer-354047:6404035'
+    }
+  update_files:
+    - ~
+fabric-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404031'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404031'
+    }
+  update_files:
+    - ~
+quilt-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404031'
+    }
+  update_files:
+    - ~
+quilt-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404031'
+    }
+  update_files:
+    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -7,7 +115,7 @@ neoforge-1.20.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:ok-zoomer-354047:6391345'
+    	implementation 'curse.maven:ok-zoomer-354047:6404009'
     }
   update_files:
     - ~
@@ -35,7 +143,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ok-zoomer-354047:6391345')
+    	implementation fg.deobf('curse.maven:ok-zoomer-354047:6404009')
     }
   update_files:
     - ~
@@ -47,7 +155,7 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6391343'
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404007'
     }
   update_files:
     - ~
@@ -59,115 +167,7 @@ quilt-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6391343'
-    }
-  update_files:
-    - ~
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:ok-zoomer-354047:6381142'
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:ok-zoomer-354047:6381142'
-    }
-  update_files:
-    - ~
-fabric-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6381139'
-    }
-  update_files:
-    - ~
-fabric-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6381139'
-    }
-  update_files:
-    - ~
-quilt-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6381139'
-    }
-  update_files:
-    - ~
-quilt-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6381139'
-    }
-  update_files:
-    - ~
-neoforge-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:ok-zoomer-354047:6346990'
-    }
-  update_files:
-    - ~
-fabric-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6346971'
-    }
-  update_files:
-    - ~
-quilt-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ok-zoomer-354047:6346971'
+    	modImplementation 'curse.maven:ok-zoomer-354047:6404007'
     }
   update_files:
     - ~

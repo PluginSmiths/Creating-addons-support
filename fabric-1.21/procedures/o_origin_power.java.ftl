@@ -1,0 +1,1 @@
+Origin.get(${input$entity}).getValue().hasPowerType(new PowerTypeReference<>(new Indetrifier("${field$power}")))

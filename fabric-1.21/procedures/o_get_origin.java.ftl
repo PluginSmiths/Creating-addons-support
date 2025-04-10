@@ -1,0 +1,1 @@
+Origin.get(${input$entity}).getValue().getIdentifier().equals("${field$origin}")

@@ -23,7 +23,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:legendary-tooltips-532127:6396885')
+    	implementation fg.deobf('curse.maven:legendary-tooltips-532127:6400662')
     }
   update_files:
     - ~
@@ -35,7 +35,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:legendary-tooltips-532127:6396880'
+    	implementation 'curse.maven:legendary-tooltips-532127:6400660'
     }
   update_files:
     - ~
@@ -195,7 +195,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:6396876'
+    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:6400658'
     }
   update_files:
     - ~
@@ -346,32 +346,6 @@ fabric-1.19.3:
     dependencies {
     	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:4335100'
     	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4335100'
-    }
-  update_files:
-    - ~
-fabric-1.19.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:3998293'
-    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3998293'
-    }
-  update_files:
-    - ~
-fabric-1.19:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:3998293'
-    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:3998293'
     }
   update_files:
     - ~
