@@ -1,0 +1,1 @@
+${input$mod}.getCurrentState()==ModLoadingStage.${field$state}

@@ -327,6 +327,18 @@ forge-1.16.4:
     }
   update_files:
     - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:female-gender-456319:6408629'
+    }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {
@@ -480,18 +492,6 @@ fabric-1.19.2:
     }
     dependencies {
     	modImplementation 'curse.maven:female-gender-456319:4023966'
-    }
-  update_files:
-    - ~
-fabric-1.19:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:female-gender-456319:3853479'
     }
   update_files:
     - ~

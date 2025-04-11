@@ -1,0 +1,32 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "mod_iterator",
+      "check": "Mod"
+    },
+    {
+      "type": "input_statement",
+      "name": "do"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#432e54",
+  "mcreator": {
+    "toolbox_id": "mod_cycle",
+    "toolbox_init": [
+      "<value name=\"mod_iterator\"><block type=\"mod_iterator\"></block></value>",
+    ],
+    "inputs": [
+      "mod_iterator"
+    ],
+    "statements": [
+      {
+        "name": "do",
+        "disable_local_variables": false
+      }
+    ]
+  }
+}

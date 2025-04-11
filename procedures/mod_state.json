@@ -1,0 +1,75 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "mod",
+      "check": "Mod"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "state",
+      "options": [
+        [
+          "COMMON_SETUP",
+          "COMMON_SETUP"
+        ],
+        [
+          "COMPLETE",
+          "COMPLETE"
+        ],
+        [
+          "CONSTRUCT",
+          "CONSTRUCT"
+        ],
+        [
+          "CREATE_REGISTRIES",
+          "CREATE_REGISTRIES"
+        ],
+        [
+          "DONE",
+          "DONE"
+        ],
+        [
+          "ENQUEUE_IMC",
+          "ENQUEUE_IMC"
+        ],
+        [
+          "ERROR",
+          "ERROR"
+        ],
+        [
+          "LOAD_REGISTRIES",
+          "LOAD_REGISTRIES"
+        ],
+        [
+          "PROCESS_IMC",
+          "PROCESS_IMC"
+        ],
+        [
+          "SIDED_SETUP",
+          "SIDED_SETUP"
+        ],
+        [
+          "VALIDATE",
+          "VALIDATE"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "mod_cycle",
+    "toolbox_init": [
+      "<value name=\"mod\"><block type=\"mcitem_allblocks\"><field name=\"value\"></field></block></value>",
+      "<value name=\"mod\"><block type=\"variables_get_mod\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "mod"
+    ],
+    "fields": [
+      "state"
+    ]
+  }
+}
