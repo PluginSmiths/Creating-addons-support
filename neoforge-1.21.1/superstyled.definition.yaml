@@ -3,10 +3,6 @@ templates:
     name: "@SRCROOT/@BASEPACKAGEPATH/superstyled/@NAMEBorder.java"
     condition: border
 
-  - template: superstyled/highlighter.java.ftl
-    name: "@SRCROOT/@BASEPACKAGEPATH/superstyled/@NAMEHighlighter.java"
-    condition: highlighter
-
   - template: superstyled/tooltips.json.ftl
     writer: json
     name: "@RESROOT/assets/legendarytooltips/frame_definitions.json"
@@ -15,3 +11,7 @@ templates:
   - template: superstyled/beam.java.ftl
     name: "@SRCROOT/@BASEPACKAGEPATH/superstyled/@NAMEBeam.java"
     condition: beam
+
+  - template: superstyled/name.properties.ftl
+    name: "@RESROOT/assets/minecraft/optifine/cit/@NAME.properties"
+    condition: named

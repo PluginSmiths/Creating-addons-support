@@ -2,40 +2,39 @@
 
 package ${package}.superstyled;
 
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.Event;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
-import com.electronwill.nightconfig.core.file.CommentedFileConfig;
-import java.io.File;
-import com.electronwill.nightconfig.core.Config;
+import java.io.IOException;
+import java.nio.file.*;
+import java.util.List;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public class ${name}Border {
-	@SubscribeEvent
-	public static void init(FMLCommonSetupEvent event) {
-		CommentedFileConfig config = CommentedFileConfig.builder(new File(FMLPaths.GAMEDIR.get().toString() + "/config/itemborders.toml")).autoreload().autosave().build();
-        config.load();
+public class ${name}Border implements ModInitializer {
 
-        Config borders = config.get("client.options.manual_borders");
+    @Override
+    public void onInitialize() {
+        Path path = FabricLoader.getInstance().getGameDir().resolve("config/itemborders.toml");
+        String color = String.format("#%06X", ${data.border_color.getRGB()} & 0xFFFFFF);
+        List<String> items = List.of(
+            <#list data.items as item>"${mappedMCItemToRegistryName(item, false)}"<#if item?has_next>, </#if></#list>
+        );
 
-        String color = "${data.border_color.getRGB()}";
-        List<String> newItems = List.of(<#list data.items as item>"${mappedMCItemToRegistryName(item, false)}"<#if item?has_next>,</#if></#list>);
 
-        List<String> existingItems = borders.contains(color)
-                ? new ArrayList<>(borders.get(color))
-                : new ArrayList<>();
-
-        for (String item : newItems) {
-            if (!existingItems.contains(item)) {
-                existingItems.add(item);
+        if(Files.exists(path)) {
+            try {
+                String content = new String(Files.readAllBytes(path));
+                String replace = "";
+                for (String item : items) {
+                    replace += item + "=" + color + ", ";
                 }
+                if(content.split("color_overrides = [", 1)[1].charAt(0) != ']') {
+                    replace.substring(0, replace.length() - 2);
+                }
+                content = content.replaceFirst("color_overrides = [", "color_overrides = [" + replace);
+                Files.write(path, content.getBytes());
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-        borders.set(color, existingItems);
-
-        config.save();
-        config.close();
-	}
+        }
+    }
 }

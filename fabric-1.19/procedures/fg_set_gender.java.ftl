@@ -1,1 +1,0 @@
-WildfireAPI.getPlayerById((${input$entity}.getUUID()).updateGender(Gender.${field$gender});

@@ -1,1 +1,0 @@
-${input$entity} instanceof BalmPlayer _pl009 ? _pl009.setForcedPose(Pose.${field$pose}) : null;
