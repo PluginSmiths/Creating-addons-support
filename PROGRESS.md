@@ -33,7 +33,7 @@
  - Tips: ![Progress](https://geps.dev/progress/100)
  - Patchouli: ![Progress](https://geps.dev/progress/0)
  - Origins: ![Progress](https://geps.dev/progress/100)
- - Item Highlighter: ![Progress](https://geps.dev/progress/0)
+ - Item Highlighter: ![Progress](https://geps.dev/progress/100)
  - Legendary Tooltips: ![Progress](https://geps.dev/progress/100)
  - Item Borders: ![Progress](https://geps.dev/progress/100)
  - Equipment Compare: ![Progress](https://geps.dev/progress/100)
