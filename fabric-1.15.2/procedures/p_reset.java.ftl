@@ -1,1 +1,1 @@
-{ScaleData var = new CombinedScaleData(ScaleTypes.${field$scale}, ${input$entity}, null).resetScale();}
+{ScaleData var = new CombinedScaleData(ScaleTypes.${field$scale}, ${input$entity}, () -> new ScaleData[]{ScaleTypes.${field$scale}.getScaleData(${input$entity})}).resetScale();}
