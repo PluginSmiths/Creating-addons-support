@@ -23,6 +23,11 @@
       "type": "input_value",
       "name": "entity",
       "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "number",
+      "check": "Number"
     }
   ],
   "inputsInline": true,
@@ -30,12 +35,14 @@
   "nextStatement": null,
   "colour": "#608a99",
   "mcreator": {
-    "toolbox_id": "pehkui_support",
+    "toolbox_id": "blockdata",
     "toolbox_init": [
-      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
+      "<value name=\"number\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>"
     ],
     "inputs": [
-      "entity"
+      "entity",
+      "number"
     ],
     "fields": [
       "name",
