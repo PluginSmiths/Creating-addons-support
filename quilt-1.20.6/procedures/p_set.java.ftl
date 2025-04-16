@@ -1,1 +1,1 @@
-new CombinedScaleData(ScaleTypes.${field$scale}, ${input$entity}, null).set${field$name}(${field$number}F);
+new CombinedScaleData(ScaleTypes.${field$scale}, ${input$entity}, null).set${field$name}(${input$number}F);
