@@ -1,4 +1,28 @@
 ---
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415804'
+    }
+  update_files:
+    - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:dynamic-fps-335493:6415802'
+    }
+  update_files:
+    - ~
 forge-1.21.5:
   gradle: |
     repositories {
@@ -23,31 +47,7 @@ forge-1.21.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6362429')
-    }
-  update_files:
-    - ~
-neoforge-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6351246'
-    }
-  update_files:
-    - ~
-quilt-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347468'
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415800')
     }
   update_files:
     - ~
@@ -59,7 +59,7 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347454'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415798'
     }
   update_files:
     - ~
@@ -71,7 +71,7 @@ quilt-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347450'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415795'
     }
   update_files:
     - ~
@@ -83,7 +83,7 @@ quilt-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347450'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415795'
     }
   update_files:
     - ~
@@ -95,7 +95,7 @@ quilt-1.21.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347450'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415795'
     }
   update_files:
     - ~
@@ -107,7 +107,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347448'
+    	implementation 'curse.maven:dynamic-fps-335493:6415793'
     }
   update_files:
     - ~
@@ -119,7 +119,7 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347448'
+    	implementation 'curse.maven:dynamic-fps-335493:6415793'
     }
   update_files:
     - ~
@@ -131,7 +131,7 @@ neoforge-1.21.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347448'
+    	implementation 'curse.maven:dynamic-fps-335493:6415793'
     }
   update_files:
     - ~
@@ -159,7 +159,7 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347446')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415791')
     }
   update_files:
     - ~
@@ -187,7 +187,7 @@ forge-1.21.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347446')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415791')
     }
   update_files:
     - ~
@@ -215,7 +215,7 @@ forge-1.21.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347446')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415791')
     }
   update_files:
     - ~
@@ -227,7 +227,7 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347443'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415789'
     }
   update_files:
     - ~
@@ -239,7 +239,7 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347443'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415789'
     }
   update_files:
     - ~
@@ -251,7 +251,7 @@ fabric-1.21.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347443'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415789'
     }
   update_files:
     - ~
@@ -263,7 +263,7 @@ quilt-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347440'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415787'
     }
   update_files:
     - ~
@@ -275,7 +275,7 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347440'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415787'
     }
   update_files:
     - ~
@@ -287,7 +287,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347438'
+    	implementation 'curse.maven:dynamic-fps-335493:6415785'
     }
   update_files:
     - ~
@@ -299,7 +299,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347438'
+    	implementation 'curse.maven:dynamic-fps-335493:6415785'
     }
   update_files:
     - ~
@@ -327,7 +327,7 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347435')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415783')
     }
   update_files:
     - ~
@@ -355,7 +355,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347435')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415783')
     }
   update_files:
     - ~
@@ -367,7 +367,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347433'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415781'
     }
   update_files:
     - ~
@@ -379,7 +379,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347433'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415781'
     }
   update_files:
     - ~
@@ -391,7 +391,7 @@ quilt-1.20.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347426'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415777'
     }
   update_files:
     - ~
@@ -403,7 +403,7 @@ quilt-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347426'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415777'
     }
   update_files:
     - ~
@@ -415,7 +415,7 @@ neoforge-1.20.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347424'
+    	implementation 'curse.maven:dynamic-fps-335493:6415775'
     }
   update_files:
     - ~
@@ -427,7 +427,7 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347424'
+    	implementation 'curse.maven:dynamic-fps-335493:6415775'
     }
   update_files:
     - ~
@@ -455,7 +455,7 @@ forge-1.20.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347422')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415772')
     }
   update_files:
     - ~
@@ -483,7 +483,7 @@ forge-1.20.6:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347422')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415772')
     }
   update_files:
     - ~
@@ -495,7 +495,7 @@ fabric-1.20.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347420'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415770'
     }
   update_files:
     - ~
@@ -507,7 +507,7 @@ fabric-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347420'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415770'
     }
   update_files:
     - ~
@@ -519,7 +519,7 @@ quilt-1.20.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347414'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415768'
     }
   update_files:
     - ~
@@ -531,7 +531,7 @@ quilt-1.20.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347414'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415768'
     }
   update_files:
     - ~
@@ -543,7 +543,7 @@ quilt-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347414'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415768'
     }
   update_files:
     - ~
@@ -555,7 +555,7 @@ neoforge-1.20.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347412'
+    	implementation 'curse.maven:dynamic-fps-335493:6415766'
     }
   update_files:
     - ~
@@ -567,7 +567,7 @@ neoforge-1.20.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347412'
+    	implementation 'curse.maven:dynamic-fps-335493:6415766'
     }
   update_files:
     - ~
@@ -579,7 +579,7 @@ neoforge-1.20.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamic-fps-335493:6347412'
+    	implementation 'curse.maven:dynamic-fps-335493:6415766'
     }
   update_files:
     - ~
@@ -607,7 +607,7 @@ forge-1.20.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347410')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415763')
     }
   update_files:
     - ~
@@ -635,7 +635,7 @@ forge-1.20.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347410')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415763')
     }
   update_files:
     - ~
@@ -663,7 +663,7 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6347410')
+    	implementation fg.deobf('curse.maven:dynamic-fps-335493:6415763')
     }
   update_files:
     - ~
@@ -675,7 +675,7 @@ fabric-1.20.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347408'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415761'
     }
   update_files:
     - ~
@@ -687,7 +687,7 @@ fabric-1.20.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347408'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415761'
     }
   update_files:
     - ~
@@ -699,7 +699,7 @@ fabric-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:dynamic-fps-335493:6347408'
+    	modImplementation 'curse.maven:dynamic-fps-335493:6415761'
     }
   update_files:
     - ~

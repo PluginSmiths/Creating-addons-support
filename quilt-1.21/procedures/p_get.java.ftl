@@ -1,0 +1,1 @@
+new ScaleData(ScaleTypes.${field$scale}, ${input$entity}).get${field$name}()

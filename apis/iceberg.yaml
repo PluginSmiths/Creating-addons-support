@@ -23,7 +23,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:iceberg-520110:6379434')
+    	implementation fg.deobf('curse.maven:iceberg-520110:6423866')
     }
   update_files:
     - ~
@@ -35,7 +35,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:iceberg-520110:6379432'
+    	implementation 'curse.maven:iceberg-520110:6423863'
     }
   update_files:
     - ~
@@ -159,18 +159,6 @@ forge-1.20.1:
     }
   update_files:
     - ~
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:iceberg-520110:5625109'
-    }
-  update_files:
-    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -179,7 +167,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:iceberg-fabric-539382:6379428'
+    	modImplementation 'curse.maven:iceberg-fabric-539382:6423860'
     }
   update_files:
     - ~
@@ -264,30 +252,6 @@ fabric-1.20.4:
     }
     dependencies {
     	modImplementation 'curse.maven:iceberg-fabric-539382:4976734'
-    }
-  update_files:
-    - ~
-fabric-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:iceberg-fabric-539382:4953519'
-    }
-  update_files:
-    - ~
-quilt-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:iceberg-fabric-539382:4953519'
     }
   update_files:
     - ~

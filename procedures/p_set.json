@@ -1,0 +1,48 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Scale",
+          "Scale"
+        ],
+        [
+          "BaseScale",
+          "BaseScale"
+        ]
+      ]
+    },
+    {
+      "type": "field_data_list_selector",
+      "name": "scale",
+      "datalist": "scales"
+    },
+    {
+      "type": "input_value",
+      "name": "entity",
+      "check": "Entity"
+    }
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#608a99",
+  "mcreator": {
+    "toolbox_id": "pehkui_support",
+    "toolbox_init": [
+      "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
+    ],
+    "inputs": [
+      "entity"
+    ],
+    "fields": [
+      "name",
+      "scale"
+    ],
+    "required_apis": [
+      "pehkui"
+    ]
+  }
+}
