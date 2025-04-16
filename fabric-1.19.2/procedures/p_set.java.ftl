@@ -1,1 +1,1 @@
-new ScaleData(ScaleTypes.${field$scale}, ${input$entity}).set${field$name}(${field$number}F)
+new ScaleData(ScaleTypes.${field$scale}, ${input$entity}).set${field$name}(${field$number}F);

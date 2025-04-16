@@ -1,0 +1,1 @@
+{ScaleData var = new ScaleData(ScaleTypes.${field$scale}, ${input$entity}).resetScale();}
