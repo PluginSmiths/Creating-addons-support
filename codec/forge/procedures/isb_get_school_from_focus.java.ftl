@@ -1,1 +1,0 @@
-SchoolRegistry.getSchoolFromFocus(${input$item})
