@@ -1,5 +1,12 @@
 There's a step by step instruction about how to make your addon for CAS or add mod to the project's open source.
 
+* Add CAS dependency to your `plugin.json`
+* 
+  ```json
+  "dependencies" {
+    "cas"
+  }
+  ```
 * Add your mod to the `PROGRESS.md` file
 * Add the mod to the `mods` datalist and it's mappings.
 * If your mod has procedure blocks then select the category of the mod (see [Mod Selection Criteria](https://github.com/PluginSmiths/Creating-addons-support/wiki/Introduction#mod-selection-criteria)) and create new category for the blocks.
