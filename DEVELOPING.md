@@ -1,7 +1,7 @@
 There's a step by step instruction about how to make your addon for CAS or add mod to the project's open source.
 
 * Add CAS dependency to your `plugin.json`
-* 
+
   ```json
   "dependencies" {
     "cas"
