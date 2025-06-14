@@ -1,4 +1,28 @@
 ---
+quilt-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-utilities-601932:4816003'
+    }
+  update_files:
+    - ~
+quilt-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-utilities-601932:4816003'
+    }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -23,7 +47,7 @@ forge-1.20:
     }
   update_files:
     - ~
-fabric-1.19.2:
+fabric-1.20.1:
   gradle: |
     repositories {
         maven {
@@ -31,11 +55,11 @@ fabric-1.19.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:elytra-utilities-fabric-601996:4815904'
+    	modImplementation 'curse.maven:elytra-utilities-601932:4815999'
     }
   update_files:
     - ~
-fabric-1.19.1:
+fabric-1.20:
   gradle: |
     repositories {
         maven {
@@ -43,11 +67,11 @@ fabric-1.19.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:elytra-utilities-fabric-601996:4815904'
+    	modImplementation 'curse.maven:elytra-utilities-601932:4815999'
     }
   update_files:
     - ~
-fabric-1.19:
+quilt-1.19.3:
   gradle: |
     repositories {
         maven {
@@ -55,11 +79,11 @@ fabric-1.19:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:elytra-utilities-fabric-601996:4815904'
+    	modImplementation 'curse.maven:elytra-utilities-601932:4815966'
     }
   update_files:
     - ~
-fabric-1.18.2:
+quilt-1.19.4:
   gradle: |
     repositories {
         maven {
@@ -67,11 +91,11 @@ fabric-1.18.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:elytra-utilities-fabric-601996:4087937'
+    	modImplementation 'curse.maven:elytra-utilities-601932:4815966'
     }
   update_files:
     - ~
-fabric-1.16.5:
+forge-1.19.3:
   gradle: |
     repositories {
         maven {
@@ -79,7 +103,103 @@ fabric-1.16.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:elytra-utilities-fabric-601996:3723096'
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
+    }
+  update_files:
+    - ~
+forge-1.19.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:4815964')
+    }
+  update_files:
+    - ~
+fabric-1.19.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-utilities-601932:4815962'
+    }
+  update_files:
+    - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-utilities-601932:4815962'
+    }
+  update_files:
+    - ~
+forge-1.19.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+  update_files:
+    - ~
+forge-1.19.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+  update_files:
+    - ~
+forge-1.19:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:4815906')
+    }
+  update_files:
+    - ~
+forge-1.18.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:4087934')
+    }
+  update_files:
+    - ~
+forge-1.16.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:elytra-utilities-601932:3723094')
     }
   update_files:
     - ~

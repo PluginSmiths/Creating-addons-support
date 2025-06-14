@@ -107,32 +107,6 @@ forge-1.20.1:
     }
   update_files:
     - ~
-neoforge-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:tips-306549:5166152'
-    	implementation 'curse.maven:bookshelf-228525:5166152'
-    }
-  update_files:
-    - ~
-forge-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:tips-306549:5166151')
-    	implementation fg.deobf('curse.maven:bookshelf-228525:5166151')
-    }
-  update_files:
-    - ~
 fabric-1.20.4:
   gradle: |
     repositories {

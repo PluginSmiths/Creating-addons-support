@@ -305,4 +305,32 @@ fabric-1.16.4:
     }
   update_files:
     - ~
+fabric-1.16.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-slot-fabric-397903:3030857'
+    	modImplementation 'curse.maven:caelus-fabric-397876:3030857'
+    	modImplementation 'curse.maven:curios-fabric-394941:3030857'
+    }
+  update_files:
+    - ~
+fabric-1.16.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-slot-fabric-397903:3016586'
+    	modImplementation 'curse.maven:caelus-fabric-397876:3016586'
+    	modImplementation 'curse.maven:curios-fabric-394941:3016586'
+    }
+  update_files:
+    - ~
 name: "Elytra Slot"

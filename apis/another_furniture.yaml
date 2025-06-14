@@ -95,16 +95,4 @@ forge-1.18.2:
     }
   update_files:
     - ~
-forge-1.19:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:another-furniture-610492:3901785')
-    }
-  update_files:
-    - ~
 name: "Another Furniture"

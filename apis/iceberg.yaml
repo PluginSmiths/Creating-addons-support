@@ -59,18 +59,6 @@ forge-1.21.3:
     }
   update_files:
     - ~
-neoforge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:iceberg-520110:5991534'
-    }
-  update_files:
-    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -116,18 +104,6 @@ fabric-1.21.4:
     }
     dependencies {
     	modImplementation 'curse.maven:iceberg-fabric-539382:6186847'
-    }
-  update_files:
-    - ~
-fabric-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:iceberg-fabric-539382:5991532'
     }
   update_files:
     - ~

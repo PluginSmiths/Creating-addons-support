@@ -95,18 +95,6 @@ neoforge-1.20.4:
     }
   update_files:
     - ~
-neoforge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:ferritecore-429235:4828512'
-    }
-  update_files:
-    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {

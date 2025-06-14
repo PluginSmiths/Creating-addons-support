@@ -47,6 +47,54 @@ quilt-1.21.4:
     }
   update_files:
     - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5905881'
+    }
+  update_files:
+    - ~
+fabric-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5905881'
+    }
+  update_files:
+    - ~
+quilt-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5905881'
+    }
+  update_files:
+    - ~
+quilt-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5905881'
+    }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -143,6 +191,78 @@ quilt-1.20.6:
     }
   update_files:
     - ~
+fabric-1.20.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5313037'
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5313037'
+    }
+  update_files:
+    - ~
+quilt-1.20.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5313037'
+    }
+  update_files:
+    - ~
+quilt-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:5313037'
+    }
+  update_files:
+    - ~
+fabric-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4761991'
+    }
+  update_files:
+    - ~
+quilt-1.20.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4761991'
+    }
+  update_files:
+    - ~
 fabric-1.19.2:
   gradle: |
     repositories {
@@ -176,6 +296,66 @@ fabric-1.20:
     }
     dependencies {
     	modImplementation 'curse.maven:fpsdisplay-440228:4653229'
+    }
+  update_files:
+    - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653225'
+    }
+  update_files:
+    - ~
+fabric-1.19.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653224'
+    }
+  update_files:
+    - ~
+fabric-1.18.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653220'
+    }
+  update_files:
+    - ~
+fabric-1.17.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653217'
+    }
+  update_files:
+    - ~
+fabric-1.17:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653217'
     }
   update_files:
     - ~
@@ -248,6 +428,42 @@ fabric-1.16.2:
     }
     dependencies {
     	modImplementation 'curse.maven:fpsdisplay-440228:4653216'
+    }
+  update_files:
+    - ~
+fabric-1.15:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653214'
+    }
+  update_files:
+    - ~
+fabric-1.15.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653214'
+    }
+  update_files:
+    - ~
+fabric-1.15.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fpsdisplay-440228:4653214'
     }
   update_files:
     - ~

@@ -203,18 +203,6 @@ fabric-1.21.3:
     }
   update_files:
     - ~
-fabric-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:female-gender-456319:5935087'
-    }
-  update_files:
-    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -236,18 +224,6 @@ fabric-1.21.1:
     }
     dependencies {
     	modImplementation 'curse.maven:female-gender-456319:5478368'
-    }
-  update_files:
-    - ~
-fabric-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:female-gender-456319:5357613'
     }
   update_files:
     - ~
@@ -296,30 +272,6 @@ fabric-1.20:
     }
     dependencies {
     	modImplementation 'curse.maven:female-gender-456319:4600149'
-    }
-  update_files:
-    - ~
-fabric-1.19.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:female-gender-456319:4552937'
-    }
-  update_files:
-    - ~
-fabric-1.19.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:female-gender-456319:4417474'
     }
   update_files:
     - ~

@@ -1,4 +1,28 @@
 ---
+quilt-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:diet-443570:4813906'
+    }
+  update_files:
+    - ~
+quilt-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:diet-443570:4813906'
+    }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -44,6 +68,42 @@ fabric-1.20:
     }
     dependencies {
     	modImplementation 'curse.maven:diet-443570:4813902'
+    }
+  update_files:
+    - ~
+quilt-1.19.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:diet-443570:4813892'
+    }
+  update_files:
+    - ~
+quilt-1.19.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:diet-443570:4813892'
+    }
+  update_files:
+    - ~
+quilt-1.19:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:diet-443570:4813892'
     }
   update_files:
     - ~
