@@ -1,16 +1,4 @@
 ---
-forge-1.16.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:cold-sweat-506194:6634584')
-    }
-  update_files:
-    - ~
 forge-1.18.2:
   gradle: |
     repositories {
@@ -55,7 +43,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:cold-sweat-506194:6634558'
+    	implementation 'curse.maven:cold-sweat-506194:6450268'
     }
   update_files:
     - ~

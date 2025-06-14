@@ -59,18 +59,6 @@ forge-1.21.3:
     }
   update_files:
     - ~
-neoforge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:equipment-compare-502561:5991591'
-    }
-  update_files:
-    - ~
 neoforge-1.21:
   gradle: |
     repositories {
@@ -92,18 +80,6 @@ forge-1.21:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:equipment-compare-502561:5590997')
-    }
-  update_files:
-    - ~
-forge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:equipment-compare-502561:5421728')
     }
   update_files:
     - ~

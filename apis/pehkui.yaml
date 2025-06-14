@@ -335,42 +335,6 @@ quilt-1.21.1:
     }
   update_files:
     - ~
-neoforge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:pehkui-319596:5419264'
-    }
-  update_files:
-    - ~
-neoforge-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:pehkui-319596:5393108'
-    }
-  update_files:
-    - ~
-neoforge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:pehkui-319596:5393105'
-    }
-  update_files:
-    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -428,18 +392,6 @@ forge-1.18.2:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:pehkui-319596:5393085')
-    }
-  update_files:
-    - ~
-forge-1.17.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:pehkui-319596:5393078')
     }
   update_files:
     - ~

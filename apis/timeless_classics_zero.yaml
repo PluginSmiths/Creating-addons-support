@@ -1,0 +1,38 @@
+---
+forge-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:6632240')
+    }
+  update_files:
+    - ~
+forge-1.19.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:6069349')
+    }
+  update_files:
+    - ~
+forge-1.18.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:6069322')
+    }
+  update_files:
+    - ~
+name: "[TaCZ] Timeless and Classics Zero"

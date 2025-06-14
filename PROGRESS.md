@@ -77,3 +77,5 @@
  - Gravity: ![Progress](https://geps.dev/progress/0)
  - Create: ![Progress](https://geps.dev/progress/90)
  - Pehkui: ![Progress](https://geps.dev/progress/100)
+ - FPS Display: ![Progress](https://geps.dev/progress/100)
+ - Timeless and Classics Zero: ![Progress](https://geps.dev/progress/0)

@@ -47,18 +47,6 @@ neoforge-1.21.4:
     }
   update_files:
     - ~
-forge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:legendary-tooltips-532127:5991567')
-    }
-  update_files:
-    - ~
 forge-1.12.2:
   gradle: |
     repositories {
