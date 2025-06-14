@@ -1,32 +1,4 @@
 ---
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:dynamictrees-252818:6410558')
-    }
-  update_files:
-    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -35,35 +7,19 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:dynamictrees-252818:6360173'
+    	implementation 'curse.maven:dynamictrees-252818:6611182'
     }
   update_files:
     - ~
-forge-1.19.2:
+forge-1.20.1:
   gradle: |
     repositories {
         maven {
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
-    	implementation fg.deobf('curse.maven:dynamictrees-252818:5600544')
+    	implementation fg.deobf('curse.maven:dynamictrees-252818:6560132')
     }
   update_files:
     - ~

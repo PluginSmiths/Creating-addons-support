@@ -1,4 +1,16 @@
 ---
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:fabric-shield-lib-380649:6622756'
+    }
+  update_files:
+    - ~
 fabric-1.21.4:
   gradle: |
     repositories {

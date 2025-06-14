@@ -7,7 +7,67 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:appleskin-248787:6385823'
+    	implementation 'curse.maven:appleskin-248787:6616294'
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:appleskin-248787:6616293'
+    }
+  update_files:
+    - ~
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:appleskin-248787:6616293'
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:appleskin-248787:6616291'
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:appleskin-248787:6616291'
+    }
+  update_files:
+    - ~
+neoforge-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:appleskin-248787:6616291'
     }
   update_files:
     - ~
@@ -20,30 +80,6 @@ fabric-1.21.5:
     }
     dependencies {
     	modImplementation 'curse.maven:appleskin-248787:6385817'
-    }
-  update_files:
-    - ~
-neoforge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:appleskin-248787:5864743'
-    }
-  update_files:
-    - ~
-neoforge-1.21.3:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:appleskin-248787:5864743'
     }
   update_files:
     - ~
@@ -92,30 +128,6 @@ fabric-1.21.1:
     }
     dependencies {
     	modImplementation 'curse.maven:appleskin-248787:5864741'
-    }
-  update_files:
-    - ~
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:appleskin-248787:5586600'
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:appleskin-248787:5586600'
     }
   update_files:
     - ~

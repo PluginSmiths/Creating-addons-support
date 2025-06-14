@@ -6,22 +6,6 @@ forge-1.20.1:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
     	implementation fg.deobf('curse.maven:elytra-slot-317716:5778734')
     }
@@ -32,22 +16,6 @@ forge-1.20:
     repositories {
         maven {
             url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
         }
     }
     dependencies {
@@ -116,7 +84,6 @@ neoforge-1.21:
     }
     dependencies {
     	implementation 'curse.maven:elytra-slot-317716:5778461'
-    	implementation 'curse.maven:curios-continuation-1037991:5778461'
     }
   update_files:
     - ~
@@ -129,7 +96,6 @@ neoforge-1.21.1:
     }
     dependencies {
     	implementation 'curse.maven:elytra-slot-317716:5778461'
-    	implementation 'curse.maven:curios-continuation-1037991:5778461'
     }
   update_files:
     - ~
@@ -202,22 +168,6 @@ forge-1.20.6:
     repositories {
         maven {
             url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
         }
     }
     dependencies {

@@ -1,0 +1,1 @@
+new InventoryManager().getCosArmorInventory(${input$entity}.getUUID()).getItem(${input$slot})

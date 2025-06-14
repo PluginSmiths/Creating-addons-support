@@ -1,16 +1,4 @@
 ---
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:farmers-delight-398521:6154807'
-    }
-  update_files:
-    - ~
 neoforge-1.20.1:
   gradle: |
     repositories {
@@ -19,7 +7,7 @@ neoforge-1.20.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:farmers-delight-398521:6154802'
+    	implementation 'curse.maven:farmers-delight-398521:6597298'
     }
   update_files:
     - ~
@@ -30,24 +18,20 @@ forge-1.20.1:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
+    dependencies {
+    	implementation fg.deobf('curse.maven:farmers-delight-398521:6597298')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:farmers-delight-398521:6154802')
+    	implementation 'curse.maven:farmers-delight-398521:6597295'
     }
   update_files:
     - ~
@@ -70,22 +54,6 @@ forge-1.20:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
     	implementation fg.deobf('curse.maven:farmers-delight-398521:5962797')
     }
@@ -103,6 +71,18 @@ neoforge-1.21:
     }
   update_files:
     - ~
+forge-1.19.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:farmers-delight-398521:5051241')
+    }
+  update_files:
+    - ~
 neoforge-1.19.2:
   gradle: |
     repositories {
@@ -111,35 +91,7 @@ neoforge-1.19.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:farmers-delight-398521:5051241'
-    }
-  update_files:
-    - ~
-forge-1.19.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:farmers-delight-398521:5051241')
+    	implementation 'curse.maven:farmers-delight-398521:4679318'
     }
   update_files:
     - ~
@@ -162,22 +114,6 @@ forge-1.18.2:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
     	implementation fg.deobf('curse.maven:farmers-delight-398521:4679315')
     }
@@ -188,22 +124,6 @@ forge-1.19.1:
     repositories {
         maven {
             url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
         }
     }
     dependencies {
@@ -218,24 +138,20 @@ forge-1.19:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
+    dependencies {
+    	implementation fg.deobf('curse.maven:farmers-delight-398521:4525646')
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:farmers-delight-398521:4525646')
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6642848'
     }
   update_files:
     - ~
@@ -247,7 +163,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6324963'
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6629141'
     }
   update_files:
     - ~
@@ -259,7 +175,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6324963'
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6629141'
     }
   update_files:
     - ~
@@ -271,7 +187,19 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6189989'
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6626608'
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:farmers-delight-refabricated-993166:6626608'
     }
   update_files:
     - ~

@@ -1,4 +1,16 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:jade-324717:6524708'
+    }
+  update_files:
+    - ~
 fabric-1.21.5:
   gradle: |
     repositories {
@@ -7,7 +19,7 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6389824'
+    	modImplementation 'curse.maven:jade-324717:6504606'
     }
   update_files:
     - ~
@@ -19,19 +31,7 @@ quilt-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6389824'
-    }
-  update_files:
-    - ~
-neoforge-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:jade-324717:6389812'
+    	modImplementation 'curse.maven:jade-324717:6504606'
     }
   update_files:
     - ~
@@ -43,7 +43,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6291536'
+    	modImplementation 'curse.maven:jade-324717:6494189'
     }
   update_files:
     - ~
@@ -55,7 +55,7 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6291536'
+    	modImplementation 'curse.maven:jade-324717:6494189'
     }
   update_files:
     - ~
@@ -150,22 +150,6 @@ forge-1.20.1:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
     	implementation fg.deobf('curse.maven:jade-324717:6271651')
     }
@@ -176,22 +160,6 @@ forge-1.20:
     repositories {
         maven {
             url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
         }
     }
     dependencies {
@@ -208,30 +176,6 @@ neoforge-1.21.4:
     }
     dependencies {
     	implementation 'curse.maven:jade-324717:6170888'
-    }
-  update_files:
-    - ~
-fabric-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:jade-324717:6155088'
-    }
-  update_files:
-    - ~
-quilt-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:jade-324717:6155088'
     }
   update_files:
     - ~

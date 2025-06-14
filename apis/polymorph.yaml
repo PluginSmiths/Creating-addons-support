@@ -7,7 +7,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:polymorph-388800:6418677'
+    	implementation 'curse.maven:polymorph-388800:6451024'
     }
   update_files:
     - ~
@@ -19,7 +19,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:polymorph-388800:6418677'
+    	implementation 'curse.maven:polymorph-388800:6451024'
     }
   update_files:
     - ~
@@ -31,7 +31,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:6418675'
+    	modImplementation 'curse.maven:polymorph-388800:6451022'
     }
   update_files:
     - ~
@@ -43,7 +43,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:6418675'
+    	modImplementation 'curse.maven:polymorph-388800:6451022'
     }
   update_files:
     - ~
@@ -54,24 +54,8 @@ forge-1.21:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
-    	implementation fg.deobf('curse.maven:polymorph-388800:6418673')
+    	implementation fg.deobf('curse.maven:polymorph-388800:6451019')
     }
   update_files:
     - ~
@@ -82,24 +66,8 @@ forge-1.21.1:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
-    	implementation fg.deobf('curse.maven:polymorph-388800:6418673')
+    	implementation fg.deobf('curse.maven:polymorph-388800:6451019')
     }
   update_files:
     - ~
@@ -110,24 +78,8 @@ forge-1.20.1:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
-    	implementation fg.deobf('curse.maven:polymorph-388800:6373145')
+    	implementation fg.deobf('curse.maven:polymorph-388800:6450982')
     }
   update_files:
     - ~
@@ -138,24 +90,8 @@ forge-1.20:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
-    	implementation fg.deobf('curse.maven:polymorph-388800:6373145')
+    	implementation fg.deobf('curse.maven:polymorph-388800:6450982')
     }
   update_files:
     - ~
@@ -167,7 +103,7 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:6373143'
+    	modImplementation 'curse.maven:polymorph-388800:6450979'
     }
   update_files:
     - ~
@@ -179,7 +115,7 @@ fabric-1.20:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:6373143'
+    	modImplementation 'curse.maven:polymorph-388800:6450979'
     }
   update_files:
     - ~

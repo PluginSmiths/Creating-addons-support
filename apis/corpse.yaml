@@ -7,7 +7,7 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6351563'
+    	implementation 'curse.maven:corpse-316582:6624404'
     }
   update_files:
     - ~
@@ -19,7 +19,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6121265'
+    	implementation 'curse.maven:corpse-316582:6624399'
     }
   update_files:
     - ~
@@ -31,7 +31,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6121250'
+    	implementation 'curse.maven:corpse-316582:6624396'
     }
   update_files:
     - ~
@@ -43,7 +43,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6121250'
+    	implementation 'curse.maven:corpse-316582:6624396'
     }
   update_files:
     - ~
@@ -54,24 +54,8 @@ forge-1.20.1:
             url = 'https://cursemaven.com/'
         }
     }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
     dependencies {
-    	implementation fg.deobf('curse.maven:corpse-316582:6121243')
+    	implementation fg.deobf('curse.maven:corpse-316582:6624394')
     }
   update_files:
     - ~
@@ -96,34 +80,6 @@ neoforge-1.21.2:
     }
     dependencies {
     	implementation 'curse.maven:corpse-316582:5834433'
-    }
-  update_files:
-    - ~
-forge-1.19.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    minecraft {
-        runs {
-            client {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            server {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-            data {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', '${projectDir}/build/createSrgToMcp/output.srg'
-            }
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:corpse-316582:5816905')
     }
   update_files:
     - ~
