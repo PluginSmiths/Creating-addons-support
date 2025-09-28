@@ -1,0 +1,1 @@
+${input$waypoint}.setLocation(${input$X}, ${input$Y}, ${input$Z}, ${input$dimension});

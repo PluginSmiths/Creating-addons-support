@@ -1,4 +1,16 @@
 ---
+forge-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:dynamictrees-252818:6655713')
+    }
+  update_files:
+    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -8,18 +20,6 @@ neoforge-1.21.1:
     }
     dependencies {
     	implementation 'curse.maven:dynamictrees-252818:6611182'
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:dynamictrees-252818:6560132')
     }
   update_files:
     - ~

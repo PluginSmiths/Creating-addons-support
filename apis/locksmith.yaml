@@ -1,4 +1,17 @@
 ---
+fabric-1.19.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:locksmith-544352:4650917'
+    	modImplementation 'curse.maven:pollen-544350:4650917'
+    }
+  update_files:
+    - ~
 forge-1.19.2:
   gradle: |
     repositories {
@@ -61,6 +74,45 @@ fabric-1.18:
     dependencies {
     	modImplementation 'curse.maven:locksmith-544352:3889834'
     	modImplementation 'curse.maven:pollen-544350:3889834'
+    }
+  update_files:
+    - ~
+forge-1.18.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:locksmith-544352:3889833')
+    	implementation fg.deobf('curse.maven:pollen-544350:3889833')
+    }
+  update_files:
+    - ~
+forge-1.18:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:locksmith-544352:3889833')
+    	implementation fg.deobf('curse.maven:pollen-544350:3889833')
+    }
+  update_files:
+    - ~
+fabric-1.16.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:locksmith-544352:3889832'
+    	modImplementation 'curse.maven:pollen-544350:3889832'
     }
   update_files:
     - ~

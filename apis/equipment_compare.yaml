@@ -203,6 +203,18 @@ fabric-1.21.4:
     }
   update_files:
     - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:5991588'
+    }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -291,6 +303,31 @@ fabric-1.20.4:
     }
   update_files:
     - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4500115'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4500115'
+    }
+  update_files:
+    - ~
+fabric-1.19.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:4335113'
+    }
+  update_files:
+    - ~
 fabric-1.19.2:
   gradle: |
     repositories {
@@ -360,6 +397,18 @@ fabric-1.18:
     }
     dependencies {
     	modImplementation 'curse.maven:equipment-compare-fabric-541329:3548173'
+    }
+  update_files:
+    - ~
+fabric-1.17.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:equipment-compare-fabric-541329:3538163'
     }
   update_files:
     - ~

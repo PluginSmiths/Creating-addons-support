@@ -1,0 +1,1 @@
+world instanceof Level _l025 && WorldHelper.getTemperatureAt(_l025, new BlockPos(${input$X}, ${input$Y}, ${input$Z}))

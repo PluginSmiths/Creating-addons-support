@@ -1,4 +1,64 @@
 ---
+fabric-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ping-wheel-734339:7042485'
+    }
+  update_files:
+    - ~
+fabric-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ping-wheel-734339:7042485'
+    }
+  update_files:
+    - ~
+fabric-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:ping-wheel-734339:7042485'
+    }
+  update_files:
+    - ~
+neoforge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:ping-wheel-734339:7042483'
+    }
+  update_files:
+    - ~
+forge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042481')
+    }
+  update_files:
+    - ~
 fabric-1.21.5:
   gradle: |
     repositories {
@@ -7,7 +67,7 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6356963'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042480'
     }
   update_files:
     - ~
@@ -19,7 +79,7 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:ping-wheel-734339:6356962'
+    	implementation 'curse.maven:ping-wheel-734339:7042479'
     }
   update_files:
     - ~
@@ -31,7 +91,7 @@ forge-1.21.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6356957')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042478')
     }
   update_files:
     - ~
@@ -43,7 +103,7 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352081'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042472'
     }
   update_files:
     - ~
@@ -55,7 +115,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:ping-wheel-734339:6352079'
+    	implementation 'curse.maven:ping-wheel-734339:7042471'
     }
   update_files:
     - ~
@@ -67,7 +127,7 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352073')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042469')
     }
   update_files:
     - ~
@@ -79,7 +139,7 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352050'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042467'
     }
   update_files:
     - ~
@@ -91,7 +151,7 @@ fabric-1.21.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352050'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042467'
     }
   update_files:
     - ~
@@ -103,7 +163,7 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:ping-wheel-734339:6352049'
+    	implementation 'curse.maven:ping-wheel-734339:7042466'
     }
   update_files:
     - ~
@@ -115,7 +175,7 @@ forge-1.21.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352048')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042464')
     }
   update_files:
     - ~
@@ -127,7 +187,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352045'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042460'
     }
   update_files:
     - ~
@@ -139,7 +199,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352045'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042460'
     }
   update_files:
     - ~
@@ -151,7 +211,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:ping-wheel-734339:6352042'
+    	implementation 'curse.maven:ping-wheel-734339:7042459'
     }
   update_files:
     - ~
@@ -163,7 +223,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352041')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042457')
     }
   update_files:
     - ~
@@ -175,7 +235,7 @@ fabric-1.20.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352040'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042456'
     }
   update_files:
     - ~
@@ -187,7 +247,7 @@ fabric-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352040'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042456'
     }
   update_files:
     - ~
@@ -199,7 +259,7 @@ forge-1.20.6:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352039')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042453')
     }
   update_files:
     - ~
@@ -211,7 +271,7 @@ fabric-1.20.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352038'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042451'
     }
   update_files:
     - ~
@@ -223,7 +283,7 @@ fabric-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352038'
+    	modImplementation 'curse.maven:ping-wheel-734339:7042451'
     }
   update_files:
     - ~
@@ -235,7 +295,7 @@ forge-1.20.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352036')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042450')
     }
   update_files:
     - ~
@@ -247,7 +307,7 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352036')
+    	implementation fg.deobf('curse.maven:ping-wheel-734339:7042450')
     }
   update_files:
     - ~
@@ -259,67 +319,7 @@ fabric-1.20.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352034'
-    }
-  update_files:
-    - ~
-forge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352033')
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352032'
-    }
-  update_files:
-    - ~
-fabric-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:ping-wheel-734339:6352032'
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352029')
-    }
-  update_files:
-    - ~
-forge-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:ping-wheel-734339:6352029')
+    	modImplementation 'curse.maven:ping-wheel-734339:7042449'
     }
   update_files:
     - ~

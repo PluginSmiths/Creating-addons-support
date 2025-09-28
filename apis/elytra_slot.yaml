@@ -1,4 +1,41 @@
 ---
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:elytra-slot-317716:6801976'
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:elytra-slot-317716:6801976'
+    }
+  update_files:
+    - ~
+fabric-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:elytra-slot-317716:6677386'
+    	modImplementation 'curse.maven:accessories-938917:6677386'
+    }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -148,30 +185,6 @@ fabric-1.20.4:
     dependencies {
     	modImplementation 'curse.maven:elytra-slot-317716:5539614'
     	modImplementation 'curse.maven:trinkets-341284:5539614'
-    }
-  update_files:
-    - ~
-neoforge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:elytra-slot-317716:5421068'
-    }
-  update_files:
-    - ~
-forge-1.20.6:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:elytra-slot-317716:5421064')
     }
   update_files:
     - ~

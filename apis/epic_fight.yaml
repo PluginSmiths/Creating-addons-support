@@ -1,4 +1,16 @@
 ---
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:epic-fight-mod-405076:7037349'
+    }
+  update_files:
+    - ~
 forge-1.20.1:
   gradle: |
     repositories {
@@ -7,7 +19,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:epic-fight-mod-405076:6640098')
+    	implementation fg.deobf('curse.maven:epic-fight-mod-405076:7035137')
     }
   update_files:
     - ~

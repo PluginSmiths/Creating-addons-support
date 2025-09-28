@@ -1,16 +1,4 @@
 ---
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:patchouli-306770:6164617'
-    }
-  update_files:
-    - ~
 neoforge-1.21.1:
   gradle: |
     repositories {
@@ -19,7 +7,19 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:patchouli-306770:6164617'
+    	implementation 'curse.maven:patchouli-306770:6842247'
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:patchouli-306770:6840034'
     }
   update_files:
     - ~
@@ -104,42 +104,6 @@ forge-1.19:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:patchouli-306770:3877555')
-    }
-  update_files:
-    - ~
-forge-1.16.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:patchouli-306770:3847029')
-    }
-  update_files:
-    - ~
-forge-1.16.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:patchouli-306770:3847029')
-    }
-  update_files:
-    - ~
-forge-1.18.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:patchouli-306770:3846086')
     }
   update_files:
     - ~

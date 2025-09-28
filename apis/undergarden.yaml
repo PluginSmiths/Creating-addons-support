@@ -7,7 +7,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:the-undergarden-379849:5769852'
+    	implementation 'curse.maven:the-undergarden-379849:6687578'
     }
   update_files:
     - ~
@@ -92,30 +92,6 @@ forge-1.20:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:the-undergarden-379849:4682838')
-    }
-  update_files:
-    - ~
-forge-1.19.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:the-undergarden-379849:4544001')
-    }
-  update_files:
-    - ~
-forge-1.19.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:the-undergarden-379849:4057184')
     }
   update_files:
     - ~

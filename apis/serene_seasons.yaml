@@ -1,4 +1,82 @@
 ---
+neoforge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:serene-seasons-291874:6812965'
+    	implementation 'curse.maven:glitchcore-955399:6812965'
+    }
+  update_files:
+    - ~
+fabric-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:serene-seasons-291874:6812964'
+    	modImplementation 'curse.maven:glitchcore-955399:6812964'
+    }
+  update_files:
+    - ~
+forge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:serene-seasons-291874:6812963')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6812963')
+    }
+  update_files:
+    - ~
+fabric-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:serene-seasons-291874:6747300'
+    	modImplementation 'curse.maven:glitchcore-955399:6747300'
+    }
+  update_files:
+    - ~
+neoforge-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:serene-seasons-291874:6747299'
+    	implementation 'curse.maven:glitchcore-955399:6747299'
+    }
+  update_files:
+    - ~
+forge-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:serene-seasons-291874:6747298')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6747298')
+    }
+  update_files:
+    - ~
 neoforge-1.21.5:
   gradle: |
     repositories {
@@ -7,8 +85,8 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:serene-seasons-291874:6549064'
-    	implementation 'curse.maven:glitchcore-955399:6549064'
+    	implementation 'curse.maven:serene-seasons-291874:6747297'
+    	implementation 'curse.maven:glitchcore-955399:6747297'
     }
   update_files:
     - ~
@@ -20,8 +98,8 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:serene-seasons-291874:6549063'
-    	modImplementation 'curse.maven:glitchcore-955399:6549063'
+    	modImplementation 'curse.maven:serene-seasons-291874:6747295'
+    	modImplementation 'curse.maven:glitchcore-955399:6747295'
     }
   update_files:
     - ~
@@ -33,12 +111,12 @@ forge-1.21.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:serene-seasons-291874:6549062')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6549062')
+    	implementation fg.deobf('curse.maven:serene-seasons-291874:6747294')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:6747294')
     }
   update_files:
     - ~
-fabric-1.20.1:
+fabric-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -46,12 +124,12 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:serene-seasons-291874:6398228'
-    	modImplementation 'curse.maven:glitchcore-955399:6398228'
+    	modImplementation 'curse.maven:serene-seasons-291874:6682334'
+    	modImplementation 'curse.maven:glitchcore-955399:6682334'
     }
   update_files:
     - ~
-forge-1.20.1:
+neoforge-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -59,47 +137,8 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:serene-seasons-291874:6398227')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6398227')
-    }
-  update_files:
-    - ~
-fabric-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:serene-seasons-291874:6299864'
-    	modImplementation 'curse.maven:glitchcore-955399:6299864'
-    }
-  update_files:
-    - ~
-neoforge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:serene-seasons-291874:6299863'
-    	implementation 'curse.maven:glitchcore-955399:6299863'
-    }
-  update_files:
-    - ~
-forge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:serene-seasons-291874:6299862')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6299862')
+    	implementation 'curse.maven:serene-seasons-291874:6682333'
+    	implementation 'curse.maven:glitchcore-955399:6682333'
     }
   update_files:
     - ~

@@ -1,5 +1,5 @@
 ---
-neoforge-1.21.5:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -7,11 +7,11 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:jade-324717:6524708'
+    	modImplementation 'curse.maven:jade-324717:6906804'
     }
   update_files:
     - ~
-fabric-1.21.5:
+fabric-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -19,11 +19,11 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6504606'
+    	modImplementation 'curse.maven:jade-324717:6906804'
     }
   update_files:
     - ~
-quilt-1.21.5:
+fabric-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -31,11 +31,11 @@ quilt-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6504606'
+    	modImplementation 'curse.maven:jade-324717:6906804'
     }
   update_files:
     - ~
-fabric-1.21.1:
+quilt-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -43,11 +43,11 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6494189'
+    	modImplementation 'curse.maven:jade-324717:6906804'
     }
   update_files:
     - ~
-quilt-1.21.1:
+quilt-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -55,11 +55,11 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6494189'
+    	modImplementation 'curse.maven:jade-324717:6906804'
     }
   update_files:
     - ~
-neoforge-1.21.1:
+quilt-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -67,11 +67,11 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:jade-324717:6291517'
+    	modImplementation 'curse.maven:jade-324717:6906804'
     }
   update_files:
     - ~
-fabric-1.20.1:
+neoforge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -79,11 +79,11 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6291330'
+    	implementation 'curse.maven:jade-324717:6902747'
     }
   update_files:
     - ~
-fabric-1.20:
+neoforge-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -91,11 +91,11 @@ fabric-1.20:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6291330'
+    	implementation 'curse.maven:jade-324717:6902747'
     }
   update_files:
     - ~
-quilt-1.20.1:
+neoforge-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -103,19 +103,7 @@ quilt-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:jade-324717:6291330'
-    }
-  update_files:
-    - ~
-quilt-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:jade-324717:6291330'
+    	implementation 'curse.maven:jade-324717:6902747'
     }
   update_files:
     - ~
@@ -127,7 +115,7 @@ neoforge-1.20.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:jade-324717:6271651'
+    	implementation 'curse.maven:jade-324717:6855440'
     }
   update_files:
     - ~
@@ -139,7 +127,7 @@ neoforge-1.20:
         }
     }
     dependencies {
-    	implementation 'curse.maven:jade-324717:6271651'
+    	implementation 'curse.maven:jade-324717:6855440'
     }
   update_files:
     - ~
@@ -151,7 +139,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:jade-324717:6271651')
+    	implementation fg.deobf('curse.maven:jade-324717:6855440')
     }
   update_files:
     - ~
@@ -163,11 +151,11 @@ forge-1.20:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:jade-324717:6271651')
+    	implementation fg.deobf('curse.maven:jade-324717:6855440')
     }
   update_files:
     - ~
-neoforge-1.21.4:
+neoforge-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -175,7 +163,31 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:jade-324717:6170888'
+    	implementation 'curse.maven:jade-324717:6853386'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:jade-324717:6738760'
+    }
+  update_files:
+    - ~
+quilt-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:jade-324717:6738760'
     }
   update_files:
     - ~

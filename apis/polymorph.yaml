@@ -7,7 +7,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:polymorph-388800:6451024'
+    	implementation 'curse.maven:polymorph-388800:6794589'
     }
   update_files:
     - ~
@@ -19,7 +19,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:polymorph-388800:6451024'
+    	implementation 'curse.maven:polymorph-388800:6794589'
     }
   update_files:
     - ~
@@ -31,7 +31,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:6451022'
+    	modImplementation 'curse.maven:polymorph-388800:6794587'
     }
   update_files:
     - ~
@@ -43,7 +43,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:6451022'
+    	modImplementation 'curse.maven:polymorph-388800:6794587'
     }
   update_files:
     - ~
@@ -55,7 +55,7 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:polymorph-388800:6451019')
+    	implementation fg.deobf('curse.maven:polymorph-388800:6794585')
     }
   update_files:
     - ~
@@ -67,7 +67,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:polymorph-388800:6451019')
+    	implementation fg.deobf('curse.maven:polymorph-388800:6794585')
     }
   update_files:
     - ~
@@ -116,30 +116,6 @@ fabric-1.20:
     }
     dependencies {
     	modImplementation 'curse.maven:polymorph-388800:6450979'
-    }
-  update_files:
-    - ~
-quilt-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:5995249'
-    }
-  update_files:
-    - ~
-quilt-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:polymorph-388800:5995249'
     }
   update_files:
     - ~

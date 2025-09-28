@@ -1,5 +1,5 @@
 ---
-neoforge-1.21.5:
+neoforge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -7,7 +7,21 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:emotecraft-forge-403422:6629989'
+    	implementation 'curse.maven:emotecraft-forge-403422:7020031'
+    	implementation 'curse.maven:player-animation-library-1283899:7020031'
+    }
+  update_files:
+    - ~
+neoforge-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:emotecraft-forge-403422:7020031'
+    	implementation 'curse.maven:player-animation-library-1283899:7020031'
     }
   update_files:
     - ~
@@ -19,7 +33,19 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:emotecraft-forge-403422:6488760'
+    	implementation 'curse.maven:emotecraft-forge-403422:6942019'
+    }
+  update_files:
+    - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:emotecraft-forge-403422:6942004'
     }
   update_files:
     - ~
@@ -31,11 +57,11 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:emotecraft-forge-403422:6466239'
+    	implementation 'curse.maven:emotecraft-forge-403422:6941989'
     }
   update_files:
     - ~
-fabric-1.21.5:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -43,11 +69,12 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6629990'
+    	modImplementation 'curse.maven:emotecraft-397809:7020032'
+    	modImplementation 'curse.maven:player-animation-library-1283899:7020032'
     }
   update_files:
     - ~
-quilt-1.21.5:
+fabric-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -55,7 +82,8 @@ quilt-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6629990'
+    	modImplementation 'curse.maven:emotecraft-397809:7020032'
+    	modImplementation 'curse.maven:player-animation-library-1283899:7020032'
     }
   update_files:
     - ~
@@ -67,7 +95,7 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6488761'
+    	modImplementation 'curse.maven:emotecraft-397809:6942020'
     }
   update_files:
     - ~
@@ -79,7 +107,31 @@ quilt-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6488761'
+    	modImplementation 'curse.maven:emotecraft-397809:6942020'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:emotecraft-397809:6942005'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:emotecraft-397809:6942005'
     }
   update_files:
     - ~
@@ -91,7 +143,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6466238'
+    	modImplementation 'curse.maven:emotecraft-397809:6941988'
     }
   update_files:
     - ~
@@ -103,7 +155,35 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:emotecraft-397809:6466238'
+    	modImplementation 'curse.maven:emotecraft-397809:6941988'
+    }
+  update_files:
+    - ~
+quilt-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:emotecraft-397809:6780037'
+    	modImplementation 'curse.maven:player-animation-library-1283899:6780037'
+    	modImplementation 'curse.maven:bendable-cuboids-1302303:6780037'
+    }
+  update_files:
+    - ~
+quilt-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:emotecraft-397809:6780037'
+    	modImplementation 'curse.maven:player-animation-library-1283899:6780037'
+    	modImplementation 'curse.maven:bendable-cuboids-1302303:6780037'
     }
   update_files:
     - ~

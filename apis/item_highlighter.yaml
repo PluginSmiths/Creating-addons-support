@@ -275,6 +275,18 @@ fabric-1.21.4:
     }
   update_files:
     - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5991609'
+    }
+  update_files:
+    - ~
 fabric-1.21:
   gradle: |
     repositories {
@@ -296,6 +308,30 @@ fabric-1.21.1:
     }
     dependencies {
     	modImplementation 'curse.maven:item-highlighter-fabric-541578:5591012'
+    }
+  update_files:
+    - ~
+fabric-1.20.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5343926'
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:item-highlighter-fabric-541578:5343926'
     }
   update_files:
     - ~

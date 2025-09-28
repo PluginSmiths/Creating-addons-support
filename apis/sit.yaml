@@ -1,4 +1,40 @@
 ---
+neoforge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:sit-278717:6776227'
+    }
+  update_files:
+    - ~
+neoforge-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:sit-278717:6776227'
+    }
+  update_files:
+    - ~
+neoforge-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:sit-278717:6776227'
+    }
+  update_files:
+    - ~
 neoforge-1.21.5:
   gradle: |
     repositories {
@@ -7,7 +43,19 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:sit-278717:5844512'
+    	implementation 'curse.maven:sit-278717:6776226'
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:sit-278717:6776225'
     }
   update_files:
     - ~
@@ -48,18 +96,6 @@ neoforge-1.21.2:
   update_files:
     - ~
 neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:sit-278717:5427947'
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -227,7 +263,7 @@ forge-1.19:
     }
   update_files:
     - ~
-forge-1.16.5:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -235,11 +271,11 @@ forge-1.16.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:sit-278717:3723460')
+    	modImplementation 'curse.maven:sit-fabric-328163:6666855'
     }
   update_files:
     - ~
-forge-1.18.1:
+fabric-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -247,11 +283,11 @@ forge-1.18.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:sit-278717:3543469')
+    	modImplementation 'curse.maven:sit-fabric-328163:6666855'
     }
   update_files:
     - ~
-forge-1.18:
+fabric-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -259,11 +295,11 @@ forge-1.18:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:sit-278717:3543469')
+    	modImplementation 'curse.maven:sit-fabric-328163:6666855'
     }
   update_files:
     - ~
-forge-1.17.1:
+quilt-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -271,7 +307,31 @@ forge-1.17.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:sit-278717:3398644')
+    	modImplementation 'curse.maven:sit-fabric-328163:6666855'
+    }
+  update_files:
+    - ~
+quilt-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:sit-fabric-328163:6666855'
+    }
+  update_files:
+    - ~
+quilt-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:sit-fabric-328163:6666855'
     }
   update_files:
     - ~
@@ -776,18 +836,6 @@ quilt-1.18:
     }
     dependencies {
     	modImplementation 'curse.maven:sit-fabric-328163:3542003'
-    }
-  update_files:
-    - ~
-fabric-1.17.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:sit-fabric-328163:3434198'
     }
   update_files:
     - ~

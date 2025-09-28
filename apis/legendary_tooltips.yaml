@@ -243,6 +243,19 @@ fabric-1.20.4:
     }
   update_files:
     - ~
+fabric-1.19.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:legendary-tooltips-fabric-542478:4515925'
+    	modImplementation 'curse.maven:forge-config-api-port-fabric-547434:4515925'
+    }
+  update_files:
+    - ~
 fabric-1.19.3:
   gradle: |
     repositories {

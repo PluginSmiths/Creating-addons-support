@@ -1,5 +1,5 @@
 ---
-neoforge-1.21.1:
+neoforge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -7,11 +7,11 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:journeymap-32274:6635000'
+    	implementation 'curse.maven:journeymap-32274:6966171'
     }
   update_files:
     - ~
-fabric-1.21.1:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -19,11 +19,11 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:journeymap-32274:6634998'
+    	modImplementation 'curse.maven:journeymap-32274:6966170'
     }
   update_files:
     - ~
-quilt-1.21.1:
+quilt-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -31,11 +31,11 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:journeymap-32274:6634998'
+    	modImplementation 'curse.maven:journeymap-32274:6966170'
     }
   update_files:
     - ~
-forge-1.21.1:
+forge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -43,11 +43,11 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:journeymap-32274:6634997')
+    	implementation fg.deobf('curse.maven:journeymap-32274:6966169')
     }
   update_files:
     - ~
-neoforge-1.21.5:
+neoforge-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -55,11 +55,11 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:journeymap-32274:6634620'
+    	implementation 'curse.maven:journeymap-32274:6730473'
     }
   update_files:
     - ~
-fabric-1.21.5:
+fabric-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -67,11 +67,11 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:journeymap-32274:6634619'
+    	modImplementation 'curse.maven:journeymap-32274:6730472'
     }
   update_files:
     - ~
-quilt-1.21.5:
+quilt-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -79,11 +79,11 @@ quilt-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:journeymap-32274:6634619'
+    	modImplementation 'curse.maven:journeymap-32274:6730472'
     }
   update_files:
     - ~
-forge-1.21.5:
+forge-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -91,55 +91,7 @@ forge-1.21.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:journeymap-32274:6634618')
-    }
-  update_files:
-    - ~
-neoforge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:journeymap-32274:6550384'
-    }
-  update_files:
-    - ~
-fabric-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:journeymap-32274:6550381'
-    }
-  update_files:
-    - ~
-quilt-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:journeymap-32274:6550381'
-    }
-  update_files:
-    - ~
-forge-1.21.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:journeymap-32274:6550380')
+    	implementation fg.deobf('curse.maven:journeymap-32274:6730471')
     }
   update_files:
     - ~
@@ -151,7 +103,127 @@ forge-1.7.10:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:journeymap-32274:6519073')
+    	implementation fg.deobf('curse.maven:journeymap-32274:6706111')
+    }
+  update_files:
+    - ~
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:journeymap-32274:6689206'
+    }
+  update_files:
+    - ~
+fabric-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:journeymap-32274:6689205'
+    }
+  update_files:
+    - ~
+quilt-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:journeymap-32274:6689205'
+    }
+  update_files:
+    - ~
+forge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:journeymap-32274:6689204')
+    }
+  update_files:
+    - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:journeymap-32274:6688091'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:journeymap-32274:6688090'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:journeymap-32274:6688090'
+    }
+  update_files:
+    - ~
+forge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:journeymap-32274:6688088')
+    }
+  update_files:
+    - ~
+fabric-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:journeymap-32274:6688084'
+    }
+  update_files:
+    - ~
+quilt-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:journeymap-32274:6688084'
     }
   update_files:
     - ~

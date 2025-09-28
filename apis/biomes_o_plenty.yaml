@@ -1,5 +1,5 @@
 ---
-fabric-1.21.1:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -7,13 +7,13 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:biomes-o-plenty-220318:6631073'
-    	modImplementation 'curse.maven:glitchcore-955399:6631073'
-    	modImplementation 'curse.maven:terrablender-fabric-565956:6631073'
+    	modImplementation 'curse.maven:biomes-o-plenty-220318:7003091'
+    	modImplementation 'curse.maven:glitchcore-955399:7003091'
+    	modImplementation 'curse.maven:terrablender-fabric-565956:7003091'
     }
   update_files:
     - ~
-neoforge-1.21.1:
+neoforge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -21,13 +21,13 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:biomes-o-plenty-220318:6631072'
-    	implementation 'curse.maven:terrablender-neoforge-940057:6631072'
-    	implementation 'curse.maven:glitchcore-955399:6631072'
+    	implementation 'curse.maven:biomes-o-plenty-220318:7003090'
+    	implementation 'curse.maven:terrablender-neoforge-940057:7003090'
+    	implementation 'curse.maven:glitchcore-955399:7003090'
     }
   update_files:
     - ~
-forge-1.21.1:
+forge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -35,64 +35,9 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6631071')
-    	implementation fg.deobf('curse.maven:terrablender-563928:6631071')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6631071')
-    }
-  update_files:
-    - ~
-fabric-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:biomes-o-plenty-220318:6602038'
-    	modImplementation 'curse.maven:glitchcore-955399:6602038'
-    	modImplementation 'curse.maven:terrablender-fabric-565956:6602038'
-    }
-  update_files:
-    - ~
-neoforge-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:biomes-o-plenty-220318:6602037'
-    	implementation 'curse.maven:terrablender-neoforge-940057:6602037'
-    	implementation 'curse.maven:glitchcore-955399:6602037'
-    }
-  update_files:
-    - ~
-forge-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6602036')
-    	implementation fg.deobf('curse.maven:terrablender-563928:6602036')
-    	implementation fg.deobf('curse.maven:glitchcore-955399:6602036')
-    }
-  update_files:
-    - ~
-forge-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6564630')
-    	implementation fg.deobf('curse.maven:terrablender-563928:6564630')
+    	implementation fg.deobf('curse.maven:biomes-o-plenty-220318:7003088')
+    	implementation fg.deobf('curse.maven:terrablender-563928:7003088')
+    	implementation fg.deobf('curse.maven:glitchcore-955399:7003088')
     }
   update_files:
     - ~

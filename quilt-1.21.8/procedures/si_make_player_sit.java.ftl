@@ -1,0 +1,1 @@
+if(${input$entity} instanceof Player _pl365 && world instanceof Level _l832) SitUtil.sitDown(_pl365, _l832, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}), 0);

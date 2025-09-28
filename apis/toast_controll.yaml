@@ -1,5 +1,5 @@
 ---
-neoforge-1.21:
+neoforge-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -7,12 +7,12 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:toast-control-271740:5530706'
-    	implementation 'curse.maven:placebo-283644:5530706'
+    	implementation 'curse.maven:toast-control-271740:6751464'
+    	implementation 'curse.maven:placebo-283644:6751464'
     }
   update_files:
     - ~
-neoforge-1.21.1:
+neoforge-1.21:
   gradle: |
     repositories {
         maven {

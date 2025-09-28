@@ -1,0 +1,1 @@
+${input$entity} instanceof Entity || ${input$entity} instanceof BlockEntity && ${input$entity}.is${field$name}()

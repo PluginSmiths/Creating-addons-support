@@ -7,7 +7,7 @@ forge-1.16.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:cold-sweat-506194:6634584')
+    	implementation fg.deobf('curse.maven:cold-sweat-506194:6991388')
     }
   update_files:
     - ~
@@ -19,7 +19,7 @@ forge-1.18.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:cold-sweat-506194:6634580')
+    	implementation fg.deobf('curse.maven:cold-sweat-506194:6991385')
     }
   update_files:
     - ~
@@ -31,7 +31,7 @@ forge-1.19.2:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:cold-sweat-506194:6634573')
+    	implementation fg.deobf('curse.maven:cold-sweat-506194:6991382')
     }
   update_files:
     - ~
@@ -43,7 +43,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:cold-sweat-506194:6634560')
+    	implementation fg.deobf('curse.maven:cold-sweat-506194:6991379')
     }
   update_files:
     - ~
@@ -55,7 +55,19 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:cold-sweat-506194:6634558'
+    	implementation 'curse.maven:cold-sweat-506194:6991377'
+    }
+  update_files:
+    - ~
+neoforge-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:cold-sweat-506194:6947079'
     }
   update_files:
     - ~

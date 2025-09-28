@@ -1,0 +1,1 @@
+(world instanceof Level _l036 ? SeasonHelper.getSeasonState(_l036) : null)

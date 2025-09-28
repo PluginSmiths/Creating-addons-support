@@ -7,7 +7,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:thirst-was-taken-679270:6532318'
+    	implementation 'curse.maven:thirst-was-taken-679270:7017923'
     }
   update_files:
     - ~
@@ -19,7 +19,7 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:thirst-was-taken-679270:6328470')
+    	implementation fg.deobf('curse.maven:thirst-was-taken-679270:6660408')
     }
   update_files:
     - ~
@@ -44,30 +44,6 @@ forge-1.19.2:
     }
     dependencies {
     	implementation fg.deobf('curse.maven:thirst-was-taken-679270:5857347')
-    }
-  update_files:
-    - ~
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:thirst-was-taken-679270:5568715'
-    }
-  update_files:
-    - ~
-forge-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:thirst-was-taken-679270:5568703')
     }
   update_files:
     - ~

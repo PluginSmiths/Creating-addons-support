@@ -1,5 +1,5 @@
 ---
-forge-1.21.5:
+neoforge-1.21.4:
   gradle: |
     repositories {
         maven {
@@ -7,19 +7,7 @@ forge-1.21.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:default-options-232131:6359952')
-    }
-  update_files:
-    - ~
-fabric-1.21.5:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:default-options-232131:6347624'
+    	implementation 'curse.maven:default-options-232131:6972502'
     }
   update_files:
     - ~
@@ -31,7 +19,7 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:default-options-232131:6347619'
+    	implementation 'curse.maven:default-options-232131:6972501'
     }
   update_files:
     - ~
@@ -43,11 +31,11 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:default-options-232131:6085939')
+    	implementation fg.deobf('curse.maven:default-options-232131:6972500')
     }
   update_files:
     - ~
-neoforge-1.21.4:
+forge-1.21.5:
   gradle: |
     repositories {
         maven {
@@ -55,11 +43,11 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:default-options-232131:6024330'
+    	implementation fg.deobf('curse.maven:default-options-232131:6972499')
     }
   update_files:
     - ~
-neoforge-1.21.3:
+fabric-1.21.5:
   gradle: |
     repositories {
         maven {
@@ -67,19 +55,7 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:default-options-232131:6024329'
-    }
-  update_files:
-    - ~
-neoforge-1.21.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:default-options-232131:6024329'
+    	modImplementation 'curse.maven:default-options-232131:6972498'
     }
   update_files:
     - ~
@@ -91,11 +67,11 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:default-options-232131:6024327'
+    	modImplementation 'curse.maven:default-options-232131:6972496'
     }
   update_files:
     - ~
-fabric-1.21.3:
+forge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -103,11 +79,11 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:default-options-232131:6024325'
+    	implementation fg.deobf('curse.maven:default-options-232131:6972487')
     }
   update_files:
     - ~
-fabric-1.21.2:
+neoforge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -115,19 +91,7 @@ fabric-1.21.2:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:default-options-232131:6024325'
-    }
-  update_files:
-    - ~
-neoforge-1.21:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:default-options-232131:6024321'
+    	implementation 'curse.maven:default-options-232131:6972486'
     }
   update_files:
     - ~
@@ -139,11 +103,11 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:default-options-232131:6024321'
+    	implementation 'curse.maven:default-options-232131:6972485'
     }
   update_files:
     - ~
-forge-1.21:
+forge-1.20.1:
   gradle: |
     repositories {
         maven {
@@ -151,7 +115,19 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:default-options-232131:6024299')
+    	implementation fg.deobf('curse.maven:default-options-232131:6972483')
+    }
+  update_files:
+    - ~
+forge-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:default-options-232131:6972483')
     }
   update_files:
     - ~
@@ -163,11 +139,11 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:default-options-232131:6024299')
+    	implementation fg.deobf('curse.maven:default-options-232131:6972481')
     }
   update_files:
     - ~
-neoforge-1.20.6:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -175,11 +151,11 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:default-options-232131:5485068'
+    	modImplementation 'curse.maven:default-options-232131:6972475'
     }
   update_files:
     - ~
-forge-1.20.6:
+fabric-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -187,7 +163,31 @@ forge-1.20.6:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:default-options-232131:5485062')
+    	modImplementation 'curse.maven:default-options-232131:6972472'
+    }
+  update_files:
+    - ~
+fabric-1.20.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:default-options-232131:6972468'
+    }
+  update_files:
+    - ~
+fabric-1.20:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:default-options-232131:6972468'
     }
   update_files:
     - ~
@@ -203,7 +203,7 @@ fabric-1.21:
     }
   update_files:
     - ~
-fabric-1.21.1:
+fabric-1.21.3:
   gradle: |
     repositories {
         maven {
@@ -211,7 +211,19 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:default-options-fabric-547694:6024297'
+    	modImplementation 'curse.maven:default-options-fabric-547694:5838325'
+    }
+  update_files:
+    - ~
+fabric-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:default-options-fabric-547694:5838325'
     }
   update_files:
     - ~
@@ -308,30 +320,6 @@ fabric-1.19:
     }
     dependencies {
     	modImplementation 'curse.maven:default-options-fabric-547694:4635887'
-    }
-  update_files:
-    - ~
-fabric-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:default-options-fabric-547694:4635875'
-    }
-  update_files:
-    - ~
-fabric-1.20:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:default-options-fabric-547694:4635875'
     }
   update_files:
     - ~

@@ -1,4 +1,76 @@
 ---
+forge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780252')
+    }
+  update_files:
+    - ~
+forge-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780252')
+    }
+  update_files:
+    - ~
+forge-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780252')
+    }
+  update_files:
+    - ~
+neoforge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:entityculling-448233:6780251'
+    }
+  update_files:
+    - ~
+neoforge-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:entityculling-448233:6780251'
+    }
+  update_files:
+    - ~
+neoforge-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:entityculling-448233:6780251'
+    }
+  update_files:
+    - ~
 neoforge-1.21.5:
   gradle: |
     repositories {
@@ -7,7 +79,43 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355883'
+    	implementation 'curse.maven:entityculling-448233:6780250'
+    }
+  update_files:
+    - ~
+fabric-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:entityculling-448233:6780249'
+    }
+  update_files:
+    - ~
+fabric-1.21.7:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:entityculling-448233:6780249'
+    }
+  update_files:
+    - ~
+fabric-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:entityculling-448233:6780249'
     }
   update_files:
     - ~
@@ -19,7 +127,7 @@ forge-1.21.5:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355882')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780248')
     }
   update_files:
     - ~
@@ -31,7 +139,7 @@ fabric-1.21.5:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355881'
+    	modImplementation 'curse.maven:entityculling-448233:6780247'
     }
   update_files:
     - ~
@@ -43,7 +151,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355880'
+    	implementation 'curse.maven:entityculling-448233:6780245'
     }
   update_files:
     - ~
@@ -55,7 +163,7 @@ forge-1.21.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355879')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780244')
     }
   update_files:
     - ~
@@ -67,7 +175,7 @@ fabric-1.21.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355878'
+    	modImplementation 'curse.maven:entityculling-448233:6780243'
     }
   update_files:
     - ~
@@ -79,7 +187,7 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355877'
+    	implementation 'curse.maven:entityculling-448233:6780242'
     }
   update_files:
     - ~
@@ -91,7 +199,7 @@ forge-1.21.3:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355876')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780241')
     }
   update_files:
     - ~
@@ -103,7 +211,7 @@ fabric-1.21.3:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355875'
+    	modImplementation 'curse.maven:entityculling-448233:6780239'
     }
   update_files:
     - ~
@@ -115,7 +223,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355874'
+    	implementation 'curse.maven:entityculling-448233:6780238'
     }
   update_files:
     - ~
@@ -127,7 +235,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355874'
+    	implementation 'curse.maven:entityculling-448233:6780238'
     }
   update_files:
     - ~
@@ -139,7 +247,7 @@ forge-1.21:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355873')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780237')
     }
   update_files:
     - ~
@@ -151,7 +259,7 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355873')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780237')
     }
   update_files:
     - ~
@@ -163,7 +271,7 @@ fabric-1.21:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355872'
+    	modImplementation 'curse.maven:entityculling-448233:6780236'
     }
   update_files:
     - ~
@@ -175,7 +283,7 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355872'
+    	modImplementation 'curse.maven:entityculling-448233:6780236'
     }
   update_files:
     - ~
@@ -187,7 +295,7 @@ neoforge-1.20.6:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355871'
+    	implementation 'curse.maven:entityculling-448233:6780235'
     }
   update_files:
     - ~
@@ -199,7 +307,7 @@ forge-1.20.6:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355869')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780234')
     }
   update_files:
     - ~
@@ -211,7 +319,7 @@ fabric-1.20.6:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355868'
+    	modImplementation 'curse.maven:entityculling-448233:6780233'
     }
   update_files:
     - ~
@@ -223,7 +331,7 @@ neoforge-1.20.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355867'
+    	implementation 'curse.maven:entityculling-448233:6780232'
     }
   update_files:
     - ~
@@ -235,43 +343,7 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355866')
-    }
-  update_files:
-    - ~
-fabric-1.20.4:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	modImplementation 'curse.maven:entityculling-448233:6355865'
-    }
-  update_files:
-    - ~
-neoforge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:entityculling-448233:6355864'
-    }
-  update_files:
-    - ~
-forge-1.20.2:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:entityculling-448233:6355863')
+    	implementation fg.deobf('curse.maven:entityculling-448233:6780231')
     }
   update_files:
     - ~

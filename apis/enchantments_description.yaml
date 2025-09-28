@@ -7,9 +7,9 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:enchantment-descriptions-250419:6348560'
-    	implementation 'curse.maven:prickle-1023259:6348560'
-    	implementation 'curse.maven:bookshelf-228525:6348560'
+    	implementation 'curse.maven:enchantment-descriptions-250419:7039849'
+    	implementation 'curse.maven:prickle-1023259:7039849'
+    	implementation 'curse.maven:bookshelf-228525:7039849'
     }
   update_files:
     - ~
@@ -21,9 +21,9 @@ forge-1.21.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6348559')
-    	implementation fg.deobf('curse.maven:prickle-1023259:6348559')
-    	implementation fg.deobf('curse.maven:bookshelf-228525:6348559')
+    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:7039848')
+    	implementation fg.deobf('curse.maven:prickle-1023259:7039848')
+    	implementation fg.deobf('curse.maven:bookshelf-228525:7039848')
     }
   update_files:
     - ~
@@ -35,9 +35,9 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:enchantment-descriptions-250419:6348558'
-    	modImplementation 'curse.maven:bookshelf-228525:6348558'
-    	modImplementation 'curse.maven:prickle-1023259:6348558'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7039847'
+    	modImplementation 'curse.maven:bookshelf-228525:7039847'
+    	modImplementation 'curse.maven:prickle-1023259:7039847'
     }
   update_files:
     - ~
@@ -49,13 +49,13 @@ quilt-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:enchantment-descriptions-250419:6348558'
-    	modImplementation 'curse.maven:bookshelf-228525:6348558'
-    	modImplementation 'curse.maven:prickle-1023259:6348558'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7039847'
+    	modImplementation 'curse.maven:bookshelf-228525:7039847'
+    	modImplementation 'curse.maven:prickle-1023259:7039847'
     }
   update_files:
     - ~
-neoforge-1.20.4:
+fabric-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -63,12 +63,11 @@ neoforge-1.20.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:enchantment-descriptions-250419:6219630'
-    	implementation 'curse.maven:bookshelf-228525:6219630'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037179'
     }
   update_files:
     - ~
-forge-1.20.4:
+quilt-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -76,12 +75,11 @@ forge-1.20.4:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:6219628')
-    	implementation fg.deobf('curse.maven:bookshelf-228525:6219628')
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037179'
     }
   update_files:
     - ~
-fabric-1.20.4:
+neoforge-1.21.8:
   gradle: |
     repositories {
         maven {
@@ -89,12 +87,11 @@ fabric-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:enchantment-descriptions-250419:6219627'
-    	modImplementation 'curse.maven:bookshelf-228525:6219627'
+    	implementation 'curse.maven:enchantment-descriptions-250419:7037177'
     }
   update_files:
     - ~
-quilt-1.20.4:
+fabric-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -102,12 +99,11 @@ quilt-1.20.4:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:enchantment-descriptions-250419:6219627'
-    	modImplementation 'curse.maven:bookshelf-228525:6219627'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037173'
     }
   update_files:
     - ~
-neoforge-1.20.1:
+quilt-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -115,12 +111,11 @@ neoforge-1.20.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:enchantment-descriptions-250419:5855251'
-    	implementation 'curse.maven:bookshelf-228525:5855251'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037173'
     }
   update_files:
     - ~
-forge-1.20.1:
+neoforge-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -128,12 +123,11 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:enchantment-descriptions-250419:5855251')
-    	implementation fg.deobf('curse.maven:bookshelf-228525:5855251')
+    	implementation 'curse.maven:enchantment-descriptions-250419:7037172'
     }
   update_files:
     - ~
-fabric-1.20.1:
+fabric-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -141,12 +135,11 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:enchantment-descriptions-250419:5855250'
-    	modImplementation 'curse.maven:bookshelf-228525:5855250'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037168'
     }
   update_files:
     - ~
-quilt-1.20.1:
+quilt-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -154,8 +147,163 @@ quilt-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:enchantment-descriptions-250419:5855250'
-    	modImplementation 'curse.maven:bookshelf-228525:5855250'
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037168'
+    }
+  update_files:
+    - ~
+neoforge-1.21.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:enchantment-descriptions-250419:7037167'
+    }
+  update_files:
+    - ~
+neoforge-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:enchantment-descriptions-250419:7037162'
+    }
+  update_files:
+    - ~
+fabric-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037161'
+    }
+  update_files:
+    - ~
+quilt-1.21.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037161'
+    }
+  update_files:
+    - ~
+fabric-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037155'
+    }
+  update_files:
+    - ~
+quilt-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7037155'
+    }
+  update_files:
+    - ~
+neoforge-1.21.5:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:enchantment-descriptions-250419:7037154'
+    }
+  update_files:
+    - ~
+fabric-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7036721'
+    }
+  update_files:
+    - ~
+quilt-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7036721'
+    }
+  update_files:
+    - ~
+neoforge-1.21.3:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:enchantment-descriptions-250419:7036720'
+    }
+  update_files:
+    - ~
+fabric-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7036653'
+    }
+  update_files:
+    - ~
+quilt-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:enchantment-descriptions-250419:7036653'
+    }
+  update_files:
+    - ~
+neoforge-1.21.2:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:enchantment-descriptions-250419:7036652'
     }
   update_files:
     - ~

@@ -1,4 +1,17 @@
 ---
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:aether-255308:6894706'
+    	implementation 'curse.maven:owo-lib-532610:6894706'
+    }
+  update_files:
+    - ~
 fabric-1.21.1:
   gradle: |
     repositories {
@@ -7,8 +20,8 @@ fabric-1.21.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:aether-255308:6389869'
-    	modImplementation 'curse.maven:owo-lib-532610:6389869'
+    	modImplementation 'curse.maven:aether-255308:6894657'
+    	modImplementation 'curse.maven:owo-lib-532610:6894657'
     }
   update_files:
     - ~
@@ -20,21 +33,8 @@ fabric-1.20.1:
         }
     }
     dependencies {
-    	modImplementation 'curse.maven:aether-255308:6389864'
-    	modImplementation 'curse.maven:accessories-938917:6389864'
-    }
-  update_files:
-    - ~
-neoforge-1.21.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:aether-255308:6389857'
-    	implementation 'curse.maven:owo-lib-532610:6389857'
+    	modImplementation 'curse.maven:aether-255308:6800393'
+    	modImplementation 'curse.maven:accessories-938917:6800393'
     }
   update_files:
     - ~
@@ -48,30 +48,6 @@ forge-1.12.2:
     dependencies {
     	implementation fg.deobf('curse.maven:aether-255308:6316434')
     	implementation fg.deobf('curse.maven:owo-lib-532610:6316434')
-    }
-  update_files:
-    - ~
-neoforge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation 'curse.maven:aether-255308:6134920'
-    }
-  update_files:
-    - ~
-forge-1.20.1:
-  gradle: |
-    repositories {
-        maven {
-            url = 'https://cursemaven.com/'
-        }
-    }
-    dependencies {
-    	implementation fg.deobf('curse.maven:aether-255308:6134920')
     }
   update_files:
     - ~

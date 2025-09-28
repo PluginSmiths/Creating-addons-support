@@ -1,4 +1,16 @@
 ---
+neoforge-1.21.8:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:corpse-316582:7018366'
+    }
+  update_files:
+    - ~
 neoforge-1.21.5:
   gradle: |
     repositories {
@@ -7,7 +19,7 @@ neoforge-1.21.5:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6624404'
+    	implementation 'curse.maven:corpse-316582:7018352'
     }
   update_files:
     - ~
@@ -19,7 +31,7 @@ neoforge-1.21.4:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6624399'
+    	implementation 'curse.maven:corpse-316582:7018334'
     }
   update_files:
     - ~
@@ -31,7 +43,7 @@ neoforge-1.21:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6624396'
+    	implementation 'curse.maven:corpse-316582:7018307'
     }
   update_files:
     - ~
@@ -43,7 +55,7 @@ neoforge-1.21.1:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:6624396'
+    	implementation 'curse.maven:corpse-316582:7018307'
     }
   update_files:
     - ~
@@ -55,11 +67,11 @@ forge-1.20.1:
         }
     }
     dependencies {
-    	implementation fg.deobf('curse.maven:corpse-316582:6624394')
+    	implementation fg.deobf('curse.maven:corpse-316582:7018272')
     }
   update_files:
     - ~
-neoforge-1.21.3:
+neoforge-1.21.7:
   gradle: |
     repositories {
         maven {
@@ -67,11 +79,11 @@ neoforge-1.21.3:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:5964725'
+    	implementation 'curse.maven:corpse-316582:6733601'
     }
   update_files:
     - ~
-neoforge-1.21.2:
+neoforge-1.21.6:
   gradle: |
     repositories {
         maven {
@@ -79,7 +91,7 @@ neoforge-1.21.2:
         }
     }
     dependencies {
-    	implementation 'curse.maven:corpse-316582:5834433'
+    	implementation 'curse.maven:corpse-316582:6707241'
     }
   update_files:
     - ~

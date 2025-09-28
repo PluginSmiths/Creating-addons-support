@@ -1,5 +1,5 @@
 ---
-neoforge-1.20.4:
+neoforge-1.21:
   gradle: |
     repositories {
         maven {
@@ -11,7 +11,19 @@ neoforge-1.20.4:
     }
   update_files:
     - ~
-fabric-1.20.4:
+neoforge-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:expandability-465066:5428824'
+    }
+  update_files:
+    - ~
+fabric-1.21:
   gradle: |
     repositories {
         maven {
@@ -23,7 +35,7 @@ fabric-1.20.4:
     }
   update_files:
     - ~
-quilt-1.20.4:
+fabric-1.21.1:
   gradle: |
     repositories {
         maven {
@@ -32,6 +44,102 @@ quilt-1.20.4:
     }
     dependencies {
     	modImplementation 'curse.maven:expandability-465066:5428823'
+    }
+  update_files:
+    - ~
+quilt-1.21:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:expandability-465066:5428823'
+    }
+  update_files:
+    - ~
+quilt-1.21.1:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:expandability-465066:5428823'
+    }
+  update_files:
+    - ~
+neoforge-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:expandability-465066:5406783'
+    }
+  update_files:
+    - ~
+fabric-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:expandability-465066:5406782'
+    }
+  update_files:
+    - ~
+quilt-1.20.6:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:expandability-465066:5406782'
+    }
+  update_files:
+    - ~
+neoforge-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	implementation 'curse.maven:expandability-465066:5301416'
+    }
+  update_files:
+    - ~
+fabric-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:expandability-465066:5301415'
+    }
+  update_files:
+    - ~
+quilt-1.20.4:
+  gradle: |
+    repositories {
+        maven {
+            url = 'https://cursemaven.com/'
+        }
+    }
+    dependencies {
+    	modImplementation 'curse.maven:expandability-465066:5301415'
     }
   update_files:
     - ~
